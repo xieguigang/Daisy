@@ -3,6 +3,8 @@ require(Daisy);
 # script for build local reference database
 let mspfiles   = list.files("./MONA/", pattern = "*.msp");
 let lib_export = "../data/MoNA/";
+let lib.pos    = spectrumTree::new(file.path(lib_export, "lib.pos.pack"), type = "Pack");
+let lib.neg    = spectrumTree::new(file.path(lib_export, "lib.neg.pack"), type = "Pack");
 
 for(let file in mspfiles) {
     let load_mona = read.MoNA(file);
@@ -10,3 +12,6 @@ for(let file in mspfiles) {
     print(`processing source library file: ${file}...`);
 
 }
+
+close(lib.pos);
+close(lib.neg);
