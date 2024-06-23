@@ -2,6 +2,7 @@ require(Darwinism);
 require(Daisy);
 
 imports "memory_query" from "Darwinism";
+imports "formula" from "mzkit";
 
 # script for build local reference database
 let mspfiles   = list.files("./MONA/", pattern = "*.msp");
@@ -20,6 +21,21 @@ for(let file in mspfiles) {
 
     print(`processing source library file: ${file}...`);
 
+    for(let spec in tqdm(load_mona)) {
+        let spec_data = [spec]::GetSpectrumPeaks;
+        let metadata  = [spec]::MetaReader;
+        let library   = ifelse([spec]::libtype == 1, lib.pos, lib.neg);
+        let metabo_name = [metadata]::name;
+        let exact_mass  = formula::eval([metadata]::formula);
+        let filter = refmet |> select(
+            refmet_name = metabo_name, 
+            # [M+H]+, [M+Na]+, [M-H]-, [M+H-H2O]+
+            between("exactmass", [exact_mass - 30, exact_mass + 30]));
+
+        if (([spec]::ms_level == 2) && (nrow(filter) > 0)) {
+            
+        }
+    }
 }
 
 close(lib.pos);
