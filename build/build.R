@@ -38,12 +38,11 @@ for(let file in mspfiles) {
             between("exactmass", [exact_mass - 30, exact_mass + 30]));
 
         if (([spec]::ms_level == 2) && (nrow(filter) > 0)) {
-            filter = filter[1,,drop = FALSE];
+            filter = filter[1,];
             filter[, "libname"] = [spec]::ID;
             filter[, "cas"] = paste([metadata]::CAS, sep = "; ") || "-";
             filter[, "hmdb"] = [metadata]::hmdb;
-            filter[, "pubchem"] = [metadata]::pubchem;
-
+    
             library <- rbind(library, filter);
             library_sepc 
             |> addBucket(spec_data,ignore_error = TRUE,
