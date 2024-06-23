@@ -7,14 +7,16 @@ imports "formula" from "mzkit";
 # script for build local reference database
 let mspfiles   = list.files("./MONA/", pattern = "*.msp");
 let lib_export = "../data/MoNA/";
-let refmet     = "./refmet.csv"
-|> read.csv(row.names = NULL, check.names = FALSE)
+let refmet     = read.csv("./refmet.csv",row.names = NULL, check.names = FALSE);
+let lib.pos    = spectrumTree::new(file.path(lib_export, "lib.pos.pack"), type = "Pack");
+let lib.neg    = spectrumTree::new(file.path(lib_export, "lib.neg.pack"), type = "Pack");
+
+refmet[, "id"] = `RefMet_${1:nrow(refmet)}`;
+refmet <- refmet
 |> memory_query::load()
 |> hashindex(["refmet_name","pubchem_cid"])
 |> valueindex(exactmass = "number")
 ;
-let lib.pos    = spectrumTree::new(file.path(lib_export, "lib.pos.pack"), type = "Pack");
-let lib.neg    = spectrumTree::new(file.path(lib_export, "lib.neg.pack"), type = "Pack");
 
 for(let file in mspfiles) {
     let load_mona = read.MoNA(file, lazy = FALSE, verbose = FALSE);
@@ -33,7 +35,7 @@ for(let file in mspfiles) {
             between("exactmass", [exact_mass - 30, exact_mass + 30]));
 
         if (([spec]::ms_level == 2) && (nrow(filter) > 0)) {
-            
+
         }
     }
 }
