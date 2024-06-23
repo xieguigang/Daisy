@@ -29,7 +29,7 @@ for(let file in mspfiles) {
     for(let spec in tqdm(load_mona)) {
         let spec_data = [spec]::GetSpectrumPeaks;
         let metadata  = [spec]::MetaReader;
-        let library_sepc = ifelse([spec]::libtype == 1, lib.pos, lib.neg);
+        let library_sepc = ifelse(as.integer([spec]::libtype) == 1, lib.pos, lib.neg);
         let metabo_name  = [metadata]::name;
         let exact_mass   = formula::eval([metadata]::formula);
         let filter = refmet |> select(
