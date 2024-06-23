@@ -16,7 +16,7 @@ let lib.pos    = spectrumTree::new(file.path(lib_export, "lib.pos.pack"), type =
 let lib.neg    = spectrumTree::new(file.path(lib_export, "lib.neg.pack"), type = "Pack");
 
 for(let file in mspfiles) {
-    let load_mona = read.MoNA(file);
+    let load_mona = read.MoNA(file, lazy = FALSE, verbose = FALSE);
 
     print(`processing source library file: ${file}...`);
 
