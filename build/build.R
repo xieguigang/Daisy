@@ -18,27 +18,46 @@ refmet <- refmet
 |> valueindex(exactmass = "number")
 ;
 
+let metalib = NULL;
+
 for(let file in mspfiles) {
     let load_mona = read.MoNA(file, lazy = FALSE, verbose = FALSE);
+    let library = NULL;
 
     print(`processing source library file: ${file}...`);
 
     for(let spec in tqdm(load_mona)) {
         let spec_data = [spec]::GetSpectrumPeaks;
         let metadata  = [spec]::MetaReader;
-        let library   = ifelse([spec]::libtype == 1, lib.pos, lib.neg);
-        let metabo_name = [metadata]::name;
-        let exact_mass  = formula::eval([metadata]::formula);
+        let library_sepc = ifelse([spec]::libtype == 1, lib.pos, lib.neg);
+        let metabo_name  = [metadata]::name;
+        let exact_mass   = formula::eval([metadata]::formula);
         let filter = refmet |> select(
             refmet_name = metabo_name, 
             # [M+H]+, [M+Na]+, [M-H]-, [M+H-H2O]+
             between("exactmass", [exact_mass - 30, exact_mass + 30]));
 
         if (([spec]::ms_level == 2) && (nrow(filter) > 0)) {
+            filter = filter[1,,drop = FALSE];
+            filter[, "libname"] = [spec]::ID;
+            filter[, "cas"] = paste([metadata]::CAS, sep = "; ") || "-";
+            filter[, "hmdb"] = [metadata]::hmdb;
+            filter[, "pubchem"] = [metadata]::pubchem;
 
+            library <- rbind(library, filter);
+            library_sepc 
+            |> addBucket(spec_data,ignore_error = TRUE,
+                uuid = [spec]::ID,formula = [metadata]::formula,
+                name = metabo_name);
         }
     }
+
+    library[, "library"] <- basename(file);
+    metalib <- rbind( metalib, library); 
 }
 
 close(lib.pos);
 close(lib.neg);
+
+write.csv(metalib, file = file.path(lib_export, "metadata.csv"), 
+    row.names = FALSE);
