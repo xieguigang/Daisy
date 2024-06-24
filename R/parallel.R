@@ -5,4 +5,10 @@ const dasy_task = function(file, args) {
         tsv = file.ext(args$peakfile) == "txt",
         general_method = TRUE);
     
+    # run metadna at last
+    metadna(
+        peaks_ms2 = args$rawdata, 
+        libtype = args$libtype, 
+        ms1ppm = args$ms1ppm, 
+        output = args$export_dir);
 }
