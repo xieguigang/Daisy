@@ -2,7 +2,7 @@ imports "metadna" from "mzDIA";
 imports "mzweb" from "mzkit";
 imports ["assembly", "data", "math"] from "mzkit";
 
-const metadna = function(peaks_ms2, libtype = [1,-1], ms1ppm = 15, output = "./") {
+const call_metadna = function(peaks_ms2, libtype = [1,-1], ms1ppm = 15, output = "./") {
     options(verbose = TRUE);
 
     let metadna = metadna(

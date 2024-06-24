@@ -6,7 +6,7 @@ const dasy_task = function(file, args) {
         general_method = TRUE);
     
     # run metadna at last
-    metadna(
+    call_metadna(
         peaks_ms2 = args$rawdata, 
         libtype = args$libtype, 
         ms1ppm = args$ms1ppm, 

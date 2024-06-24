@@ -9,6 +9,12 @@ declare namespace Daisy {
       function onLoad(): object;
    }
    /**
+     * @param libtype default value Is ``[1, -1]``.
+     * @param ms1ppm default value Is ``15``.
+     * @param output default value Is ``./``.
+   */
+   function call_metadna(peaks_ms2: any, libtype?: any, ms1ppm?: any, output?: any): object;
+   /**
    */
    function dasy_task(file: any, args: any): object;
    /**
@@ -22,12 +28,6 @@ declare namespace Daisy {
      * @param debug default value Is ``false``.
    */
    function make_annotation(files: any, peakfile: any, libtype?: any, ms1ppm?: any, export_dir?: any, debug?: any): object;
-   /**
-     * @param libtype default value Is ``[1, -1]``.
-     * @param ms1ppm default value Is ``15``.
-     * @param output default value Is ``./``.
-   */
-   function metadna(peaks_ms2: any, libtype?: any, ms1ppm?: any, output?: any): object;
    /**
      * @param cache_enable default value Is ``true``.
    */
