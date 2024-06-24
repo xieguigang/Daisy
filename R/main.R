@@ -1,8 +1,15 @@
 #' Run metabolite annotation search
 #' 
-#' @param files the file path to the rawdata files.
+#' @param files the file path to the rawdata files or a directory path that 
+#'    should contains the avaiable mass spectrum data files.
 #' @param peakfile the file path to the xcms peaktable file.
 #' 
+#' @details the input raw data files could be in data formats of:
+#'   1. open source: mzXML, mzML
+#'   2. panomix mzkit format: mzPack, PeakMs2
+#' 
 const make_annotation = function(files, peakfile, libtype = [1,-1], ms1ppm = 15, export_dir = "./") {
-
+    if (dir.exists(files)) {
+        files <- list.files(files, pattern = ["*.mzXML", "*.mzML", "*.mzPack", "*.PeakMs2"]);
+    }
 }
