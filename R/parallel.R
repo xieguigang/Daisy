@@ -11,5 +11,5 @@ const dasy_task = function(file, args) {
         peaks_ms2 = args$rawdata, 
         libtype = args$libtype, 
         ms1ppm = args$ms1ppm, 
-        output = args$export_dir);
+        output = file.path(args$export_dir, "metadna"));
 }
