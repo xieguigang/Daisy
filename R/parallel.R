@@ -4,7 +4,7 @@ const dasy_task = function(file, args) {
     args$export_dir = file.path(args$export_dir, args$filename);
     args$peaks = read.xcms_peaks(args$peakfile,
         tsv = file.ext(args$peakfile) == "txt",
-        general_method = TRUE);
+        general_method = FALSE);
     
     # run metadna at last
     call_metadna(
