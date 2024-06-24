@@ -3,15 +3,17 @@
 make_annotation \- make_annotation(files, peakfile,
     <i>libtype</i> = [<span style='color: green;'>-1</span>],
     <i>ms1ppm</i> = <span style='color: green;'>15</span>,
-    <i>export.dir</i> = <span style='color: brown;'><strong>'./'</strong></span>)
+    <i>export.dir</i> = <span style='color: brown;'><strong>'./'</strong></span>,
+    <i>debug</i> = <span style='color: blue !important;'>FALSE</span>)
 .SH SYNOPSIS
 \fImake_annotation(files, peakfile,
     <i>libtype</i> = [<span style='color: green;'>-1</span>],
     <i>ms1ppm</i> = <span style='color: green;'>15</span>,
-    <i>export.dir</i> = <span style='color: brown;'><strong>'./'</strong></span>)\fR
+    <i>export.dir</i> = <span style='color: brown;'><strong>'./'</strong></span>,
+    <i>debug</i> = <span style='color: blue !important;'>FALSE</span>)\fR
 .SH OPTIONS
 .PP
-\fBfiles\fB \fR\- . the file path to the rawdata files.
+\fBfiles\fB \fR\- . the file path to the rawdata files or a directory path that should contains the avaiable mass spectrum data files.
 .PP
 .PP
 \fBpeakfile\fB \fR\- . the file path to the xcms peaktable file.
@@ -25,9 +27,16 @@ make_annotation \- make_annotation(files, peakfile,
 .PP
 \fBexport.dir\fB \fR\- './'. 
 .PP
+.PP
+\fBdebug\fB \fR\- FALSE. 
+.PP
+.SH DETAILS
+.PP
+the input raw data files could be in data formats of: 1. open source: mzXML, mzML 2. panomix mzkit format: mzPack, PeakMs2
+.PP
 .SH FILES
 .PP
-SMRUCC/R#.declare_function.make_annotation at main.R:line 6
+SMRUCC/R#.declare_function.make_annotation at main.R:line 11
 .PP
 .SH COPYRIGHT
 Copyright © xieguigang, MIT Licensed 2024

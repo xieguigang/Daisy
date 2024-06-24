@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title><p>Run metabolite annotation search</p></title>
+    <title><p>dasy_task</p></title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
     <link rel="stylesheet" type="text/css" href="../../_assets/page.css">
@@ -13,12 +13,12 @@
 
         <table style="width: 100%;">
             <tr>
-                <td>make_annotation {Daisy}</td>
+                <td>dasy_task {Daisy}</td>
                 <td style="text-align: right;">R Documentation</td>
             </tr>
         </table>
 
-        <h2><p>Run metabolite annotation search</p></h2>
+        <h2><p>dasy_task</p></h2>
 
         <h3>Description</h3>
 
@@ -27,30 +27,19 @@
         <h3>Usage</h3>
 
         <div style="width: 100%; padding-left: 3%; color: black;">
-            <pre><code class='language-R' style="color: black; font-weight:normal;"><strong>make_annotation</strong>(<i>files</i>, <i>peakfile</i>,
-    <i>libtype</i> = [<span style='color: green;'>-1</span>],
-    <i>ms1ppm</i> = <span style='color: green;'>15</span>,
-    <i>export.dir</i> = <span style='color: brown;'><strong>'./'</strong></span>,
-    <i>debug</i> = <span style='color: blue !important;'>FALSE</span>);</code></pre>
+            <pre><code class='language-R' style="color: black; font-weight:normal;"><strong>dasy_task</strong>(<i>file</i>, <i>args</i>);</code></pre>
         </div>
 
         <h3>Arguments</h3>
 
         <table>
             
-<dt>files</dt>
-<dd><p><p>the file path to the rawdata files or a directory path that should contains the avaiable mass spectrum data files.</p></p></dd>
-
-
-<dt>peakfile</dt>
-<dd><p><p>the file path to the xcms peaktable file.</p></p></dd>
-
         </table>
 
 
-        <h3 style="display: block;">Details</h3>
+        <h3 style="display: none;">Details</h3>
 
-        <p>the input raw data files could be in data formats of: 1. open source: mzXML, mzML 2. panomix mzkit format: mzPack, PeakMs2</p>
+        
 
         <h3 style="display: block">Authors</h3>
 
