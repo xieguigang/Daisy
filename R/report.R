@@ -15,7 +15,7 @@ const export_report = function(files, export_dir) {
 
     # plot visual of the spectrum alignment
     for(let hit in as.list(result, byrow = TRUE)) {
-        svg(filename = file.path(visual_dir, `${hit$xcms_id}@${normalizeFileName(hit$name, 
+        svg(file = file.path(visual_dir, `${hit$xcms_id}@${normalizeFileName(hit$name, 
                                     alphabetOnly = FALSE, 
                                     replacement = "_", 
                                     shrink = TRUE,
@@ -23,7 +23,10 @@ const export_report = function(files, export_dir) {
 
             parse.spectrum_alignment(hit$alignment) |> plot(
                 title = `${hit$name} ${hit$precursorType} ${hit$mz}@${round(hit$rt/60,1)}min`,
-                legend_layout = "none"
+                legend_layout = "none",
+                bar_width = 2,
+                color1 = "green",
+                color2 = "blue"
             );
         }
     }
