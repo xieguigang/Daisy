@@ -51,5 +51,8 @@ const tabular = function(result) {
 }
 
 const rank_score = function(result) {
-    (result$forward + result$reverse + result$jaccard + result$entropy) / (result$ppm + 0.1);
+    (as.numeric(result$forward) + 
+     as.numeric(result$reverse) + 
+     as.numeric(result$jaccard) + 
+     as.numeric(result$entropy)) / (as.numeric(result$ppm) + 0.1);
 }
