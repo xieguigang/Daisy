@@ -1,0 +1,2240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MetaDNARawSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" size="91">
+   <TypeComment>
+      <!--
+     model:     BioNovoGene.BioDeep.MetaDNA.Infer.Candidate
+     assembly:  BioNovoGene.BioDeep.MetaDNA, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+     version:   1.0.0.0
+     built:     1/1/2000 12:00:00 AM
+     md5:       5e0a32f4459b32c3e3c332a05d58bbba
+     timestamp: 7/13/2024 3:34:59 PM
+  -->
+   </TypeComment>
+   <Inference ROI="M130T33">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>0.5874573937526371</ppm>
+      <score>3.967590896651463</score>
+      <pvalue>0.000389173557110925</pvalue>
+      <infer forward="0.9672318831695472" reverse="1" jaccard="0.25" entropy="0">
+         <query mz="130.0862" scan_time="33.364011" intensity="164090.59">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_147] FTMS - p ESI d Full ms2 130.0862@hcd30.00 [50.0000-150.0000] M130T33[130.0862,33.36][130.0862,33.36]</query>
+         <reference mz="146.0813" scan_time="107.226306" intensity="973550.125">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_580] FTMS - p ESI d Full ms2 146.0813@hcd30.00 [50.0000-170.0000] M146T107[146.0813,107.23][146.0813,107.23]: C02946</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="61.98698043823242" query="100012.34375" ref="973550.125" da="1.52587890625E-05" />
+            <SSM2MatrixFragment mz="85.06439971923828" query="5765.712890625" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="130.08616638183594" query="24795.6640625" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="131.07015991210938" query="6414.353515625" ref="0" da="NaN" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="130.0862764201" mz_ref="0" ppm="0.5874573937526371" precursorType="[M+H]+" unique_id="C05936" score="0" />
+         <parentTrace>96.72318831695472</parentTrace>
+         <inferSize>2</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M121T70">
+      <precursorType>[M+H-H2O]+</precursorType>
+      <ppm>0.9206119560290614</ppm>
+      <score>4.952566199359245</score>
+      <pvalue>0.000272923084990142</pvalue>
+      <infer forward="0.9993227921882283" reverse="0.9993227921882283" jaccard="1" entropy="0">
+         <query mz="121.0283" scan_time="70.47471" intensity="82923.18">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_307] FTMS - p ESI d Full ms2 121.0283@hcd30.00 [50.0000-140.0000] M121T70[121.0283,70.47][121.0283,70.47]</query>
+         <reference mz="121.0283" scan_time="47.6933382" intensity="75950.922">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_204] FTMS - p ESI d Full ms2 121.0283@hcd30.00 [50.0000-140.0000] M121T48[121.0283,47.69][121.0283,47.69]: C22920</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="94.02837753295898" query="5817.6376953125" ref="3483.163330078125" da="0.00037384033203125" />
+            <SSM2MatrixFragment mz="121.02824401855467" query="52088.51953125" ref="45758.953125" da="3.0517578125E-05" />
+            <SSM2MatrixFragment mz="122.02339935302734" query="10965.2587890625" ref="10222.0400390625" da="6.103515625E-05" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="121.0284114201" mz_ref="0" ppm="0.9206119560290614" precursorType="[M+H-H2O]+" unique_id="C00156" score="0" />
+         <parentTrace>99.92740049724692</parentTrace>
+         <inferSize>4</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M133T71">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>0.5745306288385322</ppm>
+      <score>3.8731855495554424</score>
+      <pvalue>0.000406765523419452</pvalue>
+      <infer forward="0.983546112750808" reverse="0.7634560404986845" jaccard="0.42857142857142855" entropy="0">
+         <query mz="133.0131" scan_time="71.35762199999999" intensity="570083.06">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_313] FTMS - p ESI d Full ms2 133.0131@hcd30.00 [50.0000-155.0000] M133T71[133.0131,71.36][133.0131,71.36]</query>
+         <reference mz="132.0291" scan_time="77.500554" intensity="3137944.94921875">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_356] FTMS - p ESI d Full ms2 132.0291@hcd30.00 [50.0000-155.0000] M132T78[132.0291,77.50][132.0291,77.50]: C03961</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="71.01246643066406" query="96319.1640625" ref="432167.875" da="1.52587890625E-05" />
+            <SSM2MatrixFragment mz="72.99169921875" query="21249.36328125" ref="73042.2734375" da="6.103515625E-05" />
+            <SSM2MatrixFragment mz="75.00736236572266" query="24373.033203125" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="88.03904724121094" query="0" ref="873811.3125" da="NaN" />
+            <SSM2MatrixFragment mz="89.0230484008789" query="28925.2109375" ref="57225.33203125" da="3.0517578125E-05" />
+            <SSM2MatrixFragment mz="115.00241088867188" query="212553.625" ref="943980.8125" da="1.52587890625E-05" />
+            <SSM2MatrixFragment mz="115.91930389404295" query="21240.412109375" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="132.02908325195312" query="0" ref="349242.84375" da="NaN" />
+            <SSM2MatrixFragment mz="132.95604705810547" query="84402.7265625" ref="408474.5" da="0.1140594482421875" />
+            <SSM2MatrixFragment mz="134.04595947265625" query="27017.7265625" ref="0" da="NaN" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="133.0131764201" mz_ref="0" ppm="0.5745306288385322" precursorType="[M+H]+" unique_id="C00036" score="0" />
+         <parentTrace>76.34560404986846</parentTrace>
+         <inferSize>2</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M132T78">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>0.578812549557352</ppm>
+      <score>3.8729714535195012</score>
+      <pvalue>0.000406800643090215</pvalue>
+      <infer forward="0.7634560404986845" reverse="0.983546112750808" jaccard="0.42857142857142855" entropy="0">
+         <query mz="132.0291" scan_time="77.500554" intensity="3728758.2">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_356] FTMS - p ESI d Full ms2 132.0291@hcd30.00 [50.0000-155.0000] M132T78[132.0291,77.50][132.0291,77.50]</query>
+         <reference mz="133.0131" scan_time="71.35762199999999" intensity="516081.26171875">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_313] FTMS - p ESI d Full ms2 133.0131@hcd30.00 [50.0000-155.0000] M133T71[133.0131,71.36][133.0131,71.36]: C00036</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="71.01246643066406" query="432167.875" ref="96319.1640625" da="1.52587890625E-05" />
+            <SSM2MatrixFragment mz="72.99169921875" query="73042.2734375" ref="21249.36328125" da="6.103515625E-05" />
+            <SSM2MatrixFragment mz="75.00736236572266" query="0" ref="24373.033203125" da="NaN" />
+            <SSM2MatrixFragment mz="88.03904724121094" query="873811.3125" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="89.0230484008789" query="57225.33203125" ref="28925.2109375" da="3.0517578125E-05" />
+            <SSM2MatrixFragment mz="115.00241088867188" query="943980.8125" ref="212553.625" da="1.52587890625E-05" />
+            <SSM2MatrixFragment mz="115.91930389404295" query="0" ref="21240.412109375" da="NaN" />
+            <SSM2MatrixFragment mz="132.02908325195312" query="349242.84375" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="132.95604705810547" query="408474.5" ref="84402.7265625" da="0.1140594482421875" />
+            <SSM2MatrixFragment mz="134.04595947265625" query="0" ref="27017.7265625" da="NaN" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="132.0291764201" mz_ref="0" ppm="0.578812549557352" precursorType="[M+H]+" unique_id="C02362" score="0" />
+         <parentTrace>76.34560404986846</parentTrace>
+         <inferSize>2</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M218T80">
+      <precursorType>[M+NH4]+</precursorType>
+      <ppm>3.0934581451930545</ppm>
+      <score>3.5771759026474736</score>
+      <pvalue>0.000474672173455577</pvalue>
+      <infer forward="0.8444958335249918" reverse="0.911088748505008" jaccard="0.14285714285714285" entropy="0">
+         <query mz="218.0666" scan_time="79.61725200000001" intensity="109675.91">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_373] FTMS - p ESI d Full ms2 218.0666@hcd30.00 [50.0000-240.0000] M218T80[218.0666,79.62][218.0666,79.62]</query>
+         <reference mz="137.0233" scan_time="365.04363" intensity="297497.828125">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_1789] FTMS - p ESI d Full ms2 137.0233@hcd30.00 [50.0000-160.0000] M137T365[137.0233,365.04][137.0233,365.04]: C00230</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="75.00730895996094" query="2377.142333984375" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="92.97994232177734" query="36018.44140625" ref="197218.625" da="0.1065673828125" />
+            <SSM2MatrixFragment mz="94.0365982055664" query="0" ref="11839.109375" da="NaN" />
+            <SSM2MatrixFragment mz="101.00377655029295" query="6241.103515625" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="128.0336151123047" query="3768.39404296875" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="131.01434326171875" query="3108.518798828125" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="137.02328491210938" query="0" ref="88440.09375" da="NaN" />
+            <SSM2MatrixFragment mz="146.0450897216797" query="7594.68896484375" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="161.0254669189453" query="2434.9892578125" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="198.98731994628903" query="2740.530517578125" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="218.03419494628903" query="5090.849609375" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="219.03131103515625" query="18874.927734375" ref="0" da="NaN" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="218.06592542010003" mz_ref="0" ppm="3.0934581451930545" precursorType="[M+NH4]+" unique_id="C06318" score="0" />
+         <parentTrace>84.44958335249918</parentTrace>
+         <inferSize>2</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M269T87">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>4.547138314070258</ppm>
+      <score>4.772643084296487</score>
+      <pvalue>0.000289830406880859</pvalue>
+      <infer forward="1" reverse="1" jaccard="1" entropy="0">
+         <query mz="269.0879" scan_time="87.34066200000001" intensity="3822651">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_433] FTMS - p ESI d Full ms2 269.0879@hcd30.00 [50.0000-295.0000] M269T87[269.0879,87.34][269.0879,87.34]</query>
+         <reference mz="89.0231" scan_time="1.8333051" intensity="310566.59375">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_10] FTMS - p ESI d Full ms2 89.0231@hcd30.00 [50.0000-110.0000] M89T2[89.0231,1.83][89.0231,1.83]: C00258</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="89.02302551269531" query="3317650" ref="310566.59375" da="1.52587890625E-05" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="269.08667642010005" mz_ref="0" ppm="4.547138314070258" precursorType="[M+H]+" unique_id="C19792" score="0" />
+         <parentTrace>100</parentTrace>
+         <inferSize>2</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M89T103">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>1.981733954493756</ppm>
+      <score>4.900913302275312</score>
+      <pvalue>0.000277577615268791</pvalue>
+      <infer forward="1" reverse="1" jaccard="1" entropy="0">
+         <query mz="89.0231" scan_time="102.52980000000001" intensity="633882.25">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_547] FTMS - p ESI d Full ms2 89.0231@hcd30.00 [50.0000-110.0000] M89T103[89.0231,102.53][89.0231,102.53]</query>
+         <reference mz="89.0231" scan_time="48.3423168" intensity="343607.88">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_209] FTMS - p ESI d Full ms2 89.0231@hcd30.00 [50.0000-110.0000] M89T48[89.0231,48.34][89.0231,48.34]: C00022</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="89.0230484008789" query="534057.5" ref="294897.78125" da="1.52587890625E-05" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="89.0232764201" mz_ref="0" ppm="1.981733954493756" precursorType="[M+H]+" unique_id="C00222" score="0" />
+         <parentTrace>100</parentTrace>
+         <inferSize>5</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M184T104">
+      <precursorType>[M]+</precursorType>
+      <ppm>5.712004541689192</ppm>
+      <score>4.073804343906133</score>
+      <pvalue>0.000373367684142704</pvalue>
+      <infer forward="0.957480063273074" reverse="0.9999999491758155" jaccard="0.6666666666666666" entropy="0">
+         <query mz="184.072" scan_time="103.7007" intensity="685617.81">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_555] FTMS - p ESI d Full ms2 184.0720@hcd30.00 [50.0000-205.0000] M184T104[184.0720,103.70][184.0720,103.70]</query>
+         <reference mz="188.0921" scan_time="144.490278" intensity="1536326.828125">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_747] FTMS - p ESI d Full ms2 188.0921@hcd30.00 [50.0000-210.0000] M188T144[188.0921,144.49][188.0921,144.49]: C05576</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="116.0704116821289" query="449239.8125" ref="1453598.125" da="3.0517578125E-05" />
+            <SSM2MatrixFragment mz="117.07386016845705" query="25711.302734375" ref="82728.703125" da="1.52587890625E-05" />
+            <SSM2MatrixFragment mz="140.081787109375" query="135582.40625" ref="0" da="NaN" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="184.0730514201" mz_ref="0" ppm="5.712004541689192" precursorType="[M]+" unique_id="C05594" score="0" />
+         <parentTrace>95.7480063273074</parentTrace>
+         <inferSize>2</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M243T106">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>12.656930471682287</ppm>
+      <score>3.4546169643517155</score>
+      <pvalue>0.000486640381664777</pvalue>
+      <infer forward="0.9463291465653176" reverse="0.9768349312939055" jaccard="0.42857142857142855" entropy="0">
+         <query mz="243.0621" scan_time="105.59553" intensity="143160.39">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_568] FTMS - p ESI d Full ms2 243.0621@hcd30.00 [50.0000-265.0000] M243T106[243.0621,105.60][243.0621,105.60]</query>
+         <reference mz="243.062" scan_time="146.268948" intensity="336269.515625">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_759] FTMS - p ESI d Full ms2 243.0620@hcd30.00 [50.0000-265.0000] M243T146[243.0620,146.27][243.0620,146.27]: C11425</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="78.95751190185547" query="4468.37744140625" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="99.92440795898438" query="5335.8525390625" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="111.01844787597656" query="4440.9619140625" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="140.0341796875" query="5076.02490234375" ref="20983.740234375" da="3.0517578125E-05" />
+            <SSM2MatrixFragment mz="146.96018981933594" query="10661.1396484375" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="153.029541015625" query="58021.3828125" ref="219457.796875" da="3.0517578125E-05" />
+            <SSM2MatrixFragment mz="168.04232788085938" query="5944.4931640625" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="174.95519256591797" query="10164.1796875" ref="11692.23828125" da="0.0002593994140625" />
+            <SSM2MatrixFragment mz="183.03987884521484" query="6918.10400390625" ref="28123.876953125" da="0.0006561279296875" />
+            <SSM2MatrixFragment mz="242.07933044433597" query="3998.85693359375" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="243.0827789306641" query="3935.900146484375" ref="56011.86328125" da="0.04217529296875" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="243.0651764201" mz_ref="0" ppm="12.656930471682287" precursorType="[M+H]+" unique_id="C11426" score="0" />
+         <parentTrace>94.63291465653177</parentTrace>
+         <inferSize>2</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M117T107">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>0.6528591382729706</ppm>
+      <score>4.488254990395241</score>
+      <pvalue>0.000321088751636315</pvalue>
+      <infer forward="0.9910852863354118" reverse="0.9826711958766668" jaccard="0.6666666666666666" entropy="0">
+         <query mz="117.0545" scan_time="107.09358599999999" intensity="620600.44">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_579] FTMS - p ESI d Full ms2 117.0545@hcd30.00 [50.0000-140.0000] M117T107[117.0545,107.09][117.0545,107.09]</query>
+         <reference mz="117.0545" scan_time="130.040268" intensity="551779.365234375">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_685] FTMS - p ESI d Full ms2 117.0545@hcd30.00 [50.0000-140.0000] M117T130[117.0545,130.04][117.0545,130.04]: C04039</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="59.01248550415039" query="35997.41015625" ref="17778.53515625" da="2.288818359375E-05" />
+            <SSM2MatrixFragment mz="71.04883575439453" query="0" ref="46497.28125" da="NaN" />
+            <SSM2MatrixFragment mz="99.92443084716795" query="60648.28125" ref="70777.9375" da="1.52587890625E-05" />
+            <SSM2MatrixFragment mz="116.0704460144043" query="65920.7890625" ref="26763.943359375" da="7.62939453125E-06" />
+            <SSM2MatrixFragment mz="116.92724227905272" query="324020" ref="342685.5" da="5.340576171875E-05" />
+            <SSM2MatrixFragment mz="117.9273567199707" query="41774.12890625" ref="47276.16796875" da="2.288818359375E-05" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="117.0545764201" mz_ref="0" ppm="0.6528591382729706" precursorType="[M+H]+" unique_id="C00141" score="0" />
+         <parentTrace>98.26711958766668</parentTrace>
+         <inferSize>2</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M146T107">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>0.8459665952552108</ppm>
+      <score>3.954665436576334</score>
+      <pvalue>0.00039116527109132</pvalue>
+      <infer forward="1" reverse="0.9672318831695472" jaccard="0.25" entropy="0">
+         <query mz="146.0813" scan_time="107.226306" intensity="1172438.6">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_580] FTMS - p ESI d Full ms2 146.0813@hcd30.00 [50.0000-170.0000] M146T107[146.0813,107.23][146.0813,107.23]</query>
+         <reference mz="130.0862" scan_time="33.364011" intensity="136988.07421875">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_147] FTMS - p ESI d Full ms2 130.0862@hcd30.00 [50.0000-150.0000] M130T33[130.0862,33.36][130.0862,33.36]: C05936</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="61.98698043823242" query="973550.125" ref="100012.34375" da="1.52587890625E-05" />
+            <SSM2MatrixFragment mz="85.06439971923828" query="0" ref="5765.712890625" da="NaN" />
+            <SSM2MatrixFragment mz="130.08616638183594" query="0" ref="24795.6640625" da="NaN" />
+            <SSM2MatrixFragment mz="131.07015991210938" query="0" ref="6414.353515625" da="NaN" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="146.0811764201" mz_ref="0" ppm="0.8459665952552108" precursorType="[M+H]+" unique_id="C02946" score="0" />
+         <parentTrace>96.72318831695472</parentTrace>
+         <inferSize>2</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M188T114">
+      <precursorType>[M+NH4]+</precursorType>
+      <ppm>1.9914706678879142</ppm>
+      <score>4.219101302883067</score>
+      <pvalue>0.00035326031760889</pvalue>
+      <infer forward="0.9999904824439382" reverse="0.9574709990655766" jaccard="0.6666666666666666" entropy="0">
+         <query mz="188.0921" scan_time="114.478002" intensity="127761.11">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_614] FTMS - p ESI d Full ms2 188.0921@hcd30.00 [50.0000-210.0000] M188T114[188.0921,114.48][188.0921,114.48]</query>
+         <reference mz="184.072" scan_time="103.7007" intensity="685617.81">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_555] FTMS - p ESI d Full ms2 184.0720@hcd30.00 [50.0000-205.0000] M184T104[184.0720,103.70][184.0720,103.70]: C05594</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="116.07042694091795" query="104083.46875" ref="449239.8125" da="0" />
+            <SSM2MatrixFragment mz="117.07384490966795" query="6412.712890625" ref="25711.302734375" da="4.57763671875E-05" />
+            <SSM2MatrixFragment mz="140.081787109375" query="0" ref="135582.40625" da="NaN" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="188.09172542009998" mz_ref="0" ppm="1.9914706678879142" precursorType="[M+NH4]+" unique_id="C05576" score="0" />
+         <parentTrace>91.67593927674416</parentTrace>
+         <inferSize>3</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M89T126">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>1.981733954493756</ppm>
+      <score>4.900913302275312</score>
+      <pvalue>0.000277577615268791</pvalue>
+      <infer forward="1" reverse="1" jaccard="1" entropy="0">
+         <query mz="89.0231" scan_time="125.934636" intensity="481551.5">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_662] FTMS - p ESI d Full ms2 89.0231@hcd30.00 [50.0000-110.0000] M89T126[89.0231,125.93][89.0231,125.93]</query>
+         <reference mz="89.0231" scan_time="102.52980000000001" intensity="633882.25">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_547] FTMS - p ESI d Full ms2 89.0231@hcd30.00 [50.0000-110.0000] M89T103[89.0231,102.53][89.0231,102.53]: C00222</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="89.02303695678711" query="423588.4375" ref="534057.5" da="3.814697265625E-05" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="89.0232764201" mz_ref="0" ppm="1.981733954493756" precursorType="[M+H]+" unique_id="C00022" score="0" />
+         <parentTrace>100</parentTrace>
+         <inferSize>6</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M366T145">
+      <precursorType>[M+NH4]+</precursorType>
+      <ppm>8.263571885731524</ppm>
+      <score>4.586821405713424</score>
+      <pvalue>0.000309071843420733</pvalue>
+      <infer forward="1" reverse="1" jaccard="1" entropy="0">
+         <query mz="366.1153" scan_time="144.75771600000002" intensity="349220.38">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_749] FTMS - p ESI d Full ms2 366.1153@hcd30.00 [50.0000-390.0000] M366T145[366.1153,144.76][366.1153,144.76]</query>
+         <reference mz="364.0999" scan_time="149.28590400000002" intensity="540426.56">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_780] FTMS - p ESI d Full ms2 364.0999@hcd30.00 [50.0000-390.0000] M364T149[364.0999,149.29][364.0999,149.29]: C19589</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="61.98696899414063" query="335150.5625" ref="499245.25" da="1.52587890625E-05" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="366.1183254201" mz_ref="0" ppm="8.263571885731524" precursorType="[M+NH4]+" unique_id="C19591" score="0" />
+         <parentTrace>100</parentTrace>
+         <inferSize>3</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M243T146">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>13.068353341846874</ppm>
+      <score>3.383255527917211</score>
+      <pvalue>0.000502325625785193</pvalue>
+      <infer forward="0.9768349312939055" reverse="0.9463291465653176" jaccard="0.42857142857142855" entropy="0">
+         <query mz="243.062" scan_time="146.268948" intensity="428984.69">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_759] FTMS - p ESI d Full ms2 243.0620@hcd30.00 [50.0000-265.0000] M243T146[243.0620,146.27][243.0620,146.27]</query>
+         <reference mz="243.0621" scan_time="105.59553" intensity="143160.39">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_568] FTMS - p ESI d Full ms2 243.0621@hcd30.00 [50.0000-265.0000] M243T106[243.0621,105.60][243.0621,105.60]: C11426</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="78.95751190185547" query="0" ref="4468.37744140625" da="NaN" />
+            <SSM2MatrixFragment mz="99.92440795898438" query="0" ref="5335.8525390625" da="NaN" />
+            <SSM2MatrixFragment mz="111.01844787597656" query="0" ref="4440.9619140625" da="NaN" />
+            <SSM2MatrixFragment mz="140.0341796875" query="20983.740234375" ref="5076.02490234375" da="3.0517578125E-05" />
+            <SSM2MatrixFragment mz="146.96018981933594" query="0" ref="10661.1396484375" da="NaN" />
+            <SSM2MatrixFragment mz="153.029541015625" query="219457.796875" ref="58021.3828125" da="3.0517578125E-05" />
+            <SSM2MatrixFragment mz="168.04232788085938" query="0" ref="5944.4931640625" da="NaN" />
+            <SSM2MatrixFragment mz="174.95519256591797" query="11692.23828125" ref="10164.1796875" da="0.0002593994140625" />
+            <SSM2MatrixFragment mz="183.03987884521484" query="28123.876953125" ref="6918.10400390625" da="0.0006561279296875" />
+            <SSM2MatrixFragment mz="242.07933044433597" query="0" ref="3998.85693359375" da="NaN" />
+            <SSM2MatrixFragment mz="243.0827789306641" query="56011.86328125" ref="3935.900146484375" da="0.04217529296875" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="243.0651764201" mz_ref="0" ppm="13.068353341846874" precursorType="[M+H]+" unique_id="C11425" score="0" />
+         <parentTrace>89.55388536390424</parentTrace>
+         <inferSize>3</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M364T149">
+      <precursorType>[M+NH4]+</precursorType>
+      <ppm>7.76001339195513</ppm>
+      <score>4.611999330402243</score>
+      <pvalue>0.000306354381899605</pvalue>
+      <infer forward="1" reverse="1" jaccard="1" entropy="0">
+         <query mz="364.0999" scan_time="149.28590400000002" intensity="540426.56">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_780] FTMS - p ESI d Full ms2 364.0999@hcd30.00 [50.0000-390.0000] M364T149[364.0999,149.29][364.0999,149.29]</query>
+         <reference mz="366.1154" scan_time="103.567764" intensity="252531.03125">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_554] FTMS - p ESI d Full ms2 366.1154@hcd30.00 [50.0000-390.0000] M366T104[366.1154,103.57][366.1154,103.57]: C19591</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="61.98697853088379" query="499245.25" ref="252531.03125" da="3.814697265625E-06" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="364.1027254201" mz_ref="0" ppm="7.76001339195513" precursorType="[M+NH4]+" unique_id="C19589" score="0" />
+         <parentTrace>100</parentTrace>
+         <inferSize>2</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M248T152">
+      <precursorType>[M+NH4]+</precursorType>
+      <ppm>3.122628639302746</ppm>
+      <score>4.136623315234815</score>
+      <pvalue>0.000365908632695581</pvalue>
+      <infer forward="0.9797107069333095" reverse="0.9896782149904273" jaccard="0.3333333333333333" entropy="0">
+         <query mz="248.0538" scan_time="151.90934399999998" intensity="648618.5">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_797] FTMS - p ESI d Full ms2 248.0538@hcd30.00 [50.0000-270.0000] M248T152[248.0538,151.91][248.0538,151.91]</query>
+         <reference mz="252.0876" scan_time="167.595336" intensity="81526.6005859375">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_880] FTMS - p ESI d Full ms2 252.0876@hcd30.00 [50.0000-275.0000] M252T168[252.0876,167.60][252.0876,167.60]: C15586</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="112.98436737060548" query="33414.87890625" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="119.04889678955078" query="0" ref="4010.15869140625" da="NaN" />
+            <SSM2MatrixFragment mz="163.03904724121094" query="39926.80078125" ref="12794.72265625" da="6.103515625E-05" />
+            <SSM2MatrixFragment mz="180.06573486328125" query="420877.875" ref="60841.18359375" da="0.000152587890625" />
+            <SSM2MatrixFragment mz="181.0697784423828" query="0" ref="3880.53564453125" da="NaN" />
+            <SSM2MatrixFragment mz="202.0478363037109" query="63309.6484375" ref="0" da="NaN" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="248.05302542010003" mz_ref="0" ppm="3.122628639302746" precursorType="[M+NH4]+" unique_id="C00620" score="0" />
+         <parentTrace>97.97107069333096</parentTrace>
+         <inferSize>2</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M198T152">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>10.483052293568626</ppm>
+      <score>3.108423996828187</score>
+      <pvalue>0.000570396063476282</pvalue>
+      <infer forward="0.9768692092317292" reverse="0.7855190749840782" jaccard="0.4" entropy="0">
+         <query mz="198.074" scan_time="152.442288" intensity="580723.31">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_801] FTMS - p ESI d Full ms2 198.0740@hcd30.00 [50.0000-220.0000] M198T152[198.0740,152.44][198.0740,152.44]</query>
+         <reference mz="130.0498" scan_time="86.667432" intensity="437867.95654296875">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_428] FTMS - p ESI d Full ms2 130.0498@hcd30.00 [50.0000-150.0000] M130T87[130.0498,86.67][130.0498,86.67]: C00025</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="61.98698425292969" query="0" ref="89742.359375" da="NaN" />
+            <SSM2MatrixFragment mz="68.0490951538086" query="0" ref="9666.2373046875" da="NaN" />
+            <SSM2MatrixFragment mz="70.0283203125" query="0" ref="10968.9921875" da="NaN" />
+            <SSM2MatrixFragment mz="71.0124282836914" query="0" ref="14160.712890625" da="NaN" />
+            <SSM2MatrixFragment mz="73.02813720703125" query="0" ref="13085.5" da="NaN" />
+            <SSM2MatrixFragment mz="84.04412078857422" query="0" ref="7179.20849609375" da="NaN" />
+            <SSM2MatrixFragment mz="85.02803802490234" query="0" ref="11129.142578125" da="NaN" />
+            <SSM2MatrixFragment mz="89.02310180664062" query="0" ref="9034.8427734375" da="NaN" />
+            <SSM2MatrixFragment mz="113.0344467163086" query="0" ref="16951.1875" da="NaN" />
+            <SSM2MatrixFragment mz="114.01842498779295" query="0" ref="25913.2734375" da="NaN" />
+            <SSM2MatrixFragment mz="128.03414916992188" query="0" ref="46326.9296875" da="NaN" />
+            <SSM2MatrixFragment mz="130.06790924072266" query="487574.4375" ref="142274.296875" da="0.0363616943359375" />
+            <SSM2MatrixFragment mz="131.08541870117188" query="33154.6015625" ref="41435.2734375" da="0.00823974609375" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="198.0760764201" mz_ref="0" ppm="10.483052293568626" precursorType="[M+H]+" unique_id="C00355" score="0" />
+         <parentTrace>78.55190749840783</parentTrace>
+         <inferSize>2</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M252T168">
+      <precursorType>[M]+</precursorType>
+      <ppm>8.919835406414471</ppm>
+      <score>3.846762976879229</score>
+      <pvalue>0.00041011422697199</pvalue>
+      <infer forward="0.9896782149904273" reverse="0.9797107069333095" jaccard="0.3333333333333333" entropy="0">
+         <query mz="252.0876" scan_time="167.595336" intensity="103806.94">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_880] FTMS - p ESI d Full ms2 252.0876@hcd30.00 [50.0000-275.0000] M252T168[252.0876,167.60][252.0876,167.60]</query>
+         <reference mz="248.0538" scan_time="151.90934399999998" intensity="557529.203125">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_797] FTMS - p ESI d Full ms2 248.0538@hcd30.00 [50.0000-270.0000] M248T152[248.0538,151.91][248.0538,151.91]: C00620</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="112.98436737060548" query="0" ref="33414.87890625" da="NaN" />
+            <SSM2MatrixFragment mz="119.04889678955078" query="4010.15869140625" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="163.03904724121094" query="12794.72265625" ref="39926.80078125" da="6.103515625E-05" />
+            <SSM2MatrixFragment mz="180.06573486328125" query="60841.18359375" ref="420877.875" da="0.000152587890625" />
+            <SSM2MatrixFragment mz="181.0697784423828" query="3880.53564453125" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="202.0478363037109" query="0" ref="63309.6484375" da="NaN" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="252.0853514201" mz_ref="0" ppm="8.919835406414471" precursorType="[M]+" unique_id="C15586" score="0" />
+         <parentTrace>97.97107069333096</parentTrace>
+         <inferSize>2</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M130T179">
+      <precursorType>[M+NH4]+</precursorType>
+      <ppm>0.19540965914784478</ppm>
+      <score>4.0736961853804186</score>
+      <pvalue>0.000393909053826161</pvalue>
+      <infer forward="0.863323923020307" reverse="0.8152588197879226" jaccard="0.6666666666666666" entropy="0">
+         <query mz="130.0862" scan_time="179.002272" intensity="215461.75">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_934] FTMS - p ESI d Full ms2 130.0862@hcd30.00 [50.0000-150.0000] M130T179[130.0862,179.00][130.0862,179.00]</query>
+         <reference mz="131.0702" scan_time="219.85739999999998" intensity="138991.44">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_1117] FTMS - p ESI d Full ms2 131.0702@hcd30.00 [50.0000-150.0000] M131T220[131.0702,219.86][131.0702,219.86]: C06102</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="59.012481689453125" query="0" ref="21180.162109375" da="NaN" />
+            <SSM2MatrixFragment mz="61.98697280883789" query="98002.015625" ref="26094.662109375" da="0" />
+            <SSM2MatrixFragment mz="85.06450271606445" query="7356.369140625" ref="6081.35693359375" da="0.00019073486328125" />
+            <SSM2MatrixFragment mz="102.98721313476562" query="7082.72216796875" ref="4134.18603515625" da="0.000274658203125" />
+            <SSM2MatrixFragment mz="113.9250946044922" query="5975.43115234375" ref="5062.78076171875" da="3.0517578125E-05" />
+            <SSM2MatrixFragment mz="130.08611297607422" query="65378.55859375" ref="53710.875" da="1.52587890625E-05" />
+            <SSM2MatrixFragment mz="131.07030487060547" query="7552.77587890625" ref="7073.62158203125" da="7.62939453125E-05" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="130.0862254201" mz_ref="0" ppm="0.19540965914784478" precursorType="[M+NH4]+" unique_id="C06105" score="0" />
+         <parentTrace>69.67792771213166</parentTrace>
+         <inferSize>3</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M360T186">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>14.782478270884319</ppm>
+      <score>4.258018589247638</score>
+      <pvalue>0.000348334305497877</pvalue>
+      <infer forward="0.9985712513959271" reverse="0.9985712513959271" jaccard="1" entropy="0">
+         <query mz="360.1277" scan_time="185.90961" intensity="91096.523">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_965] FTMS - p ESI d Full ms2 360.1277@hcd30.00 [50.0000-385.0000] M360T186[360.1277,185.91][360.1277,185.91]</query>
+         <reference mz="360.1277" scan_time="208.613214" intensity="358029.4609375">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_1068] FTMS - p ESI d Full ms2 360.1277@hcd30.00 [50.0000-385.0000] M360T209[360.1277,208.61][360.1277,208.61]: C05557</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="101.02307891845705" query="4554.95361328125" ref="14798.015625" da="6.103515625E-05" />
+            <SSM2MatrixFragment mz="130.08612060546875" query="44625.49609375" ref="233245.796875" da="0" />
+            <SSM2MatrixFragment mz="202.10739135742188" query="5066.35400390625" ref="20809.7109375" da="6.103515625E-05" />
+            <SSM2MatrixFragment mz="224.0900421142578" query="15483.0703125" ref="89175.9375" da="0.000244140625" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="360.1223764201" mz_ref="0" ppm="14.782478270884319" precursorType="[M+H]+" unique_id="C06564" score="0" />
+         <parentTrace>99.85712513959271</parentTrace>
+         <inferSize>2</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M268T186">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>13.520442151676855</ppm>
+      <score>2.9431382205102956</score>
+      <pvalue>0.000663619598194021</pvalue>
+      <infer forward="0.7919598786704403" reverse="0.8367941880728328" jaccard="0.8" entropy="0">
+         <query mz="268.0075" scan_time="186.043314" intensity="67158.641">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_966] FTMS - p ESI d Full ms2 268.0075@hcd30.00 [50.0000-290.0000] M268T186[268.0075,186.04][268.0075,186.04]</query>
+         <reference mz="268.0075" scan_time="249.078594" intensity="91385.289">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_1247] FTMS - p ESI d Full ms2 268.0075@hcd30.00 [50.0000-290.0000] M268T249[268.0075,249.08][268.0075,249.08]: C20247</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="53.12311935424805" query="1083.01708984375" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="53.679141998291016" query="1115.9136962890625" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="57.83103942871094" query="1296.922607421875" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="61.98695373535156" query="10628.1318359375" ref="8419.2578125" da="2.288818359375E-05" />
+            <SSM2MatrixFragment mz="68.78036499023438" query="1344.94482421875" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="71.32756805419922" query="1259.4599609375" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="76.47307586669922" query="1268.6485595703125" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="83.01238250732422" query="6561.3740234375" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="97.9015121459961" query="1337.914794921875" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="99.0074234008789" query="8479.2021484375" ref="36963.54296875" da="0.0001373291015625" />
+            <SSM2MatrixFragment mz="107.3663101196289" query="1470.705322265625" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="125.101318359375" query="1557.96484375" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="139.0386199951172" query="9304.830078125" ref="2592.32275390625" da="0.000213623046875" />
+            <SSM2MatrixFragment mz="173.02220153808594" query="1673.516357421875" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="183.0290985107422" query="16900.15625" ref="35513.75" da="0.000152587890625" />
+            <SSM2MatrixFragment mz="229.79684448242188" query="1875.9368896484375" ref="0" da="NaN" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="268.0038764201" mz_ref="0" ppm="13.520442151676855" precursorType="[M+H]+" unique_id="C20246" score="0" />
+         <parentTrace>62.720044942369846</parentTrace>
+         <inferSize>3</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M183T194">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>1.7679150473782275</ppm>
+      <score>3.600368146777691</score>
+      <pvalue>0.000457882926481764</pvalue>
+      <infer forward="0.7943819495733011" reverse="0.9713172995055022" jaccard="0.125" entropy="0">
+         <query mz="183.0291" scan_time="193.562478" intensity="113478.76">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_997] FTMS - p ESI d Full ms2 183.0291@hcd30.00 [50.0000-205.0000] M183T194[183.0291,193.56][183.0291,193.56]</query>
+         <reference mz="167.0341" scan_time="388.16153399999996" intensity="101159.07153320312">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_1913] FTMS - p ESI d Full ms2 167.0341@hcd30.00 [50.0000-190.0000] M167T388[167.0341,388.16][167.0341,388.16]: C14096</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="81.0330581665039" query="3817.564208984375" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="83.01248550415039" query="43444.48046875" ref="74899.90625" da="7.62939453125E-06" />
+            <SSM2MatrixFragment mz="84.0157241821289" query="0" ref="3755.846435546875" da="NaN" />
+            <SSM2MatrixFragment mz="99.0073471069336" query="29582.60546875" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="123.0438995361328" query="0" ref="17121.4453125" da="NaN" />
+            <SSM2MatrixFragment mz="139.0388641357422" query="13732.6123046875" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="167.03392028808594" query="0" ref="5381.87353515625" da="NaN" />
+            <SSM2MatrixFragment mz="183.02883911132807" query="5024.66748046875" ref="0" da="NaN" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="183.0287764201" mz_ref="0" ppm="1.7679150473782275" precursorType="[M+H]+" unique_id="C14097" score="0" />
+         <parentTrace>79.43819495733011</parentTrace>
+         <inferSize>2</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M103T200">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>1.7121715315424197</ppm>
+      <score>4.290613956679232</score>
+      <pvalue>0.000345454998008346</pvalue>
+      <infer forward="0.9881148999081851" reverse="0.9882643058525654" jaccard="0.6666666666666666" entropy="0">
+         <query mz="103.0388" scan_time="200.24910599999998" intensity="81022.055">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_1029] FTMS - p ESI d Full ms2 103.0388@hcd30.00 [50.0000-125.0000] M103T200[103.0388,200.25][103.0388,200.25]</query>
+         <reference mz="103.0388" scan_time="291.934566" intensity="84477.516">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_1427] FTMS - p ESI d Full ms2 103.0388@hcd30.00 [50.0000-125.0000] M103T292[103.0388,291.93][103.0388,291.93]: C06002</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="57.0332145690918" query="12892.3212890625" ref="11829.125" da="6.866455078125E-05" />
+            <SSM2MatrixFragment mz="59.01247215270996" query="21528.78125" ref="20345.251953125" da="1.1444091796875E-05" />
+            <SSM2MatrixFragment mz="61.98690986633301" query="2388.42626953125" ref="3716.87109375" da="1.9073486328125E-05" />
+            <SSM2MatrixFragment mz="69.2755355834961" query="0" ref="1175.930419921875" da="NaN" />
+            <SSM2MatrixFragment mz="73.02806854248047" query="4198.77783203125" ref="3735.32470703125" da="1.52587890625E-05" />
+            <SSM2MatrixFragment mz="85.95260620117188" query="0" ref="1040.0128173828125" da="NaN" />
+            <SSM2MatrixFragment mz="89.92435836791992" query="5674.16748046875" ref="6314.93505859375" da="0.00035858154296875" />
+            <SSM2MatrixFragment mz="90.9221305847168" query="2070.522705078125" ref="2189.400634765625" da="5.340576171875E-05" />
+            <SSM2MatrixFragment mz="100.92518615722656" query="1273.3193359375" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="101.92286682128906" query="2047.421875" ref="2191.271728515625" da="0.0001373291015625" />
+            <SSM2MatrixFragment mz="103.03875732421876" query="15156.830078125" ref="14490.3740234375" da="9.1552734375E-05" />
+            <SSM2MatrixFragment mz="103.91876983642578" query="1098.008544921875" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="116.91950607299805" query="3306.052734375" ref="6872.66650390625" da="0.00029754638671875" />
+            <SSM2MatrixFragment mz="117.9175148010254" query="6190.56640625" ref="7643.5703125" da="2.288818359375E-05" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="103.0389764201" mz_ref="0" ppm="1.7121715315424197" precursorType="[M+H]+" unique_id="C21030" score="0" />
+         <parentTrace>72.14409666815017</parentTrace>
+         <inferSize>6</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M360T209">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>14.782478270884319</ppm>
+      <score>4.2565918819661395</score>
+      <pvalue>0.000348519837653531</pvalue>
+      <infer forward="0.9985712513959271" reverse="0.9985712513959271" jaccard="1" entropy="0">
+         <query mz="360.1277" scan_time="208.613214" intensity="439501.56">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_1068] FTMS - p ESI d Full ms2 360.1277@hcd30.00 [50.0000-385.0000] M360T209[360.1277,208.61][360.1277,208.61]</query>
+         <reference mz="360.1277" scan_time="185.90961" intensity="91096.523">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_965] FTMS - p ESI d Full ms2 360.1277@hcd30.00 [50.0000-385.0000] M360T186[360.1277,185.91][360.1277,185.91]: C06564</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="101.02307891845705" query="14798.015625" ref="4554.95361328125" da="6.103515625E-05" />
+            <SSM2MatrixFragment mz="130.08612060546875" query="233245.796875" ref="44625.49609375" da="0" />
+            <SSM2MatrixFragment mz="202.10739135742188" query="20809.7109375" ref="5066.35400390625" da="6.103515625E-05" />
+            <SSM2MatrixFragment mz="224.0900421142578" query="89175.9375" ref="15483.0703125" da="0.000244140625" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="360.1223764201" mz_ref="0" ppm="14.782478270884319" precursorType="[M+H]+" unique_id="C05557" score="0" />
+         <parentTrace>99.71445441144279</parentTrace>
+         <inferSize>3</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M202T209">
+      <precursorType>[M+H-H2O]+</precursorType>
+      <ppm>1.922636830325666</ppm>
+      <score>3.697996298391251</score>
+      <pvalue>0.000434457556996179</pvalue>
+      <infer forward="0.9980655429930985" reverse="0.8399212128109099" jaccard="0.4" entropy="0">
+         <query mz="202.1078" scan_time="208.99939799999999" intensity="676156">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_1070] FTMS - p ESI d Full ms2 202.1078@hcd30.00 [50.0000-225.0000] M202T209[202.1078,209.00][202.1078,209.00]</query>
+         <reference mz="131.0702" scan_time="219.85739999999998" intensity="123337.64453125">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_1117] FTMS - p ESI d Full ms2 131.0702@hcd30.00 [50.0000-150.0000] M131T220[131.0702,219.86][131.0702,219.86]: C00522</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="59.012481689453125" query="0" ref="21180.162109375" da="NaN" />
+            <SSM2MatrixFragment mz="61.98697280883789" query="0" ref="26094.662109375" da="NaN" />
+            <SSM2MatrixFragment mz="85.0645980834961" query="0" ref="6081.35693359375" da="NaN" />
+            <SSM2MatrixFragment mz="102.98707580566406" query="0" ref="4134.18603515625" da="NaN" />
+            <SSM2MatrixFragment mz="113.92507934570312" query="0" ref="5062.78076171875" da="NaN" />
+            <SSM2MatrixFragment mz="130.08612060546875" query="604641.3125" ref="53710.875" da="0" />
+            <SSM2MatrixFragment mz="131.0799560546875" query="41624.9375" ref="7073.62158203125" da="0.019378662109375" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="202.10741142010002" mz_ref="0" ppm="1.922636830325666" precursorType="[M+H-H2O]+" unique_id="C00864" score="0" />
+         <parentTrace>83.99212128109099</parentTrace>
+         <inferSize>2</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M131T220">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>0.5830470998500238</ppm>
+      <score>4.394478318732164</score>
+      <pvalue>0.000348724490675703</pvalue>
+      <infer forward="0.8546724797194752" reverse="0.85911239208609" jaccard="1" entropy="0">
+         <query mz="131.0702" scan_time="219.85739999999998" intensity="138991.44">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_1117] FTMS - p ESI d Full ms2 131.0702@hcd30.00 [50.0000-150.0000] M131T220[131.0702,219.86][131.0702,219.86]</query>
+         <reference mz="130.0861" scan_time="224.898228" intensity="177079.68310546875">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_1141] FTMS - p ESI d Full ms2 130.0861@hcd30.00 [50.0000-150.0000] M130T225[130.0861,224.90][130.0861,224.90]: C06105</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="59.01246070861816" query="21180.162109375" ref="12617.46484375" da="4.1961669921875E-05" />
+            <SSM2MatrixFragment mz="61.98697471618652" query="26094.662109375" ref="89229.0234375" da="3.814697265625E-06" />
+            <SSM2MatrixFragment mz="85.06458282470703" query="6081.35693359375" ref="5104.626953125" da="3.0517578125E-05" />
+            <SSM2MatrixFragment mz="102.98707580566406" query="4134.18603515625" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="113.92507934570312" query="5062.78076171875" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="130.08611297607422" query="53710.875" ref="63428.05078125" da="1.52587890625E-05" />
+            <SSM2MatrixFragment mz="131.0702896118164" query="7073.62158203125" ref="6700.51708984375" da="4.57763671875E-05" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="131.0702764201" mz_ref="0" ppm="0.5830470998500238" precursorType="[M+H]+" unique_id="C06102" score="0" />
+         <parentTrace>85.46724797194753</parentTrace>
+         <inferSize>2</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M130T225">
+      <precursorType>[M+NH4]+</precursorType>
+      <ppm>0.9641314483650292</ppm>
+      <score>4.375424101306413</score>
+      <pvalue>0.000351218815253342</pvalue>
+      <infer forward="0.85911239208609" reverse="0.8546724797194752" jaccard="1" entropy="0">
+         <query mz="130.0861" scan_time="224.898228" intensity="206204.69">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_1141] FTMS - p ESI d Full ms2 130.0861@hcd30.00 [50.0000-150.0000] M130T225[130.0861,224.90][130.0861,224.90]</query>
+         <reference mz="131.0702" scan_time="219.85739999999998" intensity="123337.64453125">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_1117] FTMS - p ESI d Full ms2 131.0702@hcd30.00 [50.0000-150.0000] M131T220[131.0702,219.86][131.0702,219.86]: C02129</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="59.01246070861816" query="12617.46484375" ref="21180.162109375" da="4.1961669921875E-05" />
+            <SSM2MatrixFragment mz="61.98697471618652" query="89229.0234375" ref="26094.662109375" da="3.814697265625E-06" />
+            <SSM2MatrixFragment mz="85.06458282470703" query="5104.626953125" ref="6081.35693359375" da="3.0517578125E-05" />
+            <SSM2MatrixFragment mz="102.98707580566406" query="0" ref="4134.18603515625" da="NaN" />
+            <SSM2MatrixFragment mz="113.92507934570312" query="0" ref="5062.78076171875" da="NaN" />
+            <SSM2MatrixFragment mz="130.08611297607422" query="63428.05078125" ref="53710.875" da="1.52587890625E-05" />
+            <SSM2MatrixFragment mz="131.0702896118164" query="6700.51708984375" ref="7073.62158203125" da="4.57763671875E-05" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="130.0862254201" mz_ref="0" ppm="0.9641314483650292" precursorType="[M+NH4]+" unique_id="C01066" score="0" />
+         <parentTrace>85.46724797194753</parentTrace>
+         <inferSize>2</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M121T239">
+      <precursorType>[M+H-H2O]+</precursorType>
+      <ppm>0.9206119560290614</ppm>
+      <score>3.5188625411190806</score>
+      <pvalue>0.000469860233333656</pvalue>
+      <infer forward="0.9928536197276833" reverse="0.7597192967329941" jaccard="0.125" entropy="0">
+         <query mz="121.0283" scan_time="238.990644" intensity="75977.578">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_1198] FTMS - p ESI d Full ms2 121.0283@hcd30.00 [50.0000-140.0000] M121T239[121.0283,238.99][121.0283,238.99]</query>
+         <reference mz="165.0548" scan_time="334.337352" intensity="92432.80895996094">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_1625] FTMS - p ESI d Full ms2 165.0548@hcd30.00 [50.0000-185.0000] M165T334[165.0548,334.34][165.0548,334.34]: C00811</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="61.98678970336914" query="2621.031494140625" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="72.0076675415039" query="0" ref="2008.5347900390625" da="NaN" />
+            <SSM2MatrixFragment mz="89.92426300048828" query="0" ref="2228.93701171875" da="NaN" />
+            <SSM2MatrixFragment mz="94.0284423828125" query="5248.84716796875" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="119.04893493652344" query="0" ref="19326.1953125" da="NaN" />
+            <SSM2MatrixFragment mz="120.0526123046875" query="0" ref="1637.845703125" da="NaN" />
+            <SSM2MatrixFragment mz="121.04642868041992" query="50731.0625" ref="30400.935546875" da="0.03646087646484375" />
+            <SSM2MatrixFragment mz="122.04570770263672" query="7308.50537109375" ref="3254.786376953125" da="0.044464111328125" />
+            <SSM2MatrixFragment mz="147.0437469482422" query="0" ref="6083.82275390625" da="NaN" />
+            <SSM2MatrixFragment mz="149.01072692871094" query="0" ref="11951.6513671875" da="NaN" />
+            <SSM2MatrixFragment mz="150.01429748535156" query="0" ref="2261.93212890625" da="NaN" />
+            <SSM2MatrixFragment mz="164.0702667236328" query="0" ref="3148.787109375" da="NaN" />
+            <SSM2MatrixFragment mz="165.05462646484375" query="0" ref="10129.380859375" da="NaN" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="121.0284114201" mz_ref="0" ppm="0.9206119560290614" precursorType="[M+H-H2O]+" unique_id="C16700" score="0" />
+         <parentTrace>75.97192967329941</parentTrace>
+         <inferSize>2</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M134T241">
+      <precursorType>[M+NH4]+</precursorType>
+      <ppm>9.50851908420234</ppm>
+      <score>4.359894243789101</score>
+      <pvalue>0.000335489161604974</pvalue>
+      <infer forward="0.9983310247055557" reverse="0.9983310247055557" jaccard="1" entropy="0">
+         <query mz="134.0461" scan_time="241.319136" intensity="85247.531">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_1209] FTMS - p ESI d Full ms2 134.0461@hcd30.00 [50.0000-155.0000] M134T241[134.0461,241.32][134.0461,241.32]</query>
+         <reference mz="134.0461" scan_time="288.035748" intensity="105499.58">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_1409] FTMS - p ESI d Full ms2 134.0461@hcd30.00 [50.0000-155.0000] M134T288[134.0461,288.04][134.0461,288.04]: C00122</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="107.03498840332033" query="3960.273193359375" ref="5172.6904296875" da="0.00030517578125" />
+            <SSM2MatrixFragment mz="115.9194564819336" query="7141.99951171875" ref="9572.525390625" da="0.0001220703125" />
+            <SSM2MatrixFragment mz="116.91951751708984" query="6387.26513671875" ref="6239.85693359375" da="0.0002593994140625" />
+            <SSM2MatrixFragment mz="117.91765594482422" query="2188.0703125" ref="3144.066162109375" da="0.0004425048828125" />
+            <SSM2MatrixFragment mz="134.0460205078125" query="30833.728515625" ref="42102.69140625" da="9.1552734375E-05" />
+            <SSM2MatrixFragment mz="134.89347076416016" query="16863.24609375" ref="21158.166015625" da="0.0001373291015625" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="134.04482542009998" mz_ref="0" ppm="9.50851908420234" precursorType="[M+NH4]+" unique_id="C01384" score="0" />
+         <parentTrace>83.69891732936618</parentTrace>
+         <inferSize>10</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M268T249">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>13.520442151676855</ppm>
+      <score>3.107897649757038</score>
+      <pvalue>0.000610704531537504</pvalue>
+      <infer forward="0.8367941880728328" reverse="0.7919598786704403" jaccard="0.8" entropy="0">
+         <query mz="268.0075" scan_time="249.078594" intensity="91385.289">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_1247] FTMS - p ESI d Full ms2 268.0075@hcd30.00 [50.0000-290.0000] M268T249[268.0075,249.08][268.0075,249.08]</query>
+         <reference mz="268.0075" scan_time="186.043314" intensity="67158.63928222656">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_966] FTMS - p ESI d Full ms2 268.0075@hcd30.00 [50.0000-290.0000] M268T186[268.0075,186.04][268.0075,186.04]: C20246</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="53.12311935424805" query="0" ref="1083.01708984375" da="NaN" />
+            <SSM2MatrixFragment mz="53.679141998291016" query="0" ref="1115.9136962890625" da="NaN" />
+            <SSM2MatrixFragment mz="57.83103942871094" query="0" ref="1296.922607421875" da="NaN" />
+            <SSM2MatrixFragment mz="61.98695373535156" query="8419.2578125" ref="10628.1318359375" da="2.288818359375E-05" />
+            <SSM2MatrixFragment mz="68.78036499023438" query="0" ref="1344.94482421875" da="NaN" />
+            <SSM2MatrixFragment mz="71.32756805419922" query="0" ref="1259.4599609375" da="NaN" />
+            <SSM2MatrixFragment mz="76.47307586669922" query="0" ref="1268.6485595703125" da="NaN" />
+            <SSM2MatrixFragment mz="83.01238250732422" query="0" ref="6561.3740234375" da="NaN" />
+            <SSM2MatrixFragment mz="97.9015121459961" query="0" ref="1337.914794921875" da="NaN" />
+            <SSM2MatrixFragment mz="99.0074234008789" query="36963.54296875" ref="8479.2021484375" da="0.0001373291015625" />
+            <SSM2MatrixFragment mz="107.3663101196289" query="0" ref="1470.705322265625" da="NaN" />
+            <SSM2MatrixFragment mz="125.101318359375" query="0" ref="1557.96484375" da="NaN" />
+            <SSM2MatrixFragment mz="139.0386199951172" query="2592.32275390625" ref="9304.830078125" da="0.000213623046875" />
+            <SSM2MatrixFragment mz="173.02220153808594" query="0" ref="1673.516357421875" da="NaN" />
+            <SSM2MatrixFragment mz="183.0290985107422" query="35513.75" ref="16900.15625" da="0.000152587890625" />
+            <SSM2MatrixFragment mz="229.79684448242188" query="0" ref="1875.9368896484375" da="NaN" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="268.0038764201" mz_ref="0" ppm="13.520442151676855" precursorType="[M+H]+" unique_id="C20247" score="0" />
+         <parentTrace>79.19598786704402</parentTrace>
+         <inferSize>2</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M121T285">
+      <precursorType>[M+H-H2O]+</precursorType>
+      <ppm>0.9206119560290614</ppm>
+      <score>4.952274090109087</score>
+      <pvalue>0.000272910935981036</pvalue>
+      <infer forward="0.9997496592205422" reverse="0.9997496592205422" jaccard="1" entropy="0">
+         <query mz="121.0283" scan_time="284.52474" intensity="88506.414">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_1395] FTMS - p ESI d Full ms2 121.0283@hcd30.00 [50.0000-140.0000] M121T285[121.0283,284.52][121.0283,284.52]</query>
+         <reference mz="121.0283" scan_time="193.429782" intensity="87439.406">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_996] FTMS - p ESI d Full ms2 121.0283@hcd30.00 [50.0000-140.0000] M121T193[121.0283,193.43][121.0283,193.43]: C00156</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="94.02858352661131" query="5997.470703125" ref="5177.41796875" da="0.00022125244140625" />
+            <SSM2MatrixFragment mz="121.02828216552734" query="52816.328125" ref="55059.31640625" da="1.52587890625E-05" />
+            <SSM2MatrixFragment mz="122.02347564697266" query="9072.6240234375" ref="10111.5576171875" da="0.0001220703125" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="121.0284114201" mz_ref="0" ppm="0.9206119560290614" precursorType="[M+H-H2O]+" unique_id="C22920" score="0" />
+         <parentTrace>99.85550286899989</parentTrace>
+         <inferSize>6</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M134T288">
+      <precursorType>[M+NH4]+</precursorType>
+      <ppm>9.50851908420234</ppm>
+      <score>4.3578543030335695</score>
+      <pvalue>0.000336163385317901</pvalue>
+      <infer forward="0.9948918343851253" reverse="0.9948918343851253" jaccard="1" entropy="0">
+         <query mz="134.0461" scan_time="288.035748" intensity="105499.58">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_1409] FTMS - p ESI d Full ms2 134.0461@hcd30.00 [50.0000-155.0000] M134T288[134.0461,288.04][134.0461,288.04]</query>
+         <reference mz="134.0461" scan_time="216.889926" intensity="103591.58">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_1103] FTMS - p ESI d Full ms2 134.0461@hcd30.00 [50.0000-155.0000] M134T217[134.0461,216.89][134.0461,216.89]: C01384</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="107.03494262695312" query="5172.6904296875" ref="3521.03173828125" da="0.000213623046875" />
+            <SSM2MatrixFragment mz="115.9193992614746" query="9572.525390625" ref="10905.4775390625" da="7.62939453125E-06" />
+            <SSM2MatrixFragment mz="116.91958618164062" query="6239.85693359375" ref="8878.53515625" da="0.0001220703125" />
+            <SSM2MatrixFragment mz="117.91766738891602" query="3144.066162109375" ref="2928.675537109375" da="0.00046539306640625" />
+            <SSM2MatrixFragment mz="134.04598236083984" query="42102.69140625" ref="37413.5703125" da="1.52587890625E-05" />
+            <SSM2MatrixFragment mz="134.89340209960938" query="21158.166015625" ref="21411.109375" da="0" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="134.04482542009998" mz_ref="0" ppm="9.50851908420234" precursorType="[M+NH4]+" unique_id="C00122" score="0" />
+         <parentTrace>83.83884228585609</parentTrace>
+         <inferSize>9</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M320T303">
+      <precursorType>[M+NH4]+</precursorType>
+      <ppm>9.452266745032508</ppm>
+      <score>3.7708472281107035</score>
+      <pvalue>0.000421227300505997</pvalue>
+      <infer forward="1" reverse="0.9967302826811644" jaccard="0.5" entropy="0">
+         <query mz="320.0735" scan_time="303.33648" intensity="57209.914">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_1483] FTMS - p ESI d Full ms2 320.0735@hcd30.00 [50.0000-345.0000] M320T303[320.0735,303.34][320.0735,303.34]</query>
+         <reference mz="288.0603" scan_time="360.170406" intensity="128938.08984375">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_1756] FTMS - p ESI d Full ms2 288.0603@hcd30.00 [50.0000-310.0000] M288T360[288.0603,360.17][288.0603,360.17]: C15525</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="61.986982345581055" query="44706.421875" ref="119269.4296875" da="1.1444091796875E-05" />
+            <SSM2MatrixFragment mz="203.0823516845703" query="0" ref="9668.66015625" da="NaN" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="320.07652542010004" mz_ref="0" ppm="9.452266745032508" precursorType="[M+NH4]+" unique_id="C08577" score="0" />
+         <parentTrace>99.67302826811644</parentTrace>
+         <inferSize>2</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M236T323">
+      <precursorType>[M]+</precursorType>
+      <ppm>9.524143916404194</ppm>
+      <score>4.0786706846674985</score>
+      <pvalue>0.000372940970808957</pvalue>
+      <infer forward="0.996188940243854" reverse="0.9980943134237932" jaccard="0.75" entropy="0">
+         <query mz="236.0926" scan_time="322.767966" intensity="231278.12">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_1573] FTMS - p ESI d Full ms2 236.0926@hcd30.00 [50.0000-260.0000] M236T323[236.0926,322.77][236.0926,322.77]</query>
+         <reference mz="232.0588" scan_time="302.142078" intensity="434648.29296875">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_1476] FTMS - p ESI d Full ms2 232.0588@hcd30.00 [50.0000-255.0000] M232T302[232.0588,302.14][232.0588,302.14]: C00672</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="72.0077133178711" query="9416.4248046875" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="147.0440902709961" query="44089.55859375" ref="79415.4921875" da="0.0001373291015625" />
+            <SSM2MatrixFragment mz="164.07069396972656" query="145443.421875" ref="333500.0625" da="3.0517578125E-05" />
+            <SSM2MatrixFragment mz="165.07444763183594" query="7723.95263671875" ref="21732.73828125" da="0.00030517578125" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="236.0903514201" mz_ref="0" ppm="9.524143916404194" precursorType="[M]+" unique_id="C20463" score="0" />
+         <parentTrace>99.6188940243854</parentTrace>
+         <inferSize>2</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M164T324">
+      <precursorType>[M+H-H2O]+</precursorType>
+      <ppm>1.1493812425456227</ppm>
+      <score>4.93973815854976</score>
+      <pvalue>0.000274106362062514</pvalue>
+      <infer forward="0.9990687845049145" reverse="0.9990687845049145" jaccard="1" entropy="0">
+         <query mz="164.0708" scan_time="323.95713" intensity="349171.56">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_1578] FTMS - p ESI d Full ms2 164.0708@hcd30.00 [50.0000-185.0000] M164T324[164.0708,323.96][164.0708,323.96]</query>
+         <reference mz="164.0708" scan_time="301.243482" intensity="333143">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_1472] FTMS - p ESI d Full ms2 164.0708@hcd30.00 [50.0000-185.0000] M164T301[164.0708,301.24][164.0708,301.24]: C00082</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="72.00770568847656" query="41085.140625" ref="37938.01171875" da="3.0517578125E-05" />
+            <SSM2MatrixFragment mz="147.0440673828125" query="128036.6640625" ref="126943.6640625" da="3.0517578125E-05" />
+            <SSM2MatrixFragment mz="148.04735565185547" query="15645.4775390625" ref="11381.302734375" da="4.57763671875E-05" />
+            <SSM2MatrixFragment mz="149.01071166992188" query="26849.216796875" ref="26000.505859375" da="9.1552734375E-05" />
+            <SSM2MatrixFragment mz="164.0707015991211" query="95683.078125" ref="88048.8046875" da="4.57763671875E-05" />
+            <SSM2MatrixFragment mz="165.07444763183594" query="9031.787109375" ref="10294.4228515625" da="0.000640869140625" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="164.07061142010002" mz_ref="0" ppm="1.1493812425456227" precursorType="[M+H-H2O]+" unique_id="C04368" score="0" />
+         <parentTrace>99.81384361721273</parentTrace>
+         <inferSize>3</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M209T331">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>2.504627711623392</ppm>
+      <score>4.464715144016734</score>
+      <pvalue>0.000323038848562489</pvalue>
+      <infer forward="0.9966450913953858" reverse="0.9977510283268447" jaccard="0.6" entropy="0">
+         <query mz="209.045" scan_time="330.960972" intensity="165400.19">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_1610] FTMS - p ESI d Full ms2 209.0450@hcd30.00 [50.0000-230.0000] M209T331[209.0450,330.96][209.0450,330.96]</query>
+         <reference mz="209.045" scan_time="307.633992" intensity="69441.875">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_1504] FTMS - p ESI d Full ms2 209.0450@hcd30.00 [50.0000-230.0000] M209T308[209.0450,307.63][209.0450,307.63]: C00251</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="119.92252349853516" query="0" ref="2835.884765625" da="NaN" />
+            <SSM2MatrixFragment mz="121.02825546264648" query="111990.7421875" ref="44870.91796875" da="7.62939453125E-06" />
+            <SSM2MatrixFragment mz="122.0316047668457" query="7405.076171875" ref="2873.282470703125" da="0.00041961669921875" />
+            <SSM2MatrixFragment mz="208.06390380859372" query="8841.076171875" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="209.04470825195312" query="9660.296875" ref="4959.734375" da="0.0001220703125" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="209.0444764201" mz_ref="0" ppm="2.504627711623392" precursorType="[M+H]+" unique_id="C20772" score="0" />
+         <parentTrace>99.33014382025169</parentTrace>
+         <inferSize>3</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M165T334">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>1.3545798122488693</ppm>
+      <score>3.49890058679736</score>
+      <pvalue>0.00047391162992136</pvalue>
+      <infer forward="0.760587515977629" reverse="0.99304688185686" jaccard="0.125" entropy="0">
+         <query mz="165.0548" scan_time="334.337352" intensity="107751.77">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_1625] FTMS - p ESI d Full ms2 165.0548@hcd30.00 [50.0000-185.0000] M165T334[165.0548,334.34][165.0548,334.34]</query>
+         <reference mz="209.045" scan_time="307.633992" intensity="55539.819580078125">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_1504] FTMS - p ESI d Full ms2 209.0450@hcd30.00 [50.0000-230.0000] M209T308[209.0450,307.63][209.0450,307.63]: C00254</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="72.0076675415039" query="2008.5347900390625" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="89.92426300048828" query="2228.93701171875" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="119.04893493652344" query="19326.1953125" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="119.98756790161131" query="1637.845703125" ref="2835.884765625" da="0.13008880615234375" />
+            <SSM2MatrixFragment mz="121.04645538330078" query="30400.935546875" ref="44870.91796875" da="0.036407470703125" />
+            <SSM2MatrixFragment mz="122.04966735839844" query="3254.786376953125" ref="2873.282470703125" da="0.0365447998046875" />
+            <SSM2MatrixFragment mz="147.0437469482422" query="6083.82275390625" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="149.01072692871094" query="11951.6513671875" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="150.01429748535156" query="2261.93212890625" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="164.0702667236328" query="3148.787109375" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="165.05462646484375" query="10129.380859375" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="209.04476928710935" query="0" ref="4959.734375" da="NaN" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="165.0545764201" mz_ref="0" ppm="1.3545798122488693" precursorType="[M+H]+" unique_id="C00166" score="0" />
+         <parentTrace>76.05875159776289</parentTrace>
+         <inferSize>2</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M129T337">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>0.1827125882233982</ppm>
+      <score>4.990514141550946</score>
+      <pvalue>0.000269484106885556</pvalue>
+      <infer forward="0.9998832524440415" reverse="0.9998832524440415" jaccard="1" entropy="0">
+         <query mz="129.0546" scan_time="336.836316" intensity="171705.73">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_1639] FTMS - p ESI d Full ms2 129.0546@hcd30.00 [50.0000-150.0000] M129T337[129.0546,336.84][129.0546,336.84]</query>
+         <reference mz="129.0546" scan_time="313.989714" intensity="158785.86">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_1532] FTMS - p ESI d Full ms2 129.0546@hcd30.00 [50.0000-150.0000] M129T314[129.0546,313.99][129.0546,313.99]: C16272</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="61.98698616027832" query="118580.890625" ref="114877.1875" da="3.4332275390625E-05" />
+            <SSM2MatrixFragment mz="130.08615112304688" query="30814.224609375" ref="31733.34375" da="9.1552734375E-05" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="129.0545764201" mz_ref="0" ppm="0.1827125882233982" precursorType="[M+H]+" unique_id="C06719" score="0" />
+         <parentTrace>99.97665185180749</parentTrace>
+         <inferSize>3</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M288T360">
+      <precursorType>[M]+</precursorType>
+      <ppm>8.8572430842403</ppm>
+      <score>3.8005984111503137</score>
+      <pvalue>0.000416131525914119</pvalue>
+      <infer forward="0.9967302826811644" reverse="1" jaccard="0.5" entropy="0">
+         <query mz="288.0603" scan_time="360.170406" intensity="146772.34">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_1756] FTMS - p ESI d Full ms2 288.0603@hcd30.00 [50.0000-310.0000] M288T360[288.0603,360.17][288.0603,360.17]</query>
+         <reference mz="320.0735" scan_time="303.33648" intensity="44706.421875">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_1483] FTMS - p ESI d Full ms2 320.0735@hcd30.00 [50.0000-345.0000] M320T303[320.0735,303.34][320.0735,303.34]: C08577</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="61.986982345581055" query="119269.4296875" ref="44706.421875" da="1.1444091796875E-05" />
+            <SSM2MatrixFragment mz="203.0823516845703" query="9668.66015625" ref="0" da="NaN" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="288.0628514201" mz_ref="0" ppm="8.8572430842403" precursorType="[M]+" unique_id="C15525" score="0" />
+         <parentTrace>99.67302826811644</parentTrace>
+         <inferSize>2</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M137T365">
+      <precursorType>[M+H-H2O]+</precursorType>
+      <ppm>0.08334421962369361</ppm>
+      <score>3.9291213971399426</score>
+      <pvalue>0.000395146634551765</pvalue>
+      <infer forward="0.9110887485050081" reverse="1" jaccard="0.3333333333333333" entropy="0">
+         <query mz="137.0233" scan_time="365.04363" intensity="327428.47">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_1789] FTMS - p ESI d Full ms2 137.0233@hcd30.00 [50.0000-160.0000] M137T365[137.0233,365.04][137.0233,365.04]</query>
+         <reference mz="93.033" scan_time="386.544396" intensity="81215.9140625">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_1902] FTMS - p ESI d Full ms2 93.0330@hcd30.00 [50.0000-115.0000] M93T387[93.0330,386.54][93.0330,386.54]: C00090</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="93.03323364257812" query="197218.625" ref="81215.9140625" da="1.52587890625E-05" />
+            <SSM2MatrixFragment mz="94.0365982055664" query="11839.109375" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="137.02328491210938" query="88440.09375" ref="0" da="NaN" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="137.02331142010001" mz_ref="0" ppm="0.08334421962369361" precursorType="[M+H-H2O]+" unique_id="C00196" score="0" />
+         <parentTrace>91.10887485050081</parentTrace>
+         <inferSize>2</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M179T374">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>1.8073636210181871</ppm>
+      <score>3.4683395679557805</score>
+      <pvalue>0.00047998782690297</pvalue>
+      <infer forward="0.9944296452760046" reverse="0.7598733550228254" jaccard="0.14285714285714285" entropy="0">
+         <query mz="179.0342" scan_time="373.549428" intensity="166102.83">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_1836] FTMS - p ESI d Full ms2 179.0342@hcd30.00 [50.0000-200.0000] M179T374[179.0342,373.55][179.0342,373.55]</query>
+         <reference mz="165.0548" scan_time="334.337352" intensity="92432.80895996094">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_1625] FTMS - p ESI d Full ms2 165.0548@hcd30.00 [50.0000-185.0000] M165T334[165.0548,334.34][165.0548,334.34]: C00811</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="72.0076675415039" query="0" ref="2008.5347900390625" da="NaN" />
+            <SSM2MatrixFragment mz="89.92426300048828" query="0" ref="2228.93701171875" da="NaN" />
+            <SSM2MatrixFragment mz="119.04893493652344" query="0" ref="19326.1953125" da="NaN" />
+            <SSM2MatrixFragment mz="120.0526123046875" query="0" ref="1637.845703125" da="NaN" />
+            <SSM2MatrixFragment mz="121.04645538330078" query="120957.6171875" ref="30400.935546875" da="0.036407470703125" />
+            <SSM2MatrixFragment mz="122.04987335205078" query="9247.3662109375" ref="3254.786376953125" da="0.0361328125" />
+            <SSM2MatrixFragment mz="147.0437469482422" query="0" ref="6083.82275390625" da="NaN" />
+            <SSM2MatrixFragment mz="149.01072692871094" query="0" ref="11951.6513671875" da="NaN" />
+            <SSM2MatrixFragment mz="150.01429748535156" query="0" ref="2261.93212890625" da="NaN" />
+            <SSM2MatrixFragment mz="164.0702667236328" query="0" ref="3148.787109375" da="NaN" />
+            <SSM2MatrixFragment mz="165.05462646484375" query="0" ref="10129.380859375" da="NaN" />
+            <SSM2MatrixFragment mz="179.03396606445312" query="12313.5498046875" ref="0" da="NaN" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="179.0338764201" mz_ref="0" ppm="1.8073636210181871" precursorType="[M+H]+" unique_id="C16828" score="0" />
+         <parentTrace>75.98733550228253</parentTrace>
+         <inferSize>2</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M93T387">
+      <precursorType>[M+H-H2O]+</precursorType>
+      <ppm>5.497190244289014</ppm>
+      <score>3.6584290959066768</score>
+      <pvalue>0.000441352108792425</pvalue>
+      <infer forward="1" reverse="0.9110887485050081" jaccard="0.3333333333333333" entropy="0">
+         <query mz="93.033" scan_time="386.544396" intensity="104493.59">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_1902] FTMS - p ESI d Full ms2 93.0330@hcd30.00 [50.0000-115.0000] M93T387[93.0330,386.54][93.0330,386.54]</query>
+         <reference mz="137.0233" scan_time="365.04363" intensity="297497.828125">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_1789] FTMS - p ESI d Full ms2 137.0233@hcd30.00 [50.0000-160.0000] M137T365[137.0233,365.04][137.0233,365.04]: C00196</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="93.03323364257812" query="81215.9140625" ref="197218.625" da="1.52587890625E-05" />
+            <SSM2MatrixFragment mz="94.0365982055664" query="0" ref="11839.109375" da="NaN" />
+            <SSM2MatrixFragment mz="137.02328491210938" query="0" ref="88440.09375" da="NaN" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="93.0335114201" mz_ref="0" ppm="5.497190244289014" precursorType="[M+H-H2O]+" unique_id="C00090" score="0" />
+         <parentTrace>91.10887485050081</parentTrace>
+         <inferSize>2</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M167T388">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>1.3385284800814605</ppm>
+      <score>3.621837475142529</score>
+      <pvalue>0.000453706085824631</pvalue>
+      <infer forward="0.9713172995055022" reverse="0.7943819495733011" jaccard="0.125" entropy="0">
+         <query mz="167.0341" scan_time="388.16153399999996" intensity="120926.39">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_1913] FTMS - p ESI d Full ms2 167.0341@hcd30.00 [50.0000-190.0000] M167T388[167.0341,388.16][167.0341,388.16]</query>
+         <reference mz="183.0291" scan_time="193.562478" intensity="95601.92993164062">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_997] FTMS - p ESI d Full ms2 183.0291@hcd30.00 [50.0000-205.0000] M183T194[183.0291,193.56][183.0291,193.56]: C14097</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="81.0330581665039" query="0" ref="3817.564208984375" da="NaN" />
+            <SSM2MatrixFragment mz="83.01248550415039" query="74899.90625" ref="43444.48046875" da="7.62939453125E-06" />
+            <SSM2MatrixFragment mz="84.0157241821289" query="3755.846435546875" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="99.0073471069336" query="0" ref="29582.60546875" da="NaN" />
+            <SSM2MatrixFragment mz="123.0438995361328" query="17121.4453125" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="139.0388641357422" query="0" ref="13732.6123046875" da="NaN" />
+            <SSM2MatrixFragment mz="167.03392028808594" query="5381.87353515625" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="183.02883911132807" query="0" ref="5024.66748046875" da="NaN" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="167.0338764201" mz_ref="0" ppm="1.3385284800814605" precursorType="[M+H]+" unique_id="C14096" score="0" />
+         <parentTrace>79.43819495733011</parentTrace>
+         <inferSize>2</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M167T411">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>1.3385284800814605</ppm>
+      <score>3.4442124930913924</score>
+      <pvalue>0.000491158217292777</pvalue>
+      <infer forward="0.9663350671455667" reverse="0.794381949573301" jaccard="0.14285714285714285" entropy="0">
+         <query mz="167.0341" scan_time="410.863242" intensity="187983.56">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_2021] FTMS - p ESI d Full ms2 167.0341@hcd30.00 [50.0000-190.0000] M167T411[167.0341,410.86][167.0341,410.86]</query>
+         <reference mz="183.0291" scan_time="193.562478" intensity="113478.76">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_997] FTMS - p ESI d Full ms2 183.0291@hcd30.00 [50.0000-205.0000] M183T194[183.0291,193.56][183.0291,193.56]: C04783</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="81.0330581665039" query="0" ref="3817.564208984375" da="NaN" />
+            <SSM2MatrixFragment mz="83.01248168945312" query="119442.671875" ref="43444.48046875" da="0" />
+            <SSM2MatrixFragment mz="99.0073471069336" query="0" ref="29582.60546875" da="NaN" />
+            <SSM2MatrixFragment mz="123.0439910888672" query="30039.185546875" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="139.0388641357422" query="0" ref="13732.6123046875" da="NaN" />
+            <SSM2MatrixFragment mz="167.03392028808594" query="10439.8818359375" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="183.02883911132807" query="0" ref="5024.66748046875" da="NaN" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="167.0338764201" mz_ref="0" ppm="1.3385284800814605" precursorType="[M+H]+" unique_id="C01606" score="0" />
+         <parentTrace>63.10426818078786</parentTrace>
+         <inferSize>3</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M161T442">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>1.3883095810962713</ppm>
+      <score>4.90436804845163</score>
+      <pvalue>0.000277590775566516</pvalue>
+      <infer forward="0.9959448013541167" reverse="0.9964029442764142" jaccard="1" entropy="0">
+         <query mz="161.0447" scan_time="441.836202" intensity="240099.64">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_2166] FTMS - p ESI d Full ms2 161.0447@hcd30.00 [50.0000-185.0000] M161T442[161.0447,441.84][161.0447,441.84]</query>
+         <reference mz="161.0446" scan_time="694.16556" intensity="245346.41">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_3470] FTMS - p ESI d Full ms2 161.0446@hcd30.00 [50.0000-185.0000] M161T694[161.0446,694.17][161.0446,694.17]: C00691</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="59.01245880126953" query="7894.80712890625" ref="5896.392578125" da="0.00023651123046875" />
+            <SSM2MatrixFragment mz="71.0124740600586" query="6400.4013671875" ref="6134.068359375" da="0.00018310546875" />
+            <SSM2MatrixFragment mz="73.02814483642578" query="30201.3984375" ref="25987.869140625" da="0" />
+            <SSM2MatrixFragment mz="85.02811813354492" query="4888.95849609375" ref="4309.48193359375" da="3.814697265625E-05" />
+            <SSM2MatrixFragment mz="115.91943359375" query="5092.60791015625" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="116.92732238769533" query="79170.421875" ref="84360.765625" da="3.0517578125E-05" />
+            <SSM2MatrixFragment mz="117.92744827270508" query="11008.5" ref="10871.12109375" da="0.00011444091796875" />
+            <SSM2MatrixFragment mz="131.03358459472656" query="0" ref="4425.1826171875" da="NaN" />
+            <SSM2MatrixFragment mz="142.92376708984375" query="19914.2109375" ref="21749.615234375" da="0" />
+            <SSM2MatrixFragment mz="160.93453216552734" query="21430.2734375" ref="21688.462890625" da="4.57763671875E-05" />
+            <SSM2MatrixFragment mz="162.01846313476562" query="9637.814453125" ref="8016.9658203125" da="0.000579833984375" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="161.0444764201" mz_ref="0" ppm="1.3883095810962713" precursorType="[M+H]+" unique_id="C06891" score="0" />
+         <parentTrace>97.78387261523267</parentTrace>
+         <inferSize>5</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M273T451">
+      <precursorType>[M+H-H2O]+</precursorType>
+      <ppm>10.293544045421127</ppm>
+      <score>4.2390167470020685</score>
+      <pvalue>0.00035127600571628</pvalue>
+      <infer forward="0.9879580857476735" reverse="0.9950852478318143" jaccard="1" entropy="0">
+         <query mz="273.1246" scan_time="450.998082" intensity="64402.02">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_2210] FTMS - p ESI d Full ms2 273.1246@hcd30.00 [50.0000-295.0000] M273T451[273.1246,451.00][273.1246,451.00]</query>
+         <reference mz="255.1138" scan_time="466.92262800000003" intensity="71359.99645996094">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_2288] FTMS - p ESI d Full ms2 255.1138@hcd30.00 [50.0000-280.0000] M255T467[255.1138,466.92][255.1138,466.92]: C19489</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="120.39900207519533" query="1373.8076171875" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="134.05989837646484" query="3023.871337890625" ref="2448.585205078125" da="7.62939453125E-05" />
+            <SSM2MatrixFragment mz="159.05482482910156" query="0" ref="1752.5260009765625" da="NaN" />
+            <SSM2MatrixFragment mz="197.08370971679688" query="0" ref="2191.84619140625" da="NaN" />
+            <SSM2MatrixFragment mz="201.07933044433597" query="2772.9560546875" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="212.1075897216797" query="10297.3623046875" ref="12617.583984375" da="0.00048828125" />
+            <SSM2MatrixFragment mz="212.4282989501953" query="1570.81494140625" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="226.0742034912109" query="4795.5185546875" ref="4405.9267578125" da="0.00079345703125" />
+            <SSM2MatrixFragment mz="230.11703491210935" query="2351.064453125" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="240.0904998779297" query="10295.31640625" ref="13662.6064453125" da="0.00079345703125" />
+            <SSM2MatrixFragment mz="255.17303466796875" query="25499.3984375" ref="34280.921875" da="0.1192626953125" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="273.1274114201" mz_ref="0" ppm="10.293544045421127" precursorType="[M+H-H2O]+" unique_id="C19490" score="0" />
+         <parentTrace>98.79580857476735</parentTrace>
+         <inferSize>2</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M232T454">
+      <precursorType>[M+NH4]+</precursorType>
+      <ppm>4.199707401887084</ppm>
+      <score>3.795273113092056</score>
+      <pvalue>0.000418687793196548</pvalue>
+      <infer forward="0.9903329021998242" reverse="0.8740578130217765" jaccard="0.42857142857142855" entropy="0">
+         <query mz="232.059" scan_time="454.18336800000003" intensity="89724.5">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_2226] FTMS - p ESI d Full ms2 232.0590@hcd30.00 [50.0000-495.0000] M232T454[232.0590,454.18][232.0590,454.18]</query>
+         <reference mz="232.059" scan_time="494.85310200000004" intensity="162872.62915039062">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_2451] FTMS - p ESI d Full ms2 232.0590@hcd30.00 [50.0000-495.0000] M232T495[232.0590,494.85][232.0590,494.85]: C00672</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="79.95602416992188" query="0" ref="21945.869140625" da="NaN" />
+            <SSM2MatrixFragment mz="80.96392822265625" query="0" ref="11847.08203125" da="NaN" />
+            <SSM2MatrixFragment mz="96.95880126953124" query="15485.8017578125" ref="22363.58984375" da="3.0517578125E-05" />
+            <SSM2MatrixFragment mz="232.05896759033203" query="37426.06640625" ref="52339.375" da="0.0003814697265625" />
+            <SSM2MatrixFragment mz="232.56073760986328" query="10461.3076171875" ref="14071.9951171875" da="0.0009613037109375" />
+            <SSM2MatrixFragment mz="233.10626220703125" query="4301.9208984375" ref="6670.16357421875" da="0.095916748046875" />
+            <SSM2MatrixFragment mz="367.1580047607422" query="10036.8984375" ref="6414.04833984375" da="0.000274658203125" />
+            <SSM2MatrixFragment mz="368.162109375" query="2435.63330078125" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="369.1377868652344" query="0" ref="18884.31640625" da="NaN" />
+            <SSM2MatrixFragment mz="370.1401672363281" query="0" ref="3560.065185546875" da="NaN" />
+            <SSM2MatrixFragment mz="383.1534729003906" query="0" ref="4776.12451171875" da="NaN" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="232.05802542010002" mz_ref="0" ppm="4.199707401887084" precursorType="[M+NH4]+" unique_id="C00673" score="0" />
+         <parentTrace>87.40578130217766</parentTrace>
+         <inferSize>2</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M255T467">
+      <precursorType>[M+H-H2O]+</precursorType>
+      <ppm>11.804222664531148</ppm>
+      <score>4.163482816046567</score>
+      <pvalue>0.000361434410855382</pvalue>
+      <infer forward="0.9950852478318143" reverse="0.9879580857476735" jaccard="1" entropy="0">
+         <query mz="255.1138" scan_time="466.92262800000003" intensity="118940.5">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_2288] FTMS - p ESI d Full ms2 255.1138@hcd30.00 [50.0000-280.0000] M255T467[255.1138,466.92][255.1138,466.92]</query>
+         <reference mz="273.1246" scan_time="450.998082" intensity="61980.110107421875">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_2210] FTMS - p ESI d Full ms2 273.1246@hcd30.00 [50.0000-295.0000] M273T451[273.1246,451.00][273.1246,451.00]: C19490</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="120.39900207519533" query="0" ref="1373.8076171875" da="NaN" />
+            <SSM2MatrixFragment mz="134.05989837646484" query="2448.585205078125" ref="3023.871337890625" da="7.62939453125E-05" />
+            <SSM2MatrixFragment mz="159.05482482910156" query="1752.5260009765625" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="197.08370971679688" query="2191.84619140625" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="201.07933044433597" query="0" ref="2772.9560546875" da="NaN" />
+            <SSM2MatrixFragment mz="212.1075897216797" query="12617.583984375" ref="10297.3623046875" da="0.00048828125" />
+            <SSM2MatrixFragment mz="212.4282989501953" query="0" ref="1570.81494140625" da="NaN" />
+            <SSM2MatrixFragment mz="226.0742034912109" query="4405.9267578125" ref="4795.5185546875" da="0.00079345703125" />
+            <SSM2MatrixFragment mz="230.11703491210935" query="0" ref="2351.064453125" da="NaN" />
+            <SSM2MatrixFragment mz="240.0904998779297" query="13662.6064453125" ref="10295.31640625" da="0.00079345703125" />
+            <SSM2MatrixFragment mz="255.17303466796875" query="34280.921875" ref="25499.3984375" da="0.1192626953125" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="255.1168114201" mz_ref="0" ppm="11.804222664531148" precursorType="[M+H-H2O]+" unique_id="C19489" score="0" />
+         <parentTrace>98.79580857476735</parentTrace>
+         <inferSize>2</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M129T485">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>0.1827125882233982</ppm>
+      <score>4.430398879744077</score>
+      <pvalue>0.000326901504671096</pvalue>
+      <infer forward="0.9976615000981525" reverse="0.9990906655196998" jaccard="0.6666666666666666" entropy="0">
+         <query mz="129.0546" scan_time="485.419362" intensity="239819.83">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_2399] FTMS - p ESI d Full ms2 129.0546@hcd30.00 [50.0000-150.0000] M129T485[129.0546,485.42][129.0546,485.42]</query>
+         <reference mz="129.0546" scan_time="336.836316" intensity="171705.73">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_1639] FTMS - p ESI d Full ms2 129.0546@hcd30.00 [50.0000-150.0000] M129T337[129.0546,336.84][129.0546,336.84]: C06762</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="61.98699951171875" query="168889.171875" ref="118580.890625" da="7.62939453125E-06" />
+            <SSM2MatrixFragment mz="99.92430877685548" query="9249.4677734375" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="130.086181640625" query="36277.609375" ref="30814.224609375" da="3.0517578125E-05" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="129.0545764201" mz_ref="0" ppm="0.1827125882233982" precursorType="[M+H]+" unique_id="C06761" score="0" />
+         <parentTrace>99.74285646126499</parentTrace>
+         <inferSize>4</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M116T493">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>0.6583938210051083</ppm>
+      <score>4.9407610910429955</score>
+      <pvalue>0.000274758305748594</pvalue>
+      <infer forward="0.9908742373449962" reverse="0.9908742373449962" jaccard="1" entropy="0">
+         <query mz="116.0705" scan_time="493.35003000000006" intensity="2605290.2">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_2444] FTMS - p ESI d Full ms2 116.0705@hcd30.00 [50.0000-135.0000] M116T493[116.0705,493.35][116.0705,493.35]</query>
+         <reference mz="116.0705" scan_time="539.2454220000001" intensity="1939925.8">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_2692] FTMS - p ESI d Full ms2 116.0705@hcd30.00 [50.0000-135.0000] M116T539[116.0705,539.25][116.0705,539.25]: C00148</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="99.92445755004884" query="405809.59375" ref="303449.09375" da="3.814697265625E-05" />
+            <SSM2MatrixFragment mz="115.91946029663086" query="1182594.375" ref="776771.4375" da="2.288818359375E-05" />
+            <SSM2MatrixFragment mz="116.9272346496582" query="729785.125" ref="645933.125" da="0.00014495849609375" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="116.0705764201" mz_ref="0" ppm="0.6583938210051083" precursorType="[M+H]+" unique_id="C00763" score="0" />
+         <parentTrace>98.2806544748254</parentTrace>
+         <inferSize>14</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M232T495">
+      <precursorType>[M+NH4]+</precursorType>
+      <ppm>4.199707401887084</ppm>
+      <score>3.6851923605746904</score>
+      <pvalue>0.000438199796646455</pvalue>
+      <infer forward="0.8740578130217765" reverse="0.9903329021998242" jaccard="0.42857142857142855" entropy="0">
+         <query mz="232.059" scan_time="494.85310200000004" intensity="188738.98">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_2451] FTMS - p ESI d Full ms2 232.0590@hcd30.00 [50.0000-495.0000] M232T495[232.0590,494.85][232.0590,494.85]</query>
+         <reference mz="232.059" scan_time="454.18336800000003" intensity="89724.5">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_2226] FTMS - p ESI d Full ms2 232.0590@hcd30.00 [50.0000-495.0000] M232T454[232.0590,454.18][232.0590,454.18]: C00673</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="79.95602416992188" query="21945.869140625" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="80.96392822265625" query="11847.08203125" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="96.95880126953124" query="22363.58984375" ref="15485.8017578125" da="3.0517578125E-05" />
+            <SSM2MatrixFragment mz="232.05896759033203" query="52339.375" ref="37426.06640625" da="0.0003814697265625" />
+            <SSM2MatrixFragment mz="232.56073760986328" query="14071.9951171875" ref="10461.3076171875" da="0.0009613037109375" />
+            <SSM2MatrixFragment mz="233.10626220703125" query="6670.16357421875" ref="4301.9208984375" da="0.095916748046875" />
+            <SSM2MatrixFragment mz="367.1580047607422" query="6414.04833984375" ref="10036.8984375" da="0.000274658203125" />
+            <SSM2MatrixFragment mz="368.162109375" query="0" ref="2435.63330078125" da="NaN" />
+            <SSM2MatrixFragment mz="369.1377868652344" query="18884.31640625" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="370.1401672363281" query="3560.065185546875" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="383.1534729003906" query="4776.12451171875" ref="0" da="NaN" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="232.05802542010002" mz_ref="0" ppm="4.199707401887084" precursorType="[M+NH4]+" unique_id="C00672" score="0" />
+         <parentTrace>76.39770605044109</parentTrace>
+         <inferSize>3</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M337T515">
+      <precursorType>[M+H-H2O]+</precursorType>
+      <ppm>2.999978940605265</ppm>
+      <score>4.838647318207015</score>
+      <pvalue>0.000283968789117074</pvalue>
+      <infer forward="0.9943231326186394" reverse="0.9943231326186394" jaccard="1" entropy="0">
+         <query mz="337.1424" scan_time="514.604118" intensity="93804.594">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_2570] FTMS - p ESI d Full ms2 337.1424@hcd30.00 [50.0000-360.0000] M337T515[337.1424,514.60][337.1424,514.60]</query>
+         <reference mz="321.1474" scan_time="574.1533019999999" intensity="133004.890625">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_2865] FTMS - p ESI d Full ms2 321.1474@hcd30.00 [50.0000-345.0000] M321T574[321.1474,574.15][321.1474,574.15]: C22152</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="78.95767974853516" query="25323.62109375" ref="49213.9375" da="3.0517578125E-05" />
+            <SSM2MatrixFragment mz="96.9682731628418" query="56034.6953125" ref="83790.953125" da="7.62939453125E-06" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="337.1434114201" mz_ref="0" ppm="2.999978940605265" precursorType="[M+H-H2O]+" unique_id="C22153" score="0" />
+         <parentTrace>99.43231326186394</parentTrace>
+         <inferSize>2</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M148T558">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>0.15925854625734323</ppm>
+      <score>4.992037072687133</score>
+      <pvalue>0.000269339121095115</pvalue>
+      <infer forward="1" reverse="1" jaccard="1" entropy="0">
+         <query mz="148.0605" scan_time="557.5603140000001" intensity="944836.94">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_2783] FTMS - p ESI d Full ms2 148.0605@hcd30.00 [50.0000-170.0000] M148T558[148.0605,557.56][148.0605,557.56]</query>
+         <reference mz="148.0605" scan_time="534.766692" intensity="858943.75">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_2672] FTMS - p ESI d Full ms2 148.0605@hcd30.00 [50.0000-170.0000] M148T535[148.0605,534.77][148.0605,534.77]: C01732</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="61.98697471618652" query="701648.625" ref="644602.75" da="3.814697265625E-06" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="148.0604764201" mz_ref="0" ppm="0.15925854625734323" precursorType="[M+H]+" unique_id="C03618" score="0" />
+         <parentTrace>100</parentTrace>
+         <inferSize>8</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M185T559">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>2.2881665492714576</ppm>
+      <score>4.265647008031314</score>
+      <pvalue>0.000351391646931105</pvalue>
+      <infer forward="0.9400276677474432" reverse="0.9675767388308137" jaccard="0.6666666666666666" entropy="0">
+         <query mz="185.1176" scan_time="558.678822" intensity="119188.56">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_2789] FTMS - p ESI d Full ms2 185.1176@hcd30.00 [50.0000-205.0000] M185T559[185.1176,558.68][185.1176,558.68]</query>
+         <reference mz="185.1176" scan_time="781.30464" intensity="98760.26416015625">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_3987] FTMS - p ESI d Full ms2 185.1176@hcd30.00 [50.0000-205.0000] M185T781[185.1176,781.30][185.1176,781.30]: C04718</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="59.01229476928711" query="1879.417724609375" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="61.989017486572266" query="2220.712158203125" ref="1394.9456787109375" da="0.00445556640625" />
+            <SSM2MatrixFragment mz="68.99432373046875" query="0" ref="3194.361083984375" da="NaN" />
+            <SSM2MatrixFragment mz="70.40718841552734" query="1362.3642578125" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="72.99177169799805" query="8010.3232421875" ref="6595.69677734375" da="0.00029754638671875" />
+            <SSM2MatrixFragment mz="93.8307647705078" query="0" ref="1269.036376953125" da="NaN" />
+            <SSM2MatrixFragment mz="99.79543685913086" query="1712.61865234375" ref="1205.8226318359375" da="0.25843048095703125" />
+            <SSM2MatrixFragment mz="100.95968627929688" query="2501.2236328125" ref="1945.41650390625" da="0.0001068115234375" />
+            <SSM2MatrixFragment mz="101.8005142211914" query="0" ref="1326.1962890625" da="NaN" />
+            <SSM2MatrixFragment mz="107.73356628417967" query="0" ref="1225.3682861328125" da="NaN" />
+            <SSM2MatrixFragment mz="115.91930389404295" query="11764.6123046875" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="116.92723846435548" query="12309.912109375" ref="15727.3544921875" da="1.52587890625E-05" />
+            <SSM2MatrixFragment mz="117.9274559020996" query="1669.726806640625" ref="2268.90576171875" da="0.00012969970703125" />
+            <SSM2MatrixFragment mz="120.71600341796876" query="0" ref="1583.485595703125" da="NaN" />
+            <SSM2MatrixFragment mz="129.4207305908203" query="0" ref="1192.1075439453125" da="NaN" />
+            <SSM2MatrixFragment mz="139.11170959472656" query="10516.3984375" ref="10484.888671875" da="0.000213623046875" />
+            <SSM2MatrixFragment mz="141.10890197753906" query="2395.013671875" ref="2164.306884765625" da="0.036651611328125" />
+            <SSM2MatrixFragment mz="156.75413513183594" query="0" ref="1565.5579833984375" da="NaN" />
+            <SSM2MatrixFragment mz="164.97970581054688" query="0" ref="1886.4549560546875" da="NaN" />
+            <SSM2MatrixFragment mz="167.106689453125" query="26757.6171875" ref="22786.591796875" da="0.00018310546875" />
+            <SSM2MatrixFragment mz="168.10984802246094" query="2316.858154296875" ref="1495.8994140625" da="0.000823974609375" />
+            <SSM2MatrixFragment mz="185.11746215820312" query="26556.298828125" ref="17420.294921875" da="6.103515625E-05" />
+            <SSM2MatrixFragment mz="186.12179565429688" query="2396.990478515625" ref="2027.572509765625" da="0.000244140625" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="185.1171764201" mz_ref="0" ppm="2.2881665492714576" precursorType="[M+H]+" unique_id="C06066" score="0" />
+         <parentTrace>94.00276677474432</parentTrace>
+         <inferSize>2</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M195T561">
+      <precursorType>[M+H-H2O]+</precursorType>
+      <ppm>2.503760920348908</ppm>
+      <score>4.302135840802828</score>
+      <pvalue>0.000342541421067496</pvalue>
+      <infer forward="0.9914397211879146" reverse="0.9995815301628286" jaccard="0.6666666666666666" entropy="0">
+         <query mz="195.1384" scan_time="560.8857479999999" intensity="148200.84">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_2800] FTMS - p ESI d Full ms2 195.1384@hcd30.00 [50.0000-220.0000] M195T561[195.1384,560.89][195.1384,560.89]</query>
+         <reference mz="195.1384" scan_time="751.3089" intensity="195428.0078125">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_3795] FTMS - p ESI d Full ms2 195.1384@hcd30.00 [50.0000-220.0000] M195T751[195.1384,751.31][195.1384,751.31]: C16309</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="92.92754364013672" query="12301.10546875" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="195.1383285522461" query="94821.25" ref="175465.984375" da="1.52587890625E-05" />
+            <SSM2MatrixFragment mz="196.14198303222656" query="13576.140625" ref="19962.0234375" da="0.000213623046875" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="195.1379114201" mz_ref="0" ppm="2.503760920348908" precursorType="[M+H-H2O]+" unique_id="C16311" score="0" />
+         <parentTrace>99.14397211879145</parentTrace>
+         <inferSize>2</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M321T574">
+      <precursorType>[M+H-H2O]+</precursorType>
+      <ppm>3.4607787575425313</ppm>
+      <score>4.815607327360152</score>
+      <pvalue>0.000286186269619498</pvalue>
+      <infer forward="0.9943231326186394" reverse="0.9943231326186394" jaccard="1" entropy="0">
+         <query mz="321.1474" scan_time="574.1533019999999" intensity="149161.86">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_2865] FTMS - p ESI d Full ms2 321.1474@hcd30.00 [50.0000-345.0000] M321T574[321.1474,574.15][321.1474,574.15]</query>
+         <reference mz="337.1424" scan_time="514.604118" intensity="81358.31640625">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_2570] FTMS - p ESI d Full ms2 337.1424@hcd30.00 [50.0000-360.0000] M337T515[337.1424,514.60][337.1424,514.60]: C22153</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="78.95767974853516" query="49213.9375" ref="25323.62109375" da="3.0517578125E-05" />
+            <SSM2MatrixFragment mz="96.9682731628418" query="83790.953125" ref="56034.6953125" da="7.62939453125E-06" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="321.14851142009996" mz_ref="0" ppm="3.4607787575425313" precursorType="[M+H-H2O]+" unique_id="C22152" score="0" />
+         <parentTrace>99.43231326186394</parentTrace>
+         <inferSize>2</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M464T575">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>12.87184071400977</ppm>
+      <score>4.354941155588132</score>
+      <pvalue>0.000335983330698497</pvalue>
+      <infer forward="0.9992665956443101" reverse="0.9992665956443101" jaccard="1" entropy="0">
+         <query mz="464.3019" scan_time="575.166612" intensity="133005.7">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_2872] FTMS - p ESI d Full ms2 464.3019@hcd30.00 [50.0000-490.0000] M464T575[464.3019,575.17][464.3019,575.17]</query>
+         <reference mz="464.3017" scan_time="602.6278199999999" intensity="286202.728515625">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_3007] FTMS - p ESI d Full ms2 464.3017@hcd30.00 [50.0000-490.0000] M464T603[464.3017,602.63][464.3017,602.63]: C02033</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="74.02334976196289" query="13230.4990234375" ref="33104.66015625" da="2.288818359375E-05" />
+            <SSM2MatrixFragment mz="464.3015441894531" query="72239.9765625" ref="229970.140625" da="6.103515625E-05" />
+            <SSM2MatrixFragment mz="465.3059692382813" query="6949.619140625" ref="23127.927734375" da="0.0030517578125" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="464.3078764201" mz_ref="0" ppm="12.87184071400977" precursorType="[M+H]+" unique_id="C21270" score="0" />
+         <parentTrace>99.926659564431</parentTrace>
+         <inferSize>2</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M211T578">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>4.626802776482449</ppm>
+      <score>4.262926710669195</score>
+      <pvalue>0.000347710936891683</pvalue>
+      <infer forward="0.9984650763551244" reverse="0.998087730906744" jaccard="0.5" entropy="0">
+         <query mz="211.0356" scan_time="577.757952" intensity="135862">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_2885] FTMS - p ESI d Full ms2 211.0356@hcd30.00 [50.0000-235.0000] M211T578[211.0356,577.76][211.0356,577.76]</query>
+         <reference mz="211.0356" scan_time="546.264024" intensity="87860.477">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_2728] FTMS - p ESI d Full ms2 211.0356@hcd30.00 [50.0000-235.0000] M211T546[211.0356,546.26][211.0356,546.26]: C01107</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="61.98696899414063" query="0" ref="3466.147216796875" da="NaN" />
+            <SSM2MatrixFragment mz="194.03224182128903" query="4697.140625" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="211.03549194335935" query="84516.453125" ref="55859.96875" da="0.000152587890625" />
+            <SSM2MatrixFragment mz="212.0386199951172" query="6285.16259765625" ref="4026.783203125" da="0.0001220703125" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="211.0365764201" mz_ref="0" ppm="4.626802776482449" precursorType="[M+H]+" unique_id="C22453" score="0" />
+         <parentTrace>99.6179118586573</parentTrace>
+         <inferSize>3</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M148T580">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>0.15925854625734323</ppm>
+      <score>4.992037072687133</score>
+      <pvalue>0.000269339121095115</pvalue>
+      <infer forward="1" reverse="1" jaccard="1" entropy="0">
+         <query mz="148.0605" scan_time="580.4257140000001" intensity="939972.5">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_2897] FTMS - p ESI d Full ms2 148.0605@hcd30.00 [50.0000-170.0000] M148T580[148.0605,580.43][148.0605,580.43]</query>
+         <reference mz="148.0605" scan_time="557.5603140000001" intensity="944836.94">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_2783] FTMS - p ESI d Full ms2 148.0605@hcd30.00 [50.0000-170.0000] M148T558[148.0605,557.56][148.0605,557.56]: C00433</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="61.98697471618652" query="704946.375" ref="701648.625" da="3.814697265625E-06" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="148.0604764201" mz_ref="0" ppm="0.15925854625734323" precursorType="[M+H]+" unique_id="C05941" score="0" />
+         <parentTrace>100</parentTrace>
+         <inferSize>9</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M185T582">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>1.7479703431501308</ppm>
+      <score>4.1188990454646355</score>
+      <pvalue>0.000375832688627399</pvalue>
+      <infer forward="0.9379008716516993" reverse="0.9323896067755866" jaccard="1" entropy="0">
+         <query mz="185.1175" scan_time="581.649828" intensity="174929.7">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_2903] FTMS - p ESI d Full ms2 185.1175@hcd30.00 [50.0000-205.0000] M185T582[185.1175,581.65][185.1175,581.65]</query>
+         <reference mz="185.1176" scan_time="781.30464" intensity="107710.77">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_3987] FTMS - p ESI d Full ms2 185.1176@hcd30.00 [50.0000-205.0000] M185T781[185.1176,781.30][185.1176,781.30]: C11419</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="61.99124526977539" query="0" ref="1394.9456787109375" da="NaN" />
+            <SSM2MatrixFragment mz="68.99432373046875" query="0" ref="3194.361083984375" da="NaN" />
+            <SSM2MatrixFragment mz="72.99181747436523" query="16700.494140625" ref="6595.69677734375" da="0.00020599365234375" />
+            <SSM2MatrixFragment mz="93.8307647705078" query="0" ref="1269.036376953125" da="NaN" />
+            <SSM2MatrixFragment mz="99.66622161865234" query="0" ref="1205.8226318359375" da="NaN" />
+            <SSM2MatrixFragment mz="100.9597396850586" query="0" ref="1945.41650390625" da="NaN" />
+            <SSM2MatrixFragment mz="101.8005142211914" query="0" ref="1326.1962890625" da="NaN" />
+            <SSM2MatrixFragment mz="107.73356628417967" query="0" ref="1225.3682861328125" da="NaN" />
+            <SSM2MatrixFragment mz="115.9193878173828" query="9018.232421875" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="116.92715072631836" query="9413.5048828125" ref="15727.3544921875" da="0.00016021728515625" />
+            <SSM2MatrixFragment mz="117.92752075195312" query="0" ref="2268.90576171875" da="NaN" />
+            <SSM2MatrixFragment mz="120.71600341796876" query="0" ref="1583.485595703125" da="NaN" />
+            <SSM2MatrixFragment mz="129.4207305908203" query="0" ref="1192.1075439453125" da="NaN" />
+            <SSM2MatrixFragment mz="139.11170196533203" query="20725.53125" ref="10484.888671875" da="0.0001983642578125" />
+            <SSM2MatrixFragment mz="141.0907440185547" query="3300.577880859375" ref="2164.306884765625" da="0.000335693359375" />
+            <SSM2MatrixFragment mz="156.75413513183594" query="0" ref="1565.5579833984375" da="NaN" />
+            <SSM2MatrixFragment mz="164.97970581054688" query="0" ref="1886.4549560546875" da="NaN" />
+            <SSM2MatrixFragment mz="167.10670471191406" query="46883.57421875" ref="22786.591796875" da="0.000213623046875" />
+            <SSM2MatrixFragment mz="168.10977935791016" query="5473.64208984375" ref="1495.8994140625" da="0.0006866455078125" />
+            <SSM2MatrixFragment mz="185.11746215820312" query="37602.8515625" ref="17420.294921875" da="6.103515625E-05" />
+            <SSM2MatrixFragment mz="186.12145233154297" query="4882.76123046875" ref="2027.572509765625" da="0.0004425048828125" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="185.1171764201" mz_ref="0" ppm="1.7479703431501308" precursorType="[M+H]+" unique_id="C19084" score="0" />
+         <parentTrace>82.39079558465552</parentTrace>
+         <inferSize>4</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M615T590">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>1.9887636905576973</ppm>
+      <score>3.530100793050913</score>
+      <pvalue>0.000466699243709587</pvalue>
+      <infer forward="0.7579513069712173" reverse="0.9972177409799327" jaccard="0.25" entropy="0">
+         <query mz="615.2465" scan_time="589.6551420000001" intensity="213034.48">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_2942] FTMS - p ESI d Full ms2 615.2465@hcd30.00 [50.0000-645.0000] M615T590[615.2465,589.66][615.2465,589.66]</query>
+         <reference mz="581.2411" scan_time="676.9995600000001" intensity="98021.97387695312">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_3380] FTMS - p ESI d Full ms2 581.2411@hcd30.00 [50.0000-610.0000] M581T677[581.2411,677.00][581.2411,677.00]: C04536</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="213.10345458984372" query="0" ref="4139.65087890625" da="NaN" />
+            <SSM2MatrixFragment mz="227.1186370849609" query="6359.36962890625" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="239.11849975585935" query="24533.587890625" ref="24124.17578125" da="0.00030517578125" />
+            <SSM2MatrixFragment mz="241.1344223022461" query="7337.99951171875" ref="9186.96484375" da="0.0001373291015625" />
+            <SSM2MatrixFragment mz="255.11431884765625" query="20868.873046875" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="257.1283264160156" query="6088.40234375" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="273.1228942871094" query="10693.0732421875" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="285.1243591308594" query="56920.0625" ref="57477.89453125" da="0.00030517578125" />
+            <SSM2MatrixFragment mz="286.1284942626953" query="4279.90576171875" ref="3093.287841796875" da="0.002410888671875" />
+            <SSM2MatrixFragment mz="301.1192932128906" query="47391.36328125" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="351.9436950683594" query="2905.6396484375" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="364.9251098632813" query="2921.206787109375" ref="0" da="NaN" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="615.2452764201" mz_ref="0" ppm="1.9887636905576973" precursorType="[M+H]+" unique_id="C11829" score="0" />
+         <parentTrace>75.79513069712172</parentTrace>
+         <inferSize>2</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M103T595">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>1.7121715315424197</ppm>
+      <score>4.908540445503479</score>
+      <pvalue>0.000277143348051552</pvalue>
+      <infer forward="0.9970745110402999" reverse="0.9970745110402999" jaccard="1" entropy="0">
+         <query mz="103.0388" scan_time="594.5312279999999" intensity="141578.89">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_2967] FTMS - p ESI d Full ms2 103.0388@hcd30.00 [50.0000-125.0000] M103T595[103.0388,594.53][103.0388,594.53]</query>
+         <reference mz="103.0388" scan_time="640.64706" intensity="123753.74914550781">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_3197] FTMS - p ESI d Full ms2 103.0388@hcd30.00 [50.0000-125.0000] M103T641[103.0388,640.65][103.0388,640.65]: C21030</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="57.03325271606445" query="8250.9697265625" ref="8439.5498046875" da="6.103515625E-05" />
+            <SSM2MatrixFragment mz="59.012508392333984" query="13701.8994140625" ref="13838.5478515625" da="3.814697265625E-05" />
+            <SSM2MatrixFragment mz="61.98699378967285" query="39687.87109375" ref="36791.109375" da="3.814697265625E-06" />
+            <SSM2MatrixFragment mz="73.02803039550781" query="3176.196533203125" ref="1873.0091552734375" da="0.0001373291015625" />
+            <SSM2MatrixFragment mz="89.92428588867188" query="4323.8271484375" ref="3139.48388671875" da="0" />
+            <SSM2MatrixFragment mz="90.92212295532228" query="2762.061279296875" ref="2198.927978515625" da="7.62939453125E-06" />
+            <SSM2MatrixFragment mz="100.92464065551758" query="2520.496337890625" ref="2637.5185546875" da="0.00031280517578125" />
+            <SSM2MatrixFragment mz="101.92277145385742" query="4375.7236328125" ref="5045.2763671875" da="2.288818359375E-05" />
+            <SSM2MatrixFragment mz="103.038818359375" query="9393.6923828125" ref="10671.3046875" da="1.52587890625E-05" />
+            <SSM2MatrixFragment mz="116.91955947875977" query="12807.6259765625" ref="14667.642578125" da="8.392333984375E-05" />
+            <SSM2MatrixFragment mz="117.91753387451172" query="24281.3046875" ref="24451.37890625" da="0.0001373291015625" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="103.0389764201" mz_ref="0" ppm="1.7121715315424197" precursorType="[M+H]+" unique_id="C06002" score="0" />
+         <parentTrace>99.70745110402999</parentTrace>
+         <inferSize>2</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M101T597">
+      <precursorType>[M+H-H2O]+</precursorType>
+      <ppm>1.102915963836743</ppm>
+      <score>4.84814192067266</score>
+      <pvalue>0.000287170885917598</pvalue>
+      <infer forward="0.9516438594322487" reverse="0.9516438594322487" jaccard="1" entropy="0">
+         <query mz="101.0232" scan_time="596.6795279999999" intensity="1425025.1">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_2979] FTMS - p ESI d Full ms2 101.0232@hcd30.00 [50.0000-120.0000] M101T597[101.0232,596.68][101.0232,596.68]</query>
+         <reference mz="116.0705" scan_time="516.337482" intensity="2882161.125">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_2577] FTMS - p ESI d Full ms2 116.0705@hcd30.00 [50.0000-135.0000] M116T516[116.0705,516.34][116.0705,516.34]: C00148</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="99.92444610595705" query="226354.078125" ref="510644.1875" da="3.0517578125E-05" />
+            <SSM2MatrixFragment mz="115.91944885253906" query="939228.4375" ref="1628688.125" da="4.57763671875E-05" />
+            <SSM2MatrixFragment mz="116.92348861694336" query="101840.6328125" ref="742828.8125" da="0.00765228271484375" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="101.0233114201" mz_ref="0" ppm="1.102915963836743" precursorType="[M+H-H2O]+" unique_id="C00042" score="0" />
+         <parentTrace>95.16438594322487</parentTrace>
+         <inferSize>2</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M161T602">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>0.7673644443306701</ppm>
+      <score>4.957492026622598</score>
+      <pvalue>0.000272604823009438</pvalue>
+      <infer forward="0.9979301244195655" reverse="0.9979301244195655" jaccard="1" entropy="0">
+         <query mz="161.0446" scan_time="602.3209800000001" intensity="246573.12">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_3005] FTMS - p ESI d Full ms2 161.0446@hcd30.00 [50.0000-185.0000] M161T602[161.0446,602.32][161.0446,602.32]</query>
+         <reference mz="161.0447" scan_time="441.836202" intensity="195639.39404296875">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_2166] FTMS - p ESI d Full ms2 161.0447@hcd30.00 [50.0000-185.0000] M161T442[161.0447,441.84][161.0447,441.84]: C00691</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="59.0125617980957" query="6209.20556640625" ref="7894.80712890625" da="3.0517578125E-05" />
+            <SSM2MatrixFragment mz="71.0124626159668" query="6121.20947265625" ref="6400.4013671875" da="0.00020599365234375" />
+            <SSM2MatrixFragment mz="73.02814865112305" query="32560.796875" ref="30201.3984375" da="7.62939453125E-06" />
+            <SSM2MatrixFragment mz="85.0280990600586" query="3955.345947265625" ref="4888.95849609375" da="7.62939453125E-05" />
+            <SSM2MatrixFragment mz="115.91938018798828" query="7939.30126953125" ref="5092.60791015625" da="0.0001068115234375" />
+            <SSM2MatrixFragment mz="116.92731475830078" query="77890.1484375" ref="79170.421875" da="4.57763671875E-05" />
+            <SSM2MatrixFragment mz="117.9274444580078" query="13804.8857421875" ref="11008.5" da="0.0001220703125" />
+            <SSM2MatrixFragment mz="142.92373657226562" query="20033.841796875" ref="19914.2109375" da="6.103515625E-05" />
+            <SSM2MatrixFragment mz="160.93455505371094" query="19801.673828125" ref="21430.2734375" da="9.1552734375E-05" />
+            <SSM2MatrixFragment mz="162.01849365234375" query="7349.89208984375" ref="9637.814453125" da="0.000518798828125" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="161.0444764201" mz_ref="0" ppm="0.7673644443306701" precursorType="[M+H]+" unique_id="C04287" score="0" />
+         <parentTrace>99.79301244195655</parentTrace>
+         <inferSize>2</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M464T603">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>13.302600658189991</ppm>
+      <score>4.33267029190538</score>
+      <pvalue>0.000338742629663248</pvalue>
+      <infer forward="0.9992665956443101" reverse="0.9992665956443101" jaccard="1" entropy="0">
+         <query mz="464.3017" scan_time="602.6278199999999" intensity="334862.94">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_3007] FTMS - p ESI d Full ms2 464.3017@hcd30.00 [50.0000-490.0000] M464T603[464.3017,602.63][464.3017,602.63]</query>
+         <reference mz="464.3019" scan_time="575.166612" intensity="133005.7">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_2872] FTMS - p ESI d Full ms2 464.3019@hcd30.00 [50.0000-490.0000] M464T575[464.3019,575.17][464.3019,575.17]: C21270</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="74.02334976196289" query="33104.66015625" ref="13230.4990234375" da="2.288818359375E-05" />
+            <SSM2MatrixFragment mz="464.3015441894531" query="229970.140625" ref="72239.9765625" da="6.103515625E-05" />
+            <SSM2MatrixFragment mz="465.3059692382813" query="23127.927734375" ref="6949.619140625" da="0.0030517578125" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="464.3078764201" mz_ref="0" ppm="13.302600658189991" precursorType="[M+H]+" unique_id="C02033" score="0" />
+         <parentTrace>99.8533729170569</parentTrace>
+         <inferSize>3</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M148T603">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>0.15925854625734323</ppm>
+      <score>4.990773847042769</score>
+      <pvalue>0.000269450811164354</pvalue>
+      <infer forward="0.9999999791108098" reverse="0.9999999791108098" jaccard="1" entropy="0">
+         <query mz="148.0605" scan_time="603.34914" intensity="930747.62">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_3010] FTMS - p ESI d Full ms2 148.0605@hcd30.00 [50.0000-170.0000] M148T603[148.0605,603.35][148.0605,603.35]</query>
+         <reference mz="148.0605" scan_time="394.555194" intensity="673011.25">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_1943] FTMS - p ESI d Full ms2 148.0605@hcd30.00 [50.0000-170.0000] M148T395[148.0605,394.56][148.0605,394.56]: C00025</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="61.98698425292969" query="688941" ref="464481.875" da="1.52587890625E-05" />
+            <SSM2MatrixFragment mz="120.06543350219728" query="35524.7109375" ref="23855.458984375" da="0.00012969970703125" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="148.0604764201" mz_ref="0" ppm="0.15925854625734323" precursorType="[M+H]+" unique_id="C00217" score="0" />
+         <parentTrace>99.8736795244826</parentTrace>
+         <inferSize>16</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M134T616">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>9.874064967222987</ppm>
+      <score>4.3056310300510345</score>
+      <pvalue>0.000343944847081746</pvalue>
+      <infer forward="0.9850488671601144" reverse="0.983009579992822" jaccard="1" entropy="0">
+         <query mz="134.0461" scan_time="616.4853" intensity="145437.22">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_3075] FTMS - p ESI d Full ms2 134.0461@hcd30.00 [50.0000-155.0000] M134T616[134.0461,616.49][134.0461,616.49]</query>
+         <reference mz="134.046" scan_time="776.92566" intensity="148454.38">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_3958] FTMS - p ESI d Full ms2 134.0460@hcd30.00 [50.0000-155.0000] M134T777[134.0460,776.93][134.0460,776.93]: C00122</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="68.99427032470703" query="0" ref="4466.72998046875" da="NaN" />
+            <SSM2MatrixFragment mz="107.03498458862305" query="5940.56640625" ref="5990.20263671875" da="0.00051116943359375" />
+            <SSM2MatrixFragment mz="115.91950988769533" query="11804.1962890625" ref="5067.87158203125" da="0.000213623046875" />
+            <SSM2MatrixFragment mz="116.9196548461914" query="11441.4013671875" ref="4546.28662109375" da="0.0001678466796875" />
+            <SSM2MatrixFragment mz="134.04605102539062" query="48533.41015625" ref="54300.90234375" da="3.0517578125E-05" />
+            <SSM2MatrixFragment mz="134.8935089111328" query="34855.2578125" ref="42105.8984375" da="6.103515625E-05" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="134.0447764201" mz_ref="0" ppm="9.874064967222987" precursorType="[M+H]+" unique_id="C00049" score="0" />
+         <parentTrace>98.29913650860283</parentTrace>
+         <inferSize>3</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M148T626">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>0.15925854625734323</ppm>
+      <score>4.992037072687133</score>
+      <pvalue>0.000269339121095115</pvalue>
+      <infer forward="1" reverse="1" jaccard="1" entropy="0">
+         <query mz="148.0605" scan_time="626.26782" intensity="892335.44">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_3119] FTMS - p ESI d Full ms2 148.0605@hcd30.00 [50.0000-170.0000] M148T626[148.0605,626.27][148.0605,626.27]</query>
+         <reference mz="148.0605" scan_time="580.4257140000001" intensity="939972.5">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_2897] FTMS - p ESI d Full ms2 148.0605@hcd30.00 [50.0000-170.0000] M148T580[148.0605,580.43][148.0605,580.43]: C00025</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="61.98697853088379" query="671587.5625" ref="704946.375" da="3.814697265625E-06" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="148.0604764201" mz_ref="0" ppm="0.15925854625734323" precursorType="[M+H]+" unique_id="C05574" score="0" />
+         <parentTrace>100</parentTrace>
+         <inferSize>10</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M116T654">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>0.6583938210051083</ppm>
+      <score>4.966975994631689</score>
+      <pvalue>0.000271571058045827</pvalue>
+      <infer forward="0.9999652281576209" reverse="0.9999652281576209" jaccard="1" entropy="0">
+         <query mz="116.0705" scan_time="654.19362" intensity="1733718.8">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_3262] FTMS - p ESI d Full ms2 116.0705@hcd30.00 [50.0000-135.0000] M116T654[116.0705,654.19][116.0705,654.19]</query>
+         <reference mz="116.0705" scan_time="424.30212" intensity="1431270.5">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_2083] FTMS - p ESI d Full ms2 116.0705@hcd30.00 [50.0000-135.0000] M116T424[116.0705,424.30][116.0705,424.30]: C00763</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="99.92444610595705" query="276193.3125" ref="218720.625" da="0" />
+            <SSM2MatrixFragment mz="115.91946411132812" query="608958.6875" ref="497588.28125" da="1.52587890625E-05" />
+            <SSM2MatrixFragment mz="116.92721557617188" query="694049.875" ref="561937.5" da="3.0517578125E-05" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="116.0705764201" mz_ref="0" ppm="0.6583938210051083" precursorType="[M+H]+" unique_id="C00148" score="0" />
+         <parentTrace>99.99304575243228</parentTrace>
+         <inferSize>3</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M197T661">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>4.9568598604992475</ppm>
+      <score>4.260102585503799</score>
+      <pvalue>0.000349747117505537</pvalue>
+      <infer forward="0.9856516027298755" reverse="0.9790918317401649" jaccard="0.6666666666666666" entropy="0">
+         <query mz="196.9836" scan_time="661.0918200000001" intensity="639387.25">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_3301] FTMS - p ESI d Full ms2 196.9836@hcd30.00 [50.0000-220.0000] M197T661[196.9836,661.09][196.9836,661.09]</query>
+         <reference mz="196.9837" scan_time="684.08466" intensity="359488.31">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_3420] FTMS - p ESI d Full ms2 196.9837@hcd30.00 [50.0000-220.0000] M197T684[196.9837,684.08][196.9837,684.08]: C06367</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="61.98698616027832" query="29808.076171875" ref="35790.18359375" da="1.1444091796875E-05" />
+            <SSM2MatrixFragment mz="103.97520065307616" query="35004.24609375" ref="35701.28515625" da="7.62939453125E-06" />
+            <SSM2MatrixFragment mz="112.98426818847656" query="0" ref="20662.703125" da="NaN" />
+            <SSM2MatrixFragment mz="130.99137115478516" query="152356.375" ref="69113.65625" da="1.52587890625E-05" />
+            <SSM2MatrixFragment mz="196.9833755493164" query="352865.3125" ref="156085.328125" da="0.0001678466796875" />
+            <SSM2MatrixFragment mz="197.98655700683597" query="17928.90234375" ref="7823.87646484375" da="0.000579833984375" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="196.9845764201" mz_ref="0" ppm="4.9568598604992475" precursorType="[M+H]+" unique_id="C17946" score="0" />
+         <parentTrace>97.32981912330405</parentTrace>
+         <inferSize>5</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M121T672">
+      <precursorType>[M+H-H2O]+</precursorType>
+      <ppm>0.9206119560290614</ppm>
+      <score>4.4413845219582475</score>
+      <pvalue>0.000326197487855954</pvalue>
+      <infer forward="0.9937075598798503" reverse="0.9940717507124449" jaccard="0.5" entropy="0">
+         <query mz="121.0283" scan_time="672.34134" intensity="90526.891">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_3358] FTMS - p ESI d Full ms2 121.0283@hcd30.00 [50.0000-140.0000] M121T672[121.0283,672.34][121.0283,672.34]</query>
+         <reference mz="209.0451" scan_time="447.43521599999997" intensity="120822.34765625">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_2191] FTMS - p ESI d Full ms2 209.0451@hcd30.00 [50.0000-230.0000] M209T447[209.0451,447.44][209.0451,447.44]: C00251</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="94.02838134765624" query="5401.11572265625" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="121.0282859802246" query="59451.18359375" ref="104762.2109375" da="7.62939453125E-06" />
+            <SSM2MatrixFragment mz="122.02778244018556" query="8052.20703125" ref="7048.2841796875" da="0.00850677490234375" />
+            <SSM2MatrixFragment mz="209.045166015625" query="0" ref="9011.8525390625" da="NaN" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="121.0284114201" mz_ref="0" ppm="0.9206119560290614" precursorType="[M+H-H2O]+" unique_id="C00805" score="0" />
+         <parentTrace>99.37075598798502</parentTrace>
+         <inferSize>2</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M581T677">
+      <precursorType>[M+H-H2O]+</precursorType>
+      <ppm>2.3889912464567087</ppm>
+      <score>3.5100894152559627</score>
+      <pvalue>0.000470759302473902</pvalue>
+      <infer forward="0.9972177409799327" reverse="0.7579513069712173" jaccard="0.25" entropy="0">
+         <query mz="581.2411" scan_time="676.9995600000001" intensity="127752.53">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_3380] FTMS - p ESI d Full ms2 581.2411@hcd30.00 [50.0000-610.0000] M581T677[581.2411,677.00][581.2411,677.00]</query>
+         <reference mz="615.2465" scan_time="589.6551420000001" intensity="190299.48364257812">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_2942] FTMS - p ESI d Full ms2 615.2465@hcd30.00 [50.0000-645.0000] M615T590[615.2465,589.66][615.2465,589.66]: C11829</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="213.10345458984372" query="4139.65087890625" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="227.1186370849609" query="0" ref="6359.36962890625" da="NaN" />
+            <SSM2MatrixFragment mz="239.11849975585935" query="24124.17578125" ref="24533.587890625" da="0.00030517578125" />
+            <SSM2MatrixFragment mz="241.1344223022461" query="9186.96484375" ref="7337.99951171875" da="0.0001373291015625" />
+            <SSM2MatrixFragment mz="255.11431884765625" query="0" ref="20868.873046875" da="NaN" />
+            <SSM2MatrixFragment mz="257.1283264160156" query="0" ref="6088.40234375" da="NaN" />
+            <SSM2MatrixFragment mz="273.1228942871094" query="0" ref="10693.0732421875" da="NaN" />
+            <SSM2MatrixFragment mz="285.1243591308594" query="57477.89453125" ref="56920.0625" da="0.00030517578125" />
+            <SSM2MatrixFragment mz="286.1284942626953" query="3093.287841796875" ref="4279.90576171875" da="0.002410888671875" />
+            <SSM2MatrixFragment mz="301.1192932128906" query="0" ref="47391.36328125" da="NaN" />
+            <SSM2MatrixFragment mz="351.9436950683594" query="0" ref="2905.6396484375" da="NaN" />
+            <SSM2MatrixFragment mz="364.9251098632813" query="0" ref="2921.206787109375" da="NaN" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="581.2397114201" mz_ref="0" ppm="2.3889912464567087" precursorType="[M+H-H2O]+" unique_id="C04536" score="0" />
+         <parentTrace>75.79513069712172</parentTrace>
+         <inferSize>2</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M103T687">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>1.7121715315424197</ppm>
+      <score>3.585266204188527</score>
+      <pvalue>0.000459871548844114</pvalue>
+      <infer forward="0.8140088189542524" reverse="0.9763004585153977" jaccard="0.14285714285714285" entropy="0">
+         <query mz="103.0388" scan_time="686.61708" intensity="127888.89">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_3434] FTMS - p ESI d Full ms2 103.0388@hcd30.00 [50.0000-125.0000] M103T687[103.0388,686.62][103.0388,686.62]</query>
+         <reference mz="129.0546" scan_time="485.419362" intensity="214416.2490234375">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_2399] FTMS - p ESI d Full ms2 129.0546@hcd30.00 [50.0000-150.0000] M129T485[129.0546,485.42][129.0546,485.42]: C06006</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="57.03324508666992" query="7740.49365234375" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="59.01249313354492" query="11787.2978515625" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="61.98699569702149" query="41893.0546875" ref="168889.171875" da="0" />
+            <SSM2MatrixFragment mz="73.02809143066406" query="3682.130615234375" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="89.92415618896484" query="3179.75341796875" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="99.92430877685548" query="0" ref="9249.4677734375" da="NaN" />
+            <SSM2MatrixFragment mz="100.92442321777344" query="3089.639892578125" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="101.92266082763672" query="3684.387939453125" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="103.0386962890625" query="8268.55078125" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="116.9197235107422" query="13711.9755859375" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="117.9174575805664" query="19788.818359375" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="130.08616638183594" query="0" ref="36277.609375" da="NaN" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="103.0389764201" mz_ref="0" ppm="1.7121715315424197" precursorType="[M+H]+" unique_id="C00109" score="0" />
+         <parentTrace>81.40088189542524</parentTrace>
+         <inferSize>2</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M148T695">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>0.15925854625734323</ppm>
+      <score>4.992037072687133</score>
+      <pvalue>0.000269339121095115</pvalue>
+      <infer forward="1" reverse="1" jaccard="1" entropy="0">
+         <query mz="148.0605" scan_time="694.68156" intensity="1001318.6">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_3473] FTMS - p ESI d Full ms2 148.0605@hcd30.00 [50.0000-170.0000] M148T695[148.0605,694.68][148.0605,694.68]</query>
+         <reference mz="148.0605" scan_time="649.0419" intensity="886492.31">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_3237] FTMS - p ESI d Full ms2 148.0605@hcd30.00 [50.0000-170.0000] M148T649[148.0605,649.04][148.0605,649.04]: C03618</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="61.98698043823242" query="781216.1875" ref="666342.5625" da="0" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="148.0604764201" mz_ref="0" ppm="0.15925854625734323" precursorType="[M+H]+" unique_id="C00025" score="0" />
+         <parentTrace>100</parentTrace>
+         <inferSize>12</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M197T730">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>4.9568598604992475</ppm>
+      <score>4.746604186453064</score>
+      <pvalue>0.00029260191395941</pvalue>
+      <infer forward="0.9981479164214816" reverse="0.9981479164214816" jaccard="1" entropy="0">
+         <query mz="196.9836" scan_time="730.14498" intensity="332751.19">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_3668] FTMS - p ESI d Full ms2 196.9836@hcd30.00 [50.0000-220.0000] M197T730[196.9836,730.14][196.9836,730.14]</query>
+         <reference mz="196.9837" scan_time="707.1623400000001" intensity="336369.28">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_3538] FTMS - p ESI d Full ms2 196.9837@hcd30.00 [50.0000-220.0000] M197T707[196.9837,707.16][196.9837,707.16]: C17946</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="61.98698043823242" query="33448.4453125" ref="34485.11328125" da="7.62939453125E-06" />
+            <SSM2MatrixFragment mz="103.97525024414062" query="26764.04296875" ref="31703.87890625" da="1.52587890625E-05" />
+            <SSM2MatrixFragment mz="112.98428344726562" query="13863.8115234375" ref="22141.224609375" da="1.52587890625E-05" />
+            <SSM2MatrixFragment mz="130.99138641357422" query="60311.13671875" ref="61494.0859375" da="1.52587890625E-05" />
+            <SSM2MatrixFragment mz="196.98329162597656" query="143886.3125" ref="142025.640625" da="0" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="196.9845764201" mz_ref="0" ppm="4.9568598604992475" precursorType="[M+H]+" unique_id="C06367" score="0" />
+         <parentTrace>99.62992630565451</parentTrace>
+         <inferSize>3</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M169T742">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>1.9132859830566364</ppm>
+      <score>3.959457109591763</score>
+      <pvalue>0.000393360287928575</pvalue>
+      <infer forward="0.941023934628834" reverse="0.981077352465257" jaccard="0.42857142857142855" entropy="0">
+         <query mz="169.1226" scan_time="741.94362" intensity="43939.086">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_3736] FTMS - p ESI d Full ms2 169.1226@hcd30.00 [50.0000-190.0000] M169T742[169.1226,741.94][169.1226,741.94]</query>
+         <reference mz="169.1225" scan_time="774.3929999999999" intensity="31178.152">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_3941] FTMS - p ESI d Full ms2 169.1225@hcd30.00 [50.0000-190.0000] M169T774[169.1225,774.39][169.1225,774.39]: C11420</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="53.70177459716797" query="1121.850830078125" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="56.15760040283203" query="0" ref="1255.3612060546875" da="NaN" />
+            <SSM2MatrixFragment mz="59.01229095458984" query="1190.94677734375" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="59.99485397338867" query="955.0147094726562" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="60.66416549682617" query="0" ref="1042.8262939453125" da="NaN" />
+            <SSM2MatrixFragment mz="61.98686981201172" query="5202.173828125" ref="3463.693603515625" da="8.392333984375E-05" />
+            <SSM2MatrixFragment mz="77.76789093017578" query="1434.6387939453125" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="78.40528869628906" query="0" ref="1294.3433837890625" da="NaN" />
+            <SSM2MatrixFragment mz="80.615478515625" query="1120.7860107421875" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="82.60711669921875" query="1181.7696533203125" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="90.87860870361328" query="0" ref="1215.498046875" da="NaN" />
+            <SSM2MatrixFragment mz="97.06463623046876" query="1896.5928955078125" ref="2842.97998046875" da="0.000762939453125" />
+            <SSM2MatrixFragment mz="103.97517395019533" query="2939.2607421875" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="115.29700469970705" query="1314.7471923828125" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="123.53516387939452" query="1171.771484375" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="125.46805572509766" query="1267.060302734375" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="148.58218383789062" query="1279.49755859375" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="169.12238311767578" query="16454.806640625" ref="18549.685546875" da="7.62939453125E-05" />
+            <SSM2MatrixFragment mz="170.125732421875" query="3196.234375" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="173.8391571044922" query="0" ref="1513.7633056640625" da="NaN" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="169.1222764201" mz_ref="0" ppm="1.9132859830566364" precursorType="[M+H]+" unique_id="C11418" score="0" />
+         <parentTrace>88.5526045544332</parentTrace>
+         <inferSize>3</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M195T751">
+      <precursorType>[M+H-H2O]+</precursorType>
+      <ppm>2.503760920348908</ppm>
+      <score>4.293648840364083</score>
+      <pvalue>0.000343619786705548</pvalue>
+      <infer forward="0.9995815301628286" reverse="0.9914397211879146" jaccard="0.6666666666666666" entropy="0">
+         <query mz="195.1384" scan_time="751.3089" intensity="242245.12">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_3795] FTMS - p ESI d Full ms2 195.1384@hcd30.00 [50.0000-220.0000] M195T751[195.1384,751.31][195.1384,751.31]</query>
+         <reference mz="195.1384" scan_time="560.8857479999999" intensity="148200.84">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_2800] FTMS - p ESI d Full ms2 195.1384@hcd30.00 [50.0000-220.0000] M195T561[195.1384,560.89][195.1384,560.89]: C16311</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="92.92754364013672" query="0" ref="12301.10546875" da="NaN" />
+            <SSM2MatrixFragment mz="195.1383285522461" query="175465.984375" ref="94821.25" da="1.52587890625E-05" />
+            <SSM2MatrixFragment mz="196.14198303222656" query="19962.0234375" ref="13576.140625" da="0.000213623046875" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="195.1379114201" mz_ref="0" ppm="2.503760920348908" precursorType="[M+H-H2O]+" unique_id="C16309" score="0" />
+         <parentTrace>98.29527207491698</parentTrace>
+         <inferSize>3</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M169T774">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>1.321999733889782</ppm>
+      <score>4.044519311134607</score>
+      <pvalue>0.000380419934970126</pvalue>
+      <infer forward="0.981077352465257" reverse="0.941023934628834" jaccard="0.42857142857142855" entropy="0">
+         <query mz="169.1225" scan_time="774.3929999999999" intensity="31178.152">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_3941] FTMS - p ESI d Full ms2 169.1225@hcd30.00 [50.0000-190.0000] M169T774[169.1225,774.39][169.1225,774.39]</query>
+         <reference mz="169.1226" scan_time="741.94362" intensity="41727.151794433594">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_3736] FTMS - p ESI d Full ms2 169.1226@hcd30.00 [50.0000-190.0000] M169T742[169.1226,741.94][169.1226,741.94]: C09804</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="53.70177459716797" query="0" ref="1121.850830078125" da="NaN" />
+            <SSM2MatrixFragment mz="56.15760040283203" query="1255.3612060546875" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="59.01229095458984" query="0" ref="1190.94677734375" da="NaN" />
+            <SSM2MatrixFragment mz="59.99485397338867" query="0" ref="955.0147094726562" da="NaN" />
+            <SSM2MatrixFragment mz="60.66416549682617" query="1042.8262939453125" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="61.98686981201172" query="3463.693603515625" ref="5202.173828125" da="8.392333984375E-05" />
+            <SSM2MatrixFragment mz="77.76789093017578" query="0" ref="1434.6387939453125" da="NaN" />
+            <SSM2MatrixFragment mz="78.40528869628906" query="1294.3433837890625" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="80.615478515625" query="0" ref="1120.7860107421875" da="NaN" />
+            <SSM2MatrixFragment mz="82.60711669921875" query="0" ref="1181.7696533203125" da="NaN" />
+            <SSM2MatrixFragment mz="90.87860870361328" query="1215.498046875" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="97.06463623046876" query="2842.97998046875" ref="1896.5928955078125" da="0.000762939453125" />
+            <SSM2MatrixFragment mz="103.97517395019533" query="0" ref="2939.2607421875" da="NaN" />
+            <SSM2MatrixFragment mz="115.29700469970705" query="0" ref="1314.7471923828125" da="NaN" />
+            <SSM2MatrixFragment mz="123.53516387939452" query="0" ref="1171.771484375" da="NaN" />
+            <SSM2MatrixFragment mz="125.46805572509766" query="0" ref="1267.060302734375" da="NaN" />
+            <SSM2MatrixFragment mz="148.58218383789062" query="0" ref="1279.49755859375" da="NaN" />
+            <SSM2MatrixFragment mz="169.12238311767578" query="18549.685546875" ref="16454.806640625" da="7.62939453125E-05" />
+            <SSM2MatrixFragment mz="170.125732421875" query="0" ref="3196.234375" da="NaN" />
+            <SSM2MatrixFragment mz="173.8391571044922" query="1513.7633056640625" ref="0" da="NaN" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="169.1222764201" mz_ref="0" ppm="1.321999733889782" precursorType="[M+H]+" unique_id="C22225" score="0" />
+         <parentTrace>94.1023934628834</parentTrace>
+         <inferSize>2</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M134T777">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>9.128059770523176</ppm>
+      <score>4.543559952004301</score>
+      <pvalue>0.000313828288034494</pvalue>
+      <infer forward="0.9999814702652299" reverse="0.9999814702652299" jaccard="1" entropy="0">
+         <query mz="134.046" scan_time="776.92566" intensity="148454.38">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_3958] FTMS - p ESI d Full ms2 134.0460@hcd30.00 [50.0000-155.0000] M134T777[134.0460,776.93][134.0460,776.93]</query>
+         <reference mz="134.0461" scan_time="753.85128" intensity="115191.63037109375">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_3812] FTMS - p ESI d Full ms2 134.0461@hcd30.00 [50.0000-155.0000] M134T754[134.0461,753.85][134.0461,753.85]: C00049</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="68.99428176879883" query="4466.72998046875" ref="4348.85888671875" da="2.288818359375E-05" />
+            <SSM2MatrixFragment mz="107.03507995605467" query="5990.20263671875" ref="5871.39306640625" da="0.0003204345703125" />
+            <SSM2MatrixFragment mz="115.9193344116211" query="5067.87158203125" ref="5127.7275390625" da="0.0001373291015625" />
+            <SSM2MatrixFragment mz="116.91974258422852" query="4546.28662109375" ref="4419.41650390625" da="7.62939453125E-06" />
+            <SSM2MatrixFragment mz="134.04603576660156" query="54300.90234375" ref="53473.2578125" da="0" />
+            <SSM2MatrixFragment mz="134.89348602294922" query="42105.8984375" ref="41950.9765625" da="1.52587890625E-05" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="134.0447764201" mz_ref="0" ppm="9.128059770523176" precursorType="[M+H]+" unique_id="C00402" score="0" />
+         <parentTrace>99.99814702652299</parentTrace>
+         <inferSize>2</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M185T781">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>2.2881665492714576</ppm>
+      <score>4.209271356414567</score>
+      <pvalue>0.00035893593541709</pvalue>
+      <infer forward="0.9675767388308137" reverse="0.9400276677474432" jaccard="0.6666666666666666" entropy="0">
+         <query mz="185.1176" scan_time="781.30464" intensity="107710.77">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_3987] FTMS - p ESI d Full ms2 185.1176@hcd30.00 [50.0000-205.0000] M185T781[185.1176,781.30][185.1176,781.30]</query>
+         <reference mz="185.1176" scan_time="558.678822" intensity="119188.56">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_2789] FTMS - p ESI d Full ms2 185.1176@hcd30.00 [50.0000-205.0000] M185T559[185.1176,558.68][185.1176,558.68]: C19084</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="59.01229476928711" query="0" ref="1879.417724609375" da="NaN" />
+            <SSM2MatrixFragment mz="61.989017486572266" query="1394.9456787109375" ref="2220.712158203125" da="0.00445556640625" />
+            <SSM2MatrixFragment mz="68.99432373046875" query="3194.361083984375" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="70.40718841552734" query="0" ref="1362.3642578125" da="NaN" />
+            <SSM2MatrixFragment mz="72.99177169799805" query="6595.69677734375" ref="8010.3232421875" da="0.00029754638671875" />
+            <SSM2MatrixFragment mz="93.8307647705078" query="1269.036376953125" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="99.79543685913086" query="1205.8226318359375" ref="1712.61865234375" da="0.25843048095703125" />
+            <SSM2MatrixFragment mz="100.95968627929688" query="1945.41650390625" ref="2501.2236328125" da="0.0001068115234375" />
+            <SSM2MatrixFragment mz="101.8005142211914" query="1326.1962890625" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="107.73356628417967" query="1225.3682861328125" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="115.91930389404295" query="0" ref="11764.6123046875" da="NaN" />
+            <SSM2MatrixFragment mz="116.92723846435548" query="15727.3544921875" ref="12309.912109375" da="1.52587890625E-05" />
+            <SSM2MatrixFragment mz="117.9274559020996" query="2268.90576171875" ref="1669.726806640625" da="0.00012969970703125" />
+            <SSM2MatrixFragment mz="120.71600341796876" query="1583.485595703125" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="129.4207305908203" query="1192.1075439453125" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="139.11170959472656" query="10484.888671875" ref="10516.3984375" da="0.000213623046875" />
+            <SSM2MatrixFragment mz="141.10890197753906" query="2164.306884765625" ref="2395.013671875" da="0.036651611328125" />
+            <SSM2MatrixFragment mz="156.75413513183594" query="1565.5579833984375" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="164.97970581054688" query="1886.4549560546875" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="167.106689453125" query="22786.591796875" ref="26757.6171875" da="0.00018310546875" />
+            <SSM2MatrixFragment mz="168.10984802246094" query="1495.8994140625" ref="2316.858154296875" da="0.000823974609375" />
+            <SSM2MatrixFragment mz="185.11746215820312" query="17420.294921875" ref="26556.298828125" da="6.103515625E-05" />
+            <SSM2MatrixFragment mz="186.12179565429688" query="2027.572509765625" ref="2396.990478515625" da="0.000244140625" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="185.1171764201" mz_ref="0" ppm="2.2881665492714576" precursorType="[M+H]+" unique_id="C11419" score="0" />
+         <parentTrace>88.36520161306974</parentTrace>
+         <inferSize>3</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M391T785">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>3.6382109031998584</ppm>
+      <score>4.052542449091285</score>
+      <pvalue>0.000376459486047788</pvalue>
+      <infer forward="0.9923005590643891" reverse="0.9999602726432035" jaccard="0.5" entropy="0">
+         <query mz="391.2857" scan_time="785.4422400000001" intensity="1085818.5">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_4015] FTMS - p ESI d Full ms2 391.2857@hcd30.00 [50.0000-420.0000] M391T785[391.2857,785.44][391.2857,785.44]</query>
+         <reference mz="391.2857" scan_time="738.68346" intensity="220532.12">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_3716] FTMS - p ESI d Full ms2 391.2857@hcd30.00 [50.0000-420.0000] M391T739[391.2857,738.68][391.2857,738.68]: C00695</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="74.0233383178711" query="70133.2734375" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="391.285385131836" query="742666.5" ref="174590.25" da="9.1552734375E-05" />
+            <SSM2MatrixFragment mz="392.288818359375" query="110090.65625" ref="24292.337890625" da="0.000244140625" />
+            <SSM2MatrixFragment mz="409.2954406738281" query="61782.41796875" ref="0" da="NaN" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="391.2842764201" mz_ref="0" ppm="3.6382109031998584" precursorType="[M+H]+" unique_id="C11637" score="0" />
+         <parentTrace>99.2152435186889</parentTrace>
+         <inferSize>4</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M312T790">
+      <precursorType>[M]+</precursorType>
+      <ppm>10.733948976699905</ppm>
+      <score>3.721941255340906</score>
+      <pvalue>0.000453875015881742</pvalue>
+      <infer forward="0.8376526854212839" reverse="0.870339458602963" jaccard="0.6666666666666666" entropy="0">
+         <query mz="312.2262" scan_time="789.5721" intensity="1128293.1">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_4043] FTMS - p ESI d Full ms2 312.2262@hcd30.00 [50.0000-335.0000] M312T790[312.2262,789.57][312.2262,789.57]</query>
+         <reference mz="311.2229" scan_time="795.4557599999999" intensity="537084.4873046875">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_4083] FTMS - p ESI d Full ms2 311.2229@hcd30.00 [50.0000-335.0000] M311T795[311.2229,795.46][311.2229,795.46]: C21923</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="249.22210693359372" query="210332.640625" ref="107682.890625" da="0.000152587890625" />
+            <SSM2MatrixFragment mz="250.22552490234372" query="108894.5859375" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="267.23277282714844" query="25333.1953125" ref="102052.9140625" da="0.000213623046875" />
+            <SSM2MatrixFragment mz="268.2355499267578" query="15131.9560546875" ref="9699.2890625" da="0.000152587890625" />
+            <SSM2MatrixFragment mz="293.2122344970703" query="163383.21875" ref="108728.2265625" da="9.1552734375E-05" />
+            <SSM2MatrixFragment mz="294.2151184082031" query="93943.6640625" ref="11044.8876953125" da="0.00054931640625" />
+            <SSM2MatrixFragment mz="311.22271728515625" query="220524.90625" ref="176644.34375" da="0.0001220703125" />
+            <SSM2MatrixFragment mz="312.22581481933594" query="140612.140625" ref="21231.935546875" da="0.000518798828125" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="312.2295514201" mz_ref="0" ppm="10.733948976699905" precursorType="[M]+" unique_id="C21924" score="0" />
+         <parentTrace>83.7652685421284</parentTrace>
+         <inferSize>2</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M311T795">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>3.931522712315534</ppm>
+      <score>3.9260719045323293</score>
+      <pvalue>0.000416843074747685</pvalue>
+      <infer forward="0.870339458602963" reverse="0.8376526854212839" jaccard="0.6666666666666666" entropy="0">
+         <query mz="311.2229" scan_time="795.4557599999999" intensity="611401.69">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_4083] FTMS - p ESI d Full ms2 311.2229@hcd30.00 [50.0000-335.0000] M311T795[311.2229,795.46][311.2229,795.46]</query>
+         <reference mz="312.2262" scan_time="789.5721" intensity="1128293.1">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_4043] FTMS - p ESI d Full ms2 312.2262@hcd30.00 [50.0000-335.0000] M312T790[312.2262,789.57][312.2262,789.57]: C21924</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="249.22210693359372" query="107682.890625" ref="210332.640625" da="0.000152587890625" />
+            <SSM2MatrixFragment mz="250.22552490234372" query="0" ref="108894.5859375" da="NaN" />
+            <SSM2MatrixFragment mz="267.23277282714844" query="102052.9140625" ref="25333.1953125" da="0.000213623046875" />
+            <SSM2MatrixFragment mz="268.2355499267578" query="9699.2890625" ref="15131.9560546875" da="0.000152587890625" />
+            <SSM2MatrixFragment mz="293.2122344970703" query="108728.2265625" ref="163383.21875" da="9.1552734375E-05" />
+            <SSM2MatrixFragment mz="294.2151184082031" query="11044.8876953125" ref="93943.6640625" da="0.00054931640625" />
+            <SSM2MatrixFragment mz="311.22271728515625" query="176644.34375" ref="220524.90625" da="0.0001220703125" />
+            <SSM2MatrixFragment mz="312.22581481933594" query="21231.935546875" ref="140612.140625" da="0.000518798828125" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="311.22167642010004" mz_ref="0" ppm="3.931522712315534" precursorType="[M+H]+" unique_id="C21923" score="0" />
+         <parentTrace>70.16620213934884</parentTrace>
+         <inferSize>3</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M303T802">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>4.035113250969984</ppm>
+      <score>4.1045982114939825</score>
+      <pvalue>0.000370891435564275</pvalue>
+      <infer forward="0.9864583900843092" reverse="0.9817483655926695" jaccard="0.42857142857142855" entropy="0">
+         <query mz="303.2331" scan_time="802.19088" intensity="41833.367">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_4129] FTMS - p ESI d Full ms2 303.2331@hcd30.00 [50.0000-330.0000] M303T802[303.2331,802.19][303.2331,802.19]</query>
+         <reference mz="303.2332" scan_time="826.82688" intensity="44394.59228515625">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_4298] FTMS - p ESI d Full ms2 303.2332@hcd30.00 [50.0000-330.0000] M303T827[303.2332,826.83][303.2332,826.83]: C06428</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="54.97490692138672" query="0" ref="1434.0087890625" da="NaN" />
+            <SSM2MatrixFragment mz="57.12364959716797" query="0" ref="1287.7191162109375" da="NaN" />
+            <SSM2MatrixFragment mz="59.012434005737305" query="4495.6796875" ref="3938.96044921875" da="1.9073486328125E-05" />
+            <SSM2MatrixFragment mz="68.80807495117188" query="1350.2913818359375" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="77.4119644165039" query="0" ref="1609.6383056640625" da="NaN" />
+            <SSM2MatrixFragment mz="83.62419128417969" query="1544.0120849609375" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="84.39090728759766" query="0" ref="1416.923095703125" da="NaN" />
+            <SSM2MatrixFragment mz="93.10281372070312" query="1487.9114990234375" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="106.64900207519533" query="0" ref="1962.008544921875" da="NaN" />
+            <SSM2MatrixFragment mz="197.97784423828125" query="1563.120361328125" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="244.8074951171875" query="1566.317138671875" ref="1460.878173828125" da="0.287139892578125" />
+            <SSM2MatrixFragment mz="259.2422790527344" query="3088.757568359375" ref="3041.551513671875" da="6.103515625E-05" />
+            <SSM2MatrixFragment mz="303.23280334472656" query="19681.99609375" ref="25324.400390625" da="0.000701904296875" />
+            <SSM2MatrixFragment mz="304.23779296875" query="0" ref="2918.50390625" da="NaN" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="303.23187642010004" mz_ref="0" ppm="4.035113250969984" precursorType="[M+H]+" unique_id="C12083" score="0" />
+         <parentTrace>98.17483655926695</parentTrace>
+         <inferSize>2</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M520T805">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>2.453217490908068</ppm>
+      <score>3.7462259007546312</score>
+      <pvalue>0.000455453375273809</pvalue>
+      <infer forward="0.8379117332466952" reverse="0.819058772265402" jaccard="0.25" entropy="0">
+         <query mz="520.3045" scan_time="805.13178" intensity="300125.97">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_4149] FTMS - p ESI d Full ms2 520.3045@hcd30.00 [50.0000-550.0000] M520T805[520.3045,805.13][520.3045,805.13]</query>
+         <reference mz="522.3204" scan_time="836.36958" intensity="406196.3662109375">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_4364] FTMS - p ESI d Full ms2 522.3204@hcd30.00 [50.0000-550.0000] M522T836[522.3204,836.37][522.3204,836.37]: C20545</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="78.95766067504883" query="89253.90625" ref="143938.71875" da="2.288818359375E-05" />
+            <SSM2MatrixFragment mz="112.9842758178711" query="19283.740234375" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="152.99480438232422" query="30489.943359375" ref="44784.18359375" da="0.0001373291015625" />
+            <SSM2MatrixFragment mz="154.0264892578125" query="0" ref="7427.892578125" da="NaN" />
+            <SSM2MatrixFragment mz="210.05288696289065" query="8584.46484375" ref="13288.671875" da="0.000732421875" />
+            <SSM2MatrixFragment mz="265.2536315917969" query="6273.54248046875" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="267.2697448730469" query="0" ref="9665.8818359375" da="NaN" />
+            <SSM2MatrixFragment mz="401.2464294433594" query="5700.5380859375" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="403.2614135742188" query="0" ref="9435.0791015625" da="NaN" />
+            <SSM2MatrixFragment mz="419.2566223144531" query="52633.73046875" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="420.2608947753906" query="4581.63330078125" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="421.272216796875" query="0" ref="99293.953125" da="NaN" />
+            <SSM2MatrixFragment mz="422.2759399414063" query="0" ref="9193.94140625" da="NaN" />
+            <SSM2MatrixFragment mz="462.2975463867188" query="0" ref="13483.40625" da="NaN" />
+            <SSM2MatrixFragment mz="476.3147583007813" query="6929.53369140625" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="478.33245849609375" query="0" ref="13582.4169921875" da="NaN" />
+            <SSM2MatrixFragment mz="501.3948364257813" query="4752.47412109375" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="503.4102478027344" query="0" ref="7350.9775390625" da="NaN" />
+            <SSM2MatrixFragment mz="519.4080200195312" query="19156.625" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="520.4096069335938" query="11115.03515625" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="521.423583984375" query="0" ref="18818.6640625" da="NaN" />
+            <SSM2MatrixFragment mz="522.3206787109375" query="0" ref="15932.5791015625" da="NaN" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="520.3057764201" mz_ref="0" ppm="2.453217490908068" precursorType="[M+H]+" unique_id="C20546" score="0" />
+         <parentTrace>81.9058772265402</parentTrace>
+         <inferSize>2</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M299T807">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>3.7545375379196635</ppm>
+      <score>4.4341152190509145</score>
+      <pvalue>0.000326722146031888</pvalue>
+      <infer forward="0.9939351043291332" reverse="0.9968926071498362" jaccard="0.8" entropy="0">
+         <query mz="299.2592" scan_time="806.74236" intensity="114840.93">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_4160] FTMS - p ESI d Full ms2 299.2592@hcd30.00 [50.0000-325.0000] M299T807[299.2592,806.74][299.2592,806.74]</query>
+         <reference mz="299.2592" scan_time="779.56602" intensity="70354.625">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_3976] FTMS - p ESI d Full ms2 299.2592@hcd30.00 [50.0000-325.0000] M299T780[299.2592,779.57][299.2592,779.57]: C19622</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="237.2216339111328" query="4512.23193359375" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="253.25321197509768" query="19855.673828125" ref="14466.2802734375" da="0.0005035400390625" />
+            <SSM2MatrixFragment mz="281.21141052246094" query="2812.47314453125" ref="3765.21875" da="0.000579833984375" />
+            <SSM2MatrixFragment mz="299.25811767578125" query="54734.61328125" ref="34081.421875" da="0.00030517578125" />
+            <SSM2MatrixFragment mz="300.26123046875" query="4258.966796875" ref="1815.5306396484375" da="0.0010986328125" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="299.25807642010005" mz_ref="0" ppm="3.7545375379196635" precursorType="[M+H]+" unique_id="C19418" score="0" />
+         <parentTrace>98.79069916177649</parentTrace>
+         <inferSize>3</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M293T825">
+      <precursorType>[M+H-H2O]+</precursorType>
+      <ppm>4.053649522994338</ppm>
+      <score>3.845710157716516</score>
+      <pvalue>0.000413080241748999</pvalue>
+      <infer forward="0.9616963169331164" reverse="0.9729657464426695" jaccard="0.16666666666666666" entropy="0">
+         <query mz="293.2123" scan_time="824.68572" intensity="103725.66">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_4283] FTMS - p ESI d Full ms2 293.2123@hcd30.00 [50.0000-320.0000] M293T825[293.2123,824.69][293.2123,824.69]</query>
+         <reference mz="213.1492" scan_time="659.84064" intensity="54030.07958984375">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_3293] FTMS - p ESI d Full ms2 213.1492@hcd30.00 [50.0000-235.0000] M213T660[213.1492,659.84][213.1492,659.84]: C16311</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="59.01249313354492" query="54836.28515625" ref="40598.953125" da="7.62939453125E-06" />
+            <SSM2MatrixFragment mz="197.9910430908203" query="0" ref="7871.1875" da="NaN" />
+            <SSM2MatrixFragment mz="213.1490173339844" query="0" ref="5559.93896484375" da="NaN" />
+            <SSM2MatrixFragment mz="221.15460205078125" query="7353.16650390625" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="236.10435485839844" query="7427.34521484375" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="293.2124328613281" query="11621.9853515625" ref="0" da="NaN" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="293.2111114201" mz_ref="0" ppm="4.053649522994338" precursorType="[M+H-H2O]+" unique_id="C04785" score="0" />
+         <parentTrace>96.16963169331164</parentTrace>
+         <inferSize>2</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M303T827">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>4.364891113421774</ppm>
+      <score>4.070190806122602</score>
+      <pvalue>0.000375854646584177</pvalue>
+      <infer forward="0.9817483655926695" reverse="0.9864583900843092" jaccard="0.42857142857142855" entropy="0">
+         <query mz="303.2332" scan_time="826.82688" intensity="44394.594">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_4298] FTMS - p ESI d Full ms2 303.2332@hcd30.00 [50.0000-330.0000] M303T827[303.2332,826.83][303.2332,826.83]</query>
+         <reference mz="303.2331" scan_time="802.19088" intensity="41833.367">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_4129] FTMS - p ESI d Full ms2 303.2331@hcd30.00 [50.0000-330.0000] M303T802[303.2331,802.19][303.2331,802.19]: C12083</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="54.97490692138672" query="1434.0087890625" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="57.12364959716797" query="1287.7191162109375" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="59.012434005737305" query="3938.96044921875" ref="4495.6796875" da="1.9073486328125E-05" />
+            <SSM2MatrixFragment mz="68.80807495117188" query="0" ref="1350.2913818359375" da="NaN" />
+            <SSM2MatrixFragment mz="77.4119644165039" query="1609.6383056640625" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="83.62419128417969" query="0" ref="1544.0120849609375" da="NaN" />
+            <SSM2MatrixFragment mz="84.39090728759766" query="1416.923095703125" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="93.10281372070312" query="0" ref="1487.9114990234375" da="NaN" />
+            <SSM2MatrixFragment mz="106.64900207519533" query="1962.008544921875" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="197.97784423828125" query="0" ref="1563.120361328125" da="NaN" />
+            <SSM2MatrixFragment mz="244.8074951171875" query="1460.878173828125" ref="1566.317138671875" da="0.287139892578125" />
+            <SSM2MatrixFragment mz="259.2422790527344" query="3041.551513671875" ref="3088.757568359375" da="6.103515625E-05" />
+            <SSM2MatrixFragment mz="303.23280334472656" query="25324.400390625" ref="19681.99609375" da="0.000701904296875" />
+            <SSM2MatrixFragment mz="304.23779296875" query="2918.50390625" ref="0" da="NaN" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="303.23187642010004" mz_ref="0" ppm="4.364891113421774" precursorType="[M+H]+" unique_id="C06428" score="0" />
+         <parentTrace>96.38298533438778</parentTrace>
+         <inferSize>3</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M283T833">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>3.9665425539604113</ppm>
+      <score>4.8012597432125865</score>
+      <pvalue>0.000287040902966089</pvalue>
+      <infer forward="0.9998622839816351" reverse="0.9998622839816351" jaccard="1" entropy="0">
+         <query mz="283.2643" scan_time="832.5312" intensity="276848.78">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_4337] FTMS - p ESI d Full ms2 283.2643@hcd30.00 [50.0000-305.0000] M283T833[283.2643,832.53][283.2643,832.53]</query>
+         <reference mz="283.2643" scan_time="808.79124" intensity="274571.25">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_4173] FTMS - p ESI d Full ms2 283.2643@hcd30.00 [50.0000-305.0000] M283T809[283.2643,808.79][283.2643,808.79]: C03195</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="283.2641143798828" query="224864.15625" ref="222210.015625" da="3.0517578125E-05" />
+            <SSM2MatrixFragment mz="284.26756286621094" query="20014.9375" ref="16066.748046875" da="9.1552734375E-05" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="283.2631764201" mz_ref="0" ppm="3.9665425539604113" precursorType="[M+H]+" unique_id="C00712" score="0" />
+         <parentTrace>99.9724586928972</parentTrace>
+         <inferSize>3</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+   <Inference ROI="M522T836">
+      <precursorType>[M+H]+</precursorType>
+      <ppm>1.8693891719976532</ppm>
+      <score>3.7754173167001523</score>
+      <pvalue>0.000449833052392858</pvalue>
+      <infer forward="0.819058772265402" reverse="0.8379117332466952" jaccard="0.25" entropy="0">
+         <query mz="522.3204" scan_time="836.36958" intensity="516617.41">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_4364] FTMS - p ESI d Full ms2 522.3204@hcd30.00 [50.0000-550.0000] M522T836[522.3204,836.37][522.3204,836.37]</query>
+         <reference mz="520.3045" scan_time="805.13178" intensity="258755.1669921875">neg_L46.mzPack#neg_L46.mzPack [MSn][Scan_4149] FTMS - p ESI d Full ms2 520.3045@hcd30.00 [50.0000-550.0000] M520T805[520.3045,805.13][520.3045,805.13]: C20546</reference>
+         <alignments>
+            <SSM2MatrixFragment mz="78.95766067504883" query="143938.71875" ref="89253.90625" da="2.288818359375E-05" />
+            <SSM2MatrixFragment mz="112.9842758178711" query="0" ref="19283.740234375" da="NaN" />
+            <SSM2MatrixFragment mz="152.99480438232422" query="44784.18359375" ref="30489.943359375" da="0.0001373291015625" />
+            <SSM2MatrixFragment mz="154.0264892578125" query="7427.892578125" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="210.05288696289065" query="13288.671875" ref="8584.46484375" da="0.000732421875" />
+            <SSM2MatrixFragment mz="265.2536315917969" query="0" ref="6273.54248046875" da="NaN" />
+            <SSM2MatrixFragment mz="267.2697448730469" query="9665.8818359375" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="401.2464294433594" query="0" ref="5700.5380859375" da="NaN" />
+            <SSM2MatrixFragment mz="403.2614135742188" query="9435.0791015625" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="419.2566223144531" query="0" ref="52633.73046875" da="NaN" />
+            <SSM2MatrixFragment mz="420.2608947753906" query="0" ref="4581.63330078125" da="NaN" />
+            <SSM2MatrixFragment mz="421.272216796875" query="99293.953125" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="422.2759399414063" query="9193.94140625" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="462.2975463867188" query="13483.40625" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="476.3147583007813" query="0" ref="6929.53369140625" da="NaN" />
+            <SSM2MatrixFragment mz="478.33245849609375" query="13582.4169921875" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="501.3948364257813" query="0" ref="4752.47412109375" da="NaN" />
+            <SSM2MatrixFragment mz="503.4102478027344" query="7350.9775390625" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="519.4080200195312" query="0" ref="19156.625" da="NaN" />
+            <SSM2MatrixFragment mz="520.4096069335938" query="0" ref="11115.03515625" da="NaN" />
+            <SSM2MatrixFragment mz="521.423583984375" query="18818.6640625" ref="0" da="NaN" />
+            <SSM2MatrixFragment mz="522.3206787109375" query="15932.5791015625" ref="0" da="NaN" />
+         </alignments>
+         <level>Ms2</level>
+         <kegg mz="522.3213764201" mz_ref="0" ppm="1.8693891719976532" precursorType="[M+H]+" unique_id="C20545" score="0" />
+         <parentTrace>81.9058772265402</parentTrace>
+         <inferSize>2</inferSize>
+         <rawFile>n/a</rawFile>
+      </infer>
+   </Inference>
+</MetaDNARawSet>
