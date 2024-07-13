@@ -18,6 +18,9 @@ declare namespace Daisy {
    */
    function dasy_task(file: any, args: any): object;
    /**
+   */
+   function export_report(files: any, export_dir: any): object;
+   /**
      * @param ionMode default value Is ``[1, -1]``.
    */
    function get_adducts(ionMode?: any): object;
@@ -28,6 +31,11 @@ declare namespace Daisy {
      * @param debug default value Is ``false``.
    */
    function make_annotation(files: any, peakfile: any, libtype?: any, ms1ppm?: any, export_dir?: any, debug?: any): object;
+   /**
+     * @param mzdiff default value Is ``0.01``.
+     * @param rt_win default value Is ``15``.
+   */
+   function peak_alignment(metadna: any, peaktable: any, mzdiff?: any, rt_win?: any): object;
    /**
      * @param cache_enable default value Is ``true``.
    */
