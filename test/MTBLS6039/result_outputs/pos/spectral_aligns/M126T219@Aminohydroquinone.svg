@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMaxYMax" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect x="0" y="0" width="1200" height="800" style="fill: #FFFFFF" />
+  <line x1="216.96485900878906" x2="216.96485900878906" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />
+  <line x1="365.312255859375" x2="365.312255859375" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />
+  <line x1="513.6596069335938" x2="513.6596069335938" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />
+  <line x1="662.0070190429688" x2="662.0070190429688" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />
+  <line x1="810.3543701171875" x2="810.3543701171875" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />
+  <line x1="958.7017822265625" x2="958.7017822265625" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />
+  <line x1="1107.0491943359375" x2="1107.0491943359375" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />
+  <line x1="1255.396484375" x2="1255.396484375" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />
+  <line x1="100" x2="85" y1="425" y2="425" style="stroke: #000000; stroke-width: 1; stroke-dash: solid;" />
+  <line x1="100" x2="1170" y1="425" y2="425" style="stroke: #E6E6E6; stroke-width: 2; stroke-dash: solid;" />
+  <text x="60.48810577392578" y="429.4949951171875" style="font-style: normal;font-size: 12.5px;font-family: Microsoft YaHei;color: black;fill: #000000;">0%</text>
+  <line x1="100" x2="85" y1="360" y2="360" style="stroke: #000000; stroke-width: 1; stroke-dash: solid;" />
+  <line x1="100" x2="1170" y1="360" y2="360" style="stroke: #E6E6E6; stroke-width: 2; stroke-dash: solid;" />
+  <text x="52.501834869384766" y="364.4949951171875" style="font-style: normal;font-size: 12.5px;font-family: Microsoft YaHei;color: black;fill: #000000;">20%</text>
+  <line x1="100" x2="85" y1="490" y2="490" style="stroke: #000000; stroke-width: 1; stroke-dash: solid;" />
+  <line x1="100" x2="1170" y1="490" y2="490" style="stroke: #E6E6E6; stroke-width: 2; stroke-dash: solid;" />
+  <text x="52.501834869384766" y="494.4949951171875" style="font-style: normal;font-size: 12.5px;font-family: Microsoft YaHei;color: black;fill: #000000;">20%</text>
+  <line x1="100" x2="85" y1="295" y2="295" style="stroke: #000000; stroke-width: 1; stroke-dash: solid;" />
+  <line x1="100" x2="1170" y1="295" y2="295" style="stroke: #E6E6E6; stroke-width: 2; stroke-dash: solid;" />
+  <text x="52.501834869384766" y="299.4949951171875" style="font-style: normal;font-size: 12.5px;font-family: Microsoft YaHei;color: black;fill: #000000;">40%</text>
+  <line x1="100" x2="85" y1="555" y2="555" style="stroke: #000000; stroke-width: 1; stroke-dash: solid;" />
+  <line x1="100" x2="1170" y1="555" y2="555" style="stroke: #E6E6E6; stroke-width: 2; stroke-dash: solid;" />
+  <text x="52.501834869384766" y="559.4949951171875" style="font-style: normal;font-size: 12.5px;font-family: Microsoft YaHei;color: black;fill: #000000;">40%</text>
+  <line x1="100" x2="85" y1="230" y2="230" style="stroke: #000000; stroke-width: 1; stroke-dash: solid;" />
+  <line x1="100" x2="1170" y1="230" y2="230" style="stroke: #E6E6E6; stroke-width: 2; stroke-dash: solid;" />
+  <text x="52.501834869384766" y="234.49501037597656" style="font-style: normal;font-size: 12.5px;font-family: Microsoft YaHei;color: black;fill: #000000;">60%</text>
+  <line x1="100" x2="85" y1="620" y2="620" style="stroke: #000000; stroke-width: 1; stroke-dash: solid;" />
+  <line x1="100" x2="1170" y1="620" y2="620" style="stroke: #E6E6E6; stroke-width: 2; stroke-dash: solid;" />
+  <text x="52.501834869384766" y="624.4949951171875" style="font-style: normal;font-size: 12.5px;font-family: Microsoft YaHei;color: black;fill: #000000;">60%</text>
+  <line x1="100" x2="85" y1="165" y2="165" style="stroke: #000000; stroke-width: 1; stroke-dash: solid;" />
+  <line x1="100" x2="1170" y1="165" y2="165" style="stroke: #E6E6E6; stroke-width: 2; stroke-dash: solid;" />
+  <text x="52.501834869384766" y="169.49501037597656" style="font-style: normal;font-size: 12.5px;font-family: Microsoft YaHei;color: black;fill: #000000;">80%</text>
+  <line x1="100" x2="85" y1="685" y2="685" style="stroke: #000000; stroke-width: 1; stroke-dash: solid;" />
+  <line x1="100" x2="1170" y1="685" y2="685" style="stroke: #E6E6E6; stroke-width: 2; stroke-dash: solid;" />
+  <text x="52.501834869384766" y="689.4949951171875" style="font-style: normal;font-size: 12.5px;font-family: Microsoft YaHei;color: black;fill: #000000;">80%</text>
+  <line x1="100" x2="85" y1="100" y2="100" style="stroke: #000000; stroke-width: 1; stroke-dash: solid;" />
+  <line x1="100" x2="1170" y1="100" y2="100" style="stroke: #E6E6E6; stroke-width: 2; stroke-dash: solid;" />
+  <text x="44.515560150146484" y="104.49500274658203" style="font-style: normal;font-size: 12.5px;font-family: Microsoft YaHei;color: black;fill: #000000;">100%</text>
+  <line x1="100" x2="85" y1="750" y2="750" style="stroke: #000000; stroke-width: 1; stroke-dash: solid;" />
+  <line x1="100" x2="1170" y1="750" y2="750" style="stroke: #E6E6E6; stroke-width: 2; stroke-dash: solid;" />
+  <text x="44.515560150146484" y="754.4949951171875" style="font-style: normal;font-size: 12.5px;font-family: Microsoft YaHei;color: black;fill: #000000;">100%</text>
+  <line x1="100" x2="100" y1="100" y2="750" style="stroke: #000000; stroke-width: 2; stroke-dash: solid;" />
+  <text x="50.003662109375" y="502.3986511230469" style="font-style: strong;font-weight:bold;font-size: 12.5px;font-family: Microsoft YaHei;color: black;fill: #000000;transform-origin: 50.003662px 502.39865px;" transform="rotate(-90)">Relative Intensity(%)</text>
+  <line x1="100" x2="1170" y1="425" y2="425" style="stroke: #000000; stroke-width: 2; stroke-dash: solid;" />
+  <text x="1099.7076416015625" y="443.0535888671875" style="font-style: strong;font-weight:bold;font-size: 12.5px;font-family: Microsoft YaHei;color: black;fill: #000000;">M/Z ratio</text>
+  <rect x="168" y="407" width="2" height="18" style="fill: #008000" />
+  <rect x="326" y="403" width="2" height="22" style="fill: #008000" />
+  <rect x="415" y="382" width="2" height="43" style="fill: #008000" />
+  <rect x="425" y="404" width="2" height="21" style="fill: #008000" />
+  <rect x="464" y="218" width="2" height="207" style="fill: #008000" />
+  <rect x="583" y="154" width="2" height="271" style="fill: #008000" />
+  <rect x="593" y="404" width="2" height="21" style="fill: #008000" />
+  <rect x="603" y="396" width="2" height="29" style="fill: #008000" />
+  <rect x="642" y="347" width="2" height="78" style="fill: #008000" />
+  <rect x="692" y="396" width="2" height="29" style="fill: #008000" />
+  <rect x="702" y="405" width="2" height="20" style="fill: #008000" />
+  <rect x="811" y="400" width="2" height="25" style="fill: #008000" />
+  <rect x="820" y="376" width="2" height="49" style="fill: #008000" />
+  <rect x="861" y="394" width="2" height="31" style="fill: #008000" />
+  <rect x="870" y="334" width="2" height="91" style="fill: #008000" />
+  <rect x="880" y="100" width="2" height="325" style="fill: #008000" />
+  <rect x="326" y="425" width="2" height="25" style="fill: #0000FF" />
+  <rect x="415" y="425" width="2" height="42" style="fill: #0000FF" />
+  <rect x="425" y="425" width="2" height="23" style="fill: #0000FF" />
+  <rect x="464" y="425" width="2" height="153" style="fill: #0000FF" />
+  <rect x="583" y="425" width="2" height="325" style="fill: #0000FF" />
+  <rect x="593" y="425" width="2" height="17" style="fill: #0000FF" />
+  <rect x="603" y="425" width="2" height="28" style="fill: #0000FF" />
+  <rect x="642" y="425" width="2" height="60" style="fill: #0000FF" />
+  <rect x="692" y="425" width="2" height="23" style="fill: #0000FF" />
+  <rect x="811" y="425" width="2" height="20" style="fill: #0000FF" />
+  <rect x="820" y="425" width="2" height="49" style="fill: #0000FF" />
+  <rect x="861" y="425" width="2" height="25" style="fill: #0000FF" />
+  <rect x="870" y="425" width="2" height="94" style="fill: #0000FF" />
+  <rect x="880" y="425" width="2" height="316" style="fill: #0000FF" />
+  <rect x="998" y="425" width="2" height="17" style="fill: #0000FF" />
+  <text x="444.5163269042969" y="210.5773162841797" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">84.9603</text>
+  <text x="563.6669311523438" y="147.3715057373047" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">97.0081</text>
+  <text x="619.7367553710938" y="339.4634094238281" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">102.9707</text>
+  <text x="847.5726318359375" y="327.2733459472656" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">126.0081</text>
+  <text x="857.76904296875" y="92.88628387451172" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">127.0391</text>
+  <text x="444.6984558105469" y="597.1675415039062" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">84.9603</text>
+  <text x="563.6984252929688" y="769.1675415039062" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">97.0081</text>
+  <text x="847.7991943359375" y="538.1675415039062" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">126.0081</text>
+  <text x="857.7991943359375" y="760.1675415039062" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">127.0391</text>
+  <text x="383.845458984375" y="62.755645751953125" style="font-style: normal;font-size: 25px;font-family: Microsoft YaHei;color: black;fill: #000000;">Aminohydroquinone [M+H]+ 126.0553@3.6min</text>
+</svg>
