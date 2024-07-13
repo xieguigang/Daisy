@@ -26,7 +26,10 @@ const export_report = function(files, export_dir) {
                 legend_layout = "none",
                 bar_width = 2,
                 color1 = "green",
-                color2 = "blue"
+                color2 = "blue",
+                label_into = 0.2,
+                label_mz = "F4",
+                grid_x = TRUE
             );
         }
     }
