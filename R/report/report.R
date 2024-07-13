@@ -9,6 +9,8 @@ const export_report = function(files, export_dir) {
     }
 
     result[, "mz"] = round(result$mz, 4);
+    result[, "rank"] = rank_score(result);
+    result = report_unique(result);
 
     # make unique
     write.csv(result, 
