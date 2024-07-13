@@ -53,8 +53,8 @@ const peak_alignment = function(metadna, peaktable, mzdiff = 0.01, rt_win = 15) 
             hit_result = as.list(hit);
             hit_result$xcms_id = [peak]::ID;
             hit_result$mz = [peak]::mz;
-            hit$result$rt = [peak]::rt;
-            alignments[[`${id}-${hit$query_id}`]] = hit_result;
+            hit_result$rt = [peak]::rt;
+            alignments[[`${hit_result$xcms_id}-${hit$query_id}`]] = hit_result;
         }
     }
 
