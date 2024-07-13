@@ -1,6 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMaxYMax" width="1200" height="800" viewBox="0 0 1200 800">
   <rect x="0" y="0" width="1200" height="800" style="fill: #FFFFFF" />
-  <line x1="52.842777252197266" x2="52.842777252197266" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />
   <line x1="204.23843383789062" x2="204.23843383789062" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />
   <line x1="355.63409423828125" x2="355.63409423828125" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />
   <line x1="507.02972412109375" x2="507.02972412109375" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />
@@ -73,5 +72,5 @@
   <text x="515.7991943359375" y="593.1675415039062" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">123.0437</text>
   <text x="646.7991943359375" y="769.1675415039062" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">136.0753</text>
   <text x="939.7991943359375" y="560.1675415039062" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">165.0541</text>
-  <text x="401.3582763671875" y="62.755645751953125" style="font-style: normal;font-size: 25px;font-family: Microsoft YaHei;color: black;fill: #000000;">4-Coumarate [M+NH4]+ 182.08066@0.9min</text>
+  <text x="407.6667785644531" y="62.755645751953125" style="font-style: normal;font-size: 25px;font-family: Microsoft YaHei;color: black;fill: #000000;">4-Coumarate [M+NH4]+ 182.0807@0.9min</text>
 </svg>

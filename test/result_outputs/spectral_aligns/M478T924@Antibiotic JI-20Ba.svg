@@ -1,6 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMaxYMax" width="1200" height="800" viewBox="0 0 1200 800">
   <rect x="0" y="0" width="1200" height="800" style="fill: #FFFFFF" />
-  <line x1="90.50598907470703" x2="90.50598907470703" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />
   <line x1="200.8373565673828" x2="200.8373565673828" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />
   <line x1="311.168701171875" x2="311.168701171875" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />
   <line x1="421.5000915527344" x2="421.5000915527344" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />

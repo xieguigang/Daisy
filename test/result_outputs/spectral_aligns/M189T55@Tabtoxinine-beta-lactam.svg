@@ -1,6 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMaxYMax" width="1200" height="800" viewBox="0 0 1200 800">
   <rect x="0" y="0" width="1200" height="800" style="fill: #FFFFFF" />
-  <line x1="40.88154220581055" x2="40.88154220581055" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />
   <line x1="171.6254119873047" x2="171.6254119873047" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />
   <line x1="302.3692932128906" x2="302.3692932128906" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />
   <line x1="433.1131591796875" x2="433.1131591796875" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />
@@ -47,17 +46,20 @@
   <text x="50.003662109375" y="502.3986511230469" style="font-style: strong;font-weight:bold;font-size: 12.5px;font-family: Microsoft YaHei;color: black;fill: #000000;transform-origin: 50.003662px 502.39865px;" transform="rotate(-90)">Relative Intensity(%)</text>
   <line x1="100" x2="1170" y1="425" y2="425" style="stroke: #000000; stroke-width: 2; stroke-dash: solid;" />
   <text x="1099.7076416015625" y="443.0535888671875" style="font-style: strong;font-weight:bold;font-size: 12.5px;font-family: Microsoft YaHei;color: black;fill: #000000;">M/Z ratio</text>
-  <rect x="146" y="379" width="2" height="46" style="fill: #008000" />
+  <rect x="146" y="371" width="2" height="54" style="fill: #008000" />
+  <rect x="159" y="407" width="2" height="18" style="fill: #008000" />
   <rect x="447" y="100" width="2" height="325" style="fill: #008000" />
-  <rect x="715" y="402" width="2" height="23" style="fill: #008000" />
-  <rect x="1002" y="406" width="2" height="19" style="fill: #008000" />
-  <rect x="1015" y="364" width="2" height="61" style="fill: #008000" />
+  <rect x="643" y="405" width="2" height="20" style="fill: #008000" />
+  <rect x="715" y="393" width="2" height="32" style="fill: #008000" />
+  <rect x="1002" y="398" width="2" height="27" style="fill: #008000" />
+  <rect x="1015" y="368" width="2" height="57" style="fill: #008000" />
   <rect x="146" y="425" width="2" height="51" style="fill: #0000FF" />
+  <rect x="159" y="425" width="2" height="18" style="fill: #0000FF" />
   <rect x="447" y="425" width="2" height="325" style="fill: #0000FF" />
-  <rect x="715" y="425" width="2" height="24" style="fill: #0000FF" />
-  <rect x="1002" y="425" width="2" height="25" style="fill: #0000FF" />
-  <rect x="1015" y="425" width="2" height="56" style="fill: #0000FF" />
+  <rect x="715" y="425" width="2" height="20" style="fill: #0000FF" />
+  <rect x="1002" y="425" width="2" height="33" style="fill: #0000FF" />
+  <rect x="1015" y="425" width="2" height="61" style="fill: #0000FF" />
   <text x="424.3443298339844" y="92.88628387451172" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">102.0547</text>
   <text x="424.7991943359375" y="769.1675415039062" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">102.0547</text>
-  <text x="357.3875732421875" y="62.755645751953125" style="font-style: normal;font-size: 25px;font-family: Microsoft YaHei;color: black;fill: #000000;">Tabtoxinine-beta-lactam [M+H]+ 189.08628@0.9min</text>
+  <text x="363.696044921875" y="62.755645751953125" style="font-style: normal;font-size: 25px;font-family: Microsoft YaHei;color: black;fill: #000000;">Tabtoxinine-beta-lactam [M+H]+ 189.0863@0.9min</text>
 </svg>

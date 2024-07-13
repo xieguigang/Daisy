@@ -1,6 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMaxYMax" width="1200" height="800" viewBox="0 0 1200 800">
   <rect x="0" y="0" width="1200" height="800" style="fill: #FFFFFF" />
-  <line x1="21.9217586517334" x2="21.9217586517334" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />
   <line x1="153.7913055419922" x2="153.7913055419922" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />
   <line x1="285.66082763671875" x2="285.66082763671875" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />
   <line x1="417.5303955078125" x2="417.5303955078125" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />
@@ -70,5 +69,5 @@
   <text x="1002.92822265625" y="337.37872314453125" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">430.3787</text>
   <text x="302.7991943359375" y="769.1675415039062" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">165.0906</text>
   <text x="1002.7991943359375" y="552.1675415039062" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">430.3787</text>
-  <text x="139.13037109375" y="62.755645751953125" style="font-style: normal;font-size: 25px;font-family: Microsoft YaHei;color: black;fill: #000000;">4alpha-Hydroxymethyl-4beta-methyl-5alpha-cholest-7-en-3beta-ol [M]+ 430.381875@18.6min</text>
+  <text x="151.74734497070312" y="62.755645751953125" style="font-style: normal;font-size: 25px;font-family: Microsoft YaHei;color: black;fill: #000000;">4alpha-Hydroxymethyl-4beta-methyl-5alpha-cholest-7-en-3beta-ol [M]+ 430.3819@18.6min</text>
 </svg>

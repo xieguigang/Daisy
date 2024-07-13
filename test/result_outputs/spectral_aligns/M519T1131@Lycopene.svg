@@ -1,6 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMaxYMax" width="1200" height="800" viewBox="0 0 1200 800">
   <rect x="0" y="0" width="1200" height="800" style="fill: #FFFFFF" />
-  <line x1="-30.835798263549805" x2="-30.835798263549805" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />
   <line x1="122.6892318725586" x2="122.6892318725586" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />
   <line x1="276.2142639160156" x2="276.2142639160156" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />
   <line x1="429.7392883300781" x2="429.7392883300781" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />
@@ -46,25 +45,25 @@
   <text x="50.003662109375" y="502.3986511230469" style="font-style: strong;font-weight:bold;font-size: 12.5px;font-family: Microsoft YaHei;color: black;fill: #000000;transform-origin: 50.003662px 502.39865px;" transform="rotate(-90)">Relative Intensity(%)</text>
   <line x1="100" x2="1170" y1="425" y2="425" style="stroke: #000000; stroke-width: 2; stroke-dash: solid;" />
   <text x="1099.7076416015625" y="443.0535888671875" style="font-style: strong;font-weight:bold;font-size: 12.5px;font-family: Microsoft YaHei;color: black;fill: #000000;">M/Z ratio</text>
-  <rect x="119" y="393" width="2" height="32" style="fill: #008000" />
-  <rect x="155" y="407" width="2" height="18" style="fill: #008000" />
-  <rect x="182" y="406" width="2" height="19" style="fill: #008000" />
-  <rect x="274" y="402" width="2" height="23" style="fill: #008000" />
-  <rect x="544" y="396" width="2" height="29" style="fill: #008000" />
-  <rect x="581" y="393" width="2" height="32" style="fill: #008000" />
+  <rect x="119" y="392" width="2" height="33" style="fill: #008000" />
+  <rect x="155" y="395" width="2" height="30" style="fill: #008000" />
+  <rect x="182" y="403" width="2" height="22" style="fill: #008000" />
+  <rect x="274" y="407" width="2" height="18" style="fill: #008000" />
+  <rect x="544" y="406" width="2" height="19" style="fill: #008000" />
+  <rect x="581" y="392" width="2" height="33" style="fill: #008000" />
   <rect x="1032" y="100" width="2" height="325" style="fill: #008000" />
   <rect x="1035" y="317" width="2" height="108" style="fill: #008000" />
-  <rect x="1037" y="406" width="2" height="19" style="fill: #008000" />
-  <rect x="119" y="425" width="2" height="33" style="fill: #0000FF" />
-  <rect x="155" y="425" width="2" height="30" style="fill: #0000FF" />
-  <rect x="182" y="425" width="2" height="22" style="fill: #0000FF" />
-  <rect x="274" y="425" width="2" height="18" style="fill: #0000FF" />
-  <rect x="544" y="425" width="2" height="19" style="fill: #0000FF" />
-  <rect x="581" y="425" width="2" height="33" style="fill: #0000FF" />
+  <rect x="119" y="425" width="2" height="32" style="fill: #0000FF" />
+  <rect x="155" y="425" width="2" height="18" style="fill: #0000FF" />
+  <rect x="182" y="425" width="2" height="19" style="fill: #0000FF" />
+  <rect x="274" y="425" width="2" height="23" style="fill: #0000FF" />
+  <rect x="544" y="425" width="2" height="29" style="fill: #0000FF" />
+  <rect x="581" y="425" width="2" height="32" style="fill: #0000FF" />
   <rect x="1032" y="425" width="2" height="325" style="fill: #0000FF" />
   <rect x="1035" y="425" width="2" height="108" style="fill: #0000FF" />
+  <rect x="1037" y="425" width="2" height="19" style="fill: #0000FF" />
   <text x="1010.2510986328125" y="92.88628387451172" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">519.4370</text>
-  <text x="1012.30517578125" y="310.0382385253906" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">520.4404</text>
+  <text x="1012.30517578125" y="309.8447265625" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">520.4404</text>
   <text x="1009.7991943359375" y="769.1675415039062" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">519.4370</text>
   <text x="1012.7991943359375" y="552.1675415039062" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">520.4404</text>
   <text x="407.01910400390625" y="62.755645751953125" style="font-style: normal;font-size: 25px;font-family: Microsoft YaHei;color: black;fill: #000000;">Lycopene [M+H-H2O]+ 519.4418@18.8min</text>
