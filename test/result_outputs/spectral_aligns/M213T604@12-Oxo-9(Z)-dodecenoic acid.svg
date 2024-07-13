@@ -1,5 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMaxYMax" width="1200" height="800" viewBox="0 0 1200 800">
   <rect x="0" y="0" width="1200" height="800" style="fill: #FFFFFF" />
+  <line x1="-27.928375244140625" x2="-27.928375244140625" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />
+  <line x1="110.09004211425781" x2="110.09004211425781" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />
+  <line x1="248.10845947265625" x2="248.10845947265625" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />
+  <line x1="386.12689208984375" x2="386.12689208984375" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />
+  <line x1="524.1453247070312" x2="524.1453247070312" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />
+  <line x1="662.1636962890625" x2="662.1636962890625" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />
+  <line x1="800.18212890625" x2="800.18212890625" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />
+  <line x1="938.2005615234375" x2="938.2005615234375" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />
+  <line x1="1076.218994140625" x2="1076.218994140625" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />
+  <line x1="1214.2374267578125" x2="1214.2374267578125" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />
   <line x1="100" x2="85" y1="425" y2="425" style="stroke: #000000; stroke-width: 1; stroke-dash: solid;" />
   <line x1="100" x2="1170" y1="425" y2="425" style="stroke: #E6E6E6; stroke-width: 2; stroke-dash: solid;" />
   <text x="60.48810577392578" y="429.4949951171875" style="font-style: normal;font-size: 12.5px;font-family: Microsoft YaHei;color: black;fill: #000000;">0%</text>
@@ -58,8 +68,11 @@
   <rect x="580" y="425" width="2" height="17" style="fill: #0000FF" />
   <rect x="1011" y="425" width="2" height="104" style="fill: #0000FF" />
   <rect x="1022" y="425" width="2" height="325" style="fill: #0000FF" />
-  <text x="994.369384765625" y="92.88628387451172" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">213.15</text>
-  <text x="1005.1591186523438" y="136.42327880859375" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">215.10</text>
-  <text x="1005.59765625" y="769.1675415039062" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">215.10</text>
+  <text x="339.6920166015625" y="330.7997741699219" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">95.0852</text>
+  <text x="988.5709228515625" y="92.88628387451172" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">213.1452</text>
+  <text x="999.3606567382812" y="136.42327880859375" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">215.0996</text>
+  <text x="195.69845581054688" y="509.16754150390625" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">69.0698</text>
+  <text x="988.7991943359375" y="548.1675415039062" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">213.1452</text>
+  <text x="999.7991943359375" y="769.1675415039062" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">215.0996</text>
   <text x="275.453857421875" y="62.755645751953125" style="font-style: normal;font-size: 25px;font-family: Microsoft YaHei;color: black;fill: #000000;">12-Oxo-9(Z)-dodecenoic acid [M+H]+ 213.1453690909092@10.1min</text>
 </svg>

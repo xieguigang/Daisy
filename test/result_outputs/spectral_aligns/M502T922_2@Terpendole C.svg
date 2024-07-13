@@ -1,5 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMaxYMax" width="1200" height="800" viewBox="0 0 1200 800">
   <rect x="0" y="0" width="1200" height="800" style="fill: #FFFFFF" />
+  <line x1="-3.0448787212371826" x2="-3.0448787212371826" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />
+  <line x1="151.71975708007812" x2="151.71975708007812" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />
+  <line x1="306.4844055175781" x2="306.4844055175781" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />
+  <line x1="461.2490539550781" x2="461.2490539550781" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />
+  <line x1="616.013671875" x2="616.013671875" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />
+  <line x1="770.7783203125" x2="770.7783203125" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />
+  <line x1="925.54296875" x2="925.54296875" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />
+  <line x1="1080.3076171875" x2="1080.3076171875" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />
+  <line x1="1235.072265625" x2="1235.072265625" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />
   <line x1="100" x2="85" y1="425" y2="425" style="stroke: #000000; stroke-width: 1; stroke-dash: solid;" />
   <line x1="100" x2="1170" y1="425" y2="425" style="stroke: #E6E6E6; stroke-width: 2; stroke-dash: solid;" />
   <text x="60.48810577392578" y="429.4949951171875" style="font-style: normal;font-size: 12.5px;font-family: Microsoft YaHei;color: black;fill: #000000;">0%</text>
@@ -80,9 +89,20 @@
   <rect x="918" y="425" width="2" height="28" style="fill: #0000FF" />
   <rect x="1038" y="425" width="2" height="257" style="fill: #0000FF" />
   <rect x="1040" y="425" width="2" height="61" style="fill: #0000FF" />
-  <text x="195.37997436523438" y="92.88628387451172" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">104.11</text>
-  <text x="1021.1990966796875" y="106.71233367919922" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">504.30</text>
-  <text x="195.5977020263672" y="769.1675415039062" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">104.11</text>
-  <text x="1021.59765625" y="701.1675415039062" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">504.30</text>
+  <text x="155.3155517578125" y="335.161376953125" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">86.0962</text>
+  <text x="165.54611206054688" y="334.1092529296875" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">91.0540</text>
+  <text x="189.5814666748047" y="92.88628387451172" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">104.1067</text>
+  <text x="249.41162109375" y="260.9483642578125" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">133.1008</text>
+  <text x="278.0544128417969" y="332.0992736816406" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">146.9813</text>
+  <text x="720.2506713867188" y="256.80950927734375" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">361.2726</text>
+  <text x="893.50244140625" y="262.8695373535156" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">445.2316</text>
+  <text x="974.0823974609375" y="316.5876770019531" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">484.2812</text>
+  <text x="1011.246337890625" y="271.12652587890625" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">502.2911</text>
+  <text x="1015.400634765625" y="106.71233367919922" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">504.3043</text>
+  <text x="155.69845581054688" y="518.1675415039062" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">86.0962</text>
+  <text x="189.7991943359375" y="769.1675415039062" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">104.1067</text>
+  <text x="277.7991943359375" y="519.1675415039062" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">146.9813</text>
+  <text x="893.7991943359375" y="561.1675415039062" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">445.2316</text>
+  <text x="1015.7991943359375" y="701.1675415039062" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">504.3043</text>
   <text x="387.13995361328125" y="62.755645751953125" style="font-style: normal;font-size: 25px;font-family: Microsoft YaHei;color: black;fill: #000000;">Terpendole C [M+H-H2O]+ 502.2917@15.4min</text>
 </svg>

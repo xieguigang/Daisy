@@ -1,5 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMaxYMax" width="1200" height="800" viewBox="0 0 1200 800">
   <rect x="0" y="0" width="1200" height="800" style="fill: #FFFFFF" />
+  <line x1="67.0718994140625" x2="67.0718994140625" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />
+  <line x1="212.6840057373047" x2="212.6840057373047" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />
+  <line x1="358.2961120605469" x2="358.2961120605469" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />
+  <line x1="503.908203125" x2="503.908203125" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />
+  <line x1="649.5203247070312" x2="649.5203247070312" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />
+  <line x1="795.1323852539062" x2="795.1323852539062" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />
+  <line x1="940.7445068359375" x2="940.7445068359375" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />
+  <line x1="1086.3565673828125" x2="1086.3565673828125" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />
+  <line x1="1231.96875" x2="1231.96875" y1="100" y2="750" style="stroke: #D3D3D3; stroke-width: 2; stroke-dash: dash;" stroke-dasharray="8 4" />
   <line x1="100" x2="85" y1="425" y2="425" style="stroke: #000000; stroke-width: 1; stroke-dash: solid;" />
   <line x1="100" x2="1170" y1="425" y2="425" style="stroke: #E6E6E6; stroke-width: 2; stroke-dash: solid;" />
   <text x="60.48810577392578" y="429.4949951171875" style="font-style: normal;font-size: 12.5px;font-family: Microsoft YaHei;color: black;fill: #000000;">0%</text>
@@ -54,9 +63,11 @@
   <rect x="938" y="425" width="2" height="73" style="fill: #0000FF" />
   <rect x="1028" y="425" width="2" height="199" style="fill: #0000FF" />
   <rect x="1031" y="425" width="2" height="41" style="fill: #0000FF" />
-  <text x="575.0149536132812" y="92.88628387451172" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">230.05</text>
-  <text x="971.1372680664062" y="184.14564514160156" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">366.07</text>
-  <text x="574.59765625" y="769.1675415039062" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">230.05</text>
-  <text x="1011.59765625" y="643.1675415039062" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">380.08</text>
+  <text x="569.2164916992188" y="92.88628387451172" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">230.0487</text>
+  <text x="875.0059814453125" y="330.9711608886719" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">335.0501</text>
+  <text x="965.3388061523438" y="184.14564514160156" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">366.0684</text>
+  <text x="568.7991943359375" y="769.1675415039062" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">230.0487</text>
+  <text x="915.7991943359375" y="517.1675415039062" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">349.0649</text>
+  <text x="1005.7991943359375" y="643.1675415039062" style="font-style: normal;font-size: 12.5px;font-family: Segoe UI;color: black;fill: #000000;">380.0832</text>
   <text x="346.59124755859375" y="62.755645751953125" style="font-style: normal;font-size: 25px;font-family: Microsoft YaHei;color: black;fill: #000000;">Tetracenomycin F1 [M]+ 366.07096666666666@6.6min</text>
 </svg>
