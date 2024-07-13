@@ -24,6 +24,8 @@ const make_annotation = function(files, peakfile, libtype = [1,-1], ms1ppm = 15,
             dasy_task(file, as.list(workflow));
         }
     } else {
-
+        stop("not implements!");
     }
+
+    export_report(files, export_dir);
 }

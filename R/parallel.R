@@ -23,6 +23,8 @@ const dasy_task = function(file, args) {
 
     let result = rbind(dda_result, metadna_result);
 
+    result[, "rawfile"] = args$filename; 
+
     write.csv(result, file = file.path(args$export_dir, "result.csv"), 
         row.names = FALSE);
 }
