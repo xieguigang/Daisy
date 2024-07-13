@@ -1,6 +1,7 @@
 const export_report = function(files, export_dir) {
     let names = basename(files);
     let result = NULL;
+    let visual_dir = file.path(export_dir, "spectral_aligns");
 
     for(let file in `${export_dir}/${names}/result.csv`) {
         file = read.csv(file, row.names = NULL, check.names = FALSE);
@@ -13,5 +14,17 @@ const export_report = function(files, export_dir) {
         row.names = FALSE);
 
     # plot visual of the spectrum alignment
+    for(let hit in as.list(result, byrow = TRUE)) {
+        svg(filename = file.path(visual_dir, `${hit$xcms_id}@${normalizeFileName(hit$name, 
+                                    alphabetOnly = FALSE, 
+                                    replacement = "_", 
+                                    shrink = TRUE,
+                                    maxchars = 64)}.svg`)) {
 
+            parse.spectrum_alignment(hit$alignment) |> plot(
+                title = `${hit$name} ${hit$precursorType} ${hit$mz}@${round(hit$rt/60,1)}min`,
+                legend_layout = "none"
+            );
+        }
+    }
 }
