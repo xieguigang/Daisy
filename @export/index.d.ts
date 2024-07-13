@@ -37,7 +37,16 @@ declare namespace Daisy {
    */
    function peak_alignment(metadna: any, peaktable: any, mzdiff?: any, rt_win?: any): object;
    /**
+   */
+   function rank_score(result: any): object;
+   /**
      * @param cache_enable default value Is ``true``.
    */
    function read_rawfile(file: any, cache_enable?: any): object;
+   /**
+   */
+   function report_unique(result: any): object;
+   /**
+   */
+   function tabular(result: any): object;
 }
