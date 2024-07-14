@@ -49,4 +49,7 @@ declare namespace Daisy {
    /**
    */
    function tabular(result: any): object;
+   /**
+   */
+   function union_posneg(pos: any, neg: any): object;
 }
