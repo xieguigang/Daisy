@@ -4,6 +4,8 @@ imports ["assembly", "data", "math"] from "mzkit";
 
 #' run metadna algorithm
 #' 
+#' @param peaks_ms2 a collection of the spectrum in ms2 level
+#' 
 const call_metadna = function(peaks_ms2, libtype = [1,-1], ms1ppm = 15, output = "./") {
     options(verbose = TRUE);
 

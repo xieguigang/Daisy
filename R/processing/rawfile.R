@@ -1,3 +1,5 @@
+#' rawdata file processor
+#' 
 const read_rawfile = function(file, cache_enable = TRUE) {
     let cache_file = file.path(dirname(file), `${basename(file)}.cache`);
 
