@@ -6,7 +6,7 @@ const report_unique = function(result) {
     result = result |> groupBy("name");
     result = lapply(result, function(ions) {
         let files = length(unique(ions$rawfile));
-        ions = ions[order(ions$rank, decreasing = TRUE), ];
+        ions = ions[order(as.numeric(ions$rank), decreasing = TRUE), ];
         ions[, "supports"] = files;
         ions[1,,drop = TRUE];
     });
@@ -22,32 +22,6 @@ const report_unique = function(result) {
     });
 
     tabular(result);
-}
-
-const tabular = function(result) {
-    data.frame(
-        xcms_id	= result@xcms_id,
-        mz = result@mz,
-        rt = result@rt,
-        intensity = result@intensity,
-        KEGG = result@KEGG,
-        exactMass = result@exactMass,
-        formula = result@formula,
-        name = result@name,
-        precursorType = result@precursorType,
-        mzCalc = result@mzCalc,
-        ppm = result@ppm,
-        forward = result@forward,
-        reverse = result@reverse,
-        jaccard = result@jaccard,
-        entropy = result@entropy,
-        pvalue = result@pvalue,
-        rank = result@rank,
-        rawfile = result@rawfile,
-        supports = result@supports,
-        alignment = result@alignment,
-        row.names = result@xcms_id
-    );
 }
 
 const rank_score = function(result) {
