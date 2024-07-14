@@ -22,6 +22,9 @@ declare namespace Daisy {
    */
    function export_report(files: any, export_dir?: any): object;
    /**
+   */
+   function formula_annotation(): object;
+   /**
      * @param ionMode default value Is ``[1, -1]``.
    */
    function get_adducts(ionMode?: any): object;
