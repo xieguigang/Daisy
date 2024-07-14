@@ -24,7 +24,7 @@ const export_report = function(files, export_dir = "./") {
 
 #' plot visual of the spectrum alignment
 #' 
-export make_msms_plot = function(result, visual_dir = "./") {
+const make_msms_plot = function(result, visual_dir = "./") {
     for(let hit in as.list(result, byrow = TRUE)) {
         svg(file = file.path(visual_dir, `${hit$xcms_id}@${normalizeFileName(hit$name, 
                                     alphabetOnly = FALSE, 
