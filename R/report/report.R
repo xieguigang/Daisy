@@ -1,4 +1,4 @@
-const export_report = function(files, export_dir) {
+const export_report = function(files, export_dir = "./") {
     let names = basename(files);
     let result = NULL;
     let visual_dir = file.path(export_dir, "spectral_aligns");
@@ -10,14 +10,21 @@ const export_report = function(files, export_dir) {
 
     result[, "mz"] = round(result$mz, 4);
     result[, "rank"] = rank_score(result);
-    result = report_unique(result);
 
     # make unique
+    result = report_unique(result);
+    
     write.csv(result, 
         file = file.path(export_dir, "annotation_result.csv"),
         row.names = FALSE);
 
-    # plot visual of the spectrum alignment
+    # make ms/ms alignment plot
+    result |> make_msms_plot(visual_dir);
+}
+
+#' plot visual of the spectrum alignment
+#' 
+export make_msms_plot = function(result, visual_dir = "./") {
     for(let hit in as.list(result, byrow = TRUE)) {
         svg(file = file.path(visual_dir, `${hit$xcms_id}@${normalizeFileName(hit$name, 
                                     alphabetOnly = FALSE, 
@@ -37,4 +44,6 @@ const export_report = function(files, export_dir) {
             );
         }
     }
+
+    invisible(NULL);
 }
