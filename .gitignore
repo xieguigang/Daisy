@@ -399,3 +399,4 @@ FodyWeavers.xsd
 .pkg/Daisy.zip
 data/MoNA/lib.neg.pack
 data/MoNA/lib.pos.pack
+*.zip
