@@ -1,11 +1,30 @@
-﻿.TH FORMULA_ANNOTATION 1 2024-Jul "" "formula_annotation"
+﻿.TH FORMULA_ANNOTATION 1 2024-Jul "" "@param peaks the peaktable object, a mzkit peakSet object model"
 .SH NAME
-formula_annotation \- formula_annotation()
+formula_annotation \- formula_annotation(peaks,
+    <i>ms1ppm</i> = <span style='color: green;'>10</span>,
+    <i>profiles</i> = 'list'('C' = [1, 100], 'H' = [3, 200], 'O' = [0, 50], 'N' = [0, 50], 'S' = [0, 50], 'P' = [0, 50]),
+    <i>mass.range</i> = [<span style='color: green;'>1200</span>])
 .SH SYNOPSIS
-\fIformula_annotation()\fR
+\fIformula_annotation(peaks,
+    <i>ms1ppm</i> = <span style='color: green;'>10</span>,
+    <i>profiles</i> = 'list'('C' = [1, 100], 'H' = [3, 200], 'O' = [0, 50], 'N' = [0, 50], 'S' = [0, 50], 'P' = [0, 50]),
+    <i>mass.range</i> = [<span style='color: green;'>1200</span>])\fR
+.SH OPTIONS
+.PP
+\fBpeaks\fB \fR\- . 
+.PP
+.PP
+\fBms1ppm\fB \fR\- 10. 
+.PP
+.PP
+\fBprofiles\fB \fR\- 'list'('C' = [1, 100], 'H' = [3, 200], 'O' = [0, 50], 'N' = [0, 50], 'S' = [0, 50], 'P' = [0, 50]). 
+.PP
+.PP
+\fBmass.range\fB \fR\- [50, 1200]. 
+.PP
 .SH FILES
 .PP
-SMRUCC/R#.declare_function.formula_annotation at formula.R:line 1
+SMRUCC/R#.declare_function.formula_annotation at formula.R:line 4
 .PP
 .SH COPYRIGHT
 Copyright © xieguigang, MIT Licensed 2024

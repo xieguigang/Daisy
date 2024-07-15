@@ -22,8 +22,11 @@ declare namespace Daisy {
    */
    function export_report(files: any, export_dir?: any): object;
    /**
+     * @param ms1ppm default value Is ``10``.
+     * @param profiles default value Is ``Call "list"("C" <- [1, 100], "H" <- [3, 200], "O" <- [0, 50], "N" <- [0, 50], "S" <- [0, 50], "P" <- [0, 50])``.
+     * @param mass_range default value Is ``[50, 1200]``.
    */
-   function formula_annotation(): object;
+   function formula_annotation(peaks: any, ms1ppm?: any, profiles?: any, mass_range?: any): object;
    /**
      * @param ionMode default value Is ``[1, -1]``.
    */
