@@ -43,6 +43,11 @@ declare namespace Daisy {
    */
    function make_msms_plot(result: any, visual_dir?: any): object;
    /**
+     * @param ms1ppm default value Is ``10``.
+     * @param libtype default value Is ``[1, -1]``.
+   */
+   function ms1_anno(peaks: any, ms1ppm?: any, libtype?: any): object;
+   /**
      * @param mzdiff default value Is ``0.01``.
      * @param rt_win default value Is ``15``.
    */
