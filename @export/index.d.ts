@@ -35,9 +35,10 @@ declare namespace Daisy {
      * @param libtype default value Is ``[1, -1]``.
      * @param ms1ppm default value Is ``15``.
      * @param export_dir default value Is ``./``.
+     * @param n_threads default value Is ``8``.
      * @param debug default value Is ``false``.
    */
-   function make_annotation(files: any, peakfile: any, libtype?: any, ms1ppm?: any, export_dir?: any, debug?: any): object;
+   function make_annotation(files: any, peakfile: any, libtype?: any, ms1ppm?: any, export_dir?: any, n_threads?: any, debug?: any): object;
    /**
      * @param visual_dir default value Is ``./``.
    */
