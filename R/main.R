@@ -8,7 +8,11 @@
 #'   1. open source: mzXML, mzML
 #'   2. panomix mzkit format: mzPack, PeakMs2
 #' 
-const make_annotation = function(files, peakfile, libtype = [1,-1], ms1ppm = 15, export_dir = "./", debug = FALSE) {
+const make_annotation = function(files, peakfile, libtype = [1,-1], ms1ppm = 15, 
+                                 export_dir = "./", 
+                                 n_threads = 8, 
+                                 debug = FALSE) {
+
     let workflow = list(peakfile, libtype, ms1ppm, export_dir);
 
     if (dir.exists(files)) {
@@ -20,11 +24,19 @@ const make_annotation = function(files, peakfile, libtype = [1,-1], ms1ppm = 15,
 
     # run for each rawdata files
     if (debug) {
+        # run in sequantial for debug
         for(let file in files) {
             dasy_task(file, as.list(workflow));
         }
     } else {
-        stop("not implements!");
+        # run in parallel for production
+        parallel(path = files, n_threads = n_threads, 
+                 ignoreError = TRUE) {
+
+            require(Daisy);
+            # processing a single rawdata file
+            Daisy::dasy_task(path, workflow);
+        }
     }
 
     export_report(files, export_dir);
