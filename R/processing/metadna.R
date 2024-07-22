@@ -45,7 +45,7 @@ const peak_alignment = function(metadna, peaktable, mzdiff = 0.01, rt_win = 15) 
     let alignments = list();
     let hit_result = NULL;
 
-    for(let hit in tqdm(as.list(metadna, byrow = TRUE))) {
+    for(let hit in as.list(metadna, byrow = TRUE)) {
         let peaks = peaktable |> find_xcms_ionPeaks(mz  = hit$mz, rt = hit$rt,
             mzdiff = mzdiff,
             rt_win = rt_win); 
