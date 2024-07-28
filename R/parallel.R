@@ -1,3 +1,9 @@
+#' A annotation task for a single rawdata file
+#' 
+#' @param file the file path character vector of the rawdata file, should 
+#'    be in file format of mzkit supported mzXML/mzML/mzPack. 
+#' @param args the workflow arguments for run this annotation.
+#' 
 const dasy_task = function(file, args) {
     args$rawdata = read_rawfile(file, cache_enable = TRUE);
     args$filename = basename(file);
