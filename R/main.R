@@ -3,6 +3,12 @@
 #' @param files the file path to the rawdata files or a directory path that 
 #'    should contains the avaiable mass spectrum data files.
 #' @param peakfile the file path to the xcms peaktable file.
+#' @param libtype the ion polarity mode of the rawdata files, should be an
+#'    integer vector of 1 for positive and -1 for negative raw data.
+#' @param export_dir a character vector of the directory path for output 
+#'    the annotation result files.
+#' @param n_threads the number of the cpu threads for run for the 
+#'    parallel compute.
 #' 
 #' @details the input raw data files could be in data formats of:
 #'   1. open source: mzXML, mzML
