@@ -23,10 +23,24 @@ declare namespace Daisy {
    function export_report(files: any, export_dir?: any): object;
    /**
      * @param ms1ppm default value Is ``10``.
-     * @param profiles default value Is ``Call "list"("C" <- [1, 100], "H" <- [3, 200], "O" <- [0, 50], "N" <- [0, 50], "S" <- [0, 50], "P" <- [0, 50])``.
+     * @param profiles default value Is ``Call "list"("C" <- [1, 100],
+     *       "H" <- [3, 200],
+     *       "O" <- [0, 50],
+     *       "N" <- [0, 50],
+     *       "S" <- [0, 50],
+     *       "P" <- [0, 50])``.
      * @param mass_range default value Is ``[50, 1200]``.
    */
    function formula_annotation(peaks: any, ms1ppm?: any, profiles?: any, mass_range?: any): object;
+   /**
+   */
+   function gcms_mona_msp(mspfile: any): object;
+   /**
+     * @param libtype default value Is ``[1, -1]``.
+     * @param outputdir default value Is ``./``.
+     * @param lib_files default value Is ``Call "system.file"("data/MoNA-export-GC-MS_Spectra.msp", "package" <- "Daisy")``.
+   */
+   function gcms_tof_annotation(raw: any, peaktable: any, libtype?: any, outputdir?: any, lib_files?: any): object;
    /**
      * @param ionMode default value Is ``[1, -1]``.
    */

@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>MS1 annotation of the peaks</title>
+    <title>Run untargetted annotation for gc-ms</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
     <link rel="stylesheet" type="text/css" href="../../_assets/page.css">
@@ -13,12 +13,12 @@
 
         <table style="width: 100%;">
             <tr>
-                <td>ms1_anno {Daisy}</td>
+                <td>gcms_tof_annotation {Daisy}</td>
                 <td style="text-align: right;">R Documentation</td>
             </tr>
         </table>
 
-        <h2>MS1 annotation of the peaks</h2>
+        <h2>Run untargetted annotation for gc-ms</h2>
 
         <h3>Description</h3>
 
@@ -27,18 +27,16 @@
         <h3>Usage</h3>
 
         <div style="width: 100%; padding-left: 3%; color: black;">
-            <pre><code class='language-R' style="color: black; font-weight:normal;"><strong>ms1_anno</strong>(<i>peaks</i>,
-    <i>ms1ppm</i> = <span style='color: green;'>10</span>,
-    <i>libtype</i> = [<span style='color: green;'>-1</span>]);</code></pre>
+            <pre><code class='language-R' style="color: black; font-weight:normal;"><strong>gcms_tof_annotation</strong>(<i>raw</i>, <i>peaktable</i>,
+    <i>libtype</i> = [<span style='color: green;'>-1</span>],
+    <i>outputdir</i> = <span style='color: brown;'><strong>'./'</strong></span>,
+    <i>lib.files</i> = 'system.file'('data/MoNA-export-GC-MS_Spectra.msp', 'package' = 'Daisy'));</code></pre>
         </div>
 
         <h3>Arguments</h3>
 
         <table>
             
-<dt>peaks</dt>
-<dd><p><p>the mzkit peakSet object, ms1 peaks table.</p></p></dd>
-
         </table>
 
 
