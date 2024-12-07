@@ -1,4 +1,6 @@
-#' rawdata file processor
+#' rawdata lc-ms file processor
+#' 
+#' @param file the file path to the lc-ms rawdata file
 #' 
 const read_rawfile = function(file, cache_enable = TRUE) {
     let cache_file = file.path(dirname(file), `${basename(file)}.cache`);
@@ -24,3 +26,14 @@ const read_rawfile = function(file, cache_enable = TRUE) {
         }
     }
 }
+
+#' read gc-ms rawdata files
+#' 
+#' @param peaktable the file path to the peaktable data file
+#' 
+const read_gcmsdata = function(rawfile, peaktable) {
+    let peaksdata = read.xcms_peaks(peaktable,
+        tsv = file.ext(peaktable) == "txt",
+        general_method = FALSE);
+    
+} 
