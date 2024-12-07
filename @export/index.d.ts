@@ -9,6 +9,9 @@ declare namespace Daisy {
       function onLoad(): object;
    }
    /**
+   */
+   function __gcms_annotation(rawfile: any, peaktable: any, argv: any): object;
+   /**
      * @param libtype default value Is ``[1, -1]``.
      * @param ms1ppm default value Is ``15``.
      * @param output default value Is ``./``.
@@ -39,8 +42,10 @@ declare namespace Daisy {
      * @param libtype default value Is ``[1, -1]``.
      * @param outputdir default value Is ``./``.
      * @param lib_files default value Is ``Call "system.file"("data/MoNA-export-GC-MS_Spectra.msp", "package" <- "Daisy")``.
+     * @param n_threads default value Is ``8``.
+     * @param debug default value Is ``false``.
    */
-   function gcms_tof_annotation(raw: any, peaktable: any, libtype?: any, outputdir?: any, lib_files?: any): object;
+   function gcms_tof_annotation(rawdir: any, peaktable: any, libtype?: any, outputdir?: any, lib_files?: any, n_threads?: any, debug?: any): object;
    /**
      * @param ionMode default value Is ``[1, -1]``.
    */
@@ -70,6 +75,9 @@ declare namespace Daisy {
    /**
    */
    function rank_score(result: any): object;
+   /**
+   */
+   function read_gcmsdata(rawfile: any, peaktable: any): object;
    /**
      * @param cache_enable default value Is ``true``.
    */

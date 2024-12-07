@@ -1,17 +1,21 @@
 ﻿.TH GCMS_TOF_ANNOTATION 1 2024-Dec "" "Run untargetted annotation for gc-ms"
 .SH NAME
-gcms_tof_annotation \- gcms_tof_annotation(raw, peaktable,
+gcms_tof_annotation \- gcms_tof_annotation(rawdir, peaktable,
     <i>libtype</i> = [<span style='color: green;'>-1</span>],
     <i>outputdir</i> = <span style='color: brown;'><strong>'./'</strong></span>,
-    <i>lib.files</i> = 'system.file'('data/MoNA-export-GC-MS_Spectra.msp', 'package' = 'Daisy'))
+    <i>lib.files</i> = 'system.file'('data/MoNA-export-GC-MS_Spectra.msp', 'package' = 'Daisy'),
+    <i>n.threads</i> = <span style='color: green;'>8</span>,
+    <i>debug</i> = <span style='color: blue !important;'>FALSE</span>)
 .SH SYNOPSIS
-\fIgcms_tof_annotation(raw, peaktable,
+\fIgcms_tof_annotation(rawdir, peaktable,
     <i>libtype</i> = [<span style='color: green;'>-1</span>],
     <i>outputdir</i> = <span style='color: brown;'><strong>'./'</strong></span>,
-    <i>lib.files</i> = 'system.file'('data/MoNA-export-GC-MS_Spectra.msp', 'package' = 'Daisy'))\fR
+    <i>lib.files</i> = 'system.file'('data/MoNA-export-GC-MS_Spectra.msp', 'package' = 'Daisy'),
+    <i>n.threads</i> = <span style='color: green;'>8</span>,
+    <i>debug</i> = <span style='color: blue !important;'>FALSE</span>)\fR
 .SH OPTIONS
 .PP
-\fBraw\fB \fR\- . 
+\fBrawdir\fB \fR\- . 
 .PP
 .PP
 \fBpeaktable\fB \fR\- . 
@@ -24,6 +28,12 @@ gcms_tof_annotation \- gcms_tof_annotation(raw, peaktable,
 .PP
 .PP
 \fBlib.files\fB \fR\- 'system.file'('data/MoNA-export-GC-MS_Spectra.msp', 'package' = 'Daisy'). 
+.PP
+.PP
+\fBn.threads\fB \fR\- 8. 
+.PP
+.PP
+\fBdebug\fB \fR\- FALSE. 
 .PP
 .SH FILES
 .PP
