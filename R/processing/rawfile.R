@@ -32,8 +32,12 @@ const read_rawfile = function(file, cache_enable = TRUE) {
 #' @param peaktable the file path to the peaktable data file
 #' 
 const read_gcmsdata = function(rawfile, peaktable) {
+    imports "GCMS" from "mzkit";
+
     let peaksdata = read.xcms_peaks(peaktable,
         tsv = file.ext(peaktable) == "txt",
         general_method = FALSE);
-    
+    let rawdata = open.mzpack(rawfile);
+
+    GCMS::gcms_features(rawdata, peaksdata);
 } 
