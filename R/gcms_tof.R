@@ -34,6 +34,8 @@ const gcms_tof_annotation = function(rawdir, peaktable,
 }
 
 const __gcms_annotation = function(rawfile, peaktable, argv) {
+    let outputdir = argv$outputdir;
+    let tmp = file.path(outputdir,"tmp");
     let ions = Daisy::read_gcmsdata(rawfile, peaktable);
-    
+    let libs = Daisy::gcms_mona_msp(argv$libfiles);
 }
