@@ -51,8 +51,23 @@ const __gcms_annotation = function(rawfile, peaktable, argv) {
     let reference_id = candidate_ids(result);   
     let scores = as.data.frame(result);
     let annotation = load_metadata(libs, reference_id );
+    let xrefs = [annotation]::xref;
 
     annotation <- data.frame(
+        ID = [annotation]::ID,
+        name = [annotation]::name,
+        formula = [annotation]::formula,
+        exact_mass = [annotation]::exact_mass,
         
+        kingdom = [annotation]::kingdom,
+        super_class = [annotation]::super_class,
+        class = [annotation]::class,
+        sub_class = [annotation]::sub_class,
+        molecular_framework = [annotation]::molecular_framework
     );
+    result <- cbind(annotation, scores);
+
+    write.csv(result, 
+        file = file.path(outputdir,`${basename(rawfile)}.csv`), 
+        row.names = FALSE);
 }
