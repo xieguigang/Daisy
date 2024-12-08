@@ -38,4 +38,21 @@ const __gcms_annotation = function(rawfile, peaktable, argv) {
     let tmp = file.path(outputdir,"tmp");
     let ions = Daisy::read_gcmsdata(rawfile, peaktable);
     let libs = Daisy::gcms_mona_msp(argv$libfiles);
+    let top = as.integer(argv$top || 9);
+
+    print("make spectrum alignment search...");
+
+    let result = lapply(ions, function(i) {
+        libs |> top_candidates(i, top = top);
+    });
+
+    result <- unlist(result);
+
+    let reference_id = candidate_ids(result);   
+    let scores = as.data.frame(result);
+    let annotation = load_metadata(libs, reference_id );
+
+    annotation <- data.frame(
+        
+    );
 }
