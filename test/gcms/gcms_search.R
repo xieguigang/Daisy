@@ -8,6 +8,6 @@ let rawfiles = list.files("./rawdata", pattern = "*.mzML");
 gcms_tof_annotation("./rawdata", "./peaktable.csv", 
     libtype   = -1, 
     outputdir = "./", 
-    lib_files = system.file("data/MoNA-export-GC-MS_Spectra.msp", package = "Daisy"), 
+    # lib_files = system.file("data/MoNA-export-GC-MS_Spectra.msp", package = "Daisy"), 
     n_threads = 8,
     debug = TRUE);

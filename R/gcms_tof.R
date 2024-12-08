@@ -12,11 +12,13 @@ const gcms_tof_annotation = function(rawdir, peaktable,
                    "*.mzML", 
                    "*.mzPack"]);
     let work_pars = list(
-        libtype = libtype,
+        libtype = .Internal::first(as.integer(libtype)),
         outputdir = normalizePath(outputdir),
         libfiles = lib_files
     ); 
     
+    str(work_pars);
+
     if (debug || (n_threads == 1)) {
         for(let file in rawfiles) {
             file |> __gcms_annotation(peaktable, work_pars);
@@ -37,7 +39,7 @@ const __gcms_annotation = function(rawfile, peaktable, argv) {
     let outputdir = argv$outputdir;
     let tmp = file.path(outputdir,"tmp");
     let ions = Daisy::read_gcmsdata(rawfile, peaktable);
-    let libs = Daisy::gcms_mona_msp(argv$libfiles);
+    let libs = Daisy::gcms_mona_msp(argv$libfiles, libtype = argv$libtype);
     let top = as.integer(argv$top || 9);
 
     print("make spectrum alignment search...");
@@ -58,7 +60,7 @@ const __gcms_annotation = function(rawfile, peaktable, argv) {
         name = [annotation]::name,
         formula = [annotation]::formula,
         exact_mass = [annotation]::exact_mass,
-        
+
         kingdom = [annotation]::kingdom,
         super_class = [annotation]::super_class,
         class = [annotation]::class,

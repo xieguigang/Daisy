@@ -36,8 +36,9 @@ declare namespace Daisy {
    */
    function formula_annotation(peaks: any, ms1ppm?: any, profiles?: any, mass_range?: any): object;
    /**
+     * @param libtype default value Is ``[1, -1]``.
    */
-   function gcms_mona_msp(mspfile: any): object;
+   function gcms_mona_msp(mspfile: any, libtype?: any): object;
    /**
      * @param libtype default value Is ``[1, -1]``.
      * @param outputdir default value Is ``./``.
