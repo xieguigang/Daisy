@@ -33,8 +33,15 @@ const gcms_tof_annotation = function(rawdir, peaktable,
             ignoreError = TRUE) {
 
             require(Daisy);
-            # processing a single rawdata file
-            Daisy::__gcms_annotation(filepath, peaktable, work_pars);
+
+            let outputdir = work_pars$outputdir;
+            let checkfile = file.path(outputdir,`${basename(filepath)}.csv`);
+
+            if (!file.exists(checkfile)) {
+                # processing a single rawdata file
+                Daisy::__gcms_annotation(filepath, peaktable, 
+                    argv = work_pars);
+            }
         }
     }
 }
