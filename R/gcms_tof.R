@@ -5,6 +5,7 @@ imports "Parallel" from "snowFall";
 const gcms_tof_annotation = function(rawdir, peaktable, 
     libtype   = [1,-1], 
     outputdir = "./", 
+    ppm_cutoff = 20,
     lib_files = system.file("data/MoNA-export-GC-MS_Spectra.msp", package = "Daisy"), 
     n_threads = 8,
     debug = FALSE) {
@@ -16,7 +17,8 @@ const gcms_tof_annotation = function(rawdir, peaktable,
     let work_pars = list(
         libtype = .Internal::first(as.integer(libtype)),
         outputdir = normalizePath(outputdir),
-        libfiles = lib_files
+        libfiles = lib_files,
+        ppm_cutoff = as.numeric(ppm_cutoff)
     ); 
     
     str(work_pars);
@@ -86,8 +88,22 @@ const __merge_samples = function(results, argv) {
         merge[,name]<- results@{name};
     }
 
+    let ppm_cutoff = as.numeric(argv$ppm_cutoff);
+    let libtype = as.integer(argv$libtype);
+    let adducts = as.list(results,byrow=TRUE) 
+    |> tqdm()
+    |> lapply(function(r) {
+        find_precursor(r$exact_mass, r$mz,safe=TRUE, libtype = libtype);
+    });
+
+    merge[,"precursor_type"] <- adducts@precursor_type;
+    merge[,"ppm"] <- as.numeric(adducts@ppm);
     merge[,"rank"] <- results@rank;
     merge[,"supports"] <- results@supports;
+
+    merge <- merge[merge$ppm < ppm_cutoff,];
+    merge <- merge[nchar(merge$precursor_type)>0,];
+    merge[,"rank"] = (merge$rank) / (merge$ppm); 
 
     merge <- rank_unique(merge, "query_id", merge$rank);
     merge <- rank_unique(merge, "ID", merge$rank);
