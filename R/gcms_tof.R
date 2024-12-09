@@ -1,3 +1,5 @@
+imports "Parallel" from "snowFall";
+
 #' Run untargetted annotation for gc-ms
 #' 
 const gcms_tof_annotation = function(rawdir, peaktable, 
@@ -25,12 +27,14 @@ const gcms_tof_annotation = function(rawdir, peaktable,
         }
     } else {
         # run in parallel for production
-        parallel(path = rawfiles, n_threads = n_threads, 
-                 ignoreError = TRUE) {
+        Parallel::parallel(
+            filepath    = rawfiles, 
+            n_threads   = n_threads, 
+            ignoreError = TRUE) {
 
             require(Daisy);
             # processing a single rawdata file
-            Daisy::__gcms_annotation(path, peaktable, work_pars);
+            Daisy::__gcms_annotation(filepath, peaktable, work_pars);
         }
     }
 }
