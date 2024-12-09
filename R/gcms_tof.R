@@ -23,7 +23,11 @@ const gcms_tof_annotation = function(rawdir, peaktable,
 
     if (debug || (n_threads == 1)) {
         for(let file in rawfiles) {
-            file |> __gcms_annotation(peaktable, work_pars);
+            let checkfile = file.path(outputdir,`${basename(file)}.csv`);
+
+            if (!file.exists(checkfile)) {
+                file |> __gcms_annotation(peaktable, work_pars);
+            }            
         }
     } else {
         # run in parallel for production
@@ -44,6 +48,15 @@ const gcms_tof_annotation = function(rawdir, peaktable,
             }
         }
     }
+
+    file.path(outputdir, `${basename(rawfiles)}.csv`)
+    |> __merge_samples(work_pars)
+    |> write.csv(file = file.path(outputdir, "anno.csv"))
+    ;
+}
+
+const __merge_samples = function(results, argv) {
+    
 }
 
 const __gcms_annotation = function(rawfile, peaktable, argv) {
