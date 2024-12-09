@@ -422,3 +422,4 @@ test/gcms/rawdata/SAV_130416_038_To145.mzML
 test/gcms/rawdata/SAV_130416_034_To137.mzML
 test/gcms/rawdata/SAV_130416_033_To122.mzML
 test/gcms/rawdata/SAV_130416_022_To103.mzML
+test/gcms/anno.csv

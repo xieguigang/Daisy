@@ -62,9 +62,34 @@ const __merge_samples = function(results, argv) {
         result;
     });
     results <- bind_rows(results);
+    results[, "unique_id"] = `${results$ID}-${results$query_id}`;
 
-    print(results);
+    let cols = colnames(results);
 
+    results <- groupBy(results, "unique_id");
+    results <- lapply(tqdm(results), function(align) {
+        let rank = align$forward +align$reverse +align$jaccard +align$entropy;
+        align[,"supports"] <- nrow(align);
+        align[,"rank"] <- nrow(align) * rank;
+        align <- align[order( rank , decreasing = TRUE ),];
+        align[1,,drop=TRUE];
+    });
+
+    let merge = data.frame(
+        row.names = names(result),
+        unique_id = names(result)
+    );
+
+    for(name in cols) {
+        merge[,name]<- results@{name};
+    }
+
+    merge[,"rank"] <- results@rank;
+    merge[,"supports"] <- results@supports;
+
+    print(merge);
+
+    merge;
 }
 
 const __gcms_annotation = function(rawfile, peaktable, argv) {
