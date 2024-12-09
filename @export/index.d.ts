@@ -45,11 +45,12 @@ declare namespace Daisy {
    /**
      * @param libtype default value Is ``[1, -1]``.
      * @param outputdir default value Is ``./``.
+     * @param ppm_cutoff default value Is ``20``.
      * @param lib_files default value Is ``Call "system.file"("data/MoNA-export-GC-MS_Spectra.msp", "package" <- "Daisy")``.
      * @param n_threads default value Is ``8``.
      * @param debug default value Is ``false``.
    */
-   function gcms_tof_annotation(rawdir: any, peaktable: any, libtype?: any, outputdir?: any, lib_files?: any, n_threads?: any, debug?: any): object;
+   function gcms_tof_annotation(rawdir: any, peaktable: any, libtype?: any, outputdir?: any, ppm_cutoff?: any, lib_files?: any, n_threads?: any, debug?: any): object;
    /**
      * @param ionMode default value Is ``[1, -1]``.
    */

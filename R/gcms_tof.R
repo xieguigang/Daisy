@@ -51,10 +51,10 @@ const gcms_tof_annotation = function(rawdir, peaktable,
         }
     }
 
-    `${work_pars$outputdir}/${basename(rawfiles)}.csv`
-    |> __merge_samples(work_pars)
-    |> write.csv(file = file.path(outputdir, "anno.csv"))
-    ;
+    let result = __merge_samples(`${work_pars$outputdir}/${basename(rawfiles)}.csv`, work_pars);
+    
+    result |> write.csv(file = file.path(outputdir, "anno.csv"));
+    result |> make_msms_plot(file.path(outputdir,"plotMs"));
 }
 
 const __merge_samples = function(results, argv) {
@@ -96,19 +96,23 @@ const __merge_samples = function(results, argv) {
         find_precursor(r$exact_mass, r$mz,safe=TRUE, libtype = libtype);
     });
 
-    merge[,"precursor_type"] <- adducts@precursor_type;
+    merge[,"adducts"] <- adducts@precursor_type;
     merge[,"ppm"] <- as.numeric(adducts@ppm);
     merge[,"rank"] <- results@rank;
     merge[,"supports"] <- results@supports;
 
     merge <- merge[merge$ppm < ppm_cutoff,];
-    merge <- merge[nchar(merge$precursor_type)>0,];
+    merge <- merge[nchar(merge$adducts)>0,];
     merge[,"rank"] = (merge$rank) / (merge$ppm); 
 
     merge <- rank_unique(merge, "query_id", merge$rank);
     merge <- rank_unique(merge, "ID", merge$rank);
     merge[,"ID"] = NULL;
     merge[,"unique_id"] =NULL;
+    merge[,"xcms_id"] = merge$query_id;
+    merge[,"query_id"] = NULL;
+    merge[,"alignment"] = merge$alignment_str;
+    merge[,"alignment_str"] = NULL;
 
     print(merge);
 
