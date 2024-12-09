@@ -54,13 +54,17 @@ const __gcms_annotation = function(rawfile, peaktable, argv) {
     let scores = as.data.frame(result);
     let annotation = load_metadata(libs, reference_id );
     let xrefs = [annotation]::xref;
+    let cas_id = sapply(xrefs, a -> .Internal::first([a]::CAS));
 
     annotation <- data.frame(
         ID = [annotation]::ID,
         name = [annotation]::name,
         formula = [annotation]::formula,
         exact_mass = [annotation]::exact_mass,
-
+        CAS = cas_id,
+        KEGG = [xrefs]::KEGG,
+        chebi = [xrefs]::chebi,
+        HMDB = [xrefs]::HMDB,
         kingdom = [annotation]::kingdom,
         super_class = [annotation]::super_class,
         class = [annotation]::class,
