@@ -89,6 +89,11 @@ const __merge_samples = function(results, argv) {
     merge[,"rank"] <- results@rank;
     merge[,"supports"] <- results@supports;
 
+    merge <- rank_unique(merge, "query_id", merge$rank);
+    merge <- rank_unique(merge, "ID", merge$rank);
+    merge[,"ID"] = NULL;
+    merge[,"unique_id"] =NULL;
+
     print(merge);
 
     merge;
