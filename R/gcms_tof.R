@@ -49,7 +49,7 @@ const gcms_tof_annotation = function(rawdir, peaktable,
         }
     }
 
-    file.path(outputdir, `${basename(rawfiles)}.csv`)
+    `${work_pars$outputdir}/${basename(rawfiles)}.csv`
     |> __merge_samples(work_pars)
     |> write.csv(file = file.path(outputdir, "anno.csv"))
     ;
