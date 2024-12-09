@@ -56,7 +56,15 @@ const gcms_tof_annotation = function(rawdir, peaktable,
 }
 
 const __merge_samples = function(results, argv) {
-    
+    results <- lapply(tqdm(results), function(path) {
+        let result = read.csv(path, row.names = NULL, check.names = FALSE);
+        result[,"sample"] = basename(path);
+        result;
+    });
+    results <- bind_rows(results);
+
+    print(results);
+
 }
 
 const __gcms_annotation = function(rawfile, peaktable, argv) {
