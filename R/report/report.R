@@ -33,7 +33,7 @@ const make_msms_plot = function(result, visual_dir = "./") {
                                     maxchars = 64)}.svg`)) {
 
             parse.spectrum_alignment(hit$alignment) |> plot(
-                title = `${hit$name} ${hit$adducts} ${hit$mz}@${round(hit$rt/60,1)}min`,
+                title = `${hit$name} ${hit$adducts || "-"} ${hit$mz}@${round(hit$rt/60,1)}min`,
                 legend_layout = "none",
                 bar_width = 2,
                 color1 = "green",

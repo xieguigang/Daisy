@@ -90,20 +90,20 @@ const __merge_samples = function(results, argv) {
 
     let ppm_cutoff = as.numeric(argv$ppm_cutoff);
     let libtype = as.integer(argv$libtype);
-    let adducts = as.list(results,byrow=TRUE) 
-    |> tqdm()
-    |> lapply(function(r) {
-        find_precursor(r$exact_mass, r$mz,safe=TRUE, libtype = libtype);
-    });
+    # let adducts = as.list(results,byrow=TRUE) 
+    # |> tqdm()
+    # |> lapply(function(r) {
+    #     find_precursor(r$exact_mass, r$mz,safe=TRUE, libtype = libtype);
+    # });
 
-    merge[,"adducts"] <- adducts@precursor_type;
-    merge[,"ppm"] <- as.numeric(adducts@ppm);
+    # merge[,"adducts"] <- adducts@precursor_type;
+    # merge[,"ppm"] <- as.numeric(adducts@ppm);
     merge[,"rank"] <- results@rank;
     merge[,"supports"] <- results@supports;
 
-    merge <- merge[merge$ppm < ppm_cutoff,];
-    merge <- merge[nchar(merge$adducts)>0,];
-    merge[,"rank"] = (merge$rank) / (merge$ppm); 
+    # merge <- merge[merge$ppm < ppm_cutoff,];
+    # merge <- merge[nchar(merge$adducts)>0,];
+    # merge[,"rank"] = (merge$rank) / (merge$ppm); 
 
     merge <- rank_unique(merge, "query_id", merge$rank);
     merge <- rank_unique(merge, "ID", merge$rank);
