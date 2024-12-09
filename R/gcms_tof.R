@@ -68,7 +68,9 @@ const __merge_samples = function(results, argv) {
 
     results <- groupBy(results, "unique_id");
     results <- lapply(tqdm(results), function(align) {
-        let rank = align$forward +align$reverse +align$jaccard +align$entropy;
+        let rank = as.numeric(align$forward) +
+            as.numeric(align$reverse) +as.numeric(align$jaccard) +as.numeric(align$entropy);
+        
         align[,"supports"] <- nrow(align);
         align[,"rank"] <- nrow(align) * rank;
         align <- align[order( rank , decreasing = TRUE ),];
@@ -76,8 +78,8 @@ const __merge_samples = function(results, argv) {
     });
 
     let merge = data.frame(
-        row.names = names(result),
-        unique_id = names(result)
+        row.names = names(results),
+        unique_id = names(results)
     );
 
     for(name in cols) {

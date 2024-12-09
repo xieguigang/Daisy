@@ -10,5 +10,5 @@ gcms_tof_annotation("./rawdata", "./peaktable.csv",
     outputdir = "./", 
     # lib_files = system.file("data/MoNA-export-GC-MS_Spectra.msp", package = "Daisy"), 
     n_threads = 16,
-    debug = FALSE
+    debug = TRUE
 );
