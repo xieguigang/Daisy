@@ -73,6 +73,9 @@ declare namespace Daisy {
    */
    function ms1_anno(peaks: any, ms1ppm?: any, libtype?: any): object;
    /**
+   */
+   function open_biocad_local(): object;
+   /**
      * @param mzdiff default value Is ``0.01``.
      * @param rt_win default value Is ``15``.
    */
