@@ -15,6 +15,9 @@ declare namespace Daisy {
    */
    function __merge_samples(results: any, argv: any): object;
    /**
+   */
+   function buildCfmidDb(cfmid: any, libfile: any): object;
+   /**
      * @param libtype default value Is ``[1, -1]``.
      * @param ms1ppm default value Is ``15``.
      * @param output default value Is ``./``.
