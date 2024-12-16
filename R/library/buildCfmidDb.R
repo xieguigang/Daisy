@@ -11,7 +11,7 @@ const buildCfmidDb = function(cfmid, libfile) {
 
         libfile |> addBucket(spec$spectral,
             uuid = basename(file),
-            formula = "",
+            formula = "H",
             name = basename(file));
     }
 
