@@ -13,5 +13,20 @@ const open_biocad_local = function() {
 }
 
 const open_local_gcms_EI = function() {
-    
+    imports "spectrumTree" from "mzkit";
+
+    let file = system.file("data/EI_pos.pack", package = "Daisy");
+    let repo = spectrumTree::open(file);
+
+    return(repo);
+}
+
+const local_gcms_lib = function() {
+    imports "annotation" from "mzkit";
+
+    # create clr library object
+    annotation::load_local(
+        open_biocad_local(), 
+        open_local_gcms_EI()
+    );
 }

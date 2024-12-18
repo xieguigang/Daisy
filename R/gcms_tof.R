@@ -128,7 +128,7 @@ const __gcms_annotation = function(rawfile, peaktable, argv) {
         if (file.ext(argv$libfiles) == "msp") {
             Daisy::gcms_mona_msp(argv$libfiles, libtype = argv$libtype);
         } else {
-            
+            Daisy::local_gcms_lib();
         }
     }
     
