@@ -9,7 +9,7 @@ const buildCfmidDb = function(cfmid, libfile) {
 
     libfile <- spectrumTree::new(libfile,type = "Pack");
 
-    for(let file in tqdm(scan_files[1:1000])) {
+    for(let file in tqdm(scan_files[1:100])) {
         let spec = mzkit::read.cfmid_3_EI(file);
 
         libfile |> addBucket(spec$spectral,
