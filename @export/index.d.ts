@@ -79,6 +79,9 @@ declare namespace Daisy {
    */
    function open_biocad_local(): object;
    /**
+   */
+   function open_local_gcms_EI(): object;
+   /**
      * @param mzdiff default value Is ``0.01``.
      * @param rt_win default value Is ``15``.
    */
