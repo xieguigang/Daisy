@@ -1,5 +1,7 @@
 
-#' Open local library file
+#' Open local annotation library file
+#' 
+#' @return IMetaDb
 #' 
 const open_biocad_local = function() {
     imports "annotation" from "mzkit";
@@ -8,4 +10,8 @@ const open_biocad_local = function() {
     let repo = annotation::open_repository(file);
 
     return(repo);
+}
+
+const open_local_gcms_EI = function() {
+    
 }

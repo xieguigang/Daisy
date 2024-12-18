@@ -1,3 +1,3 @@
 require(Daisy);
 
-buildCfmidDb(cfmid ="Z:/cfmid", libfile=file.path(@dir,"EI_pos.pack"));
+buildCfmidDb(cfmid ="Z:/cfmid", libfile=file.path(dirname(@dir),"data/EI_pos.pack"));

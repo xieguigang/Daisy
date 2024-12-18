@@ -425,3 +425,4 @@ test/gcms/rawdata/SAV_130416_022_To103.mzML
 test/gcms/anno.csv
 data/biocad_registry.dat
 test/EI_pos.pack
+data/EI_pos.pack

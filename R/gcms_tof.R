@@ -122,10 +122,16 @@ const __merge_samples = function(results, argv) {
 const __gcms_annotation = function(rawfile, peaktable, argv) {
     let outputdir = argv$outputdir;
     let tmp = file.path(outputdir,"tmp");
-    let ions = Daisy::read_gcmsdata(rawfile, peaktable);
-    let libs = Daisy::gcms_mona_msp(argv$libfiles, libtype = argv$libtype);
     let top = as.integer(argv$top || 9);
-
+    let ions = Daisy::read_gcmsdata(rawfile, peaktable);
+    let libs = {
+        if (file.ext(argv$libfiles) == "msp") {
+            Daisy::gcms_mona_msp(argv$libfiles, libtype = argv$libtype);
+        } else {
+            
+        }
+    }
+    
     print("make spectrum alignment search...");
 
     let result = lapply(ions, function(i) {
