@@ -49,7 +49,7 @@ declare namespace Daisy {
      * @param libtype default value Is ``[1, -1]``.
      * @param outputdir default value Is ``./``.
      * @param ppm_cutoff default value Is ``20``.
-     * @param lib_files default value Is ``Call "system.file"("data/MoNA-export-GC-MS_Spectra.msp", "package" <- "Daisy")``.
+     * @param lib_files default value Is ``null``.
      * @param n_threads default value Is ``8``.
      * @param debug default value Is ``false``.
    */
@@ -58,6 +58,9 @@ declare namespace Daisy {
      * @param ionMode default value Is ``[1, -1]``.
    */
    function get_adducts(ionMode?: any): object;
+   /**
+   */
+   function local_gcms_lib(): object;
    /**
      * @param libtype default value Is ``[1, -1]``.
      * @param ms1ppm default value Is ``15``.

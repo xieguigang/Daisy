@@ -6,7 +6,7 @@ const gcms_tof_annotation = function(rawdir, peaktable,
     libtype   = [1,-1], 
     outputdir = "./", 
     ppm_cutoff = 20,
-    lib_files = system.file("data/MoNA-export-GC-MS_Spectra.msp", package = "Daisy"), 
+    lib_files = NULL, # system.file("data/MoNA-export-GC-MS_Spectra.msp", package = "Daisy"), 
     n_threads = 8,
     debug = FALSE) {
 
@@ -125,7 +125,7 @@ const __gcms_annotation = function(rawfile, peaktable, argv) {
     let top = as.integer(argv$top || 9);
     let ions = Daisy::read_gcmsdata(rawfile, peaktable);
     let libs = {
-        if (file.ext(argv$libfiles) == "msp") {
+        if (length(argv$libfiles) > 0 && file.ext(argv$libfiles) == "msp") {
             Daisy::gcms_mona_msp(argv$libfiles, libtype = argv$libtype);
         } else {
             Daisy::local_gcms_lib();
