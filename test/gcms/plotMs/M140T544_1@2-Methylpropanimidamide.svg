@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 800">
+  <rect fill="white" width="1200" height="800" />
+  <rect fill="white" width="1200" height="800" />
+  <path fill="none" stroke="#D3D3D3" stroke-width="1.0416666" stroke-miterlimit="4" d="M201.945 100L201.945 750" />
+  <path fill="none" stroke="#D3D3D3" stroke-width="1.0416666" stroke-miterlimit="4" d="M395.353 100L395.353 750" />
+  <path fill="none" stroke="#D3D3D3" stroke-width="1.0416666" stroke-miterlimit="4" d="M588.761 100L588.761 750" />
+  <path fill="none" stroke="#D3D3D3" stroke-width="1.0416666" stroke-miterlimit="4" d="M782.169 100L782.169 750" />
+  <path fill="none" stroke="#D3D3D3" stroke-width="1.0416666" stroke-miterlimit="4" d="M975.577 100L975.577 750" />
+  <path fill="none" stroke="#D3D3D3" stroke-width="1.0416666" stroke-miterlimit="4" d="M1168.98 100L1168.98 750" />
+  <path fill="none" stroke="black" stroke-width="1" stroke-miterlimit="4" d="M100 425L85 425" />
+  <path fill="none" stroke="#EBEBEB" stroke-width="1.0416666" stroke-miterlimit="4" d="M100 425L1170 425" />
+  <text font-size="12.5" font-family="Microsoft YaHei, 微软雅黑" x="63.253387, 70.58371, " y="429.375, ">
+			0%
+	</text>
+  <path fill="none" stroke="black" stroke-width="1" stroke-miterlimit="4" d="M100 360L85 360" />
+  <path fill="none" stroke="#EBEBEB" stroke-width="1.0416666" stroke-miterlimit="4" d="M100 360L1170 360" />
+  <text font-size="12.5" font-family="Microsoft YaHei, 微软雅黑" x="55.006775, 62.337097, 69.667419, " y="364.375, ">
+			20%
+	</text>
+  <path fill="none" stroke="black" stroke-width="1" stroke-miterlimit="4" d="M100 490L85 490" />
+  <path fill="none" stroke="#EBEBEB" stroke-width="1.0416666" stroke-miterlimit="4" d="M100 490L1170 490" />
+  <text font-size="12.5" font-family="Microsoft YaHei, 微软雅黑" x="55.006775, 62.337097, 69.667419, " y="494.375, ">
+			20%
+	</text>
+  <path fill="none" stroke="black" stroke-width="1" stroke-miterlimit="4" d="M100 295L85 295" />
+  <path fill="none" stroke="#EBEBEB" stroke-width="1.0416666" stroke-miterlimit="4" d="M100 295L1170 295" />
+  <text font-size="12.5" font-family="Microsoft YaHei, 微软雅黑" x="55.006775, 62.337097, 69.667419, " y="299.375, ">
+			40%
+	</text>
+  <path fill="none" stroke="black" stroke-width="1" stroke-miterlimit="4" d="M100 555L85 555" />
+  <path fill="none" stroke="#EBEBEB" stroke-width="1.0416666" stroke-miterlimit="4" d="M100 555L1170 555" />
+  <text font-size="12.5" font-family="Microsoft YaHei, 微软雅黑" x="55.006775, 62.337097, 69.667419, " y="559.375, ">
+			40%
+	</text>
+  <path fill="none" stroke="black" stroke-width="1" stroke-miterlimit="4" d="M100 230L85 230" />
+  <path fill="none" stroke="#EBEBEB" stroke-width="1.0416666" stroke-miterlimit="4" d="M100 230L1170 230" />
+  <text font-size="12.5" font-family="Microsoft YaHei, 微软雅黑" x="55.006775, 62.337097, 69.667419, " y="234.375, ">
+			60%
+	</text>
+  <path fill="none" stroke="black" stroke-width="1" stroke-miterlimit="4" d="M100 620L85 620" />
+  <path fill="none" stroke="#EBEBEB" stroke-width="1.0416666" stroke-miterlimit="4" d="M100 620L1170 620" />
+  <text font-size="12.5" font-family="Microsoft YaHei, 微软雅黑" x="55.006775, 62.337097, 69.667419, " y="624.375, ">
+			60%
+	</text>
+  <path fill="none" stroke="black" stroke-width="1" stroke-miterlimit="4" d="M100 165L85 165" />
+  <path fill="none" stroke="#EBEBEB" stroke-width="1.0416666" stroke-miterlimit="4" d="M100 165L1170 165" />
+  <text font-size="12.5" font-family="Microsoft YaHei, 微软雅黑" x="55.006775, 62.337097, 69.667419, " y="169.375, ">
+			80%
+	</text>
+  <path fill="none" stroke="black" stroke-width="1" stroke-miterlimit="4" d="M100 685L85 685" />
+  <path fill="none" stroke="#EBEBEB" stroke-width="1.0416666" stroke-miterlimit="4" d="M100 685L1170 685" />
+  <text font-size="12.5" font-family="Microsoft YaHei, 微软雅黑" x="55.006775, 62.337097, 69.667419, " y="689.375, ">
+			80%
+	</text>
+  <path fill="none" stroke="black" stroke-width="1" stroke-miterlimit="4" d="M100 100L85 100" />
+  <path fill="none" stroke="#EBEBEB" stroke-width="1.0416666" stroke-miterlimit="4" d="M100 100L1170 100" />
+  <text font-size="12.5" font-family="Microsoft YaHei, 微软雅黑" x="47.885162, 55.215485, 62.545807, 69.876129, " y="104.375, ">
+			100%
+	</text>
+  <path fill="none" stroke="black" stroke-width="1" stroke-miterlimit="4" d="M100 750L85 750" />
+  <path fill="none" stroke="#EBEBEB" stroke-width="1.0416666" stroke-miterlimit="4" d="M100 750L1170 750" />
+  <text font-size="12.5" font-family="Microsoft YaHei, 微软雅黑" x="47.885162, 55.215485, 62.545807, 69.876129, " y="754.375, ">
+			100%
+	</text>
+  <path fill="none" stroke="black" stroke-width="2" stroke-miterlimit="4" d="M100 100L100 750" />
+  <text transform="matrix(0 -1 1 0 42.6875 432.312)" font-size="12.5" font-family="Segoe UI" x="-56.238403, -48.761597, -42.224731, -39.197388, -32.837524, -28.601685, -25.574341, -19.586792, -13.049927, -9.6258545, -6.2994385, 0.77453613, 5.010376, 11.547241, 18.621216, 23.925171, 26.952515, 31.188354, 37.236938, 41.008911, 51.238403, " y="3.5, ">
+			Relative Intensity(%)
+	</text>
+  <path fill="none" stroke="black" stroke-width="2" stroke-miterlimit="4" d="M100 425L1170 425" />
+  <text font-size="12.5" font-family="Microsoft YaHei, 微软雅黑" x="1107, 1119.2131, 1124.5537, 1132.3052, 1136.0039, 1140.7769, 1147.686, 1152.343, 1155.6694, " y="439, ">
+			M/Z ratio
+	</text>
+  <rect fill="green" x="124" y="407" width="2" height="18" />
+  <rect fill="green" x="131" y="257" width="2" height="168" />
+  <rect fill="green" x="133" y="342" width="2" height="83" />
+  <rect fill="green" x="159" y="374" width="2" height="51" />
+  <rect fill="green" x="164" y="389" width="2" height="36" />
+  <rect fill="green" x="167" y="311" width="2" height="114" />
+  <rect fill="green" x="171" y="372" width="2" height="53" />
+  <rect fill="green" x="174" y="100" width="2" height="325" />
+  <rect fill="green" x="178" y="335" width="2" height="90" />
+  <rect fill="green" x="182" y="365" width="2" height="60" />
+  <rect fill="green" x="213" y="408" width="2" height="17" />
+  <rect fill="green" x="220" y="356" width="2" height="69" />
+  <rect fill="green" x="223" y="380" width="2" height="45" />
+  <rect fill="green" x="226" y="348" width="2" height="77" />
+  <rect fill="green" x="229" y="382" width="2" height="43" />
+  <rect fill="green" x="234" y="406" width="2" height="19" />
+  <rect fill="green" x="266" y="407" width="2" height="18" />
+  <rect fill="green" x="274" y="373" width="2" height="52" />
+  <rect fill="green" x="279" y="406" width="2" height="19" />
+  <rect fill="green" x="287" y="401" width="2" height="24" />
+  <rect fill="green" x="290" y="395" width="2" height="30" />
+  <rect fill="green" x="321" y="406" width="2" height="19" />
+  <rect fill="green" x="324" y="401" width="2" height="24" />
+  <rect fill="green" x="1040" y="378" width="2" height="47" />
+  <rect fill="blue" x="112" y="425" width="2" height="44" />
+  <rect fill="blue" x="167" y="425" width="2" height="153" />
+  <rect fill="blue" x="170" y="425" width="2" height="123" />
+  <rect fill="blue" x="174" y="425" width="2" height="325" />
+  <rect fill="blue" x="178" y="425" width="2" height="103" />
+  <rect fill="blue" x="182" y="425" width="2" height="75" />
+  <rect fill="blue" x="283" y="425" width="2" height="89" />
+  <rect fill="blue" x="341" y="425" width="2" height="182" />
+  <text font-size="12.5" font-family="Segoe UI" x="108.87256, 115.61084, 122.34912, 125.05908, 131.79736, 138.53564, 145.27393, " y="256.29413, ">
+			31.9916
+	</text>
+  <text font-size="12.5" font-family="Segoe UI" x="110.93352, 117.6718, 124.41008, 127.12004, 133.85832, 140.5966, 147.33488, " y="341.26718, ">
+			32.5244
+	</text>
+  <text font-size="12.5" font-family="Segoe UI" x="144.349, 151.08728, 157.82556, 160.53552, 167.2738, 174.01208, 180.75037, " y="309.90601, ">
+			41.1630
+	</text>
+  <text font-size="12.5" font-family="Segoe UI" x="152.06676, 158.80504, 165.54332, 168.25328, 174.99156, 181.72984, 188.46812, " y="98.875, ">
+			43.1582
+	</text>
+  <text font-size="12.5" font-family="Segoe UI" x="155.80069, 162.53897, 169.27725, 171.98721, 178.72549, 185.46378, 192.20206, " y="333.89117, ">
+			44.1235
+	</text>
+  <text font-size="12.5" font-family="Segoe UI" x="198.47235, 205.21063, 211.94891, 214.65887, 221.39716, 228.13544, 234.87372, " y="355.12567, ">
+			55.0096
+	</text>
+  <text font-size="12.5" font-family="Segoe UI" x="204.38638, 211.12466, 217.86295, 220.57291, 227.31119, 234.04947, 240.78775, " y="346.38309, ">
+			56.5385
+	</text>
+  <text font-size="12.5" font-family="Segoe UI" x="144.58673, 151.32501, 158.06329, 160.77325, 167.51154, 174.24982, 180.9881, " y="590, ">
+			41.1630
+	</text>
+  <text font-size="12.5" font-family="Segoe UI" x="147.58673, 154.32501, 161.06329, 163.77325, 170.51154, 177.24982, 183.9881, " y="560, ">
+			42.0464
+	</text>
+  <text font-size="12.5" font-family="Segoe UI" x="151.58673, 158.32501, 165.06329, 167.77325, 174.51154, 181.24982, 187.9881, " y="762, ">
+			43.1582
+	</text>
+  <text font-size="12.5" font-family="Segoe UI" x="155.58673, 162.32501, 169.06329, 171.77325, 178.51154, 185.24982, 191.9881, " y="540, ">
+			44.1235
+	</text>
+  <text font-size="12.5" font-family="Segoe UI" x="159.58673, 166.32501, 173.06329, 175.77325, 182.51154, 189.24982, 195.9881, " y="512, ">
+			45.1314
+	</text>
+  <text font-size="12.5" font-family="Segoe UI" x="260.58673, 267.32501, 274.06329, 276.77325, 283.51154, 290.24982, 296.9881, " y="526, ">
+			71.0947
+	</text>
+  <text font-size="12.5" font-family="Segoe UI" x="318.58673, 325.32501, 332.06329, 334.77325, 341.51154, 348.24982, 354.9881, " y="619, ">
+			86.0838
+	</text>
+  <text font-size="25" font-family="Microsoft YaHei, 微软雅黑" x="327.953, 342.61365, 353.42908, 377.85535, 392.03992, 401.35388, 416.74695, 429.97937, 436.6322, 452.599, 462.1449, 478.03845, 494.00525, 507.82361, 523.22888, 529.88171, 553.30701, 559.95984, 575.95105, 589.76941, 613.1947, 619.84753, 635.83875, 650.02332, 657.42078, 668.23621, 675.63367, 690.29431, 704.95496, 719.6156, 725.63367, 740.29431, 754.95496, 769.6156, 795.39685, 810.0575, 816.07556, 830.73621, 854.1615, 860.81433, " y="82.125, ">
+			2-Methylpropanimidamide - 139.761@9.1min
+	</text>
+</svg>
