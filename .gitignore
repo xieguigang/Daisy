@@ -426,3 +426,5 @@ test/gcms/anno.csv
 data/biocad_registry.dat
 test/EI_pos.pack
 data/EI_pos.pack
+test/gcms/SAV_130416_022_To103.csv
+test/gcms/tmp/SAV_130416_022_To103/biocad_registry.csv
