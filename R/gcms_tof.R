@@ -46,6 +46,7 @@ const gcms_tof_annotation = function(rawdir, peaktable,
             if (!file.exists(checkfile)) {
                 # processing a single rawdata file
                 Daisy::__gcms_annotation(filepath, peaktable, 
+                    libs =  __load_gcms_libs(work_pars), 
                     argv = work_pars);
             }
         }
@@ -57,18 +58,11 @@ const gcms_tof_annotation = function(rawdir, peaktable,
     result |> make_msms_plot(file.path(outputdir,"plotMs"));
 }
 
-const __gcms_annotation = function(rawfile, peaktable, argv) {
+const __gcms_annotation = function(rawfile, peaktable, libs, argv) {
     let outputdir = argv$outputdir;
     let tmp = file.path(outputdir,"tmp");
     let top = as.integer(argv$top || 9);
     let ions = Daisy::read_gcmsdata(rawfile, peaktable);
-    let libs = {
-        if (length(argv$libfiles) > 0 && file.ext(argv$libfiles) == "msp") {
-            Daisy::gcms_mona_msp(argv$libfiles, libtype = argv$libtype);
-        } else {
-            Daisy::local_gcms_lib();
-        }
-    }
     
     print("make spectrum alignment search...");
 
