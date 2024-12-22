@@ -10,7 +10,14 @@ declare namespace Daisy {
    }
    /**
    */
-   function __gcms_annotation(rawfile: any, peaktable: any, argv: any): object;
+   function __gcms_annotation(rawfile: any, peaktable: any, libname: any, libs: any, argv: any): object;
+   /**
+   */
+   function __gcms_file_annotation(filepath: any, peaktable: any, work_pars: any): object;
+   /**
+     * @param argv default value Is ``Call "list"("libfiles" <- NULL, "libtype" <- [1, -1])``.
+   */
+   function __load_gcms_libs(argv?: any): object;
    /**
    */
    function __merge_samples(results: any, argv: any): object;
