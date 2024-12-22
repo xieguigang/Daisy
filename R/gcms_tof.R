@@ -51,15 +51,17 @@ const __gcms_file_annotation = function(filepath, peaktable,work_pars) {
     let checkfile = file.path(outputdir,`${basename(filepath)}.csv`);
 
     if (!file.exists(checkfile)) {
+        let ions = Daisy::read_gcmsdata(filepath, peaktable);
+
         if (is.null(work_pars$libfiles)) {
             # default internal
             let msp = system.file("data/MoNA-export-GC-MS_Spectra.msp", package = "Daisy");
 
-            Daisy::__gcms_annotation(filepath, peaktable, 
+            Daisy::__gcms_annotation(filepath, ions, 
                 libname = basename(msp),
                 libs = Daisy::gcms_mona_msp(msp, libtype = work_pars$libtype), 
                 argv = work_pars);
-            Daisy::__gcms_annotation(filepath, peaktable, 
+            Daisy::__gcms_annotation(filepath, ions, 
                 libname = "biocad_registry",
                 libs = Daisy::local_gcms_lib(), 
                 argv = work_pars);
@@ -68,7 +70,7 @@ const __gcms_file_annotation = function(filepath, peaktable,work_pars) {
             # load external msp file
             for(let libfile in work_pars$libfiles) {
                 # processing a single rawdata file
-                Daisy::__gcms_annotation(filepath, peaktable, 
+                Daisy::__gcms_annotation(filepath, ions, 
                     libname = basename(libfile),
                     libs = Daisy::gcms_mona_msp(libfile, libtype = work_pars$libtype), 
                     argv = work_pars);
@@ -90,13 +92,12 @@ const __gcms_file_annotation = function(filepath, peaktable,work_pars) {
 
 #' run single gcms annotation
 #' 
-const __gcms_annotation = function(rawfile, peaktable, libname, libs, argv) {
+const __gcms_annotation = function(rawfile, ions, libname, libs, argv) {
     let outputdir = argv$outputdir;
     let tmp = file.path(outputdir,"tmp");
     let top = as.integer(argv$top || 9);
-    let ions = Daisy::read_gcmsdata(rawfile, peaktable);
-    
-    print("make spectrum alignment search...");
+        
+    print(`[${libname}] make spectrum alignment search...`);
 
     let result = lapply(ions, function(i) {
         libs |> top_candidates(i, top = top);
