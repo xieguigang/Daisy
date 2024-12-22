@@ -75,12 +75,16 @@ const __gcms_file_annotation = function(filepath, peaktable,work_pars) {
             }
         }
 
+        print("make result file union...");
+
         # merge library result
         let tempfiles = file.path(work_pars$outputdir,"tmp",basename(filepath)) |> list.files(pattern = "*.csv");
         let tempdata = as.list(tempfiles, basename(tempfiles)) |> lapply(path -> read.csv(path, row.names = NULL, check.names = FALSE));
         let union = bind_rows(tempdata);
 
         write.csv(union, file = checkfile, row.names = FALSE);
+    } else {
+        print("skip of the cached result file!");
     }
 }
 
