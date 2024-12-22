@@ -27,6 +27,7 @@ const local_gcms_lib = function() {
     # create clr library object
     annotation::load_local(
         open_biocad_local(), 
-        open_local_gcms_EI()
+        open_local_gcms_EI(),
+        tqdm_verbose = FALSE
     );
 }
