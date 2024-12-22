@@ -9,8 +9,13 @@ const gcms_mona_msp = function(mspfile, libtype = [1,-1]) {
     imports "massbank" from "mzkit";
     imports "annotation" from "mzkit";
 
+    print("load reference library with library type:");
+    print(libtype);
+
     let mona = massbank::read.MoNA(mspfile, is_gcms =TRUE,lazy=FALSE);
-    let library = annotation::library_from_mona(mona ,libtype=libtype);
+    let library = annotation::library_from_mona(mona ,
+        libtype = libtype,
+        tqdm_verbose = FALSE);
 
     library;
 }

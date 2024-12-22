@@ -10,7 +10,7 @@ declare namespace Daisy {
    }
    /**
    */
-   function __gcms_annotation(rawfile: any, peaktable: any, libname: any, libs: any, argv: any): object;
+   function __gcms_annotation(rawfile: any, ions: any, libname: any, libs: any, argv: any): object;
    /**
    */
    function __gcms_file_annotation(filepath: any, peaktable: any, work_pars: any): object;
