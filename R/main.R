@@ -27,6 +27,8 @@ const make_annotation = function(files, peakfile, libtype = [1,-1], ms1ppm = 15,
 
     print("get raw data files for run annotations:");
     print(basename(files));
+    print("run daisy annotation with cpu processor threads:");
+    print(n_threads);
 
     # run for each rawdata files
     if (debug) {
@@ -36,12 +38,19 @@ const make_annotation = function(files, peakfile, libtype = [1,-1], ms1ppm = 15,
         }
     } else {
         # run in parallel for production
-        parallel(path = files, n_threads = n_threads, 
-                 ignoreError = TRUE) {
+        Parallel::parallel(raw_file = files, n_threads = n_threads, 
+                 ignoreError = FALSE, 
+                 debug = FALSE,
+                 log_tmp = `${export_dir}/tmp/.local_debug/parallel_slave/`) {
 
             require(Daisy);
+
+            let filepath <- unlist(raw_file);
+
+            # view verbose debug echo 
+            print(` -> ${filepath}`);
             # processing a single rawdata file
-            Daisy::dasy_task(path, workflow);
+            Daisy::dasy_task(filepath, workflow);
         }
     }
 
