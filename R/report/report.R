@@ -25,15 +25,19 @@ const export_report = function(files, export_dir = "./") {
 #' plot visual of the spectrum alignment
 #' 
 const make_msms_plot = function(result, visual_dir = "./") {
-    for(let hit in as.list(result, byrow = TRUE)) {
-        svg(file = file.path(visual_dir, `${hit$xcms_id}@${normalizeFileName(hit$name, 
+    for(let hit in tqdm(as.list(result, byrow = TRUE))) {
+        let safe_filename = normalizeFileName(hit$name, 
                                     alphabetOnly = FALSE, 
                                     replacement = "_", 
                                     shrink = TRUE,
-                                    maxchars = 64)}.svg`)) {
+                                    maxchars = 64)
+        ;
+        let title_str = `${hit$name} ${hit$adducts || "-"} ${round(hit$mz,3)}@${round(hit$rt/60,1)}min`;
+        let save_pdffile = file.path(visual_dir, `${hit$xcms_id}@${safe_filename}.pdf`);
 
+        pdf(file = save_pdffile) {
             parse.spectrum_alignment(hit$alignment) |> plot(
-                title = `${hit$name} ${hit$adducts || "-"} ${round(hit$mz,3)}@${round(hit$rt/60,1)}min`,
+                title = title_str,
                 legend_layout = "none",
                 bar_width = 2,
                 color1 = "green",
