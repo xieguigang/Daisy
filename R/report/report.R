@@ -33,9 +33,9 @@ const make_msms_plot = function(result, visual_dir = "./") {
                                     maxchars = 64)
         ;
         let title_str = `${hit$name} ${hit$adducts || "-"} ${round(hit$mz,3)}@${round(hit$rt/60,1)}min`;
-        let save_pdffile = file.path(visual_dir, `${hit$xcms_id}@${safe_filename}.pdf`);
+        let save_pdffile = file.path(visual_dir, `${hit$xcms_id}@${safe_filename}.svg`);
 
-        pdf(file = save_pdffile) {
+        svg(file = save_pdffile) {
             parse.spectrum_alignment(hit$alignment) |> plot(
                 title = title_str,
                 legend_layout = "none",
