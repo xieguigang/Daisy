@@ -21,5 +21,11 @@ const build_mona_lcms = function(repo, libdir = "./MoNA") {
 
     write_metadata(metadata, meta = metabolites);
 
+    for(let spec in tqdm(spectra)) {
+        ifelse(is_positive(spec), libpos, libneg) |> write_mona(spec);
+    }
+
+    close(libpos);
+    close(libneg);
     close(metadata);
 }
