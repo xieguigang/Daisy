@@ -19,13 +19,19 @@ const build_mona_lcms = function(repo, libdir = "./MoNA") {
     |> writeLines(con = file.path(libdir,"mapping.json"))
     ;
 
+    print("write metabolite database...");
     write_metadata(metadata, meta = metabolites);
 
+    print("write reference spectrum database...");
     for(let spec in tqdm(spectra)) {
-        ifelse(is_positive(spec), libpos, libneg) |> write_mona(spec);
+        if (nchar([spec]::formula) > 0) {
+            ifelse(is_positive(spec), libpos, libneg) |> write_mona(spec);
+        }
     }
 
     close(libpos);
     close(libneg);
     close(metadata);
+
+    print(" ~Job done!");
 }
