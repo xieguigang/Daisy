@@ -22,6 +22,10 @@ declare namespace Daisy {
    */
    function __merge_samples(results: any, argv: any): object;
    /**
+     * @param libdir default value Is ``./MoNA``.
+   */
+   function build_mona_lcms(repo: any, libdir?: any): object;
+   /**
    */
    function buildCfmidDb(cfmid: any, libfile: any): object;
    /**

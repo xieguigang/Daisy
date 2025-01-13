@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Run untargetted annotation for gc-ms</title>
+    <title>build lcms reference library for MoNA LC-MS dataset</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
     <link rel="stylesheet" type="text/css" href="../../_assets/page.css">
@@ -13,12 +13,12 @@
 
         <table style="width: 100%;">
             <tr>
-                <td>gcms_tof_annotation {Daisy}</td>
+                <td>build_mona_lcms {Daisy}</td>
                 <td style="text-align: right;">R Documentation</td>
             </tr>
         </table>
 
-        <h2>Run untargetted annotation for gc-ms</h2>
+        <h2>build lcms reference library for MoNA LC-MS dataset</h2>
 
         <h3>Description</h3>
 
@@ -27,19 +27,17 @@
         <h3>Usage</h3>
 
         <div style="width: 100%; padding-left: 3%; color: black;">
-            <pre><code class='language-R' style="color: black; font-weight:normal;"><strong>gcms_tof_annotation</strong>(<i>rawdir</i>, <i>peaktable</i>,
-    <i>libtype</i> = [<span style='color: green;'>-1</span>],
-    <i>outputdir</i> = <span style='color: brown;'><strong>'./'</strong></span>,
-    <i>ppm.cutoff</i> = <span style='color: green;'>20</span>,
-    <i>lib.files</i> = <span style='color: blue !important;'>NULL</span>,
-    <i>n.threads</i> = <span style='color: green;'>8</span>,
-    <i>debug</i> = <span style='color: blue !important;'>FALSE</span>);</code></pre>
+            <pre><code class='language-R' style="color: black; font-weight:normal;"><strong>build_mona_lcms</strong>(<i>repo</i>,
+    <i>libdir</i> = <span style='color: brown;'><strong>'./MoNA'</strong></span>);</code></pre>
         </div>
 
         <h3>Arguments</h3>
 
         <table>
             
+<dt>repo</dt>
+<dd><p><p>a local directory path that contains multiple msp data files that could be download from the MoNA database.</p></p></dd>
+
         </table>
 
 
