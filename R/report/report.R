@@ -1,3 +1,6 @@
+
+#' export report table and spectrum alignment mirror plot
+#' 
 const export_report = function(files, export_dir = "./") {
     let names = basename(files);
     let result = NULL;
