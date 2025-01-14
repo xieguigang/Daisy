@@ -102,7 +102,13 @@ const dasy_task = function(file, args = list(
         rt_win = rt_winsize)
     ;
 
-    metadna_result["source"] = "metadna";
+    print("inspect of the reference library search result:");
+    str(dda_result);
+
+    print("inspect of the metadna result:");
+    str(metadna_result);
+
+    metadna_result[, "source"] = "metadna";
     dda_result[,"source"] = "reference_library";
     
     let result = rbind(dda_result, metadna_result);

@@ -6,7 +6,7 @@ const peak_alignment = function(metadna, peaktable, mzdiff = 0.01, rt_win = 15) 
     let alignments = list();
     let hit_result = NULL;
 
-    for(let hit in as.list(metadna, byrow = TRUE)) {
+    for(let hit in tqdm(as.list(metadna, byrow = TRUE))) {
         let peaks = peaktable |> find_xcms_ionPeaks(mz  = hit$mz, rt = hit$rt,
             mzdiff = mzdiff,
             rt_win = rt_win); 
@@ -21,24 +21,25 @@ const peak_alignment = function(metadna, peaktable, mzdiff = 0.01, rt_win = 15) 
         }
     }
 
-    data.frame(
-        xcms_id = alignments@xcms_id,
-        mz = alignments@mz,
-        rt = alignments@rt,
-        intensity = alignments@intensity,
-        KEGG = alignments@KEGGId,
-        exactMass = alignments@exactMass,
-        formula = alignments@formula,
-        name = alignments@name,
-        precursorType = alignments@precursorType,
-        mzCalc = alignments@mzCalc,
-        ppm = alignments@ppm,
-        forward	= alignments@forward,
-        reverse = alignments@reverse,
-        jaccard = alignments@jaccard,
-        entropy = alignments@entropy,
-        pvalue	= alignments@pvalue,
-        alignment = alignments@alignment,
-        row.names = alignments@xcms_id
-    );
+    # data.frame(
+    #     xcms_id = alignments@xcms_id,
+    #     mz = alignments@mz,
+    #     rt = alignments@rt,
+    #     intensity = alignments@intensity,
+    #     KEGG = alignments@KEGGId,
+    #     exactMass = alignments@exactMass,
+    #     formula = alignments@formula,
+    #     name = alignments@name,
+    #     precursorType = alignments@precursorType,
+    #     mzCalc = alignments@mzCalc,
+    #     ppm = alignments@ppm,
+    #     forward	= alignments@forward,
+    #     reverse = alignments@reverse,
+    #     jaccard = alignments@jaccard,
+    #     entropy = alignments@entropy,
+    #     pvalue	= alignments@pvalue,
+    #     alignment = alignments@alignment,
+    #     row.names = alignments@xcms_id
+    # );
+    as.data.frame(alignments);
 }
