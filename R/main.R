@@ -32,7 +32,7 @@ const make_annotation = function(files, peakfile, libtype = [1,-1], ms1ppm = 15,
     print(n_threads);
 
     # run for each rawdata files
-    if (debug) {
+    if (debug || as.integer(n_threads) == 1) {
         # run in sequantial for debug
         for(let file in files) {
             dasy_task(file, as.list(workflow));
