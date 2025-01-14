@@ -7,5 +7,8 @@ const call_librarysearch = function(peaks_ms2, libfiles = NULL, libtype = [1,-1]
         ;
     });
 
-    
+    unlist(result)
+    |> as.data.frame()
+    |> write.csv(file.path(output, "libsdata.csv"))
+    ;
 }
