@@ -84,6 +84,7 @@ const dasy_task = function(file, args = list(
         entropy = metadna_result$entropy,
         mz = metadna_result$mz,
         rt = metadna_result$rt,
+        intensity = metadna_result$intensity,
         evidence = metadna_result$reaction,
         alignment = metadna_result$alignment
     ) 
@@ -101,6 +102,9 @@ const dasy_task = function(file, args = list(
         rt_win = rt_winsize)
     ;
 
+    metadna_result["source"] = "metadna";
+    dda_result[,"source"] = "reference_library";
+    
     let result = rbind(dda_result, metadna_result);
 
     result[, "rawfile"] = args$filename; 
