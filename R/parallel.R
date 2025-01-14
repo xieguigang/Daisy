@@ -32,7 +32,7 @@ const dasy_task = function(file, args = list(
     let ms1_da = args$ms1_da || 0.1;
     let rt_winsize = args$rt_winsize || 10;
 
-    if (length(readLines(dda_output)) == 0 || !opt_cache_enable) {
+    if (length(readLines(dda_output,strict=FALSE)) == 0 || !opt_cache_enable) {
         # run reference library search
         call_librarysearch(
             peaks_ms2 = args$rawdata, 
@@ -44,7 +44,7 @@ const dasy_task = function(file, args = list(
         print("use the cached dda library search result!");
     }
 
-    if (length(readLines(dia_output)) == 0 || !opt_cache_enable) {
+    if (length(readLines(dia_output,strict=FALSE)) == 0 || !opt_cache_enable) {
         # run metadna at last
         call_metadna(
             peaks_ms2 = args$rawdata, 
