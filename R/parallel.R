@@ -5,12 +5,13 @@
 #' @param args the workflow arguments for run this annotation.
 #' 
 const dasy_task = function(file, args = list(
-        export_dir = "./", 
-        peakfile   = "./peaksdata.csv",
-        ms1_da     = 0.1, 
-        rt_winsize = 10, 
-        libtype    = 1, 
-        ms1ppm     = 15)) {
+        export_dir  = "./", 
+        peakfile    = "./peaksdata.csv",
+        library_dir = NULL,
+        ms1_da      = 0.1, 
+        rt_winsize  = 10, 
+        libtype     = 1, 
+        ms1ppm      = 15)) {
 
     let opt_cache_enable = TRUE;
 
@@ -35,7 +36,7 @@ const dasy_task = function(file, args = list(
         # run reference library search
         call_librarysearch(
             peaks_ms2 = args$rawdata, 
-            libfiles = NULL, 
+            libfiles = args$library_dir, 
             libtype = args$libtype, 
             ms1ppm = args$ms1ppm, 
             output = library_exports);

@@ -16,10 +16,11 @@
 #' 
 const make_annotation = function(files, peakfile, libtype = [1,-1], ms1ppm = 15, 
                                  export_dir = "./", 
+                                 library_dir = NULL,
                                  n_threads = 8, 
                                  debug = FALSE) {
 
-    let workflow = list(peakfile, libtype, ms1ppm, export_dir);
+    let workflow = list(peakfile, libtype, ms1ppm, export_dir, library_dir);
 
     if (dir.exists(files)) {
         files <- list.files(files, pattern = ["*.mzXML", "*.mzML", "*.mzPack", "*.PeakMs2"]);

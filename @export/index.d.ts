@@ -47,6 +47,7 @@ declare namespace Daisy {
    /**
      * @param args default value Is ``Call "list"("export_dir" <- "./",
      *       "peakfile" <- "./peaksdata.csv",
+     *       "library_dir" <- NULL,
      *       "ms1_da" <- 0.1,
      *       "rt_winsize" <- 10,
      *       "libtype" <- 1,
@@ -92,10 +93,11 @@ declare namespace Daisy {
      * @param libtype default value Is ``[1, -1]``.
      * @param ms1ppm default value Is ``15``.
      * @param export_dir default value Is ``./``.
+     * @param library_dir default value Is ``null``.
      * @param n_threads default value Is ``8``.
      * @param debug default value Is ``false``.
    */
-   function make_annotation(files: any, peakfile: any, libtype?: any, ms1ppm?: any, export_dir?: any, n_threads?: any, debug?: any): object;
+   function make_annotation(files: any, peakfile: any, libtype?: any, ms1ppm?: any, export_dir?: any, library_dir?: any, n_threads?: any, debug?: any): object;
    /**
      * @param visual_dir default value Is ``./``.
    */
