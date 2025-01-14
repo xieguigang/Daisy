@@ -35,10 +35,9 @@ declare namespace Daisy {
    /**
      * @param libfiles default value Is ``null``.
      * @param libtype default value Is ``[1, -1]``.
-     * @param ms1ppm default value Is ``15``.
      * @param output default value Is ``./``.
    */
-   function call_librarysearch(peaks_ms2: any, libfiles?: any, libtype?: any, ms1ppm?: any, output?: any): object;
+   function call_librarysearch(peaks_ms2: any, libfiles?: any, libtype?: any, output?: any): object;
    /**
      * @param libtype default value Is ``[1, -1]``.
      * @param ms1ppm default value Is ``15``.
