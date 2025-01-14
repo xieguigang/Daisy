@@ -1,6 +1,8 @@
 #' make unique annotation result
 #' 
 const report_unique = function(result) {
+    let keys = colnames(result);
+
     # make unique name
     # by pickup top score ion
     result = result |> groupBy("name");
@@ -10,7 +12,7 @@ const report_unique = function(result) {
         ions[, "supports"] = files;
         ions[1,,drop = TRUE];
     });
-    result = tabular(result);
+    result = tabular(result,keys );
 
     # make unique ion
     # by pickup top score name
@@ -21,7 +23,7 @@ const report_unique = function(result) {
         meta[1,,drop = TRUE];
     });
 
-    tabular(result);
+    tabular(result,keys );
 }
 
 const rank_score = function(result) {

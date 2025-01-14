@@ -40,9 +40,9 @@ const make_annotation = function(files, peakfile, libtype = [1,-1], ms1ppm = 15,
     } else {
         # run in parallel for production
         Parallel::parallel(raw_file = files, n_threads = n_threads, 
-                 ignoreError = FALSE, 
-                 debug = FALSE,
-                 log_tmp = `${export_dir}/tmp/.local_debug/parallel_slave/`) {
+                ignoreError = FALSE, 
+                debug = FALSE,
+                log_tmp = `${export_dir}/tmp/.local_debug/parallel_slave/`) {
 
             require(Daisy);
 
@@ -50,6 +50,8 @@ const make_annotation = function(files, peakfile, libtype = [1,-1], ms1ppm = 15,
 
             # view verbose debug echo 
             print(` -> ${filepath}`);
+            str(workflow);
+
             # processing a single rawdata file
             Daisy::dasy_task(filepath, workflow);
         }

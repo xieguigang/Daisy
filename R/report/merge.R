@@ -7,7 +7,7 @@ const __merge_samples = function(results, argv) {
         result;
     });
     results <- bind_rows(results);
-    results[, "unique_id"] = `${results$ID}-${results$query_id}`;
+    results[, "unique_id"] = `${results$metabolite_id}-${results$xcms_id}`;
 
     let cols = colnames(results);
 
@@ -48,14 +48,10 @@ const __merge_samples = function(results, argv) {
     # merge <- merge[nchar(merge$adducts)>0,];
     # merge[,"rank"] = (merge$rank) / (merge$ppm); 
 
-    merge <- rank_unique(merge, "query_id", merge$rank);
-    merge <- rank_unique(merge, "ID", merge$rank);
+    merge <- rank_unique(merge, "xcms_id", merge$rank);
+    merge <- rank_unique(merge, "metabolite_id", merge$rank);
     merge[,"ID"] = NULL;
     merge[,"unique_id"] =NULL;
-    merge[,"xcms_id"] = merge$query_id;
-    merge[,"query_id"] = NULL;
-    merge[,"alignment"] = merge$alignment_str;
-    merge[,"alignment_str"] = NULL;
 
     print(merge);
 
