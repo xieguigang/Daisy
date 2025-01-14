@@ -39,6 +39,8 @@ const dasy_task = function(file, args = list(
             libtype = args$libtype, 
             ms1ppm = args$ms1ppm, 
             output = library_exports);
+    } else {
+        print("use the cached dda library search result!");
     }
 
     if (length(readLines(dia_output)) == 0 || !opt_cache_enable) {
@@ -48,6 +50,8 @@ const dasy_task = function(file, args = list(
             libtype = args$libtype, 
             ms1ppm = args$ms1ppm, 
             output = metadna_exports);
+    } else {
+        print("use the cached metadna annotation result!");
     }
 
     let metadna_result = dia_output
