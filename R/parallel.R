@@ -5,15 +5,27 @@
 #' @param args the workflow arguments for run this annotation.
 #' 
 const dasy_task = function(file, args) {
+    # get a collection of the mzkit peakms2 clr object
+    # the precursor of the ms2 spectrum has not changed to ms1 peaks ion
     args$rawdata = read_rawfile(file, cache_enable = TRUE);
     args$filename = basename(file);
     args$export_dir = file.path(args$export_dir, args$filename);
+    # get peak table data
     args$peaks = read.xcms_peaks(args$peakfile,
         tsv = file.ext(args$peakfile) == "txt",
         general_method = FALSE);
 
     let metadna_exports = file.path(args$export_dir, "metadna");
+    let library_exports = file.path(args$export_dir, "libsearch");
     let dda_result = NULL;
+
+    # run reference library search
+    call_librarysearch(
+        peaks_ms2 = args$rawdata, 
+        libfiles = NULL, 
+        libtype = args$libtype, 
+        ms1ppm = args$ms1ppm, 
+        output = library_exports);
 
     # run metadna at last
     call_metadna(
