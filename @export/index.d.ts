@@ -19,6 +19,10 @@ declare namespace Daisy {
    */
    function __load_gcms_libs(argv?: any): object;
    /**
+     * @param argv default value Is ``Call "list"("libfiles" <- NULL, "libtype" <- [1, -1])``.
+   */
+   function __load_lcms_libs(argv?: any): object;
+   /**
    */
    function __merge_samples(results: any, argv: any): object;
    /**
@@ -28,6 +32,13 @@ declare namespace Daisy {
    /**
    */
    function buildCfmidDb(cfmid: any, libfile: any): object;
+   /**
+     * @param libfiles default value Is ``null``.
+     * @param libtype default value Is ``[1, -1]``.
+     * @param ms1ppm default value Is ``15``.
+     * @param output default value Is ``./``.
+   */
+   function call_librarysearch(peaks_ms2: any, libfiles?: any, libtype?: any, ms1ppm?: any, output?: any): object;
    /**
      * @param libtype default value Is ``[1, -1]``.
      * @param ms1ppm default value Is ``15``.
