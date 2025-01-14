@@ -45,8 +45,14 @@ declare namespace Daisy {
    */
    function call_metadna(peaks_ms2: any, libtype?: any, ms1ppm?: any, output?: any): object;
    /**
+     * @param args default value Is ``Call "list"("export_dir" <- "./",
+     *       "peakfile" <- "./peaksdata.csv",
+     *       "ms1_da" <- 0.1,
+     *       "rt_winsize" <- 10,
+     *       "libtype" <- 1,
+     *       "ms1ppm" <- 15)``.
    */
-   function dasy_task(file: any, args: any): object;
+   function dasy_task(file: any, args?: any): object;
    /**
      * @param export_dir default value Is ``./``.
    */
