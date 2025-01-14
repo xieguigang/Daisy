@@ -60,7 +60,7 @@ const dasy_task = function(file, args = list(
 
     metadna_result <- data.frame(
         metabolite_id = metadna_result$KEGGId,
-	    name = metadna_result$name,
+        name = metadna_result$name,
         formula = metadna_result$formula,
         exact_mass = metadna_result$exactMass,
         chebi = "",

@@ -17,29 +17,40 @@ const peak_alignment = function(metadna, peaktable, mzdiff = 0.01, rt_win = 15) 
             hit_result$xcms_id = [peak]::ID;
             hit_result$mz = [peak]::mz;
             hit_result$rt = [peak]::rt;
-            alignments[[`${hit_result$xcms_id}-${hit$query_id}`]] = hit_result;
+            alignments[[`${hit_result$xcms_id}-${hit$metabolite_id}`]] = hit_result;
         }
     }
 
-    # data.frame(
-    #     xcms_id = alignments@xcms_id,
-    #     mz = alignments@mz,
-    #     rt = alignments@rt,
-    #     intensity = alignments@intensity,
-    #     KEGG = alignments@KEGGId,
-    #     exactMass = alignments@exactMass,
-    #     formula = alignments@formula,
-    #     name = alignments@name,
-    #     precursorType = alignments@precursorType,
-    #     mzCalc = alignments@mzCalc,
-    #     ppm = alignments@ppm,
-    #     forward	= alignments@forward,
-    #     reverse = alignments@reverse,
-    #     jaccard = alignments@jaccard,
-    #     entropy = alignments@entropy,
-    #     pvalue	= alignments@pvalue,
-    #     alignment = alignments@alignment,
-    #     row.names = alignments@xcms_id
-    # );
-    as.data.frame(alignments);
+    let exact_mass = formula::eval(alignments@formula);
+
+    data.frame(
+        metabolite_id = alignments@metabolite_id,
+        name = alignments@name,
+        formula = alignments@formula,
+        exact_mass = exact_mass,
+        chebi = alignments@chebi,
+        pubchem = alignments@pubchem,
+        cas = alignments@cas,
+        kegg = alignments@kegg,
+        hmdb = alignments@hmdb,
+        lipidmaps = alignments@lipidmaps,
+        mesh = alignments@mesh,
+        inchikey = alignments@inchikey,
+        inchi = alignments@inchi,
+        smiles = alignments@smiles,
+        kingdom = alignments@kingdom,
+        super_class = alignments@super_class,
+        class = alignments@class,
+        sub_class = alignments@sub_class,
+        molecular_framework = alignments@molecular_framework,
+        forward = alignments@forward,
+        reverse = alignments@reverse,
+        jaccard = alignments@jaccard,
+        entropy = alignments@entropy,
+        mz = alignments@mz,
+        rt = alignments@rt,
+        intensity = alignments@intensity,
+        evidence = alignments@evidence,
+        alignment = alignments@alignment
+    );
 }
