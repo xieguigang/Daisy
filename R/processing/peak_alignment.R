@@ -2,7 +2,7 @@
 #' 
 #' @details a common method for handling of the ion feature annotation result
 #' 
-const peak_alignment = function(metadna, peaktable, mzdiff = 0.01, rt_win = 15) {
+const peak_alignment = function(metadna, peaktable, mzdiff = 0.01, rt_win = 15, ms1ppm = 15, libtype = [1,-1]) {
     let alignments = list();
     let hit_result = NULL;
 
@@ -21,9 +21,19 @@ const peak_alignment = function(metadna, peaktable, mzdiff = 0.01, rt_win = 15) 
         }
     }
 
-    let exact_mass = formula::eval(alignments@formula);
+    libtype <- .Internal::first(as.integer(libtype || 1));
+    libtype <- get_adducts(libtype);
 
-    data.frame(
+    let query_mz = alignments@mz;
+    let exact_mass = formula::eval(alignments@formula);
+    let adducts = lapply(tqdm(exact_mass), function(mass, i) {
+        find_precursor(mass, mz = query_mz[i],
+            libtype = libtype,
+            da = 0.3,
+            safe = TRUE);
+    });
+
+    alignments <- data.frame(
         metabolite_id = alignments@metabolite_id,
         name = alignments@name,
         formula = alignments@formula,
@@ -47,10 +57,16 @@ const peak_alignment = function(metadna, peaktable, mzdiff = 0.01, rt_win = 15) 
         reverse = alignments@reverse,
         jaccard = alignments@jaccard,
         entropy = alignments@entropy,
-        mz = alignments@mz,
+        mz = query_mz,
         rt = alignments@rt,
         intensity = alignments@intensity,
+        adducts = adducts@precursor_type,
+        theoretical_mz = adducts@theoretical,
+        ppm = adducts@ppm,
         evidence = alignments@evidence,
         alignment = alignments@alignment
     );
+    alignments <- alignments[nchar(alignments$adducts)>0,];
+    alignments <- alignments[as.numeric(alignments$ppm)<ms1ppm, ];
+    alignments;
 }

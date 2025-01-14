@@ -55,6 +55,7 @@ const dasy_task = function(file, args = list(
         print("use the cached metadna annotation result!");
     }
 
+    let ms1ppm = as.numeric(args$ms1ppm ||15);
     let metadna_result = dia_output
     |> read.csv(row.names = NULL, check.names = FALSE);
 
@@ -91,7 +92,8 @@ const dasy_task = function(file, args = list(
     # the annotation result dataframe required of mz and rt field
     |> peak_alignment(args$peaks, 
         mzdiff = ms1_da, 
-        rt_win = rt_winsize)
+        rt_win = rt_winsize,
+        ms1ppm = ms1ppm, libtype = args$libtype )
     ;
     
     let dda_result = dda_output
@@ -99,7 +101,8 @@ const dasy_task = function(file, args = list(
     # the annotation result dataframe required of mz and rt field
     |> peak_alignment(args$peaks, 
         mzdiff = ms1_da, 
-        rt_win = rt_winsize)
+        rt_win = rt_winsize,
+        ms1ppm = ms1ppm, libtype = args$libtype)
     ;
 
     print("inspect of the reference library search result:");
