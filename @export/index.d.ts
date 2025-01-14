@@ -116,8 +116,10 @@ declare namespace Daisy {
    /**
      * @param mzdiff default value Is ``0.01``.
      * @param rt_win default value Is ``15``.
+     * @param ms1ppm default value Is ``15``.
+     * @param libtype default value Is ``[1, -1]``.
    */
-   function peak_alignment(metadna: any, peaktable: any, mzdiff?: any, rt_win?: any): object;
+   function peak_alignment(metadna: any, peaktable: any, mzdiff?: any, rt_win?: any, ms1ppm?: any, libtype?: any): object;
    /**
    */
    function rank_score(result: any): object;
@@ -133,7 +135,7 @@ declare namespace Daisy {
    function report_unique(result: any): object;
    /**
    */
-   function tabular(result: any): object;
+   function tabular(list: any, keys: any): object;
    /**
    */
    function union_posneg(pos: any, neg: any): object;
