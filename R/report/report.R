@@ -7,6 +7,8 @@ const export_report = function(files, export_dir = "./") {
     let visual_dir = file.path(export_dir, "spectral_aligns");
 
     for(let file in `${export_dir}/${names}/result.csv`) {
+        print(file);
+        
         file = read.csv(file, row.names = NULL, check.names = FALSE);
         result = rbind(result, file);
     }
