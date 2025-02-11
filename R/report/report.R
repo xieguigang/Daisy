@@ -39,9 +39,10 @@ const make_msms_plot = function(result, visual_dir = "./") {
         ;
         let title_str = `${hit$name} ${hit$adducts || "-"} ${round(hit$mz,3)}@${round(hit$rt/60,1)}min`;
         let save_pdffile = file.path(visual_dir, `${hit$xcms_id}@${safe_filename}.svg`);
-
-        svg(file = save_pdffile) {
-            parse.spectrum_alignment(hit$alignment) |> plot(
+        let save_pngfile = file.path(visual_dir, `${hit$xcms_id}@${safe_filename}.png`);
+        let align_data = parse.spectrum_alignment(hit$alignment);
+        let make_mirror = function() {
+            plot(align_data,
                 title = title_str,
                 legend_layout = "none",
                 bar_width = 2,
@@ -52,6 +53,13 @@ const make_msms_plot = function(result, visual_dir = "./") {
                 grid_x = TRUE
             );
         }
+
+        svg(file = save_pdffile) {
+            make_mirror(); 
+        };
+        bitmap(file = save_pngfile) {
+            make_mirror(); 
+        };
     }
 
     invisible(NULL);
