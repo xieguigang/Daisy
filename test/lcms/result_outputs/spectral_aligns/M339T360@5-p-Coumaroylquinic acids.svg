@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 800">
+  <rect fill="white" width="1200" height="800" />
+  <rect fill="white" width="1200" height="800" />
+  <path fill="none" stroke="#D3D3D3" stroke-width="1.0416666" stroke-miterlimit="4" d="M177.317 100L177.317 750" />
+  <path fill="none" stroke="#D3D3D3" stroke-width="1.0416666" stroke-miterlimit="4" d="M295.75 100L295.75 750" />
+  <path fill="none" stroke="#D3D3D3" stroke-width="1.0416666" stroke-miterlimit="4" d="M414.184 100L414.184 750" />
+  <path fill="none" stroke="#D3D3D3" stroke-width="1.0416666" stroke-miterlimit="4" d="M532.618 100L532.618 750" />
+  <path fill="none" stroke="#D3D3D3" stroke-width="1.0416666" stroke-miterlimit="4" d="M651.051 100L651.051 750" />
+  <path fill="none" stroke="#D3D3D3" stroke-width="1.0416666" stroke-miterlimit="4" d="M769.485 100L769.485 750" />
+  <path fill="none" stroke="#D3D3D3" stroke-width="1.0416666" stroke-miterlimit="4" d="M887.918 100L887.918 750" />
+  <path fill="none" stroke="#D3D3D3" stroke-width="1.0416666" stroke-miterlimit="4" d="M1006.35 100L1006.35 750" />
+  <path fill="none" stroke="#D3D3D3" stroke-width="1.0416666" stroke-miterlimit="4" d="M1124.79 100L1124.79 750" />
+  <path fill="none" stroke="black" stroke-width="1" stroke-miterlimit="4" d="M100 425L85 425" />
+  <path fill="none" stroke="#EBEBEB" stroke-width="1.0416666" stroke-miterlimit="4" d="M100 425L1170 425" />
+  <text font-size="12.5" font-family="Microsoft YaHei, 微软雅黑" x="64.669678, 72, " y="429.5, ">
+			0%
+	</text>
+  <path fill="none" stroke="black" stroke-width="1" stroke-miterlimit="4" d="M100 360L85 360" />
+  <path fill="none" stroke="#EBEBEB" stroke-width="1.0416666" stroke-miterlimit="4" d="M100 360L1170 360" />
+  <text font-size="12.5" font-family="Microsoft YaHei, 微软雅黑" x="57.339355, 64.669678, 72, " y="364.5, ">
+			20%
+	</text>
+  <path fill="none" stroke="black" stroke-width="1" stroke-miterlimit="4" d="M100 490L85 490" />
+  <path fill="none" stroke="#EBEBEB" stroke-width="1.0416666" stroke-miterlimit="4" d="M100 490L1170 490" />
+  <text font-size="12.5" font-family="Microsoft YaHei, 微软雅黑" x="57.339355, 64.669678, 72, " y="494.5, ">
+			20%
+	</text>
+  <path fill="none" stroke="black" stroke-width="1" stroke-miterlimit="4" d="M100 295L85 295" />
+  <path fill="none" stroke="#EBEBEB" stroke-width="1.0416666" stroke-miterlimit="4" d="M100 295L1170 295" />
+  <text font-size="12.5" font-family="Microsoft YaHei, 微软雅黑" x="57.339355, 64.669678, 72, " y="299.5, ">
+			40%
+	</text>
+  <path fill="none" stroke="black" stroke-width="1" stroke-miterlimit="4" d="M100 555L85 555" />
+  <path fill="none" stroke="#EBEBEB" stroke-width="1.0416666" stroke-miterlimit="4" d="M100 555L1170 555" />
+  <text font-size="12.5" font-family="Microsoft YaHei, 微软雅黑" x="57.339355, 64.669678, 72, " y="559.5, ">
+			40%
+	</text>
+  <path fill="none" stroke="black" stroke-width="1" stroke-miterlimit="4" d="M100 230L85 230" />
+  <path fill="none" stroke="#EBEBEB" stroke-width="1.0416666" stroke-miterlimit="4" d="M100 230L1170 230" />
+  <text font-size="12.5" font-family="Microsoft YaHei, 微软雅黑" x="57.339355, 64.669678, 72, " y="234.5, ">
+			60%
+	</text>
+  <path fill="none" stroke="black" stroke-width="1" stroke-miterlimit="4" d="M100 620L85 620" />
+  <path fill="none" stroke="#EBEBEB" stroke-width="1.0416666" stroke-miterlimit="4" d="M100 620L1170 620" />
+  <text font-size="12.5" font-family="Microsoft YaHei, 微软雅黑" x="57.339355, 64.669678, 72, " y="624.5, ">
+			60%
+	</text>
+  <path fill="none" stroke="black" stroke-width="1" stroke-miterlimit="4" d="M100 165L85 165" />
+  <path fill="none" stroke="#EBEBEB" stroke-width="1.0416666" stroke-miterlimit="4" d="M100 165L1170 165" />
+  <text font-size="12.5" font-family="Microsoft YaHei, 微软雅黑" x="57.339355, 64.669678, 72, " y="169.5, ">
+			80%
+	</text>
+  <path fill="none" stroke="black" stroke-width="1" stroke-miterlimit="4" d="M100 685L85 685" />
+  <path fill="none" stroke="#EBEBEB" stroke-width="1.0416666" stroke-miterlimit="4" d="M100 685L1170 685" />
+  <text font-size="12.5" font-family="Microsoft YaHei, 微软雅黑" x="57.339355, 64.669678, 72, " y="689.5, ">
+			80%
+	</text>
+  <path fill="none" stroke="black" stroke-width="1" stroke-miterlimit="4" d="M100 100L85 100" />
+  <path fill="none" stroke="#EBEBEB" stroke-width="1.0416666" stroke-miterlimit="4" d="M100 100L1170 100" />
+  <text font-size="12.5" font-family="Microsoft YaHei, 微软雅黑" x="51.009033, 58.339355, 65.669678, 73, " y="104.5, ">
+			100%
+	</text>
+  <path fill="none" stroke="black" stroke-width="1" stroke-miterlimit="4" d="M100 750L85 750" />
+  <path fill="none" stroke="#EBEBEB" stroke-width="1.0416666" stroke-miterlimit="4" d="M100 750L1170 750" />
+  <text font-size="12.5" font-family="Microsoft YaHei, 微软雅黑" x="51.009033, 58.339355, 65.669678, 73, " y="754.5, ">
+			100%
+	</text>
+  <path fill="none" stroke="black" stroke-width="2" stroke-miterlimit="4" d="M100 100L100 750" />
+  <text transform="matrix(0 -1 1 0 43 439.333)" font-size="12.5" font-family="Segoe UI" x="-56.238403, -48.761597, -42.224731, -39.197388, -32.837524, -28.601685, -25.574341, -19.586792, -13.049927, -9.6258545, -6.2994385, 0.77453613, 5.010376, 11.547241, 18.621216, 23.925171, 26.952515, 31.188354, 37.236938, 41.008911, 51.238403, " y="3.5, ">
+			Relative Intensity(%)
+	</text>
+  <path fill="none" stroke="black" stroke-width="2" stroke-miterlimit="4" d="M100 425L1170 425" />
+  <text font-size="12.5" font-family="Microsoft YaHei, 微软雅黑" x="1113, 1125.2131, 1130.5537, 1138.3052, 1142.0039, 1146.7769, 1153.686, 1158.343, 1161.6694, " y="439, ">
+			M/Z ratio
+	</text>
+  <rect fill="green" x="139" y="408" width="2" height="17" />
+  <rect fill="green" x="252" y="368" width="2" height="57" />
+  <rect fill="green" x="338" y="397" width="2" height="28" />
+  <rect fill="green" x="385" y="228" width="2" height="197" />
+  <rect fill="green" x="517" y="100" width="2" height="325" />
+  <rect fill="green" x="1019" y="396" width="2" height="29" />
+  <rect fill="blue" x="517" y="425" width="2" height="325" />
+  <text font-size="12.5" font-family="Segoe UI" x="361.92307, 368.66135, 375.39963, 382.13791, 384.84787, 391.58615, 398.32443, 405.06271, " y="226.79321, ">
+			119.0492
+	</text>
+  <text font-size="12.5" font-family="Segoe UI" x="493.9657, 500.70398, 507.44226, 514.18054, 516.8905, 523.62878, 530.36707, 537.10535, " y="99, ">
+			146.9219
+	</text>
+  <text font-size="12.5" font-family="Segoe UI" x="493.93018, 500.66846, 507.40674, 514.14502, 516.85498, 523.59326, 530.33154, 537.06982, " y="762, ">
+			146.9219
+	</text>
+  <text font-size="25" font-family="Microsoft YaHei, 微软雅黑" x="328.34741, 343.00806, 353.82349, 369.79028, 380.60571, 397.32935, 413.2229, 428.62817, 452.05347, 465.87183, 475.41772, 491.31128, 504.5437, 511.19653, 527.18774, 542.59302, 549.24585, 564.65112, 571.30396, 583.84058, 591.23804, 605.0564, 617.59302, 624.24585, 640.23706, 651.80933, 659.20679, 667.5564, 691.98267, 710.52515, 729.86108, 738.21069, 756.75317, 764.15063, 778.81128, 793.47192, 808.13257, 814.15063, 828.81128, 843.47192, 858.13257, 883.91382, 898.57446, 921.99976, 928.65259, " y="85.5, ">
+			5-p-Coumaroylquinic acids [M+H]+ 339.107@6min
+	</text>
+</svg>

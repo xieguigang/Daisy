@@ -6,5 +6,6 @@ Daisy::make_annotation(
     libtype = 1, 
     ms1ppm = 15, 
     export_dir = file.path(@dir, "result_outputs"),
-    debug = TRUE
+    debug = TRUE,
+    library_dir = "F:/datapool/mona/libs"
 );
