@@ -428,3 +428,4 @@ test/EI_pos.pack
 data/EI_pos.pack
 test/gcms/SAV_130416_022_To103.csv
 test/gcms/tmp/SAV_130416_022_To103/biocad_registry.csv
+test/lcms/0001.mzXML
