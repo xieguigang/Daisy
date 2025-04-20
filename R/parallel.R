@@ -17,6 +17,9 @@ const dasy_task = function(file, args = list(
 
     let opt_cache_enable = TRUE;
 
+    print("view of the workflow arguments:");
+    str(args);
+
     # get a collection of the mzkit peakms2 clr object
     # the precursor of the ms2 spectrum has not changed to ms1 peaks ion
     args$rawdata = read_rawfile(file, cache_enable = opt_cache_enable);

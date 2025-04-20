@@ -19,7 +19,7 @@ declare namespace Daisy {
    */
    function __load_gcms_libs(argv?: any): object;
    /**
-     * @param argv default value Is ``Call "list"("libfiles" <- NULL, "libtype" <- [1, -1])``.
+     * @param argv default value Is ``Call "list"("libfiles" <- NULL, "libtype" <- [1, -1], "waters" <- False)``.
    */
    function __load_lcms_libs(argv?: any): object;
    /**
@@ -51,7 +51,9 @@ declare namespace Daisy {
      *       "ms1_da" <- 0.1,
      *       "rt_winsize" <- 10,
      *       "libtype" <- 1,
-     *       "ms1ppm" <- 15)``.
+     *       "ms1ppm" <- 15,
+     *       "waters" <- False,
+     *       "metadna" <- True)``.
    */
    function dasy_task(file: any, args?: any): object;
    /**
@@ -95,9 +97,11 @@ declare namespace Daisy {
      * @param export_dir default value Is ``./``.
      * @param library_dir default value Is ``null``.
      * @param n_threads default value Is ``8``.
+     * @param waters default value Is ``false``.
+     * @param metadna default value Is ``true``.
      * @param debug default value Is ``false``.
    */
-   function make_annotation(files: any, peakfile: any, libtype?: any, ms1ppm?: any, export_dir?: any, library_dir?: any, n_threads?: any, debug?: any): object;
+   function make_annotation(files: any, peakfile: any, libtype?: any, ms1ppm?: any, export_dir?: any, library_dir?: any, n_threads?: any, waters?: any, metadna?: any, debug?: any): object;
    /**
      * @param visual_dir default value Is ``./``.
    */
