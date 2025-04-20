@@ -48,11 +48,11 @@ const dasy_task = function(file, args = list(
         # run reference library search
         call_librarysearch(
             peaks_ms2 = args$rawdata, 
-            libfiles = args$library_dir, 
-            libtype = args$libtype, 
-            ms1ppm = args$ms1ppm, 
-            output = library_exports,
-            waters = args$waters);
+             libfiles = args$library_dir, 
+              libtype = args$libtype, 
+               ms1ppm = args$ms1ppm, 
+               output = library_exports,
+               waters = args$waters);
     } else {
         print("use the cached dda library search result!");
     }

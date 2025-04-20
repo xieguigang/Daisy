@@ -1,5 +1,8 @@
-const call_librarysearch = function(peaks_ms2, libfiles = NULL, libtype = [1,-1], output = "./") {
-    let [libs, metadb ] = __load_lcms_libs(list(libfiles = libfiles, libtype = libtype));
+const call_librarysearch = function(peaks_ms2, libfiles = NULL, libtype = [1,-1], output = "./", waters = FALSE) {
+    let [libs, metadb ] = __load_lcms_libs(list(libfiles = libfiles, 
+                                                libtype = libtype, 
+                                                waters = waters)
+    );
     let result = lapply(tqdm(peaks_ms2), function(sample) {
         libs 
         |> query(sample, top_hits = 9) 

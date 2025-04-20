@@ -15,6 +15,9 @@ const __load_lcms_libs = function(argv = list(libfiles = NULL, libtype = [1,-1],
     # 20250420 there is a precursor ion bug for proteowizard 
     # make conversion of the waters rawdata file
     if (as.logical(argv$waters)) {
+        print("disable precursor filter for processing waters rawdata.");
+        print("the library search job will be very long!");
+
         libfile |> discard_precursor_filter();
     }
 
