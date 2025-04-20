@@ -15,12 +15,18 @@
 #'   2. panomix mzkit format: mzPack, PeakMs2
 #' 
 const make_annotation = function(files, peakfile, libtype = [1,-1], ms1ppm = 15, 
-                                 export_dir = "./", 
+                                 export_dir  = "./", 
                                  library_dir = NULL,
-                                 n_threads = 8, 
-                                 debug = FALSE) {
+                                 n_threads   = 8, 
+                                 waters      = FALSE,
+                                 metadna     = TRUE,
+                                 debug       = FALSE) {
 
-    let workflow = list(peakfile, libtype, ms1ppm, export_dir, library_dir);
+    let workflow = list(
+        peakfile, libtype, ms1ppm, export_dir, library_dir, 
+        waters, 
+        metadna
+    );
 
     if (dir.exists(files)) {
         files <- list.files(files, pattern = ["*.mzXML", "*.mzML", "*.mzPack", "*.PeakMs2"]);

@@ -11,7 +11,9 @@ const dasy_task = function(file, args = list(
         ms1_da      = 0.1, 
         rt_winsize  = 10, 
         libtype     = 1, 
-        ms1ppm      = 15)) {
+        ms1ppm      = 15,
+        waters      = FALSE,
+        metadna     = TRUE)) {
 
     let opt_cache_enable = TRUE;
 
@@ -31,6 +33,13 @@ const dasy_task = function(file, args = list(
     let dda_output = `${library_exports}/libsdata.csv`;
     let ms1_da = args$ms1_da || 0.1;
     let rt_winsize = args$rt_winsize || 10;
+    let metadna_search = args$metadna;
+
+    if (args$waters) {
+        # there is a bug of the precursor ion info in waters rawdata
+        # no precursor for make kegg metabolite matches
+        metadna_search = FALSE;
+    }
 
     if (length(readLines(dda_output,strict=FALSE)) == 0 || !opt_cache_enable) {
         # run reference library search
@@ -39,20 +48,25 @@ const dasy_task = function(file, args = list(
             libfiles = args$library_dir, 
             libtype = args$libtype, 
             ms1ppm = args$ms1ppm, 
-            output = library_exports);
+            output = library_exports,
+            waters = args$waters);
     } else {
         print("use the cached dda library search result!");
     }
 
-    if (length(readLines(dia_output,strict=FALSE)) == 0 || !opt_cache_enable) {
-        # run metadna at last
-        call_metadna(
-            peaks_ms2 = args$rawdata, 
-            libtype = args$libtype, 
-            ms1ppm = args$ms1ppm, 
-            output = metadna_exports);
+    if (metadna_search) {
+        if (length(readLines(dia_output,strict=FALSE)) == 0 || !opt_cache_enable) {
+            # run metadna at last
+            call_metadna(
+                peaks_ms2 = args$rawdata, 
+                libtype = args$libtype, 
+                ms1ppm = args$ms1ppm, 
+                output = metadna_exports);
+        } else {
+            print("use the cached metadna annotation result!");
+        }
     } else {
-        print("use the cached metadna annotation result!");
+        print("skip of the metadna networking search.");
     }
 
     let ms1ppm = as.numeric(args$ms1ppm ||15);
