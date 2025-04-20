@@ -73,45 +73,55 @@ const dasy_task = function(file, args = list(
     }
 
     let ms1ppm = as.numeric(args$ms1ppm ||15);
-    let metadna_result = dia_output
-    |> read.csv(row.names = NULL, check.names = FALSE);
+    let metadna_result = {
+        if (metadna_search) {
+            dia_output
+            |> read.csv(row.names = NULL, check.names = FALSE);
+        } else {
+            NULL;
+        }
+    };
 
-    metadna_result <- data.frame(
-        metabolite_id = metadna_result$KEGGId,
-        name = metadna_result$name,
-        formula = metadna_result$formula,
-        exact_mass = metadna_result$exactMass,
-        chebi = "",
-        pubchem = "",
-        cas = "",
-        kegg = metadna_result$KEGGId,
-        hmdb = "",
-        lipidmaps = "",
-        mesh = "",
-        inchikey = "",
-        inchi = "",
-        smiles = "",
-        kingdom = "",
-        super_class = "",
-        class = "",
-        sub_class = "",
-        molecular_framework = "",
-        forward = metadna_result$forward,
-        reverse = metadna_result$reverse,
-        jaccard = metadna_result$jaccard,
-        entropy = metadna_result$entropy,
-        mz = metadna_result$mz,
-        rt = metadna_result$rt,
-        intensity = metadna_result$intensity,
-        evidence = metadna_result$reaction,
-        alignment = metadna_result$alignment
-    ) 
-    # the annotation result dataframe required of mz and rt field
-    |> Daisy::peak_alignment(args$peaks, 
-        mzdiff = ms1_da, 
-        rt_win = rt_winsize,
-        ms1ppm = ms1ppm, libtype = args$libtype )
-    ;
+    if (nrow(metadna_result) > 0) {
+        metadna_result <- data.frame(
+            metabolite_id = metadna_result$KEGGId,
+            name = metadna_result$name,
+            formula = metadna_result$formula,
+            exact_mass = metadna_result$exactMass,
+            chebi = "",
+            pubchem = "",
+            cas = "",
+            kegg = metadna_result$KEGGId,
+            hmdb = "",
+            lipidmaps = "",
+            mesh = "",
+            inchikey = "",
+            inchi = "",
+            smiles = "",
+            kingdom = "",
+            super_class = "",
+            class = "",
+            sub_class = "",
+            molecular_framework = "",
+            forward = metadna_result$forward,
+            reverse = metadna_result$reverse,
+            jaccard = metadna_result$jaccard,
+            entropy = metadna_result$entropy,
+            mz = metadna_result$mz,
+            rt = metadna_result$rt,
+            intensity = metadna_result$intensity,
+            evidence = metadna_result$reaction,
+            alignment = metadna_result$alignment
+        ) 
+        # the annotation result dataframe required of mz and rt field
+        |> Daisy::peak_alignment(args$peaks, 
+            mzdiff = ms1_da, 
+            rt_win = rt_winsize,
+            ms1ppm = ms1ppm, libtype = args$libtype )
+        ;
+    } else {
+        metadna_result = NULL;
+    }
     
     let dda_result = dda_output
     |> read.csv(row.names = NULL, check.names = FALSE) 
@@ -122,15 +132,20 @@ const dasy_task = function(file, args = list(
         ms1ppm = ms1ppm, libtype = args$libtype)
     ;
 
+    dda_result[,"source"] = "reference_library";
+
     print("inspect of the reference library search result:");
     str(dda_result);
 
-    print("inspect of the metadna result:");
-    str(metadna_result);
+    if (nrow(metadna_result) > 0) {
+        print("inspect of the metadna result:");
+        str(metadna_result);
 
-    metadna_result[, "source"] = "metadna";
-    dda_result[,"source"] = "reference_library";
-    
+        metadna_result[, "source"] = "metadna";
+    } else {
+        print("there is no metadna annotation result for merge!");
+    }
+
     let result = rbind(dda_result, metadna_result);
 
     result[, "rawfile"] = args$filename; 
