@@ -90,7 +90,7 @@ const dasy_task = function(file, args = list(
         alignment = metadna_result$alignment
     ) 
     # the annotation result dataframe required of mz and rt field
-    |> peak_alignment(args$peaks, 
+    |> Daisy::peak_alignment(args$peaks, 
         mzdiff = ms1_da, 
         rt_win = rt_winsize,
         ms1ppm = ms1ppm, libtype = args$libtype )
@@ -99,7 +99,7 @@ const dasy_task = function(file, args = list(
     let dda_result = dda_output
     |> read.csv(row.names = NULL, check.names = FALSE) 
     # the annotation result dataframe required of mz and rt field
-    |> peak_alignment(args$peaks, 
+    |> Daisy::peak_alignment(args$peaks, 
         mzdiff = ms1_da, 
         rt_win = rt_winsize,
         ms1ppm = ms1ppm, libtype = args$libtype)
