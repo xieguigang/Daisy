@@ -6,6 +6,8 @@ imports "annotation" from "mzkit";
 #' 
 #' @param repo a local directory path that contains multiple msp data files that 
 #'    could be download from the MoNA database. 
+#' @param metabolites accept the metabolite annotation information and spectrum id
+#'    mapping from external database source.
 #' 
 const build_mona_lcms = function(repo, libdir = "./MoNA", metabolites = NULL) {
     # load the spectrum reference database files
@@ -17,7 +19,7 @@ const build_mona_lcms = function(repo, libdir = "./MoNA", metabolites = NULL) {
     if (is.null(metabolites)) {
         # extract the metabolite information 
         # from the external spectrum reference database files
-        metabolites <- extract_mona_metabolites(mona = spectra)
+        metabolites <- extract_mona_metabolites(mona = spectra);
     }
 
     attr(metabolites, "mapping")
