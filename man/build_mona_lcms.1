@@ -1,10 +1,12 @@
-﻿.TH BUILD_MONA_LCMS 1 2025-May "" "build lcms reference library for MoNA LC-MS dataset"
+﻿.TH BUILD_MONA_LCMS 1 2025-Jun "" "build lcms reference library for MoNA LC-MS dataset"
 .SH NAME
 build_mona_lcms \- build_mona_lcms(repo,
-    <i>libdir</i> = <span style='color: brown;'><strong>'./MoNA'</strong></span>)
+    <i>libdir</i> = <span style='color: brown;'><strong>'./MoNA'</strong></span>,
+    <i>metabolites</i> = <span style='color: blue !important;'>NULL</span>)
 .SH SYNOPSIS
 \fIbuild_mona_lcms(repo,
-    <i>libdir</i> = <span style='color: brown;'><strong>'./MoNA'</strong></span>)\fR
+    <i>libdir</i> = <span style='color: brown;'><strong>'./MoNA'</strong></span>,
+    <i>metabolites</i> = <span style='color: blue !important;'>NULL</span>)\fR
 .SH OPTIONS
 .PP
 \fBrepo\fB \fR\- . a local directory path that contains multiple msp data files that could be download from the MoNA database.
@@ -12,9 +14,12 @@ build_mona_lcms \- build_mona_lcms(repo,
 .PP
 \fBlibdir\fB \fR\- './MoNA'. 
 .PP
+.PP
+\fBmetabolites\fB \fR\- NULL. accept the metabolite annotation information and spectrum id mapping from external database source.
+.PP
 .SH FILES
 .PP
-SMRUCC/R#.declare_function.build_mona_lcms at build_mona_lcms.R:line 10
+SMRUCC/R#.declare_function.build_mona_lcms at build_mona_lcms.R:line 12
 .PP
 .SH COPYRIGHT
 Copyright © xieguigang, MIT Licensed 2025
