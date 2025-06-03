@@ -7,15 +7,18 @@ imports "annotation" from "mzkit";
 #' @param repo a local directory path that contains multiple msp data files that 
 #'    could be download from the MoNA database. 
 #' 
-const build_mona_lcms = function(repo, libdir = "./MoNA") {
+const build_mona_lcms = function(repo, libdir = "./MoNA", metabolites = NULL) {
     # load the spectrum reference database files
     let spectra = read.MoNA(repo, lazy = FALSE);
-    # extract the metabolite information 
-    # from the external spectrum reference database files
-    let metabolites = extract_mona_metabolites(mona = spectra);
     let metadata = open_repository(file.path(libdir,"metadata.dat"), mode = "write");
     let libpos = spectrumTree::new(file.path(libdir,"lib.pos.pack"), "Pack");
     let libneg = spectrumTree::new(file.path(libdir,"lib.neg.pack"), "Pack");
+
+    if (is.null(metabolites)) {
+        # extract the metabolite information 
+        # from the external spectrum reference database files
+        metabolites <- extract_mona_metabolites(mona = spectra)
+    }
 
     attr(metabolites, "mapping")
     |> JSON::json_encode()
