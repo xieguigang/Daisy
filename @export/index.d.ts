@@ -26,6 +26,11 @@ declare namespace Daisy {
    */
    function __merge_samples(results: any, argv: any): object;
    /**
+     * @param max_rtwin default value Is ``15``.
+     * @param workdir default value Is ``./``.
+   */
+   function __peak_alignment(xcms_out: any, max_rtwin?: any, workdir?: any): object;
+   /**
      * @param libdir default value Is ``./MoNA``.
      * @param metabolites default value Is ``null``.
    */
@@ -58,6 +63,14 @@ declare namespace Daisy {
      *       "metadna" <- True)``.
    */
    function dasy_task(file: any, args?: any): object;
+   /**
+     * @param workdir default value Is ``./``.
+     * @param max_rtwin default value Is ``15``.
+     * @param docker default value Is ``null``.
+     * @param n_threads default value Is ``8``.
+     * @param call_xcms default value Is ``true``.
+   */
+   function deconv_peaks(rawfiles: any, workdir?: any, max_rtwin?: any, docker?: any, n_threads?: any, call_xcms?: any): object;
    /**
      * @param export_dir default value Is ``./``.
    */
@@ -145,4 +158,9 @@ declare namespace Daisy {
    /**
    */
    function union_posneg(pos: any, neg: any): object;
+   /**
+     * @param workdir default value Is ``./``.
+     * @param docker default value Is ``null``.
+   */
+   function xcms_findPeaks(raw_files: any, workdir?: any, docker?: any): object;
 }
