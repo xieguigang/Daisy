@@ -12,6 +12,11 @@ const deconv_peaks = function(rawfiles, workdir = "./",
         let batch = rawfiles |> split(size = (length(rawfiles) / n_threads) - 1);
         let docker_id = docker;
 
+        print("run xcms with n_threads:");
+        str(n_threads);
+        print("view rawdata file batch:");
+        str(batch);
+
         # run in parallel for production
         Parallel::parallel(raw_file = batch, n_threads = n_threads, 
                 ignoreError = FALSE, 
@@ -35,6 +40,8 @@ const deconv_peaks = function(rawfiles, workdir = "./",
             );
         }
     }
+
+    print("call native R xcms job done! run peaktable assembly!");
 
     xcms_out |> __peak_alignment(max_rtwin, workdir);
 }
