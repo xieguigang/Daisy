@@ -9,7 +9,7 @@ const deconv_peaks = function(rawfiles, workdir = "./",
 
     if (as.logical(call_xcms)) {
         # findPeaks via xcms package
-        metaboanalyst::xcms_findPeaks(
+        Daisy::xcms_findPeaks(
             rawfiles, 
             workdir = xcms_out, 
             docker = docker);
