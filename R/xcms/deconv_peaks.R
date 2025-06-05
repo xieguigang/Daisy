@@ -54,16 +54,23 @@ const __peak_alignment = function(xcms_out, max_rtwin = 15, workdir="./") {
         mzdiff = 0.01
     );
     let rt_shifts = attr(peaktable, "rt.shift");
+    let peaksarea = as.data.frame(peaktable, peaks_area = TRUE); 
 
     write.csv(peaktable, file = file.path(workdir, "peaktable.csv"));
     write.csv(rt_shifts, file = file.path(workdir, "rt_shifts.csv"), 
         row.names = TRUE);
+
+    peaksarea <- apply(peaksarea, margin = "row", FUN = sum);
+
+    print("sum peak area for each peak features:");
+    print(peaksarea);
 
     let peakmeta = data.frame(
         mz = [peaktable]::mz, mzmin = [peaktable]::mzmin, mzmax = [peaktable]::mzmax,
         rt = [peaktable]::rt, rtmin = [peaktable]::rtmin, rtmax = [peaktable]::rtmax,
         RI = [peaktable]::RI,
         npeaks = [peaktable]::npeaks,
+        into = peaksarea,
         row.names = [peaktable]::ID
     );
 
