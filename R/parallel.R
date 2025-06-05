@@ -132,10 +132,14 @@ const dasy_task = function(file, args = list(
         ms1ppm = ms1ppm, libtype = args$libtype)
     ;
 
-    dda_result[,"source"] = "reference_library";
+    if (nrow(dda_result) > 0) {
+        dda_result[,"source"] = "reference_library";
 
-    print("inspect of the reference library search result:");
-    str(dda_result);
+        print("inspect of the reference library search result:");
+        str(dda_result);
+    } else {
+        print("[warining] no library search annotation result!");
+    }
 
     if (nrow(metadna_result) > 0) {
         print("inspect of the metadna result:");
@@ -143,12 +147,16 @@ const dasy_task = function(file, args = list(
 
         metadna_result[, "source"] = "metadna";
     } else {
-        print("there is no metadna annotation result for merge!");
+        print("[warining] there is no metadna annotation result for merge!");
     }
 
     let result = rbind(dda_result, metadna_result);
 
-    result[, "rawfile"] = args$filename; 
+    if (nrow(result) > 0) {
+        result[, "rawfile"] <- args$filename; 
+    } else {
+        warning(`no annotation result for rawdata file: ${args$filename}`);
+    }   
 
     write.csv(result, file = file.path(args$export_dir, "result.csv"), 
         row.names = FALSE);
