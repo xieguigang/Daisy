@@ -1,4 +1,4 @@
-﻿.TH MAKE_MSMS_PLOT 1 2025-Jun "" "plot visual of the spectrum alignment"
+﻿.TH MAKE_MSMS_PLOT 1 2025-Jun "" "Generate mirror plots for spectrum alignment results This function creates visualizations of mass spectrometry (MS/MS) spectrum alignment results, producing mirror plots for each hit and saving them as SVG and PNG files. The plots display aligned experimental and theoretical spectra with annotated m/z values."
 .SH NAME
 make_msms_plot \- make_msms_plot(result,
     <i>visual.dir</i> = <span style='color: brown;'><strong>'./'</strong></span>)
@@ -7,14 +7,18 @@ make_msms_plot \- make_msms_plot(result,
     <i>visual.dir</i> = <span style='color: brown;'><strong>'./'</strong></span>)\fR
 .SH OPTIONS
 .PP
-\fBresult\fB \fR\- . 
+\fBresult\fB \fR\- . A list or data frame containing spectrum alignment results. Each element must include: - `name`: Compound identifier (character). - `adducts`: Adduct information (character or `NA`). - `mz`: Mass-to-charge ratio (numeric). - `rt`: Retention time in seconds (numeric). - `xcms_id`: Unique XCMS identifier (character or numeric). - `alignment`: Spectrum alignment data (list or string).
 .PP
 .PP
 \fBvisual.dir\fB \fR\- './'. 
 .PP
+.SH VALUE
+.PP
+Invisibly returns `NULL`. The function primarily generates side effects by saving plot files to the specified directory. Files are named in the format: `{xcms_id}@{normalized_name}.svg/png`.
+.PP
 .SH FILES
 .PP
-SMRUCC/R#.declare_function.make_msms_plot at report.R:line 40
+SMRUCC/R#.declare_function.make_msms_plot at report.R:line 124
 .PP
 .SH COPYRIGHT
 Copyright © xieguigang, MIT Licensed 2025

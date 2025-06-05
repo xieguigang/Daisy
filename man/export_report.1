@@ -1,4 +1,4 @@
-﻿.TH EXPORT_REPORT 1 2025-Jun "" "export report table and spectrum alignment mirror plot"
+﻿.TH EXPORT_REPORT 1 2025-Jun "" "Export Metabolomics Annotation Report with Spectrum Alignment Visuals This function processes mass spectrometry annotation results from multiple sample files, merges them into a consolidated report, generates spectrum alignment mirror plots for each hit, and exports the results to specified directory. The function handles file I/O operations and data processing in a pipeline workflow."
 .SH NAME
 export_report \- export_report(files,
     <i>export.dir</i> = <span style='color: brown;'><strong>'./'</strong></span>)
@@ -7,14 +7,18 @@ export_report \- export_report(files,
     <i>export.dir</i> = <span style='color: brown;'><strong>'./'</strong></span>)\fR
 .SH OPTIONS
 .PP
-\fBfiles\fB \fR\- . 
+\fBfiles\fB \fR\- . Character vector of file paths containing sample annotation results. Each path should point to a sample directory containing `result.csv`[2,6](@ref).
 .PP
 .PP
 \fBexport.dir\fB \fR\- './'. 
 .PP
+.SH VALUE
+.PP
+Invisibly returns `NULL`. Primary outputs are: - `export_dir/annotation_result.csv`: Consolidated report table - `export_dir/spectral_aligns/*`: Spectrum alignment plots (SVG/PNG)
+.PP
 .SH FILES
 .PP
-SMRUCC/R#.declare_function.export_report at report.R:line 4
+SMRUCC/R#.declare_function.export_report at report.R:line 52
 .PP
 .SH COPYRIGHT
 Copyright © xieguigang, MIT Licensed 2025
