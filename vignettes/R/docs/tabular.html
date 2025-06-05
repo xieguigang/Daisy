@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>tabular</title>
+    <title>Convert named list to tabular data frame</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
     <link rel="stylesheet" type="text/css" href="../../_assets/page.css">
@@ -18,7 +18,7 @@
             </tr>
         </table>
 
-        <h2>tabular</h2>
+        <h2>Convert named list to tabular data frame</h2>
 
         <h3>Description</h3>
 
@@ -34,6 +34,13 @@
 
         <table>
             
+<dt>list</dt>
+<dd><p><p>A named list containing the data to be converted. Each element should correspond to a column in the output data frame.</p></p></dd>
+
+
+<dt>keys</dt>
+<dd><p><p>Character vector specifying the names of list elements to extract as columns. Must match existing names in `list`.</p></p></dd>
+
         </table>
 
 
@@ -47,11 +54,11 @@
 
         <h3>Value</h3>
 
-        This function has no value returns.
+        <p>A [data.frame] object where: - Column names correspond to `keys` - Each column contains values from `list` elements - Row count matches the length of list elements</p>
 
-        <h3 style="display: none;">Examples</h3>
+        <h3 style="display: block;">Examples</h3>
 
-        
+        <pre><code id="example_r"># Basic usage my_list <- list(name = c("Alice", "Bob"), age = c(28, 32)) tabular(my_list, keys = c("name", "age")) # Partial key mapping tabular(my_list, keys = "name")</code></pre>
 
         <hr />
         <div style="text-align: center;">[Package <em>Daisy</em> version 0.1.0 <a
