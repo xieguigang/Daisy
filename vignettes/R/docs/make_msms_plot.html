@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Generate mirror plots for spectrum alignment results This function creates visualizations of mass spectrometry (MS/MS) spectrum alignment results, producing mirror plots for each hit and saving them as SVG and PNG files. The plots display aligned experimental and theoretical spectra with annotated m/z values.</title>
+    <title>Generate mirror plots for spectrum alignment results</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
     <link rel="stylesheet" type="text/css" href="../../_assets/page.css">
@@ -18,7 +18,7 @@
             </tr>
         </table>
 
-        <h2>Generate mirror plots for spectrum alignment results This function creates visualizations of mass spectrometry (MS/MS) spectrum alignment results, producing mirror plots for each hit and saving them as SVG and PNG files. The plots display aligned experimental and theoretical spectra with annotated m/z values.</h2>
+        <h2>Generate mirror plots for spectrum alignment results</h2>
 
         <h3>Description</h3>
 
@@ -57,9 +57,9 @@
 
         <p>Invisibly returns `NULL`. The function primarily generates side effects by saving plot files to the specified directory. Files are named in the format: `{xcms<em>id}@{normalized</em>name}.svg/png`.</p>
 
-        <h3 style="display: none;">Examples</h3>
+        <h3 style="display: block;">Examples</h3>
 
-        
+        <pre><code id="example_r"># Example usage: result <- list( list( name = "Compound1", adducts = "[M+H]+", mz = 456.123, rt = 300, xcms_id = "XCMS_001", alignment = "parsed_alignment_data" ) ) make_msms_plot(result, visual_dir = "./output_plots")</code></pre>
 
         <hr />
         <div style="text-align: center;">[Package <em>Daisy</em> version 0.1.0 <a

@@ -1,4 +1,4 @@
-﻿.TH EXPORT_REPORT 1 2025-Jun "" "Export Metabolomics Annotation Report with Spectrum Alignment Visuals This function processes mass spectrometry annotation results from multiple sample files, merges them into a consolidated report, generates spectrum alignment mirror plots for each hit, and exports the results to specified directory. The function handles file I/O operations and data processing in a pipeline workflow."
+﻿.TH EXPORT_REPORT 1 2025-Jun "" "Export Metabolomics Annotation Report with Spectrum Alignment Visuals"
 .SH NAME
 export_report \- export_report(files,
     <i>export.dir</i> = <span style='color: brown;'><strong>'./'</strong></span>)
@@ -16,6 +16,12 @@ export_report \- export_report(files,
 .PP
 Invisibly returns `NULL`. Primary outputs are: - `export_dir/annotation_result.csv`: Consolidated report table - `export_dir/spectral_aligns/*`: Spectrum alignment plots (SVG/PNG)
 .PP
+.SH EXAMPLES
+.PP
+\dontrun{ # Basic usage export_report(files = c("sample1", "sample2")) # Custom output directory export_report( files = list.dirs("raw_data", recursive = FALSE), export_dir = "processed_results" )}
+.PP
+.SH SEE ALSO
+- [make_msms_plot()] for spectrum visualization details - [report_unique()] for uniqueness filtering logic
 .SH FILES
 .PP
 SMRUCC/R#.declare_function.export_report at report.R:line 52
