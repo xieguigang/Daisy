@@ -6,11 +6,19 @@ const export_report = function(files, export_dir = "./") {
     let result = NULL;
     let visual_dir = file.path(export_dir, "spectral_aligns");
 
-    for(let file in `${export_dir}/${names}/result.csv`) {
+    print("read samples files and merge result table...");
+
+    for(let file in tqdm(`${export_dir}/${names}/result.csv`)) {
         print(file);
         
-        file = read.csv(file, row.names = NULL, check.names = FALSE);
-        result = rbind(result, file);
+        if (file.exists(file)) {
+            file = read.csv(file, row.names = NULL, check.names = FALSE);
+            result = rbind(result, file);
+        } else {
+            warning(`missing sample annotation: ${file}`);
+        }
+
+        invisible(NULL);
     }
 
     result[, "mz"] = round(result$mz, 4);
