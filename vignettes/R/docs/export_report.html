@@ -2,10 +2,10 @@
 <html>
 
 <head>
-    <title>export report table and spectrum alignment mirror plot</title>
+    <title>Export Metabolomics Annotation Report with Spectrum Alignment Visuals</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-    <link rel="stylesheet" type="text/css" href="../../_assets/page.css">
+    <link rel="stylesheet" type="text/css" href="https://mzkit.org/assets/js/page.css">
 </head>
 
 <body>
@@ -18,7 +18,7 @@
             </tr>
         </table>
 
-        <h2>export report table and spectrum alignment mirror plot</h2>
+        <h2>Export Metabolomics Annotation Report with Spectrum Alignment Visuals</h2>
 
         <h3>Description</h3>
 
@@ -35,6 +35,13 @@
 
         <table>
             
+<dt>files</dt>
+<dd><p><p>Character vector of file paths containing sample annotation results. Each path should point to a sample directory containing `result.csv`<a href='@ref' title='2,6'>2,6</a>.</p></p></dd>
+
+
+<dt>export.dir</dt>
+<dd><p><p>Output directory path for saving consolidated report and visualizations. Defaults to current working directory (`"./"`).</p></p></dd>
+
         </table>
 
 
@@ -48,11 +55,11 @@
 
         <h3>Value</h3>
 
-        This function has no value returns.
+        <p>Invisibly returns `NULL`. Primary outputs are: - `export<em>dir/annotation</em>result.csv`: Consolidated report table - `export<em>dir/spectral</em>aligns/*`: Spectrum alignment plots (SVG/PNG)</p>
 
-        <h3 style="display: none;">Examples</h3>
+        <h3 style="display: block;">Examples</h3>
 
-        
+        <pre><code id="example_r">\dontrun{ # Basic usage export_report(files = c("sample1", "sample2")) # Custom output directory export_report( files = list.dirs("raw_data", recursive = FALSE), export_dir = "processed_results" )}</code></pre>
 
         <hr />
         <div style="text-align: center;">[Package <em>Daisy</em> version 0.1.0 <a
@@ -61,8 +68,8 @@
     </div>
 </body>
 
-<script type="text/javascript" src="../../_assets/R_syntax.js"></script>
-<script type="text/javascript" src="../../_assets/highlights.js"></script>
+<script type="text/javascript" src="https://mzkit.org/assets/js/R_syntax.js"></script>
+<script type="text/javascript" src="https://mzkit.org/assets/js/highlights.js"></script>
 <script type="text/javascript">r_highlights("example_r");</script>
 
 </html>

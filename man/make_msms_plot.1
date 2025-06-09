@@ -1,4 +1,4 @@
-﻿.TH MAKE_MSMS_PLOT 1 2025-Jun "" "plot visual of the spectrum alignment"
+﻿.TH MAKE_MSMS_PLOT 1 2025-Jun "" "Generate mirror plots for spectrum alignment results"
 .SH NAME
 make_msms_plot \- make_msms_plot(result,
     <i>visual.dir</i> = <span style='color: brown;'><strong>'./'</strong></span>)
@@ -7,14 +7,24 @@ make_msms_plot \- make_msms_plot(result,
     <i>visual.dir</i> = <span style='color: brown;'><strong>'./'</strong></span>)\fR
 .SH OPTIONS
 .PP
-\fBresult\fB \fR\- . 
+\fBresult\fB \fR\- . A list or data frame containing spectrum alignment results. Each element must include: - `name`: Compound identifier (character). - `adducts`: Adduct information (character or `NA`). - `mz`: Mass-to-charge ratio (numeric). - `rt`: Retention time in seconds (numeric). - `xcms_id`: Unique XCMS identifier (character or numeric). - `alignment`: Spectrum alignment data (list or string).
 .PP
 .PP
 \fBvisual.dir\fB \fR\- './'. 
 .PP
+.SH VALUE
+.PP
+Invisibly returns `NULL`. The function primarily generates side effects by saving plot files to the specified directory. Files are named in the format: `{xcms_id}@{normalized_name}.svg/png`.
+.PP
+.SH EXAMPLES
+.PP
+# Example usage: result <- list( list( name = "Compound1", adducts = "[M+H]+", mz = 456.123, rt = 300, xcms_id = "XCMS_001", alignment = "parsed_alignment_data" ) ) make_msms_plot(result, visual_dir = "./output_plots")
+.PP
+.SH SEE ALSO
+- `normalizeFileName()` for filename sanitization. - `parse.spectrum_alignment()` for alignment data parsing.
 .SH FILES
 .PP
-SMRUCC/R#.declare_function.make_msms_plot at report.R:line 32
+SMRUCC/R#.declare_function.make_msms_plot at report.R:line 124
 .PP
 .SH COPYRIGHT
 Copyright © xieguigang, MIT Licensed 2025

@@ -1,18 +1,26 @@
-﻿.TH TABULAR 1 2025-Jun "" "A helper function for make list to tabular report"
+﻿.TH TABULAR 1 2025-Jun "internal" "Convert named list to tabular data frame"
 .SH NAME
 tabular \- tabular(list, keys)
 .SH SYNOPSIS
 \fItabular(list, keys)\fR
 .SH OPTIONS
 .PP
-\fBlist\fB \fR\- . 
+\fBlist\fB \fR\- . A named list containing the data to be converted. Each element should correspond to a column in the output data frame.
 .PP
 .PP
-\fBkeys\fB \fR\- . 
+\fBkeys\fB \fR\- . Character vector specifying the names of list elements to extract as columns. Must match existing names in `list`.
+.PP
+.SH VALUE
+.PP
+A [data.frame] object where: - Column names correspond to `keys` - Each column contains values from `list` elements - Row count matches the length of list elements
+.PP
+.SH EXAMPLES
+.PP
+# Basic usage my_list <- list(name = c("Alice", "Bob"), age = c(28, 32)) tabular(my_list, keys = c("name", "age")) # Partial key mapping tabular(my_list, keys = "name")
 .PP
 .SH FILES
 .PP
-SMRUCC/R#.declare_function.tabular at tabular.R:line 3
+SMRUCC/R#.declare_function.tabular at tabular.R:line 33
 .PP
 .SH COPYRIGHT
 Copyright © xieguigang, MIT Licensed 2025
