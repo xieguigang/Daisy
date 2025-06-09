@@ -12,16 +12,19 @@ const xcms_findPeaks = function(raw_files, workdir = "./", docker = NULL) {
         for (file in raw_files) {
             print(sprintf("findPeaks: %s", file));
 
-            let data   <- xcmsRaw(file);
-            let xpeaks <- findPeaks(data,method="matchedFilter",fwhm=15);
+            let peakfile <- sub("\\..*$", "", basename(file));
+            peakfile <- file.path(xcms_work, sprintf("%s.csv", peakfile));
+
+            if (!(file.exists(peakfile) && length(readLines(peakfile)) > 1)) {
+                let data   <- xcmsRaw(file);
+                let xpeaks <- findPeaks(data,method="matchedFilter",fwhm=15);
+                
+                xpeaks <- as.data.frame(xpeaks);
             
-            xpeaks <- as.data.frame(xpeaks);
-            file <- sub("\\..*$", "", basename(file));
-            file <- file.path(xcms_work, sprintf("%s.csv", file));
-        
-            print(sprintf("    => %s", file));
-            # dump peaks data
-            write.csv(xpeaks, file, row.names = FALSE);
+                print(sprintf("    => %s", peakfile));
+                # dump peaks data
+                write.csv(xpeaks, peakfile, row.names = FALSE);
+            }
         }
     }
 
