@@ -1,5 +1,10 @@
 #' load lcms library database
 #' 
+#' @return a tuple list of the reference library data:
+#' 
+#'  1. libs - the reference spectrum library
+#'  2. metadb - the metabolite annotation repository 
+#' 
 const __load_lcms_libs = function(argv = list(libfiles = NULL, libtype = [1,-1], waters = FALSE)) {
     let libs = (argv$libfiles) || "/opt/libs/MoNA/";
     let libtype = .Internal::first(as.integer(argv$libtype || 1));
