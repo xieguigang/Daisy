@@ -1,11 +1,18 @@
 #' reference library search based spectrum annotation
 #' 
-const call_librarysearch = function(peaks_ms2, libfiles = NULL, libtype = [1,-1], output = "./", waters = FALSE) {
+const call_librarysearch = function(peaks_ms2, 
+                                    libfiles = NULL, 
+                                    libtype = [1,-1], 
+                                    output = "./", 
+                                    waters = FALSE, 
+                                    target_idset = NULL) {
+                                        
     # libs is the reference spectrum library
     # metadb is the metabolite annotation respotiory object
     let [libs, metadb ] = __load_lcms_libs(list(libfiles = libfiles, 
                                                 libtype = libtype, 
-                                                waters = waters)
+                                                waters = waters), 
+        target_idset = target_idset
     );
     let result = lapply(tqdm(peaks_ms2), function(sample) {
         libs 

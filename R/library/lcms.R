@@ -16,6 +16,9 @@ const __load_lcms_libs = function(argv = list(libfiles = NULL, libtype = [1,-1],
     let metadb = file.path(libs, "metadata.dat");
     let mapfile = file.path(libs, map_name || "mapping.json");
 
+    print("id range for make annotation search:");
+    print(target_idset);
+
     mapfile <- JSON::json_decode(readText(mapfile));
     metadb <- annotation::open_repository(metadb, mode = "read", mapping = mapfile);
 

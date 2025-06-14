@@ -52,7 +52,8 @@ const dasy_task = function(file, args = list(
               libtype = args$libtype, 
                ms1ppm = args$ms1ppm, 
                output = library_exports,
-               waters = args$waters);
+               waters = args$waters,
+         target_idset = args$id_range);
     } else {
         print("use the cached dda library search result!");
     }

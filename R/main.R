@@ -21,12 +21,14 @@ const make_annotation = function(files, peakfile, libtype = [1,-1], ms1ppm = 15,
                                  waters      = FALSE,
                                  metadna     = TRUE,
                                  do_plot     = TRUE,
+                                 id_range    = NULL,
                                  debug       = FALSE) {
 
     let workflow = list(
         peakfile, libtype, ms1ppm, export_dir, library_dir, 
         waters, 
-        metadna
+        metadna,
+        id_range
     );
 
     if (dir.exists(files)) {
