@@ -1,26 +1,30 @@
 const metadna_report = function(metadna_result, metadb, args) {
     let metadata = metadb |> getByKEGG(metadna_result$KEGGId);
-    
+    let xref = [metadata]::xref;
+    let ms1_da = args$ms1_da || 0.1;
+    let rt_winsize = args$rt_winsize || 10;
+    let ms1ppm = as.numeric(args$ms1ppm ||15);
+
     data.frame(
-        metabolite_id = metadna_result$KEGGId,
-        name = metadna_result$name,
-        formula = metadna_result$formula,
-        exact_mass = metadna_result$exactMass,
-        chebi = "",
-        pubchem = "",
-        cas = "",
+        metabolite_id = [metadata]::ID,
+        name = [metadata]::name,
+        formula = [metadata]::formula,
+        exact_mass = [metadata]::exact_mass,
+        chebi = [xref]::chebi,
+        pubchem = [xref]::pubchem,
+        cas = sapply(xref, i -> .Internal::first([i]::CAS) || "NULL"),
         kegg = metadna_result$KEGGId,
-        hmdb = "",
-        lipidmaps = "",
-        mesh = "",
+        hmdb = [xref]::HMDB,
+        lipidmaps = [xref]::lipidmaps,
+        mesh = [xref]::MeSH,
         inchikey = "",
         inchi = "",
-        smiles = "",
-        kingdom = "",
-        super_class = "",
-        class = "",
-        sub_class = "",
-        molecular_framework = "",
+        smiles = [xref]::SMILES,
+        kingdom = [metadata]::kingdom,
+        super_class = [metadata]::super_class,
+        class = [metadata]::class,
+        sub_class = [metadata]::sub_class,
+        molecular_framework = [metadata]::molecular_framework,
         forward = metadna_result$forward,
         reverse = metadna_result$reverse,
         jaccard = metadna_result$jaccard,
