@@ -1,16 +1,21 @@
 ﻿.TH EXPORT_REPORT 1 2025-Jun "" "Export Metabolomics Annotation Report with Spectrum Alignment Visuals"
 .SH NAME
 export_report \- export_report(files,
-    <i>export.dir</i> = <span style='color: brown;'><strong>'./'</strong></span>)
+    <i>export.dir</i> = <span style='color: brown;'><strong>'./'</strong></span>,
+    <i>do.plot</i> = <span style='color: blue !important;'>TRUE</span>)
 .SH SYNOPSIS
 \fIexport_report(files,
-    <i>export.dir</i> = <span style='color: brown;'><strong>'./'</strong></span>)\fR
+    <i>export.dir</i> = <span style='color: brown;'><strong>'./'</strong></span>,
+    <i>do.plot</i> = <span style='color: blue !important;'>TRUE</span>)\fR
 .SH OPTIONS
 .PP
 \fBfiles\fB \fR\- . Character vector of file paths containing sample annotation results. Each path should point to a sample directory containing `result.csv`[2,6](@ref).
 .PP
 .PP
 \fBexport.dir\fB \fR\- './'. 
+.PP
+.PP
+\fBdo.plot\fB \fR\- TRUE. 
 .PP
 .SH VALUE
 .PP

@@ -73,8 +73,9 @@ declare namespace Daisy {
    function deconv_peaks(rawfiles: any, workdir?: any, max_rtwin?: any, docker?: any, n_threads?: any, call_xcms?: any): object;
    /**
      * @param export_dir default value Is ``./``.
+     * @param do_plot default value Is ``true``.
    */
-   function export_report(files: any, export_dir?: any): object;
+   function export_report(files: any, export_dir?: any, do_plot?: any): object;
    /**
      * @param ms1ppm default value Is ``10``.
      * @param profiles default value Is ``Call "list"("C" <- [1, 100],
@@ -96,9 +97,10 @@ declare namespace Daisy {
      * @param ppm_cutoff default value Is ``20``.
      * @param lib_files default value Is ``null``.
      * @param n_threads default value Is ``8``.
+     * @param do_plot default value Is ``true``.
      * @param debug default value Is ``false``.
    */
-   function gcms_tof_annotation(rawdir: any, peaktable: any, libtype?: any, outputdir?: any, ppm_cutoff?: any, lib_files?: any, n_threads?: any, debug?: any): object;
+   function gcms_tof_annotation(rawdir: any, peaktable: any, libtype?: any, outputdir?: any, ppm_cutoff?: any, lib_files?: any, n_threads?: any, do_plot?: any, debug?: any): object;
    /**
      * @param ionMode default value Is ``[1, -1]``.
    */
@@ -114,9 +116,10 @@ declare namespace Daisy {
      * @param n_threads default value Is ``8``.
      * @param waters default value Is ``false``.
      * @param metadna default value Is ``true``.
+     * @param do_plot default value Is ``true``.
      * @param debug default value Is ``false``.
    */
-   function make_annotation(files: any, peakfile: any, libtype?: any, ms1ppm?: any, export_dir?: any, library_dir?: any, n_threads?: any, waters?: any, metadna?: any, debug?: any): object;
+   function make_annotation(files: any, peakfile: any, libtype?: any, ms1ppm?: any, export_dir?: any, library_dir?: any, n_threads?: any, waters?: any, metadna?: any, do_plot?: any, debug?: any): object;
    /**
      * @param visual_dir default value Is ``./``.
    */
@@ -152,6 +155,12 @@ declare namespace Daisy {
    /**
    */
    function report_unique(result: any): object;
+   /**
+     * @param libfiles default value Is ``null``.
+     * @param libtype default value Is ``[1, -1]``.
+     * @param waters default value Is ``false``.
+   */
+   function resolve_metadb(libfiles?: any, libtype?: any, waters?: any): object;
    /**
    */
    function tabular(list: any, keys: any): object;
