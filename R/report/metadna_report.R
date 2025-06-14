@@ -1,4 +1,6 @@
 const metadna_report = function(metadna_result, metadb, args) {
+    let metadata = metadb |> getByKEGG(metadna_result$KEGGId);
+    
     data.frame(
         metabolite_id = metadna_result$KEGGId,
         name = metadna_result$name,
