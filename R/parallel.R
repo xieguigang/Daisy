@@ -86,8 +86,7 @@ const dasy_task = function(file, args = list(
         metadna_result <- metadna_report(metadna_result, 
             metadb = resolve_metadb(
                 libfiles = args$library_dir, 
-                libtype  = args$libtype, 
-                waters   = args$waters
+                map_name = "kegg.json"
             ), 
             args = args
         );

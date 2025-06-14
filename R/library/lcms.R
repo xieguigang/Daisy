@@ -5,12 +5,15 @@
 #'  1. libs - the reference spectrum library
 #'  2. metadb - the metabolite annotation repository 
 #' 
-const __load_lcms_libs = function(argv = list(libfiles = NULL, libtype = [1,-1], waters = FALSE), load_spectrum = TRUE) {
+const __load_lcms_libs = function(argv = list(libfiles = NULL, libtype = [1,-1], waters = FALSE), 
+                                  load_spectrum = TRUE, 
+                                  map_name = NULL) {
+
     let libs = (argv$libfiles) || "/opt/libs/MoNA/";
     let libtype = .Internal::first(as.integer(argv$libtype || 1));
     let libfile = ifelse(libtype == 1, "lib.pos.pack", "lib.neg.pack");
     let metadb = file.path(libs, "metadata.dat");
-    let mapfile = file.path(libs, "mapping.json");
+    let mapfile = file.path(libs, map_name || "mapping.json");
 
     if (load_spectrum) {
         libfile <- file.path(libs, libfile);
