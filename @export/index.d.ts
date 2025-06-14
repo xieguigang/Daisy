@@ -125,10 +125,8 @@ declare namespace Daisy {
    */
    function make_msms_plot(result: any, visual_dir?: any): object;
    /**
-     * @param ms1ppm default value Is ``10``.
-     * @param libtype default value Is ``[1, -1]``.
    */
-   function ms1_anno(peaks: any, ms1ppm?: any, libtype?: any): object;
+   function metadna_report(metadna_result: any, metadb: any, args: any): object;
    /**
    */
    function open_biocad_local(): object;
