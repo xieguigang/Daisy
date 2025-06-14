@@ -49,7 +49,7 @@
 #'   - [make_msms_plot()] for spectrum visualization details
 #'   - [report_unique()] for uniqueness filtering logic
 #' @export
-const export_report = function(files, export_dir = "./") {
+const export_report = function(files, export_dir = "./", do_plot = TRUE) {
     let names = basename(files);
     let result = NULL;
     let visual_dir = file.path(export_dir, "spectral_aligns");
@@ -79,8 +79,10 @@ const export_report = function(files, export_dir = "./") {
         file = file.path(export_dir, "annotation_result.csv"),
         row.names = FALSE);
 
-    # make ms/ms alignment plot
-    result |> make_msms_plot(visual_dir);
+    if (do_plot) {
+        # make ms/ms alignment plot
+        result |> make_msms_plot(visual_dir);
+    }
 }
 
 #' Generate mirror plots for spectrum alignment results

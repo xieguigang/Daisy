@@ -20,6 +20,7 @@ const make_annotation = function(files, peakfile, libtype = [1,-1], ms1ppm = 15,
                                  n_threads   = 8, 
                                  waters      = FALSE,
                                  metadna     = TRUE,
+                                 do_plot     = TRUE,
                                  debug       = FALSE) {
 
     let workflow = list(
@@ -63,5 +64,5 @@ const make_annotation = function(files, peakfile, libtype = [1,-1], ms1ppm = 15,
         }
     }
 
-    export_report(files, export_dir);
+    export_report(files, export_dir, do_plot = do_plot);
 }
