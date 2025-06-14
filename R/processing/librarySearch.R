@@ -25,7 +25,8 @@ const call_librarysearch = function(peaks_ms2, libfiles = NULL, libtype = [1,-1]
 const resolve_metadb = function(libfiles = NULL, libtype = [1,-1], waters = FALSE) {
     let [libs, metadb ] = __load_lcms_libs(list(libfiles = libfiles, 
                                                 libtype = libtype, 
-                                                waters = waters)
+                                                waters = waters),
+        load_spectrum = FALSE
     );
 
     return(metadb );
