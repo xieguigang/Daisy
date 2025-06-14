@@ -7,7 +7,8 @@
 #' 
 const __load_lcms_libs = function(argv = list(libfiles = NULL, libtype = [1,-1], waters = FALSE), 
                                   load_spectrum = TRUE, 
-                                  map_name = NULL) {
+                                  map_name = NULL,
+                                  target_idset = NULL) {
 
     let libs = (argv$libfiles) || "/opt/libs/MoNA/";
     let libtype = .Internal::first(as.integer(argv$libtype || 1));
@@ -15,13 +16,25 @@ const __load_lcms_libs = function(argv = list(libfiles = NULL, libtype = [1,-1],
     let metadb = file.path(libs, "metadata.dat");
     let mapfile = file.path(libs, map_name || "mapping.json");
 
-    if (load_spectrum) {
-        libfile <- file.path(libs, libfile);
-        libfile <- spectrumTree::open(libfile, dotcutoff = 0.6, adducts = get_adducts(libtype));
-    }
-
     mapfile <- JSON::json_decode(readText(mapfile));
     metadb <- annotation::open_repository(metadb, mode = "read", mapping = mapfile);
+
+    if (load_spectrum) {
+        if (length(target_idset) > 0) {
+            mapfile <- flip_list(mapfile);
+            mapfile <- mapfile[target_idset];
+            target_idset <- append(target_idset, unlist(mapfile)) |> unique();
+        } else {
+            target_idset <- NULL;
+        }
+        
+        libfile <- file.path(libs, libfile);
+        libfile <- spectrumTree::open(libfile, 
+            dotcutoff = 0.6, 
+            adducts = get_adducts(libtype), 
+            target_uuid = target_idset
+        );
+    }
 
     # 20250420 there is a precursor ion bug for proteowizard 
     # make conversion of the waters rawdata file
