@@ -26,6 +26,8 @@ const report_unique = function(result) {
     tabular(result,keys );
 }
 
+#' formula for make rank score for each search candidates
+#' 
 const rank_score = function(result) {
     (as.numeric(result$forward) + 
      as.numeric(result$reverse) + 
