@@ -20,8 +20,11 @@ declare namespace Daisy {
    function __load_gcms_libs(argv?: any): object;
    /**
      * @param argv default value Is ``Call "list"("libfiles" <- NULL, "libtype" <- [1, -1], "waters" <- False)``.
+     * @param load_spectrum default value Is ``true``.
+     * @param map_name default value Is ``null``.
+     * @param target_idset default value Is ``null``.
    */
-   function __load_lcms_libs(argv?: any): object;
+   function __load_lcms_libs(argv?: any, load_spectrum?: any, map_name?: any, target_idset?: any): object;
    /**
    */
    function __merge_samples(results: any, argv: any): object;
@@ -43,8 +46,9 @@ declare namespace Daisy {
      * @param libtype default value Is ``[1, -1]``.
      * @param output default value Is ``./``.
      * @param waters default value Is ``false``.
+     * @param target_idset default value Is ``null``.
    */
-   function call_librarysearch(peaks_ms2: any, libfiles?: any, libtype?: any, output?: any, waters?: any): object;
+   function call_librarysearch(peaks_ms2: any, libfiles?: any, libtype?: any, output?: any, waters?: any, target_idset?: any): object;
    /**
      * @param libtype default value Is ``[1, -1]``.
      * @param ms1ppm default value Is ``15``.
@@ -117,9 +121,10 @@ declare namespace Daisy {
      * @param waters default value Is ``false``.
      * @param metadna default value Is ``true``.
      * @param do_plot default value Is ``true``.
+     * @param id_range default value Is ``null``.
      * @param debug default value Is ``false``.
    */
-   function make_annotation(files: any, peakfile: any, libtype?: any, ms1ppm?: any, export_dir?: any, library_dir?: any, n_threads?: any, waters?: any, metadna?: any, do_plot?: any, debug?: any): object;
+   function make_annotation(files: any, peakfile: any, libtype?: any, ms1ppm?: any, export_dir?: any, library_dir?: any, n_threads?: any, waters?: any, metadna?: any, do_plot?: any, id_range?: any, debug?: any): object;
    /**
      * @param visual_dir default value Is ``./``.
    */
@@ -155,10 +160,9 @@ declare namespace Daisy {
    function report_unique(result: any): object;
    /**
      * @param libfiles default value Is ``null``.
-     * @param libtype default value Is ``[1, -1]``.
-     * @param waters default value Is ``false``.
+     * @param map_name default value Is ``null``.
    */
-   function resolve_metadb(libfiles?: any, libtype?: any, waters?: any): object;
+   function resolve_metadb(libfiles?: any, map_name?: any): object;
    /**
    */
    function tabular(list: any, keys: any): object;
