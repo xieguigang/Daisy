@@ -123,6 +123,7 @@ const dasy_task = function(file, args = list(
 
     if (nrow(dda_result) > 0) {
         dda_result[,"source"] = "reference_library";
+        dda_result[,"msi_level"] = 1;
 
         print("inspect of the reference library search result:");
         str(dda_result);
@@ -135,17 +136,22 @@ const dasy_task = function(file, args = list(
         str(metadna_result);
 
         metadna_result[, "source"] = "metadna";
+        metadna_result[,"msi_level"] = 3;
     } else {
         print("[warining] there is no metadna annotation result for merge!");
     }
 
     let result = rbind(dda_result, metadna_result);
 
-    if (nrow(result) > 0) {
+    if (nrow(result) > 0) {        
         result[, "rawfile"] <- args$filename; 
     } else {
         warning(`no annotation result for rawdata file: ${args$filename}`);
     }   
+
+    if (nrow(result) > 0) {
+        result = result[!is.metal_ion(result$formula),];
+    }
 
     write.csv(result, file = file.path(args$export_dir, "result.csv"), 
         row.names = FALSE);
