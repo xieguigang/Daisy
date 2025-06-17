@@ -96,6 +96,7 @@ const tabular_annotation = function(result, rt_shifts = 15) {
         let refer_rt = tabulate.mode(rt);
         let filter = abs(rt - refer_rt) < rt_shifts;
 
+        meta[,"refer_rt"] = refer_rt;
         meta[,"supports"] = sum(filter);
         meta[filter,]; 
     });
