@@ -69,6 +69,8 @@ const export_report = function(files, export_dir = "./", do_plot = TRUE) {
         invisible(NULL);
     }
 
+    str(result);
+
     result[, "mz"] = round(result$mz, 4);
     result[, "rank"] = rank_score(result);
 

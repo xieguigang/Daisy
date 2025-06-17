@@ -32,7 +32,7 @@ const report_unique = function(result) {
 #' 
 const rank_score = function(result) {
     let score = (as.numeric(result$npeaks) / max(as.numeric(result$npeaks))) + 
-    (as.numeric(result$into) / max(as.numeric(result$into))) + 
+    (as.numeric(result$intensity ) / max(as.numeric(result$intensity ))) + 
     (as.numeric(result$forward) + 
      as.numeric(result$reverse) + 
      as.numeric(result$jaccard) + 
