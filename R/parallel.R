@@ -30,6 +30,23 @@ const dasy_task = function(file, args = list(
         tsv = file.ext(args$peakfile) == "txt",
         general_method = FALSE);
 
+    let msn_ions <- args$rawdata
+    # generates the fake spectrum id
+    |> make.ROI_names(name_chrs = FALSE, prefix = "MSn_")
+    |> filter_noise_spectrum(peaktable = args$peaks,
+                             mzdiff = 0.1,
+                             rt_win = 20);
+
+    if (length(attr(msn_ions,"noise")) > 0) {
+        print(paste(rep("=", 100), sep = ""));
+        print(`load ${basename(file)} total ${length(args$rawdata)} MSn spectrum`);
+        print(`drop ${length(attr(msn_ions,"noise"))} noise spectrum,`);
+        print(`use ${length(msn_ions)} clean spectrum!`);
+        print(paste(rep("=", 100), sep = ""));
+    }
+
+    args$rawdata <- msn_ions;
+
     let metadna_exports = file.path(args$export_dir, "metadna");
     let library_exports = file.path(args$export_dir, "libsearch");
     let dia_output = `${metadna_exports}/metaDNA.csv`; 
