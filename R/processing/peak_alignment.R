@@ -5,6 +5,7 @@
 const peak_alignment = function(metadna, peaktable, mzdiff = 0.01, rt_win = 15, ms1ppm = 15, libtype = [1,-1]) {
     let alignments = list();
     let hit_result = NULL;
+    let offset = 0;
 
     for(let hit in tqdm(as.list(metadna, byrow = TRUE))) {
         let peaks = peaktable |> find_xcms_ionPeaks(mz  = hit$mz, rt = hit$rt,
@@ -17,7 +18,9 @@ const peak_alignment = function(metadna, peaktable, mzdiff = 0.01, rt_win = 15, 
             hit_result$xcms_id = [peak]::ID;
             hit_result$mz = [peak]::mz;
             hit_result$rt = [peak]::rt;
-            alignments[[`${hit_result$xcms_id}-${hit$metabolite_id}`]] = hit_result;
+            hit_result$npeaks = [peak]::npeaks;
+            hit_result$into = [peak]::into;
+            alignments[[`${hit_result$xcms_id}-${hit$metabolite_id}-${offset = offset + 1}`]] = hit_result;
         }
     }
 
@@ -32,6 +35,7 @@ const peak_alignment = function(metadna, peaktable, mzdiff = 0.01, rt_win = 15, 
             da = 0.3,
             safe = TRUE);
     });
+    let check_ms1 = sum(alignments@into > 0) > 0;
 
     alignments <- data.frame(
         metabolite_id = alignments@metabolite_id,
@@ -60,7 +64,14 @@ const peak_alignment = function(metadna, peaktable, mzdiff = 0.01, rt_win = 15, 
         xcms_id = alignments@xcms_id,
         mz = query_mz,
         rt = alignments@rt,
-        intensity = alignments@intensity,
+        intensity = {
+            if (check_ms1) {
+                alignments@into;
+            } else {
+                alignments@intensity;
+            }
+        },
+        npeaks = alignments@npeaks,
         adducts = adducts@precursor_type,
         theoretical_mz = adducts@theoretical,
         ppm = adducts@ppm,
