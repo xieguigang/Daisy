@@ -51,21 +51,24 @@ const make_annotation = function(files, peakfile, libtype = [1,-1], ms1ppm = 15,
         Parallel::parallel(raw_file = files, n_threads = n_threads, 
                 ignoreError = FALSE, 
                 debug = FALSE,
-                log_tmp = `${export_dir}/tmp/.local_debug/parallel_slave/`) {
-
-            require(Daisy);
+                log_tmp = `${export_dir}/tmp/.local_debug/parallel_slave/`) {            
 
             let filepath <- unlist(raw_file);
+            let result_table = file.path(workflow$export_dir, basename(filepath), "result.csv");
 
-            sink(file = file.path(workflow$export_dir, "tmp", "logs", `${basename(filepath)}.log`));            
-            # view verbose debug echo 
-            print(` -> ${filepath}`);
-            str(workflow);
+            if (!file.exists(result_table)) {
+                require(Daisy);
 
-            # processing a single rawdata file
-            Daisy::dasy_task(filepath, workflow);
+                sink(file = file.path(workflow$export_dir, "tmp", "logs", `${basename(filepath)}.log`));            
+                # view verbose debug echo 
+                print(` -> ${filepath}`);
+                str(workflow);
 
-            sink();
+                # processing a single rawdata file
+                Daisy::dasy_task(filepath, workflow);
+
+                sink();
+            }
         }
     }
 
