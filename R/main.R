@@ -57,12 +57,15 @@ const make_annotation = function(files, peakfile, libtype = [1,-1], ms1ppm = 15,
 
             let filepath <- unlist(raw_file);
 
+            sink(file = file.path(workflow$export_dir, "tmp", "logs", `${basename(filepath)}.log`));            
             # view verbose debug echo 
             print(` -> ${filepath}`);
             str(workflow);
 
             # processing a single rawdata file
             Daisy::dasy_task(filepath, workflow);
+
+            sink();
         }
     }
 
