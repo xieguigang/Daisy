@@ -31,12 +31,13 @@ const report_unique = function(result) {
 #' formula for make rank score for each search candidates
 #' 
 const rank_score = function(result) {
-    let score = (as.numeric(result$npeaks) / max(as.numeric(result$npeaks))) + 
-    (as.numeric(result$intensity ) / max(as.numeric(result$intensity ))) + 
-    (as.numeric(result$forward) + 
-     as.numeric(result$reverse) + 
-     as.numeric(result$jaccard) + 
-     as.numeric(result$entropy));
+    let score = 
+        (as.numeric(result$intensity) / max(as.numeric(result$intensity))) + 
+        (as.numeric(result$forward) + 
+         as.numeric(result$reverse) + 
+         as.numeric(result$jaccard) + 
+         as.numeric(result$entropy))
+        ;
 
     let formula_ranking = math::rank_adducts(
         formula = result$formula, 
@@ -46,7 +47,8 @@ const rank_score = function(result) {
 
     score = score / (as.numeric(result$ppm) + 0.1);
     score = score / (as.numeric(result$msi_level));
-    score = score * formula_ranking;
+    score = score * formula_ranking * as.numeric(result$npeaks) * as.numeric(result$supports);
+    score = score / max(score);
 
     print("view of the ion ranking score:");
     print(score);

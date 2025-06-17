@@ -71,8 +71,10 @@ const export_report = function(files, export_dir = "./", do_plot = TRUE) {
 
     str(result);
 
-    result[, "mz"] = round(result$mz, 4);
+    result[, "mz"]   = round(result$mz, 4);
+    result           = tabular_annotation(result);
     result[, "rank"] = rank_score(result);
+    result           = result[result$rank > 0, ];
 
     # make unique
     result = report_unique(result);
@@ -87,3 +89,16 @@ const export_report = function(files, export_dir = "./", do_plot = TRUE) {
     }
 }
 
+const tabular_annotation = function(result, rt_shifts = 15) {
+    result = result |> groupBy("metabolite_id");
+    result = lapply(result, function(meta) {
+        let rt = meta$rt;
+        let refer_rt = tabulate.mode(rt);
+        let filter = abs(rt - refer_rt) < rt_shifts;
+
+        meta[,"supports"] = sum(filter);
+        meta[filter,]; 
+    });
+
+    bind_rows(result);
+}

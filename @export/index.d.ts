@@ -167,6 +167,10 @@ declare namespace Daisy {
    */
    function tabular(list: any, keys: any): object;
    /**
+     * @param rt_shifts default value Is ``15``.
+   */
+   function tabular_annotation(result: any, rt_shifts?: any): object;
+   /**
    */
    function union_posneg(pos: any, neg: any): object;
    /**
