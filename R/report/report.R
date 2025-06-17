@@ -92,7 +92,7 @@ const export_report = function(files, export_dir = "./", do_plot = TRUE) {
 const tabular_annotation = function(result, rt_shifts = 15) {
     result = result |> groupBy("metabolite_id");
     result = lapply(result, function(meta) {
-        let rt = meta$rt;
+        let rt = as.numeric(meta$rt);
         let refer_rt = tabulate.mode(rt);
         let filter = abs(rt - refer_rt) < rt_shifts;
 
