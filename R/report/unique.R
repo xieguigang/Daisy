@@ -42,7 +42,7 @@ const rank_score = function(result) {
     let formula_ranking = math::rank_adducts(
         formula = result$formula, 
         adducts = result$adducts, 
-        max_score = 2
+        max_score = 10
     );
 
     score = score / (as.numeric(result$ppm) + 0.1);
