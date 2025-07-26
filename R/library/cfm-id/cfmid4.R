@@ -37,6 +37,8 @@ const parse_cfmid4_predicts = function(str_output) {
 
 #' Parse the ms2 spectrum fragment annotation information
 #' 
+#' @param lines the multiple lines of the text data
+#' 
 const .parse_annotation4 = function(lines) {
     lines = lapply(lines, l -> strsplit(l));
 
@@ -47,6 +49,8 @@ const .parse_annotation4 = function(lines) {
 }
 
 #' Parse the ms2 predicted spectrum data
+#' 
+#' @param lines the multiple lines of the text data
 #' 
 #' @return ms2 spectrum data in multiple level of the collision energy
 #' 
@@ -59,6 +63,8 @@ const .parse_spectrum4 = function(lines) {
 }
 
 #' Parse the annotation metadata
+#' 
+#' @param lines the multiple lines of the text data
 #' 
 const .parse_metadata4 = function(lines) {
     let parse = lines 
