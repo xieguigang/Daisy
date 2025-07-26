@@ -151,6 +151,9 @@ declare namespace Daisy {
    */
    function parse_cfmid4_predicts(str_output: any): object;
    /**
+   */
+   function parseMS(block: any): object;
+   /**
      * @param mzdiff default value Is ``0.01``.
      * @param rt_win default value Is ``15``.
      * @param ms1ppm default value Is ``15``.
