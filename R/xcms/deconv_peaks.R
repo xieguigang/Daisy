@@ -1,5 +1,11 @@
 #' method for export peakstable for both lcms and gcms
 #' 
+#' @param rawfiles a character vector that contains multiple sample rawdata files, should be in mzXML or mzML file format.
+#' @param workdir the result directory path for save the result files.
+#' @param docker the docker image id for run the xcms function
+#' @param n_threads the threads number for run the xcms parallel task
+#' @param call_xcms call the xcms function for make the sample data peak finding. set this parameter false will just make the peak alignment and generates the peaktable without call the xcms function.
+#' 
 const deconv_peaks = function(rawfiles, workdir = "./", 
                               max_rtwin = 15, 
                               docker = NULL, 
@@ -46,6 +52,14 @@ const deconv_peaks = function(rawfiles, workdir = "./",
     xcms_out |> __peak_alignment(max_rtwin, workdir);
 }
 
+#' make sample file peak alignment and export peak table file
+#' 
+#' @param xcms_out a directory that contains the multiple sample peak finding result table file in csv file format
+#' @param max_rtwin max rt window in time unit seconds for matches peak between multiple samples
+#' @param workdir a direcotry path for make export the peak table files 
+#' 
+#' @return this function has no return value
+#' 
 const __peak_alignment = function(xcms_out, max_rtwin = 15, workdir="./") {
     let peakfiles = list.files(xcms_out, pattern = "*.csv");
     let peaktable = mzkit::make_peak_alignment(

@@ -1,5 +1,11 @@
 #' a simple tool for make extract peaks data via xcms
 #' 
+#' @param raw_files a character vector that contains multiple sample rawdata files, should be in mzXML or mzML file format.
+#' @param workdir a temp directory for save the multiplee sample peak finding csv table files
+#' @param docker the docker image id for run the xcms function
+#' 
+#' @return this function has no return value
+#' 
 const xcms_findPeaks = function(raw_files, workdir = "./", docker = NULL) {
     let xcms_work = normalizePath( workdir);
     let run_xcms = function() {
@@ -53,4 +59,6 @@ const xcms_findPeaks = function(raw_files, workdir = "./", docker = NULL) {
             workdir = workdir,
             print_code = TRUE);
     }
+
+    invisible(NULL);
 }
