@@ -15,6 +15,8 @@ const xcms_findPeaks = function(raw_files, workdir = "./", docker = NULL) {
         print(raw_files);
         cat("\n\n");
 
+        # function for call xcms method in native R environment
+
         for (file in raw_files) {
             print(sprintf("findPeaks: %s", file));
 
