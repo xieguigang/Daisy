@@ -43,13 +43,13 @@ declare namespace Daisy {
    */
    function __peak_alignment(xcms_out: any, max_rtwin?: any, workdir?: any): object;
    /**
+   */
+   function build_cfmid3_library(cfmid: any, libfile: any): object;
+   /**
      * @param libdir default value Is ``./MoNA``.
      * @param metabolites default value Is ``null``.
    */
    function build_mona_lcms(repo: any, libdir?: any, metabolites?: any): object;
-   /**
-   */
-   function buildCfmidDb(cfmid: any, libfile: any): object;
    /**
      * @param libfiles default value Is ``null``.
      * @param libtype default value Is ``[1, -1]``.

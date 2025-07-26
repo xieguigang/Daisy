@@ -1,0 +1,26 @@
+﻿.TH BUILD_CFMID3_LIBRARY 1 2025-Jul "" "Build Reference Spectrum Library from CFM-ID 3.0 Outputs"
+.SH NAME
+build_cfmid3_library \- build_cfmid3_library(cfmid, libfile)
+.SH SYNOPSIS
+\fIbuild_cfmid3_library(cfmid, libfile)\fR
+.SH OPTIONS
+.PP
+\fBcfmid\fB \fR\- . Character string specifying the directory path containing CFM-ID 3.0 output files. Files must be in TXT format with predicted spectra.
+.PP
+.PP
+\fBlibfile\fB \fR\- . Character string defining the output file path for the compiled spectral library. Recommended file extension is `.spa` for compatibility with `mzkit` packages.
+.PP
+.SH VALUE
+.PP
+None (invisible `NULL`). The function's primary output is a binary library file saved at the location specified by `libfile`.
+.PP
+.SH EXAMPLES
+.PP
+\dontrun{ build_cfmid3_library( cfmid = "path/to/cfm_id_outputs", libfile = "reference_library.spa" )}
+.PP
+.SH FILES
+.PP
+SMRUCC/R#.declare_function.build_cfmid3_library at build_cfmid3_library.R:line 37
+.PP
+.SH COPYRIGHT
+Copyright © xieguigang@metabolomics.ac.cn, MIT Licensed 2025
