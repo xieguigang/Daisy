@@ -65,6 +65,11 @@ declare namespace Daisy {
    */
    function call_metadna(peaks_ms2: any, libtype?: any, ms1ppm?: any, output?: any): object;
    /**
+     * @param save_dir default value Is ``./``.
+     * @param image_id default value Is ``wishartlab/cfmid:latest``.
+   */
+   function cfmid4_task(data: any, save_sh: any, save_dir?: any, image_id?: any): object;
+   /**
      * @param args default value Is ``Call "list"("export_dir" <- "./",
      *       "peakfile" <- "./peaksdata.csv",
      *       "library_dir" <- NULL,

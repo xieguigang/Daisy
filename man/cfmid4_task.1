@@ -1,0 +1,36 @@
+﻿.TH CFMID4_TASK 1 2025-Jul "" "Generate a parallel task bash script for running CFM-ID 4.0 predictions"
+.SH NAME
+cfmid4_task \- cfmid4_task(data, save.sh,
+    <i>save.dir</i> = <span style='color: brown;'><strong>'./'</strong></span>,
+    <i>image.id</i> = <span style='color: brown;'><strong>'wishartlab/cfmid:latest'</strong></span>)
+.SH SYNOPSIS
+\fIcfmid4_task(data, save.sh,
+    <i>save.dir</i> = <span style='color: brown;'><strong>'./'</strong></span>,
+    <i>image.id</i> = <span style='color: brown;'><strong>'wishartlab/cfmid:latest'</strong></span>)\fR
+.SH OPTIONS
+.PP
+\fBdata\fB \fR\- . A `dataframe` containing molecular structures and unique identifiers. Must include: - Row names: Unique molecule reference IDs (used as identifiers) - Column named `smiles`: Molecular structures in SMILES format
+.PP
+.PP
+\fBsave.sh\fB \fR\- . 
+.PP
+.PP
+\fBsave.dir\fB \fR\- './'. 
+.PP
+.PP
+\fBimage.id\fB \fR\- 'wishartlab/cfmid:latest'. 
+.PP
+.SH VALUE
+.PP
+No return value. Writes executable bash script to `save_sh`.
+.PP
+.SH EXAMPLES
+.PP
+\dontrun{ data <- data.frame(smiles = c("CCO", "CCN"), row.names = c("ethanol", "ethylamine")) cfmid4_task(data, save_sh = "predictions.sh", save_dir = "~/cfm_results", image_id = "my_cfmid_image:4.0") }
+.PP
+.SH FILES
+.PP
+SMRUCC/R#.declare_function.cfmid4_task at task.R:line 50
+.PP
+.SH COPYRIGHT
+Copyright © xieguigang@metabolomics.ac.cn, MIT Licensed 2025

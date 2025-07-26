@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Generate a parallel task bash script for running CFM-ID 4.0 predictions</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+    <link rel="stylesheet" type="text/css" href="../../_assets/page.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <table style="width: 100%;">
+            <tr>
+                <td>cfmid4_task {Daisy}</td>
+                <td style="text-align: right;">R Documentation</td>
+            </tr>
+        </table>
+
+        <h2>Generate a parallel task bash script for running CFM-ID 4.0 predictions</h2>
+
+        <h3>Description</h3>
+
+        
+
+        <h3>Usage</h3>
+
+        <div style="width: 100%; padding-left: 3%; color: black;">
+            <pre><code class='language-R' style="color: black; font-weight:normal;"><strong>cfmid4_task</strong>(<i>data</i>, <i>save.sh</i>,
+    <i>save.dir</i> = <span style='color: brown;'><strong>'./'</strong></span>,
+    <i>image.id</i> = <span style='color: brown;'><strong>'wishartlab/cfmid:latest'</strong></span>);</code></pre>
+        </div>
+
+        <h3>Arguments</h3>
+
+        <table>
+            
+<dt>data</dt>
+<dd><p><p>A `dataframe` containing molecular structures and unique identifiers. Must include: - Row names: Unique molecule reference IDs (used as identifiers) - Column named `smiles`: Molecular structures in SMILES format</p></p></dd>
+
+
+<dt>save.sh</dt>
+<dd><p><p>Path (string) to save the generated bash script. Example: "/scripts/cfm_predictions.sh"</p></p></dd>
+
+
+<dt>save.dir</dt>
+<dd><p><p>Output directory for prediction results (default: current directory). Will be normalized to absolute path. Directory structure follows: `save<em>dir/.cfmid4/hash1/hash2/molecule</em>id/`</p></p></dd>
+
+
+<dt>image.id</dt>
+<dd><p><p>Docker image ID for CFM-ID execution (default: "wishartlab/cfmid:latest")</p></p></dd>
+
+        </table>
+
+
+        <h3 style="display: none;">Details</h3>
+
+        
+
+        <h3 style="display: block">Authors</h3>
+
+        xieguigang@metabolomics.ac.cn
+
+        <h3>Value</h3>
+
+        <p>No return value. Writes executable bash script to `save_sh`.</p>
+
+        <h3 style="display: block;">Examples</h3>
+
+        <pre><code id="example_r">\dontrun{ data <- data.frame(smiles = c("CCO", "CCN"), row.names = c("ethanol", "ethylamine")) cfmid4_task(data, save_sh = "predictions.sh", save_dir = "~/cfm_results", image_id = "my_cfmid_image:4.0") }</code></pre>
+
+        <hr />
+        <div style="text-align: center;">[Package <em>Daisy</em> version 0.1.0 <a
+                href="../Daisy.html">Index</a>]
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript" src="../../_assets/R_syntax.js"></script>
+<script type="text/javascript" src="../../_assets/highlights.js"></script>
+<script type="text/javascript">r_highlights("example_r");</script>
+
+</html>
