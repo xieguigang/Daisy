@@ -7,6 +7,15 @@ declare namespace Daisy {
       /**
       */
       function onLoad(): object;
+      /**
+      */
+      function parse_annotation4(lines: any): object;
+      /**
+      */
+      function parse_metadata4(lines: any): object;
+      /**
+      */
+      function parse_spectrum4(lines: any): object;
    }
    /**
    */
@@ -138,6 +147,9 @@ declare namespace Daisy {
    /**
    */
    function open_local_gcms_EI(): object;
+   /**
+   */
+   function parse_cfmid4_predicts(str_output: any): object;
    /**
      * @param mzdiff default value Is ``0.01``.
      * @param rt_win default value Is ``15``.
