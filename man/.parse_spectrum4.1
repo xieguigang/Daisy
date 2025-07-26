@@ -1,19 +1,23 @@
-﻿.TH .PARSE_SPECTRUM4 1 2025-Jul "" "Parse the ms2 predicted spectrum data"
+﻿.TH .PARSE_SPECTRUM4 1 2025-Jul "" "Parse multi-energy spectra blocks"
 .SH NAME
 .parse_spectrum4 \- .parse_spectrum4(lines)
 .SH SYNOPSIS
 \fI.parse_spectrum4(lines)\fR
 .SH OPTIONS
 .PP
-\fBlines\fB \fR\- . 
+\fBlines\fB \fR\- . Character vector of spectrum data lines, with energy headers ("energyX") separating different collision energy blocks.
 .PP
 .SH VALUE
 .PP
-ms2 spectrum data in multiple level of the collision energy
+List of dataframes, each dataframe contains spectrum data for one collision energy level.
+.PP
+.SH DETAILS
+.PP
+Energy headers must match the pattern "energy\\d+" (e.g., "energy0"). Blocks without valid headers will be ignored.
 .PP
 .SH FILES
 .PP
-SMRUCC/R#.declare_function..parse_spectrum4 at cfmid4.R:line 57
+SMRUCC/R#.declare_function..parse_spectrum4 at cfmid4.R:line 90
 .PP
 .SH COPYRIGHT
 Copyright © xieguigang@metabolomics.ac.cn, MIT Licensed 2025

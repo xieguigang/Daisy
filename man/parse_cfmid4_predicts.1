@@ -1,4 +1,4 @@
-﻿.TH PARSE_CFMID4_PREDICTS 1 2025-Jul "" "Parse the cfm-id 4.0 spectra predicts result"
+﻿.TH PARSE_CFMID4_PREDICTS 1 2025-Jul "" "Parse CFM-ID 4.0 spectral prediction output"
 .SH NAME
 parse_cfmid4_predicts \- parse_cfmid4_predicts(str.output)
 .SH SYNOPSIS
@@ -7,13 +7,17 @@ parse_cfmid4_predicts \- parse_cfmid4_predicts(str.output)
 .PP
 \fBstr.output\fB \fR\- . 
 .PP
+.SH VALUE
+.PP
+A named list containing three components: \itemize{ \item \code{metadata} - List of key-value pairs from the prediction metadata header \item \code{spectrum} - List of dataframes, each containing MS2 spectrum data for an energy level \item \code{annotation} - Dataframe containing peak annotations }
+.PP
 .SH DETAILS
 .PP
-PMass is the precursor mz of [M+H]+ or [M-H]-
+Output structure must contain: 1. Metadata lines starting with "#" at beginning 2. Spectrum data block (whitespace separated m/z-intensity pairs) 3. Annotation block (whitespace separated m/z-annotation pairs) The precursor mass (PMass) in metadata represents [M+H]+ or [M-H]- ion.
 .PP
 .SH FILES
 .PP
-SMRUCC/R#.declare_function.parse_cfmid4_predicts at cfmid4.R:line 13
+SMRUCC/R#.declare_function.parse_cfmid4_predicts at cfmid4.R:line 24
 .PP
 .SH COPYRIGHT
 Copyright © xieguigang@metabolomics.ac.cn, MIT Licensed 2025

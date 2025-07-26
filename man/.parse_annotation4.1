@@ -1,15 +1,23 @@
-﻿.TH .PARSE_ANNOTATION4 1 2025-Jul "" "Parse the ms2 spectrum fragment annotation information"
+﻿.TH .PARSE_ANNOTATION4 1 2025-Jul "" "Parse MS2 fragment annotations"
 .SH NAME
 .parse_annotation4 \- .parse_annotation4(lines)
 .SH SYNOPSIS
 \fI.parse_annotation4(lines)\fR
 .SH OPTIONS
 .PP
-\fBlines\fB \fR\- . 
+\fBlines\fB \fR\- . Character vector where each element contains whitespace-separated values (expected format: peak_index, m/z value, annotation text).
+.PP
+.SH VALUE
+.PP
+Dataframe containing: \itemize{ \item \code{mz} - Numeric vector of fragment m/z values \item \code{peak_anno} - Character vector of corresponding peak annotations }
+.PP
+.SH DETAILS
+.PP
+Input lines should contain at least three whitespace-separated columns. Second column is parsed as m/z, third column as annotation text.
 .PP
 .SH FILES
 .PP
-SMRUCC/R#.declare_function..parse_annotation4 at cfmid4.R:line 42
+SMRUCC/R#.declare_function..parse_annotation4 at cfmid4.R:line 67
 .PP
 .SH COPYRIGHT
 Copyright © xieguigang@metabolomics.ac.cn, MIT Licensed 2025

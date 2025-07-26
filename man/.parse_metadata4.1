@@ -1,15 +1,23 @@
-﻿.TH .PARSE_METADATA4 1 2025-Jul "" "Parse the annotation metadata"
+﻿.TH .PARSE_METADATA4 1 2025-Jul "" "Parse metadata from header lines"
 .SH NAME
 .parse_metadata4 \- .parse_metadata4(lines)
 .SH SYNOPSIS
 \fI.parse_metadata4(lines)\fR
 .SH OPTIONS
 .PP
-\fBlines\fB \fR\- . 
+\fBlines\fB \fR\- . Character vector of metadata lines (each starting with "#" prefix)
+.PP
+.SH VALUE
+.PP
+Named list containing metadata parameters. Keys are derived from text before "=", values are converted to appropriate types.
+.PP
+.SH DETAILS
+.PP
+Performs automatic type conversion: \itemize{ \item Numeric values converted to numeric type \item "TRUE/FALSE" converted to logical \item Other values remain as character strings }
 .PP
 .SH FILES
 .PP
-SMRUCC/R#.declare_function..parse_metadata4 at cfmid4.R:line 69
+SMRUCC/R#.declare_function..parse_metadata4 at cfmid4.R:line 116
 .PP
 .SH COPYRIGHT
 Copyright © xieguigang@metabolomics.ac.cn, MIT Licensed 2025

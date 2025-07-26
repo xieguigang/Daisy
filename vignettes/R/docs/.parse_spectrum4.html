@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Parse the ms2 predicted spectrum data</title>
+    <title>Parse multi-energy spectra blocks</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
     <link rel="stylesheet" type="text/css" href="../../_assets/page.css">
@@ -18,7 +18,7 @@
             </tr>
         </table>
 
-        <h2>Parse the ms2 predicted spectrum data</h2>
+        <h2>Parse multi-energy spectra blocks</h2>
 
         <h3>Description</h3>
 
@@ -34,12 +34,15 @@
 
         <table>
             
+<dt>lines</dt>
+<dd><p><p>Character vector of spectrum data lines, with energy headers ("energyX") separating different collision energy blocks.</p></p></dd>
+
         </table>
 
 
-        <h3 style="display: none;">Details</h3>
+        <h3 style="display: block;">Details</h3>
 
-        
+        <p>Energy headers must match the pattern "energy\\d+" (e.g., "energy0"). Blocks without valid headers will be ignored.</p>
 
         <h3 style="display: block">Authors</h3>
 
@@ -47,7 +50,7 @@
 
         <h3>Value</h3>
 
-        <p>ms2 spectrum data in multiple level of the collision energy</p>
+        <p>List of dataframes, each dataframe contains spectrum data for one collision energy level.</p>
 
         <h3 style="display: none;">Examples</h3>
 
