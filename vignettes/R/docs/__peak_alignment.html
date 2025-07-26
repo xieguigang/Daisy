@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>__peak_alignment</title>
+    <title>(Internal) Perform peak alignment across samples</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
     <link rel="stylesheet" type="text/css" href="../../_assets/page.css">
@@ -18,7 +18,7 @@
             </tr>
         </table>
 
-        <h2>__peak_alignment</h2>
+        <h2>(Internal) Perform peak alignment across samples</h2>
 
         <h3>Description</h3>
 
@@ -36,6 +36,17 @@
 
         <table>
             
+<dt>xcms.out</dt>
+<dd><p><p>Directory containing XCMS peak CSV files.</p></p></dd>
+
+
+<dt>max.rtwin</dt>
+<dd><p><p>Maximum retention time window (seconds) for peak matching.</p></p></dd>
+
+
+<dt>workdir</dt>
+<dd><p><p>Output directory for generated files (default: "./").</p></p></dd>
+
         </table>
 
 
@@ -49,7 +60,7 @@
 
         <h3>Value</h3>
 
-        This function has no value returns.
+        <p>Invisibly returns NULL. Generates: \itemize{ \item Consolidated peak table (peaktable.csv) \item Retention time shift data (rt<em>shifts.csv) \item Peak metadata (peakmeta.csv) \item Diagnostic plots (rt</em>shifts.pdf, peakset.pdf) }</p>
 
         <h3 style="display: none;">Examples</h3>
 

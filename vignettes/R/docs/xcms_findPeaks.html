@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>xcms_findPeaks</title>
+    <title>Perform peak detection using XCMS</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
     <link rel="stylesheet" type="text/css" href="../../_assets/page.css">
@@ -18,7 +18,7 @@
             </tr>
         </table>
 
-        <h2>xcms_findPeaks</h2>
+        <h2>Perform peak detection using XCMS</h2>
 
         <h3>Description</h3>
 
@@ -36,12 +36,23 @@
 
         <table>
             
+<dt>raw.files</dt>
+<dd><p><p>Character vector of raw data files (mzXML/mzML format).</p></p></dd>
+
+
+<dt>workdir</dt>
+<dd><p><p>Output directory for peak CSV files (default: "./").</p></p></dd>
+
+
+<dt>docker</dt>
+<dd><p><p>Docker image ID for execution environment (optional).</p></p></dd>
+
         </table>
 
 
-        <h3 style="display: none;">Details</h3>
+        <h3 style="display: block;">Details</h3>
 
-        
+        <p>Uses either: \enumerate{ \item Docker container execution (if \code{docker} provided) \item Native R environment via \code{REnv::rlang_interop()} }</p>
 
         <h3 style="display: block">Authors</h3>
 
@@ -49,7 +60,7 @@
 
         <h3>Value</h3>
 
-        This function has no value returns.
+        <p>Invisibly returns NULL. Outputs CSV peak files in \code{workdir}, one per input file (named using original basename).</p>
 
         <h3 style="display: none;">Examples</h3>
 

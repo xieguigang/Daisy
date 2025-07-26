@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>deconv_peaks</title>
+    <title>Perform peak detection and alignment for LC-MS/GC-MS data</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
     <link rel="stylesheet" type="text/css" href="../../_assets/page.css">
@@ -18,7 +18,7 @@
             </tr>
         </table>
 
-        <h2>deconv_peaks</h2>
+        <h2>Perform peak detection and alignment for LC-MS/GC-MS data</h2>
 
         <h3>Description</h3>
 
@@ -39,12 +39,35 @@
 
         <table>
             
+<dt>rawfiles</dt>
+<dd><p><p>Character vector of raw data files (mzXML or mzML format).</p></p></dd>
+
+
+<dt>workdir</dt>
+<dd><p><p>Output directory for results (default: "./").</p></p></dd>
+
+
+<dt>max.rtwin</dt>
+<dd><p><p>Maximum retention time window (seconds) for peak alignment (default: 15).</p></p></dd>
+
+
+<dt>docker</dt>
+<dd><p><p>Docker image ID for XCMS execution environment (optional).</p></p></dd>
+
+
+<dt>n.threads</dt>
+<dd><p><p>Number of threads for parallel processing (default: 8).</p></p></dd>
+
+
+<dt>call.xcms</dt>
+<dd><p><p>Logical indicating whether to run XCMS peak detection (default: TRUE). If FALSE, only alignment is performed using existing XCMS output.</p></p></dd>
+
         </table>
 
 
-        <h3 style="display: none;">Details</h3>
+        <h3 style="display: block;">Details</h3>
 
-        
+        <p>The processing pipeline involves two main steps: \enumerate{ \item \strong{XCMS Peak Detection:} When \code{call<em>xcms = TRUE}, runs \code{xcms</em>findPeaks()} in parallel batches using matchedFilter algorithm. \item \strong{Peak Alignment:} Aligns peaks across samples using specified RT window and outputs consolidated results. }</p>
 
         <h3 style="display: block">Authors</h3>
 
@@ -52,7 +75,7 @@
 
         <h3>Value</h3>
 
-        This function has no value returns.
+        <p>Invisibly returns NULL. Outputs the following files in \code{workdir}: \itemize{ \item \strong{peaktable.csv} - Aligned peak feature table \item \strong{rt<em>shifts.csv} - Retention time shift corrections \item \strong{peakmeta.csv} - Peak metadata (mz, RT, intensity, etc.) \item \strong{rt</em>shifts.pdf} - Visualization of retention time shifts \item \strong{peakset.pdf} - Peak distribution visualization }</p>
 
         <h3 style="display: none;">Examples</h3>
 

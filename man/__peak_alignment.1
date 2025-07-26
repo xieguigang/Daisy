@@ -1,4 +1,4 @@
-﻿.TH __PEAK_ALIGNMENT 1 2025-Jul "" "__peak_alignment"
+﻿.TH __PEAK_ALIGNMENT 1 2025-Jul "internal" "(Internal) Perform peak alignment across samples"
 .SH NAME
 __peak_alignment \- __peak_alignment(xcms.out,
     <i>max.rtwin</i> = <span style='color: green;'>15</span>,
@@ -15,11 +15,15 @@ __peak_alignment \- __peak_alignment(xcms.out,
 \fBmax.rtwin\fB \fR\- 15. 
 .PP
 .PP
-\fBworkdir\fB \fR\- './'. 
+\fBworkdir\fB \fR\- './'. Output directory for generated files (default: "./").
+.PP
+.SH VALUE
+.PP
+Invisibly returns NULL. Generates: \itemize{ \item Consolidated peak table (peaktable.csv) \item Retention time shift data (rt_shifts.csv) \item Peak metadata (peakmeta.csv) \item Diagnostic plots (rt_shifts.pdf, peakset.pdf) }
 .PP
 .SH FILES
 .PP
-SMRUCC/R#.declare_function.__peak_alignment at deconv_peaks.R:line 49
+SMRUCC/R#.declare_function.__peak_alignment at deconv_peaks.R:line 95
 .PP
 .SH COPYRIGHT
 Copyright © xieguigang@metabolomics.ac.cn, MIT Licensed 2025

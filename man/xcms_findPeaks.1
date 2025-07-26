@@ -1,4 +1,4 @@
-﻿.TH XCMS_FINDPEAKS 1 2025-Jul "" "xcms_findPeaks"
+﻿.TH XCMS_FINDPEAKS 1 2025-Jul "" "Perform peak detection using XCMS"
 .SH NAME
 xcms_findPeaks \- xcms_findPeaks(raw.files,
     <i>workdir</i> = <span style='color: brown;'><strong>'./'</strong></span>,
@@ -12,14 +12,22 @@ xcms_findPeaks \- xcms_findPeaks(raw.files,
 \fBraw.files\fB \fR\- . 
 .PP
 .PP
-\fBworkdir\fB \fR\- './'. 
+\fBworkdir\fB \fR\- './'. Output directory for peak CSV files (default: "./").
 .PP
 .PP
-\fBdocker\fB \fR\- NULL. 
+\fBdocker\fB \fR\- NULL. Docker image ID for execution environment (optional).
+.PP
+.SH VALUE
+.PP
+Invisibly returns NULL. Outputs CSV peak files in \code{workdir}, one per input file (named using original basename).
+.PP
+.SH DETAILS
+.PP
+Uses either: \enumerate{ \item Docker container execution (if \code{docker} provided) \item Native R environment via \code{REnv::rlang_interop()} }
 .PP
 .SH FILES
 .PP
-SMRUCC/R#.declare_function.xcms_findPeaks at xcms.R:line 3
+SMRUCC/R#.declare_function.xcms_findPeaks at xcms.R:line 19
 .PP
 .SH COPYRIGHT
 Copyright © xieguigang@metabolomics.ac.cn, MIT Licensed 2025
