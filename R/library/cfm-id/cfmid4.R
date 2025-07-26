@@ -58,7 +58,7 @@ const .parse_spectrum4 = function(lines) {
     lines 
     |> split(line -> line == $"energy\d+") 
     |> which(block -> length(block) > 0) 
-    |> lapply(parseMS)
+    |> lapply(Daisy::parseMS)
     ;
 }
 
