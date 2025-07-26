@@ -2,7 +2,7 @@ Package: Daisy
 Type: Package
 Title: A un-targetted metabolite annotation workflow power by mzkit
 Version: 0.1.0
-Author: xieguigang
+Author: xieguigang@metabolomics.ac.cn
 Maintainer: xieguigang <xie.guigang@gcmodeller.org>
 Description: A lc-ms/gc-ms un-targetted metabolite annotation workflow power by mzkit
 License: MIT
