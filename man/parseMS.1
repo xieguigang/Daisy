@@ -1,19 +1,27 @@
-﻿.TH PARSEMS 1 2025-Jul "" "Parse the ms2 spectrum data"
+﻿.TH PARSEMS 1 2025-Jul "" "Parse MS2 spectrum data from text block"
 .SH NAME
 parseMS \- parseMS(block)
 .SH SYNOPSIS
 \fIparseMS(block)\fR
 .SH OPTIONS
 .PP
-\fBblock\fB \fR\- . 
+\fBblock\fB \fR\- . Character vector where each element contains a pair of whitespace-separated numeric values (m/z and intensity).
 .PP
 .SH VALUE
 .PP
-the parsed ms2 spectrum data in a dataframe object, contains two data fields: - mz: the ms2 fragment mz data - into: the ms2 fragment intensity data
+A dataframe containing two columns: \itemize{ \item \code{mz} - Numeric vector of fragment m/z values \item \code{into} - Numeric vector of corresponding intensity values }
+.PP
+.SH DETAILS
+.PP
+Each line in the input block should contain exactly two numeric values separated by whitespace. The first value is parsed as m/z, the second as intensity. Non-numeric entries will result in NA values.
+.PP
+.SH EXAMPLES
+.PP
+\dontrun{ block <- c("100.0 500", "150.2 2500") parseMS(block) }
 .PP
 .SH FILES
 .PP
-SMRUCC/R#.declare_function.parseMS at parseMS.R:line 10
+SMRUCC/R#.declare_function.parseMS at parseMS.R:line 23
 .PP
 .SH COPYRIGHT
 Copyright © xieguigang@metabolomics.ac.cn, MIT Licensed 2025
