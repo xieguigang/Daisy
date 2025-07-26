@@ -1,11 +1,34 @@
-#' method for export peakstable for both lcms and gcms
+#' Perform peak detection and alignment for LC-MS/GC-MS data
+#'
+#' This function processes raw MS data files using parallelized XCMS peak detection 
+#' (if enabled) and performs peak alignment across samples to generate a peak table.
+#'
+#' @param rawfiles Character vector of raw data files (mzXML or mzML format).
+#' @param workdir Output directory for results (default: "./").
+#' @param max_rtwin Maximum retention time window (seconds) for peak alignment (default: 15).
+#' @param docker Docker image ID for XCMS execution environment (optional).
+#' @param n_threads Number of threads for parallel processing (default: 8).
+#' @param call_xcms Logical indicating whether to run XCMS peak detection (default: TRUE).
+#'                 If FALSE, only alignment is performed using existing XCMS output.
+#'
+#' @return Invisibly returns NULL. Outputs the following files in \code{workdir}:
+#' \itemize{
+#'   \item \strong{peaktable.csv} - Aligned peak feature table
+#'   \item \strong{rt_shifts.csv} - Retention time shift corrections
+#'   \item \strong{peakmeta.csv} - Peak metadata (mz, RT, intensity, etc.)
+#'   \item \strong{rt_shifts.pdf} - Visualization of retention time shifts
+#'   \item \strong{peakset.pdf} - Peak distribution visualization
+#' }
 #' 
-#' @param rawfiles a character vector that contains multiple sample rawdata files, should be in mzXML or mzML file format.
-#' @param workdir the result directory path for save the result files.
-#' @param docker the docker image id for run the xcms function
-#' @param n_threads the threads number for run the xcms parallel task
-#' @param call_xcms call the xcms function for make the sample data peak finding. set this parameter false will just make the peak alignment and generates the peaktable without call the xcms function.
-#' 
+#' @details The processing pipeline involves two main steps:
+#' \enumerate{
+#'   \item \strong{XCMS Peak Detection:} When \code{call_xcms = TRUE}, runs 
+#'         \code{xcms_findPeaks()} in parallel batches using matchedFilter algorithm.
+#'   \item \strong{Peak Alignment:} Aligns peaks across samples using specified RT window 
+#'         and outputs consolidated results.
+#' }
+#'
+#' @seealso \code{\link{xcms_findPeaks}}, \code{\link{__peak_alignment}}
 const deconv_peaks = function(rawfiles, workdir = "./", 
                               max_rtwin = 15, 
                               docker = NULL, 
@@ -52,14 +75,23 @@ const deconv_peaks = function(rawfiles, workdir = "./",
     xcms_out |> __peak_alignment(max_rtwin, workdir);
 }
 
-#' make sample file peak alignment and export peak table file
+#' (Internal) Perform peak alignment across samples
+#'
+#' Aligns detected peaks from multiple samples and generates output files.
+#'
+#' @param xcms_out Directory containing XCMS peak CSV files.
+#' @param max_rtwin Maximum retention time window (seconds) for peak matching.
+#' @param workdir Output directory for generated files (default: "./").
+#'
+#' @return Invisibly returns NULL. Generates:
+#' \itemize{
+#'   \item Consolidated peak table (peaktable.csv)
+#'   \item Retention time shift data (rt_shifts.csv)
+#'   \item Peak metadata (peakmeta.csv)
+#'   \item Diagnostic plots (rt_shifts.pdf, peakset.pdf)
+#' }
 #' 
-#' @param xcms_out a directory that contains the multiple sample peak finding result table file in csv file format
-#' @param max_rtwin max rt window in time unit seconds for matches peak between multiple samples
-#' @param workdir a direcotry path for make export the peak table files 
-#' 
-#' @return this function has no return value
-#' 
+#' @keywords internal
 const __peak_alignment = function(xcms_out, max_rtwin = 15, workdir="./") {
     let peakfiles = list.files(xcms_out, pattern = "*.csv");
     let peaktable = mzkit::make_peak_alignment(

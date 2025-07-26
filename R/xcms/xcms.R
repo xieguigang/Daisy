@@ -1,11 +1,21 @@
-#' a simple tool for make extract peaks data via xcms
+#' Perform peak detection using XCMS
+#'
+#' Detects peaks in raw MS files using XCMS matchedFilter algorithm.
+#'
+#' @param raw_files Character vector of raw data files (mzXML/mzML format).
+#' @param workdir Output directory for peak CSV files (default: "./").
+#' @param docker Docker image ID for execution environment (optional).
+#'
+#' @return Invisibly returns NULL. Outputs CSV peak files in \code{workdir},
+#'         one per input file (named using original basename).
+#'
+#' @details Uses either:
+#' \enumerate{
+#'   \item Docker container execution (if \code{docker} provided)
+#'   \item Native R environment via \code{REnv::rlang_interop()}
+#' }
 #' 
-#' @param raw_files a character vector that contains multiple sample rawdata files, should be in mzXML or mzML file format.
-#' @param workdir a temp directory for save the multiplee sample peak finding csv table files
-#' @param docker the docker image id for run the xcms function
-#' 
-#' @return this function has no return value
-#' 
+#' @note Files are only processed if output CSV doesn't exist or is empty.
 const xcms_findPeaks = function(raw_files, workdir = "./", docker = NULL) {
     let xcms_work = normalizePath( workdir);
     let run_xcms = function() {
